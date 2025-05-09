@@ -7,7 +7,7 @@ category: networking
 version: "2.6.3"
 port: 8784
 description: >-
-  Gotify is an open-source, self-hosted notification server designed to enable real-time push notifications across multiple devices. It is a lightweight, efficient system that allows applications to send messages to the Gotify server via a REST API. These messages are then delivered to connected clients, including web browsers, mobile devices, or other systems that support Gotify’s push notification service.
+  📲 Gotify is an open-source, self-hosted notification server designed to enable real-time push notifications across multiple devices. It is a lightweight, efficient system that allows applications to send messages to the Gotify server via a REST API. These messages are then delivered to connected clients, including web browsers, mobile devices, or other systems that support Gotify’s push notification service.
 
 
   The server is built with Go, known for its high performance and minimal resource consumption, making it suitable for various environments. Gotify’s simple and intuitive web interface allows users to manage notifications, configure applications, and generate API tokens for authentication and access control.
