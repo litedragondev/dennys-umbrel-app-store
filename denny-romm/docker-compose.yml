@@ -18,7 +18,7 @@ services:
     restart: on-failure
 
   app:
-    image: ghcr.io/rommapp/romm:3.7.3@sha256:45bfde6088e217b0f050064ca2146bbbf052a559112567cf129e17f52fd07f5b
+    image: rommapp/romm:3.9.0@sha256:478544fe537a7b4976f2196f4fe465cbdec931b269d8f5167f5c354f718559a7
     environment:
       - DB_HOST=romm-db
       - DB_NAME=romm
