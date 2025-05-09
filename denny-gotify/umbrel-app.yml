@@ -3,7 +3,7 @@ id: denny-gotify
 name: Gotify
 tagline: A simple server for sending and receiving messages
 icon: https://i.imgur.com/HakL1r4.png
-category: In Progress
+category: networking
 version: "2.6.3"
 port: 8784
 description: >-
