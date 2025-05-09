@@ -20,6 +20,9 @@ description: >-
 
 
   As a self-hosted solution, Gotify gives users complete control over their notification infrastructure, ensuring privacy and data security. With its open-source nature, it can be customized and extended to suit different use cases. The ability to host notifications locally, without relying on third-party services, makes Gotify an attractive option for those seeking a private, cost-effective solution for delivering real-time notifications.
+
+  
+  ⚠️ For more detailed information, including advanced configuration and API documentation, refer to the official Gotify documentation: https://gotify.net/docs/pushmsg.
 developer: Gotify
 website: https://gotify.net/
 submitter: dennysubke
