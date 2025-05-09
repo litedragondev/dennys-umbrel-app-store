@@ -27,9 +27,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/gotify/server
 support: https://github.com/gotify/server/issues
 gallery:
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
+  - https://i.imgur.com/2Lx1snb.png
+  - https://i.imgur.com/bG45KkM.png
+  - https://i.imgur.com/ZF1XQca.png
 releaseNotes: >-
   This update sets the umask to 0 when creating Unix sockets to ensure proper file permissions. It also updates dependencies and fixes the release build process.
 dependencies:
