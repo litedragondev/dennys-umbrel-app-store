@@ -4,7 +4,7 @@ services:
     depends_on:
       - socat
     environment:
-      APP_HOST: ente-auth_socat_1
+      APP_HOST: denny-ente-auth_socat_1
       APP_PORT: "${ENTE_AUTH_NEW_PORT}" # Ente Auth app will be mapped to 43000
       PROXY_AUTH_ADD: "false"
 

@@ -25,7 +25,7 @@ services:
     depends_on:
       - web
     environment:
-      APP_HOST: ente-photos_web_1
+      APP_HOST: denny-ente-photos_web_1
       APP_PORT: 3000 # Photos web app will be mapped to 33000
       PROXY_AUTH_ADD: "false"
 
