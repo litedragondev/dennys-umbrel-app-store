@@ -7,7 +7,7 @@ icon: https://i.imgur.com/Sm6pSFE.png
 version: "1.0.10"
 port: 33000
 description: >-
-  Ente Photos is a privacy-focused cloud service designed for securely storing and managing photos and videos. Unlike mainstream platforms like Google Photos or iCloud, Ente prioritizes user privacy through end-to-end encryption, ensuring that only the user has access to their data. Even Ente itself cannot view or analyze the content, preventing data mining and targeted advertising while protecting sensitive personal information.
+  🐥 Ente Photos is a privacy-focused cloud service designed for securely storing and managing photos and videos. Unlike mainstream platforms like Google Photos or iCloud, Ente prioritizes user privacy through end-to-end encryption, ensuring that only the user has access to their data. Even Ente itself cannot view or analyze the content, preventing data mining and targeted advertising while protecting sensitive personal information.
 
 
   Ente Photos is open source, allowing transparency in its implementation and enabling independent security reviews. The service is accessible across multiple platforms, including Android, iOS, Windows, macOS, Linux, and the web. It stores encrypted data redundantly in three separate data centers, adding an extra layer of security and data availability.
@@ -20,7 +20,9 @@ description: >-
 
 
   ⚠️ Make sure to go through setup steps after installing it:
-    - https://github.com/dennysubke/dennys-umbrel-app-store/blob/master/denny-ente-photos/README.md
+  
+  
+  https://github.com/dennysubke/dennys-umbrel-app-store/blob/master/denny-ente-photos/README.md
 developer: Ente
 website: https://ente.io
 submitter: Starfreck
