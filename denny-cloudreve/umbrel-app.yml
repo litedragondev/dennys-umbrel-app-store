@@ -3,7 +3,7 @@ id: denny-cloudreve
 name: Cloudreve
 tagline: A self-hosted file management system with multi-cloud support
 icon: https://i.imgur.com/2PTDRPQ.png
-category: files & productivity
+category: In Progress
 version: "5.4.0"
 port: 5212
 description: >-
