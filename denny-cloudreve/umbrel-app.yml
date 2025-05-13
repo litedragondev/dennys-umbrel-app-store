@@ -24,9 +24,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/cloudreve/Cloudreve
 support: https://github.com/cloudreve/Cloudreve/issues
 gallery:
-  - https://i.imgur.com/9zj1bjZ.png
-  - https://i.imgur.com/9zj1bjZ.png
-  - https://i.imgur.com/9zj1bjZ.png
+  - https://i.imgur.com/EPkyC7O.png
+  - https://i.imgur.com/EPkyC7O.png
+  - https://i.imgur.com/EPkyC7O.png
 releaseNotes: >-
   Cloudreve version 4.0.0-beta.9 addresses several issues, including incorrect handling of negative quantities for credit increase, OneDrive OAuth callback errors, and missing marker icons on maps. It also improves language settings in receipt emails and corrects the handling of # in file names. Additionally, the order of group storage policy options is now preserved.
 dependencies:
