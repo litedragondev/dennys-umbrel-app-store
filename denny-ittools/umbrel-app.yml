@@ -3,7 +3,7 @@ id: denny-ittools
 name: IT-Tools
 tagline: An array of handy online tools for developers
 icon: https://i.imgur.com/mzXqNcH.png
-category: In Progress
+category: developer tools
 version: "2024.10.22"
 port: 8786
 description: >-
@@ -24,9 +24,12 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/CorentinTh/it-tools
 support: https://github.com/CorentinTh/it-tools/issues
 gallery:
-  - https://i.imgur.com/5hOhyoN.png
-  - https://i.imgur.com/5hOhyoN.png
-  - https://i.imgur.com/5hOhyoN.png
+  - https://imgur.com/RDu1Hr2.png
+  - https://imgur.com/FqF4s9F.png
+  - https://imgur.com/HKsmasV.png
+  - https://imgur.com/vq4xVs3.png
+  - https://imgur.com/AnnfiMG.png
+  - https://imgur.com/mxo2TNR.png
 releaseNotes: >-
   The v2024.10.22 release of IT-tools introduces several new features, including a Regex Tester, Markdown to HTML converter, email normalizer, and tools for converting JSON to XML and vice versa. It also includes bug fixes such as improvements to favorites storage, debounced search input for the emoji picker, and UI adjustments for various tools.
 dependencies:
