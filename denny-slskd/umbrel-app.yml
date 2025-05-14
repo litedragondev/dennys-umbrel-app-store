@@ -25,7 +25,7 @@ description: >-
   Overall, slskd represents a modernized approach to Soulseek, combining the familiar functionality of the original client with the scalability, security, and convenience of a self-hosted, web-based service.
 
 
-  
+  ⚙️ For detailed configuration instructions, please refer to the documentation here: https://github.com/dennysubke/dennys-umbrel-app-store/blob/master/denny-slskd/readme.md.
 developer: JP Dillingham
 website: https://github.com/slskd/slskd
 submitter: dennysubke
@@ -40,5 +40,5 @@ releaseNotes: >-
   The latest version 0.22.5 of slskd was released last month and includes a fix for a cryptic error message that appeared when a remote client did not return any files when requesting directory contents.
 dependencies:
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "slskd"
+defaultPassword: "slskd"
