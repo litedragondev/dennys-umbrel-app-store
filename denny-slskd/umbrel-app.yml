@@ -3,7 +3,7 @@ id: denny-slskd
 name: slskd
 tagline: A modern client-server application for the Soulseek file sharing network
 icon: https://i.imgur.com/KvwYux3.png
-category: In Progress
+category: media
 version: "0.22.5"
 port: 5030
 description: >-
