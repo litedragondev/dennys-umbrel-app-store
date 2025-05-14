@@ -33,9 +33,10 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/slskd/slskd
 support: https://github.com/slskd/slskd/issues
 gallery:
-  - https://i.imgur.com/b7Iu2Kh.png
-  - https://i.imgur.com/b7Iu2Kh.png
-  - https://i.imgur.com/b7Iu2Kh.png
+  - https://i.imgur.com/AIfP8yc.png
+  - https://i.imgur.com/mmyLEx8.png
+  - https://i.imgur.com/TjABk34.png
+  - https://i.imgur.com/KL0R5Cu.png
 releaseNotes: >-
   The latest version 0.22.5 of slskd was released last month and includes a fix for a cryptic error message that appeared when a remote client did not return any files when requesting directory contents.
 dependencies:
