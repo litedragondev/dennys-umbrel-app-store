@@ -25,9 +25,10 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/ente-io/ente
 support: https://www.reddit.com/r/enteio/?rdt=39096
 gallery:
-  - https://i.imgur.com/rD3M2h1.png
-  - https://i.imgur.com/rD3M2h1.png
-  - https://i.imgur.com/rD3M2h1.png
+  - https://i.imgur.com/ifKsQKd.png
+  - https://i.imgur.com/Sr7QPpX.png
+  - https://i.imgur.com/GqIyAJA.png
+  - https://i.imgur.com/RurIXXk.png
 releaseNotes: >-
   Auth v4.3.5 introduces several enhancements and fixes, including updates to custom icons for various services such as AJ Bell, Ankama, Seafile, and LinkedIn. The release also addresses multiple bug fixes, such as improving the 2FA recovery flow, resolving issues with the logout button on the lock screen, and refining the change-password process after login. Additionally, it includes new translations, support for advanced TOTP options, and minor UI adjustments, ensuring a more polished and user-friendly experience.
 dependencies:
