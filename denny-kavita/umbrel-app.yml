@@ -1,31 +1,40 @@
 manifestVersion: 1
 id: denny-kavita
 name: Kavita
-tagline: A WhatsApp client with themes and multiple account support
-icon: https://i.imgur.com/wfT4QX3.png
-category: test
-version: "5.4.0"
+tagline: A fast, feature rich, cross platform reading server
+icon: https://i.imgur.com/LHZJTAW.png
+category: In Progress
+version: "0.8.6"
 port: 5444
 description: >-
-  📱 Altus is a powerful Electron-based WhatsApp client that enhances the desktop WhatsApp experience by adding a variety of extra features. Using the GitHub-developed Electron framework, Altus integrates WhatsApp Web while adding functionality that goes beyond what the standard WhatsApp Web offers. One of the standout features of Altus is its support for multiple WhatsApp accounts, allowing users to manage and switch between different accounts simultaneously.
+  📚 Kavita is a comprehensive, open-source platform developed to manage, read, and organize digital reading materials, encompassing books, comics, manga, and webtoons. It is designed with a modern and intuitive web interface that is optimized for both desktop and mobile devices, ensuring a seamless reading experience across different screen sizes. Unlike conventional media servers that primarily focus on video or music content, Kavita is specifically tailored for reading materials, providing features and functionalities that cater to avid readers and collectors alike.
 
 
-  The app also provides native notification support, so users are instantly notified when new messages arrive. Clicking on a notification opens the corresponding chat directly. A useful online indicator shows in the bottom-left corner of each chat whether the contact is currently online, making communication easier. For a more comfortable experience in low light or during the evening, Altus offers a Dark Mode that reduces eye strain and adapts the app's design to the lighting conditions.
+  The platform supports a wide array of file formats, including EPUB, PDF, CBZ, and CBR, allowing users to import diverse content types into a single, unified library. Kavita’s interface is visually appealing and highly customizable, with options to adjust themes, layouts, and reading modes to suit individual preferences. Users can create collections and series, track their reading progress, and manage metadata, making it easier to organize and categorize large libraries.
 
 
-  Additionally, Altus allows users to fully customize their WhatsApp interface. They can create custom themes either by writing their own CSS or using the built-in theme customizer, which allows for easy color selection to personalize the app's appearance. This flexibility in interface customization ensures a more tailored and comfortable user experience. Altus thus provides not only a practical but also a highly customizable solution for WhatsApp on the desktop.
-developer: Aman Harwara
-website: https://github.com/amanharwara/altus
+  Kavita goes beyond basic library management by offering advanced tagging and filtering systems, enabling users to sort and search content based on genres, authors, publication dates, and other metadata. This functionality is particularly beneficial for extensive collections, as it helps maintain order and structure without overwhelming the user. Additionally, the platform supports user profiles, allowing multiple users to maintain separate reading histories and preferences within the same instance.
+
+
+  Designed with a strong emphasis on privacy and self-hosting, Kavita gives users full control over their content without relying on third-party services. It can be deployed locally on a home server or hosted in the cloud, making it versatile for different hosting environments. The platform is actively developed and maintained, with regular updates that introduce new features and improvements, further enhancing its capabilities as a robust reading management solution.
+
+
+  With its focus on providing a reading-centric experience, Kavita not only serves as a digital library but also as a powerful tool for collectors and enthusiasts who want to manage and enjoy their content in a structured, visually engaging, and privacy-conscious environment.
+developer: Joe Milazzo
+website: https://www.kavitareader.com/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/amanharwara/altus
-support: https://github.com/amanharwara/altus/issues
+repo: https://github.com/Kareadita/Kavita
+support: https://github.com/Kareadita/Kavita/issues
 gallery:
-  - https://i.imgur.com/rn7Zivn.png
-  - https://i.imgur.com/bDy2X8i.png
-  - https://i.imgur.com/ERsYpg3.png
+  - https://i.imgur.com/lJp51DK.png
+  - https://i.imgur.com/lJp51DK.png
+  - https://i.imgur.com/lJp51DK.png
 releaseNotes: >-
-  The per-tab microphone and camera permission option is enabled by default, allowing users to manage permissions on a tab-by-tab basis for enhanced privacy and security. In addition, various other improvements have been implemented, such as performance optimizations, bug fixes, and a more streamlined user interface for better overall experience.
+  Version 0.8.6 of Kavita introduces several new features, including the ability to delete and rename Smart Filters, reorder the side navigation without accessing the customization screen, and a new cleanup task that scans and resolves media errors. The update also improves localization support, adjusts how EPUBs and PDFs are processed, and enhances the webtoon reading experience by allowing automatic switching based on image resolution. 
+  
+  
+  Additionally, numerous interface refinements, bug fixes, and dependency updates have been implemented to improve overall stability and user experience.
 dependencies:
 path: ""
 defaultUsername: ""
