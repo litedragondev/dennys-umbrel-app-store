@@ -6,7 +6,7 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 🔀 I am open to app suggestions and will do my best to implement them. Additionally, I plan to occasionally submit pull requests to the official Umbrel App repository over time.
 
 
-[![Tip in Crypto](https://imgur.com/X2EWBj4.png).png)](https://tip.md/dennysubke)
+[![Tip in Crypto](https://imgur.com/X2EWBj4.png)](https://tip.md/dennysubke)
 
 ##
 
