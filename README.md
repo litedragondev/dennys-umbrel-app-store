@@ -5,8 +5,13 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 
 🔀 I am open to app suggestions and will do my best to implement them. Additionally, I plan to occasionally submit pull requests to the official Umbrel App repository over time.
 
+&nbsp;
 
-[![Tip in Crypto](https://imgur.com/X2EWBj4.png)](https://tip.md/dennysubke)
+#### You enjoy my work? I enjoy a beer!
+
+ [![Lightning](https://imgur.com/X2EWBj4.png)](https://tip.md/dennysubke) &nbsp; [![PayNym](https://imgur.com/2AAZ5u1.png)](https://paynym.rs/+bulkypackage58) &nbsp; [![Buy Me a Coffee](https://imgur.com/lSwOoAI.png)](https://buymeacoffee.com/dennysubke) &nbsp; [![Ko-fi](https://imgur.com/miPSjKJ.png)](https://ko-fi.com/dennysubke)
+
+
 
 ##
 
@@ -176,9 +181,6 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 | 160 | [Zoraxy Proxy Server](https://github.com/tobychui/zoraxy) | An efficient reverse proxy server with automated SSL management      | 8400   |
 
 🔄 All Apps are continually updated and new Apps are added over time.
-
-##
-
 
 ##
 
