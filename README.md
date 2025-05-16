@@ -5,6 +5,9 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 
 🔀 I am open to app suggestions and will do my best to implement them. Additionally, I plan to occasionally submit pull requests to the official Umbrel App repository over time.
 
+
+[![Tip in Crypto](https://imgur.com/h4Hswcd.png)](https://tip.md/dennysubke)
+
 ##
 
 ### Currently available apps
@@ -188,19 +191,3 @@ https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-
 For further help and support: https://community.umbrel.com/
 
 ##
-
-### Like what I’m building?
-
-<p align="left">
-  <span>
-    <a href="https://buymeacoffee.com/dennysubke">
-      <img src="https://imgur.com/RcNFWcb.png" width="150" alt="Buy Me a Coffee"/>
-    </a>
-  </span>
-  &nbsp;&nbsp;&nbsp;
-  <span>
-    <a href="https://paynym.rs/+bulkypackage58">
-      <img src="https://imgur.com/ARj0Rde.png" width="150" alt="PayNym"/>
-    </a>
-  </span>
-</p>
