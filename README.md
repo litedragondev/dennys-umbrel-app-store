@@ -5,13 +5,15 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 
 🔀 I am open to app suggestions and will do my best to implement them. Additionally, I plan to occasionally submit pull requests to the official Umbrel App repository over time.
 
-&nbsp;
-
+&nbsp; 
 
 #### You enjoy my work? I enjoy a beer!
 
- [![Lightning](https://imgur.com/0QrGiUQ.png)](https://tip.md/dennysubke) &nbsp; [![PayNym](https://imgur.com/5PTx1Zz.png)](https://paynym.rs/+bulkypackage58) &nbsp; [![Buy Me a Coffee](https://imgur.com/kUp2xPe.png)](https://buymeacoffee.com/dennysubke) &nbsp; [![Ko-fi](https://imgur.com/0SP9FAN.png)](https://ko-fi.com/dennysubke)
-
+[![Bitcoin](https://imgur.com/rNMrbPr.png)](#) &nbsp; 
+[![Lightning](https://imgur.com/0QrGiUQ.png)](https://tip.md/dennysubke) &nbsp; 
+[![PayNym](https://imgur.com/5PTx1Zz.png)](https://paynym.rs/+bulkypackage58) &nbsp; 
+[![Buy Me a Coffee](https://imgur.com/kUp2xPe.png)](https://buymeacoffee.com/dennysubke) &nbsp; 
+[![Ko-fi](https://imgur.com/0SP9FAN.png)](https://ko-fi.com/dennysubke)  
 
 
 ##
@@ -189,7 +191,7 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 
 https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-b475-94b754adc7a3.mp4
 
-##
+&nbsp; 
 
 For further help and support: https://community.umbrel.com/
 
