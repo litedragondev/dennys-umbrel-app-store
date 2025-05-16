@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-peersuite_app_1
+      APP_PORT: 80
+
+  app:
+    image: dennysubke/peersuite:0.0.1@sha256:d45e5bab03a95c5848f41fbadca581fc7a251acde8fae5978707f5039c17cf3b
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data/gotify_data:/usr/share/nginx/html
