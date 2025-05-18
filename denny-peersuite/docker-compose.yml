@@ -9,5 +9,5 @@ services:
   app:
     image: zeroc0077/peersuite:latest@sha256:add5a2214f6a73c4a9e17d6c67ec632de25a33d744589d32d7282f5438706ee3
     restart: on-failure
-    volumes:
-      - ${APP_DATA_DIR}/data/gotify_data:/usr/share/nginx/html
+    #volumes:
+      # ${APP_DATA_DIR}/data/gotify_data:/usr/share/nginx/html
