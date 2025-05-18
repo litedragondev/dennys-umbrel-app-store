@@ -2,7 +2,7 @@ version: '3'
 
 services:
   peersuite:
-    image: peersuite:latest
+    image: openconstruct/peersuite:latest
     container_name: peersuite
     ports:
       - "8189:80"
