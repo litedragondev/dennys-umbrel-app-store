@@ -9,5 +9,5 @@ services:
   app:
     image: openconstruct/peersuite:latest@sha256:1db0c92dbff26b5b4e367e863ce0b6266e53f969a713954118b991102e087732
     restart: on-failure
-    volumes:
-      - ${APP_DATA_DIR}/data/gotify_data:/usr/share/nginx/html
+    #volumes:
+      # ${APP_DATA_DIR}/data/gotify_data:/usr/share/nginx/html
