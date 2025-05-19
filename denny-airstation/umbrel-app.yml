@@ -17,7 +17,7 @@ description: >-
 
 
   ⚙️ The app is accessible at umbrel.local:7331/studio. After entering the password "umbrel," you reach the studio interface where you can add music. Once done, you can remove "/studio" from the URL to access the main interface for sharing your music.
-developer: Gotify
+developer: Yurace
 website: https://github.com/cheatsnake/airstation
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
