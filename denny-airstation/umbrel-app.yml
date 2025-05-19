@@ -1,9 +1,9 @@
 manifestVersion: 1
 id: denny-airstation
 name: Airstation
-tagline: A simple server for sending and receiving messages
+tagline: An instant radio station
 icon: https://i.imgur.com/s0PHMyq.png
-category: An instant radio station
+category: In Progress
 version: "1.0.0"
 port: 7331
 description: >-
