@@ -16,7 +16,7 @@ description: >-
   The project is released under the MIT license, offering users freedom to use, modify, and redistribute the software without restriction. Airstation is particularly appealing to those who want to run a personalized internet radio station without relying on third-party services, providing full control over their music streaming experience. With clear documentation and an active repository, it supports enthusiasts looking for a straightforward yet powerful solution to host their own online radio broadcasts.
 
 
-  ⚙️ The app is accessible at umbrel.local:7331/studio. After entering the password "umbrel," you reach the studio interface where you can add music. Once done, you can remove "/studio" from the URL to access the main interface for sharing your music.
+  ⚙️ The app is accessible at umbrel.local:7331/studio. After entering the password, you reach the studio interface where you can add music. Once done, you can remove "/studio" from the URL to access the main interface for sharing your music.
 developer: Yurace
 website: https://github.com/cheatsnake/airstation
 submitter: dennysubke
@@ -32,4 +32,4 @@ releaseNotes: >-
 dependencies:
 path: "/studio"
 defaultUsername: ""
-defaultPassword: "umbrel"
+defaultPassword: "dOxZYTTZgXKMHkqLBIQVImayQXAVWdzGBPuFJKggzcgvgPJPXpWzqzKaUOIOGGIr"
