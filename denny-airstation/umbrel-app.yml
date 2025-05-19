@@ -30,6 +30,6 @@ gallery:
 releaseNotes: >-
   The update adds an extra authentication check to improve security and fixes the caching scope issue in the PWA for better performance. Additionally, it refactors the database file path for clarity and removes unnecessary arguments from the multi-architecture CI setup.
 dependencies:
-path: "/studio"
+path: ""
 defaultUsername: ""
 defaultPassword: "umbrel"
