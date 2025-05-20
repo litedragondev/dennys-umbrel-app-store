@@ -1,11 +1,15 @@
 version: '3.7'
 
 services:
-  crafty:
-    container_name: crafty_container
-    image: registry.gitlab.com/crafty-controller/crafty-4:4.4.7@sha256:a2a083675b1e6442599e31dba230f2242c9f9c713e360a507ee7df205ab4689f
+  app_proxy:
+    environment:
+      APP_HOST: denny-crafty_web_1
+      APP_PORT: 8000
+
+  web:
+    image: registry.gitlab.com/crafty-controller/crafty-4:4.4.9@sha256:7f3f1112326727e48aaae98e10d226bd9d997a6ceb370e3f040e42e47a7551dd
     ports:
-      - "18000:8000"
+      # "18000:8000"
       - "18443:8443" 
       - "18123:8123" 
       - "19132:19132/udp" 
