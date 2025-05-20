@@ -41,6 +41,6 @@ gallery:
 releaseNotes: >-
   The update 4.4.7 includes bug fixes and resolves the issue by replacing the "ubuntu" user with the "crafty" user in the Docker repair process.
 dependencies:
-path: "https://umbrel.local:18443"
+path: "https://umbrel-2.local:18443"
 defaultUsername: "admin"
 defaultPassword: ""
