@@ -23,6 +23,6 @@ services:
     image: ghcr.io/usekaneo/web:node-new
     user: 0:0
     environment:
-      KANEO_API_URL: http://umbrel-2.local:5173
+      KANEO_API_URL: http://umbrel-2.local:5174
       ALLOW_REGISTRATION: true
     restart: on-failure
