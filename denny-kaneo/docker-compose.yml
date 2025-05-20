@@ -1,0 +1,28 @@
+version: '3.7'
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-kaneo_app_1
+      APP_PORT: 5173
+
+  kaneo:
+    image: ghcr.io/usekaneo/api:node-new
+    user: 0:0
+    container_name: Kaneo-API
+    environment:
+      JWT_ACCESS: dOxZYTTZgXKMHkqLBIQVImayQXAVWdzGBPuFJKggzcgvgPJPXpWzqzKaUOIOGGIr
+      DB_PATH: /app/apps/api/data/kaneo.db
+    ports:
+      - 1339:1337
+    volumes:
+      - ${APP_DATA_DIR}/data/kaneodb:/app/apps/api/data:rw
+    restart: on-failure
+
+  app:
+    image: ghcr.io/usekaneo/web:node-new
+    user: 0:0
+    environment:
+      KANEO_API_URL: http://umbrel-2.local
+      ALLOW_REGISTRATION: true
+    restart: on-failure
