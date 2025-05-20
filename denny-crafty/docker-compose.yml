@@ -9,8 +9,6 @@ services:
       - "18123:8123" 
       - "19132:19132/udp" 
       - "25500-25600:25500-25600" 
-    environment:
-      - TZ=Europe/Berlin
     volumes:
       - ${APP_DATA_DIR}/data/backups:/crafty/backups
       - ${APP_DATA_DIR}/data/logs:/crafty/logs
