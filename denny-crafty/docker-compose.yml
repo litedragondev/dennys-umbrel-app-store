@@ -4,13 +4,13 @@ services:
   app_proxy:
     environment:
       APP_HOST: denny-crafty_web_1
-      APP_PORT: 8000
+      APP_PORT: 8443
 
   web:
     image: registry.gitlab.com/crafty-controller/crafty-4:4.4.9@sha256:7f3f1112326727e48aaae98e10d226bd9d997a6ceb370e3f040e42e47a7551dd
     ports:
-      # "18000:8000"
-      - "18443:8443" 
+      - "18000:8000"
+      # "18443:8443" 
       - "18123:8123" 
       - "19132:19132/udp" 
       - "25500-25600:25500-25600" 
