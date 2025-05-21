@@ -4,7 +4,7 @@ name: BookStack
 tagline: An organized way to manage and share your knowledge
 icon: https://i.imgur.com/ASJ9aQS.png
 category: files & productivity
-version: "24.12.1"
+version: "25.02.5"
 port: 8875
 description: >-
   📘 BookStack is an open-source application designed to help individuals and teams organize, manage, and share knowledge bases and documentation. It features a book-like structure, where content is neatly divided into books, chapters, and pages. This hierarchical approach makes it easy to create, structure, and navigate large amounts of information, whether it’s for a small personal project or an extensive team-based knowledge base.
