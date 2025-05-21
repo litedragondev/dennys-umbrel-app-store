@@ -16,5 +16,5 @@ services:
       - PUID=1000
       - PGID=1000
     volumes:
-      - ${APP_DATA_DIR}/data/config:/config
-      - ${APP_DATA_DIR}/data/emulatorjs_data:/data
+      - ${APP_DATA_DIR}/data/profile:/config
+      - ${APP_DATA_DIR}/data/roms:/data
