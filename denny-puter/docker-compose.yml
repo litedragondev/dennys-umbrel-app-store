@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   web:
-    image: ghcr.io/heyputer/puter:sha-ec31007@sha256:ec0fb133779bcdb37987c7776cb7b698876ded3020970d981719b666aed6c094
+    image: ghcr.io/heyputer/puter:2.5.1@sha256:0c5aa88f5d4db7749577b0118b16e674ff9db323604079b1b90ff6bafdcd0ab5
     restart: on-failure
     environment:
       - HOST=0.0.0.0
