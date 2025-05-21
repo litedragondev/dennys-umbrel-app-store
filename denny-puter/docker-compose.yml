@@ -11,10 +11,10 @@ services:
     image: ghcr.io/heyputer/puter:sha-ec31007@sha256:ec0fb133779bcdb37987c7776cb7b698876ded3020970d981719b666aed6c094
     restart: on-failure
     environment:
-      TZ: "Europe/Berlin"
-      PUID: "0"
-      PGID: "0"
-      HOST: "0.0.0.0"
+      - HOST=0.0.0.0
+      - PORT=4100
+      - PUID=1000
+      - PGID=1000
     volumes:
       - ${APP_DATA_DIR}/data:/data/.puter:rw
       - ${APP_DATA_DIR}/config:/config:rw
