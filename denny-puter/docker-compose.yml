@@ -12,9 +12,6 @@ services:
     restart: on-failure
     environment:
       - DANGEROUSLY_DISABLE_HOST_CHECK=true  # falls Webpack
-      - VITE_ALLOW_HOST=umbrel-2.local,localhost
-      - VITE_HOST=umbrel-2.local
-      - VITE_ORIGIN=http://umbrel-2.local:4100
       - HOST=0.0.0.0
       - PORT=4100
       - PUID=1000
