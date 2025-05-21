@@ -3,7 +3,7 @@ id: denny-airstation
 name: Airstation
 tagline: An instant radio station
 icon: https://i.imgur.com/fbK8LWI.png
-category: In Progress
+category: media
 version: "1.0.0"
 port: 7331
 description: >-
