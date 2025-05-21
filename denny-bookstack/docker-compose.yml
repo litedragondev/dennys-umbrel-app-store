@@ -12,7 +12,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      # APP_URL=DEVICE_DOMAIN_NAME
+      - APP_URL="http://${DEVICE_DOMAIN_NAME}:8875"
       - DB_HOST=denny-bookstack_db_1
       - DB_PORT=3306
       - DB_USERNAME=bookstack
