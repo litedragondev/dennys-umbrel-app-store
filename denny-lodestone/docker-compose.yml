@@ -8,7 +8,7 @@ services:
 
   server:
     image: ghcr.io/lodestone-team/lodestone_core:0.5.1@sha256:de5e85e9ec67fdb0561b98bd5ae9dcdd2de7fe9ef0ab9da1f4db23c5c10ade61
-    user: 1000:1000
+    user: 0:0
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data:/home/user/.lodestone
