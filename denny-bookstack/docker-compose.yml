@@ -12,7 +12,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - APP_URL=http://${DEVICE_DOMAIN_NAME}:8875
+      - APP_URL=http://umbrel-2.local:8875
       - DB_HOST=denny-bookstack_db_1
       - DB_PORT=3306
       - DB_USERNAME=bookstack
