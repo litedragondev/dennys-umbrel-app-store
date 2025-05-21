@@ -11,6 +11,8 @@ services:
     image: ghcr.io/heyputer/puter:2.5.1@sha256:0c5aa88f5d4db7749577b0118b16e674ff9db323604079b1b90ff6bafdcd0ab5
     restart: on-failure
     environment:
+      - DANGEROUSLY_DISABLE_HOST_CHECK=true  # falls Webpack
+      - VITE_ALLOW_HOST=umbrel-2.local         # falls Vite
       - HOST=0.0.0.0
       - PORT=4100
       - PUID=1000
