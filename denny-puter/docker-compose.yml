@@ -1,21 +1,25 @@
----
 version: "3.7"
+
 services:
-  puter:
-    container_name: puter
-    image: ghcr.io/heyputer/puter:latest
-    user: 0:0
-    restart: unless-stopped
-    ports:
-      - '4100:4100'
+  app_proxy:
     environment:
-      # TZ: Europe/Paris
-      # CONFIG_PATH: /etc/puter
+      APP_HOST: denny-puter_web_1
+      APP_PORT: 4100
+      PROXY_AUTH_ADD: "false"
+
+  web:
+    image: ghcr.io/heyputer/puter:sha-ec31007@sha256:ec0fb133779bcdb37987c7776cb7b698876ded3020970d981719b666aed6c094
+    restart: on-failure
+    environment:
+      TZ: "Europe/Berlin"
+      PUID: "0"
+      PGID: "0"
+      HOST: "0.0.0.0"
     volumes:
-      - ./puter/config:/etc/puter
-      - ./puter/data:/var/puter
+      - ${APP_DATA_DIR}/data:/data/.puter:rw
+      - ${APP_DATA_DIR}/config:/config:rw
     healthcheck:
-      test: wget --no-verbose --tries=1 --spider http://puter.localhost:4100/test || exit 1
+      test: wget --no-verbose --tries=1 --spider http://umbrel.local:4100/test || exit 1
       interval: 30s
       timeout: 3s
       retries: 3
