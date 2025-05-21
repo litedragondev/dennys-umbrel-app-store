@@ -10,10 +10,9 @@ services:
   app:
     image: linuxserver/bookstack:25.02.5@sha256:e3f4a383e8db24af5ab15da056a2a02d902c83a64d7027dc93d0b48b3d298a1d
     environment:
-      - DEVICE_DOMAIN_NAME="${DEVICE_DOMAIN_NAME}"
       - PUID=1000
       - PGID=1000
-      - APP_URL=DEVICE_DOMAIN_NAME
+      # APP_URL=DEVICE_DOMAIN_NAME
       - DB_HOST=denny-bookstack_db_1
       - DB_PORT=3306
       - DB_USERNAME=bookstack
