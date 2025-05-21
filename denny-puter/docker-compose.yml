@@ -4,14 +4,13 @@ services:
   puter:
     container_name: puter
     image: ghcr.io/heyputer/puter:latest
+    user: 0:0
     restart: unless-stopped
     ports:
       - '4100:4100'
     environment:
       # TZ: Europe/Paris
       # CONFIG_PATH: /etc/puter
-      PUID: 1000
-      PGID: 1000
     volumes:
       - ./puter/config:/etc/puter
       - ./puter/data:/var/puter
