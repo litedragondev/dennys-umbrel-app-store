@@ -13,7 +13,7 @@ services:
       - PUID=1000
       - PGID=1000
       - APP_URL=http://${DEVICE_DOMAIN_NAME}:8875
-      - DB_HOST=db
+      - DB_HOST=denny-bookstack_db_1
       - DB_PORT=3306
       - DB_USERNAME=bookstack
       - DB_PASSWORD=umbrelpass
