@@ -1,37 +1,31 @@
 manifestVersion: 1
 id: denny-emulatorjs
 name: EmulatorJS
-tagline: A simple server for sending and receiving messages
-icon: https://i.imgur.com/HakL1r4.png
-category: Test
-version: "2.6.3"
+tagline: An immersive browser retro gaming experience
+icon: https://i.imgur.com/Dxvxa0q.png
+category: In Progress
+version: "1.9.2"
 port: 8662
 description: >-
-  Gotify is an open-source, self-hosted notification server designed to enable real-time push notifications across multiple devices. It is a lightweight, efficient system that allows applications to send messages to the Gotify server via a REST API. These messages are then delivered to connected clients, including web browsers, mobile devices, or other systems that support Gotify’s push notification service.
+  🎮 EmulatorJS is a web-based software platform that allows users to play retro video games directly in their browser. It works by emulating classic gaming consoles using JavaScript, making it possible to run old-school games without the need for additional software or plugins. The emulator is designed to be lightweight and efficient, providing smooth gameplay for a wide range of classic systems.
 
 
-  The server is built with Go, known for its high performance and minimal resource consumption, making it suitable for various environments. Gotify’s simple and intuitive web interface allows users to manage notifications, configure applications, and generate API tokens for authentication and access control.
+  It supports loading ROM files locally or from a server, enabling users to either play their own legally obtained game backups or host libraries of games for personal use. EmulatorJS includes features such as save states, controller support, and fullscreen mode, creating an experience that closely mimics the original hardware.
 
 
-  One of the core features of Gotify is its support for real-time notifications using WebSockets. This allows connected clients to receive notifications instantly, ensuring timely delivery of messages. Additionally, Gotify supports categorizing and prioritizing notifications, helping users organize incoming messages based on importance.
-
-
-  Gotify offers a native Android app, which allows users to receive push notifications directly on their devices. It also provides a web app, ensuring that users can stay updated across different platforms. The system’s architecture is designed for flexibility and scalability, enabling it to handle notifications from a variety of sources, from system alerts and monitoring tools to custom applications.
-
-
-  As a self-hosted solution, Gotify gives users complete control over their notification infrastructure, ensuring privacy and data security. With its open-source nature, it can be customized and extended to suit different use cases. The ability to host notifications locally, without relying on third-party services, makes Gotify an attractive option for those seeking a private, cost-effective solution for delivering real-time notifications.
-developer: Gotify
-website: https://gotify.net/
+  Its versatility and ease of use make it an appealing choice for enthusiasts who want to relive the nostalgia of classic games or build their own web-based retro gaming platforms. As an open-source project, it is freely available and can be customized or self-hosted, offering full control over the look, feel, and functionality of the emulator environment.
+developer: EmulatorJS
+website: https://emulatorjs.org/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/gotify/server
-support: https://github.com/gotify/server/issues
+repo: https://github.com/linuxserver/docker-emulatorjs
+support: https://github.com/linuxserver/docker-emulatorjs/issues
 gallery:
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
+  - https://i.imgur.com/ba6MhWz.png
+  - https://i.imgur.com/ba6MhWz.png
+  - https://i.imgur.com/ba6MhWz.png
 releaseNotes: >-
-  This update sets the umask to 0 when creating Unix sockets to ensure proper file permissions. It also updates dependencies and fixes the release build process.
+  This update skips the IPFS configuration if the DISABLE_IPFS environment variable is set. It also adds many new logos and videos for platforms such as 3do, arcade, msx, nds, ngp, psx, saturn, and wonderswan.
 dependencies:
 path: ""
 defaultUsername: ""
