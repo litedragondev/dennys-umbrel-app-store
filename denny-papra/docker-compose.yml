@@ -13,5 +13,5 @@ services:
       DOCUMENT_STORAGE_MAX_UPLOAD_SIZE: 10737418240
     #user: "1000:1000"
     restart: on-failure
-    volumes:
-      - ${APP_DATA_DIR}/data:/app/app-data:ro
+    #volumes:
+      # ${APP_DATA_DIR}/data:/app/app-data:ro
