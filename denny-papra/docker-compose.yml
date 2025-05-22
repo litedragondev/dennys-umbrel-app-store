@@ -16,5 +16,4 @@ services:
       DOCUMENTS_DELETED_DOCUMENTS_RETENTION_DAYS: 30
       DOCUMENT_STORAGE_MAX_UPLOAD_SIZE: 10737418240
     volumes:
-      - ${APP_DATA_DIR}/data/papra_data:/app/app-data:rw
-      - ${APP_DATA_DIR}/data/db_data:/app-data/db/db.sqlite
+      - ${APP_DATA_DIR}/data:/app/app-data:rw
