@@ -11,7 +11,7 @@ services:
 
   studio:
     # https://github.com/supabase/supabase/pkgs/container/studio/versions
-    image: ghcr.io/supabase/studio:2025.05.19-sha-3487831@sha256:a2ebda20912b136707a99729ce8bf8f8d5ad240094f43e0fe914937f94ffdf68
+    image: ghcr.io/supabase/studio:2025.05.21-sha-c9ee6bc@sha256:b398a3dec4d6cfada86d1a939cb0ea3ec35a759046b540fe763be5257c2ba348
     restart: on-failure
     healthcheck:
       test:
