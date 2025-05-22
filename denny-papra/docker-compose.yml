@@ -11,6 +11,9 @@ services:
     environment:
       DOCUMENTS_DELETED_DOCUMENTS_RETENTION_DAYS: 30
       DOCUMENT_STORAGE_MAX_UPLOAD_SIZE: 10737418240
+      CLIENT_BASE_URL: http://umbrel-2.local:1221
+      SERVER_CORS_ORIGINS: http://umbrel-2.local:1221
+      TRUSTED_ORIGINS: http://umbrel-2.local:1221
     #user: "1000:1000"
     restart: on-failure
     #volumes:
