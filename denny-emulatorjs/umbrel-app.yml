@@ -16,7 +16,10 @@ description: >-
   Its versatility and ease of use make it an appealing choice for enthusiasts who want to relive the nostalgia of classic games or build their own web-based retro gaming platforms. As an open-source project, it is freely available and can be customized or self-hosted, offering full control over the look, feel, and functionality of the emulator environment.
 
 
-  ⚠️ Please make sure to follow the installation instructions in the README here: https://github.com/dennysubke/dennys-umbrel-app-store/blob/master/denny-emulatorjs/README.md
+  ⚠️ Please make sure to follow the installation instructions in the README here: 
+  
+  
+  https://github.com/dennysubke/dennys-umbrel-app-store/blob/master/denny-emulatorjs/README.md
 developer: EmulatorJS
 website: https://emulatorjs.org/
 submitter: dennysubke
