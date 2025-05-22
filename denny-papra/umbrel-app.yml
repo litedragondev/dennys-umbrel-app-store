@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: denny-papra
 name: Papra
-tagline: A simple server for sending and receiving messages
+tagline: A minimalistic document archiving platform
 icon: https://i.imgur.com/HakL1r4.png
 category: Test
 version: "2.6.3"
