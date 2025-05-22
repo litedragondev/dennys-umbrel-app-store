@@ -7,8 +7,7 @@ services:
       APP_PORT: 1221
 
   web:
-    image: ghcr.io/papra-hq/papra:0.4.0-root@sha256:a9c461fa778c7679e4c240c671ebe4f23f1c45a7af3b5fa1e592a2af61e716ff
-    user: 0:0
+    image: ghcr.io/papra-hq/papra:latest
     restart: on-failure
-    volumes:
-      - ${APP_DATA_DIR}/data:/app/app-data:rw
+    #volumes:
+      # ${APP_DATA_DIR}/data:/app/app-data:rw
