@@ -2,7 +2,7 @@ manifestVersion: 1
 id: denny-papra
 name: Papra
 tagline: A minimalistic document archiving platform
-icon: https://i.imgur.com/x9UhWSW.png
+icon: https://i.imgur.com/fvKaUPO.png
 category: In Progress
 version: "0.4.0"
 port: 1221
