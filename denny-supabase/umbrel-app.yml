@@ -4,10 +4,10 @@ category: developer tools
 name: Supabase
 icon: https://i.imgur.com/IKOoCbJ.png
 tagline: An open source Firebase alternative
-version: "2025.05.19"
+version: "2025.05.21"
 port: 53000
 description: >-
-  Supabase is an open-source backend-as-a-service platform that provides developers with a powerful and scalable infrastructure for building modern web and mobile applications. It offers a suite of tools that combine the convenience of a traditional backend with the flexibility and control of an open-source stack. Built on top of PostgreSQL, Supabase adds real-time capabilities, instant APIs, and user authentication without requiring developers to write complex backend logic.
+  🐊 Supabase is an open-source backend-as-a-service platform that provides developers with a powerful and scalable infrastructure for building modern web and mobile applications. It offers a suite of tools that combine the convenience of a traditional backend with the flexibility and control of an open-source stack. Built on top of PostgreSQL, Supabase adds real-time capabilities, instant APIs, and user authentication without requiring developers to write complex backend logic.
 
 
   At its core, Supabase transforms a Postgres database into a complete backend solution. When a new table is created in the database, a RESTful and real-time API is automatically generated, making it easy to interact with the data from the frontend. This reduces development time and eliminates the need for repetitive backend code. Developers can manage their data, track changes in real time, and even subscribe to database events directly from the client.
@@ -30,14 +30,18 @@ description: >-
 developer: Supabase
 website: https://supabase.com
 submitter: Starfreck
-submission: https://github.com/getumbrel/umbrel-apps/pull/
+submission: https://github.com/dennysubke/dennys-umbrel-app-store/pull/7
 repo: https://github.com/supabase/supabase
 support: https://supabase.com/support
 gallery:
   - https://i.imgur.com/qFl2PUA.png
   - https://i.imgur.com/qFl2PUA.png
   - https://i.imgur.com/qFl2PUA.png
-releaseNotes: ""
+releaseNotes: >-
+  This update brings a wave of new tutorials and tools, including a reusable Team component built with Next.js and Shadcn, a Grocery Tracker app using Vue and Supabase, and the new SupaWP plugin for seamless WordPress integration. You’ll also find deep dives into multi-tenancy with Clerk, building AI agents powered by n8n and Supabase, setting up custom SMTP for authentication, and using Supabase MCP in VSCode, Cursor, and Agno. 
+ 
+ 
+  On the platform side, Supabase now supports project-scoped roles for all Team plans, has released a new SOC 2 report, and published comprehensive documentation outlining its security practices.
 path: ""
 defaultUsername: "umbrel"
 defaultPassword: "umbrel"
