@@ -9,5 +9,5 @@ services:
   web:
     image: ghcr.io/papra-hq/papra:0.4.0-rootless@sha256:1351119dad64360aaa33c79d7e27661fdf566a2f591bce572cb021a8ca5e51b6
     restart: on-failure
-    #volumes:
-      # ${APP_DATA_DIR}/data:/app/app-data:rw
+    volumes:
+      - ${APP_DATA_DIR}/data/papra-data:/app/app-data
