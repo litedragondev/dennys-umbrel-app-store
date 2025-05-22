@@ -34,4 +34,4 @@ For optimal performance it's best to use a Chromium-based browser like:
 Further details and configuration options are available in the official documentation:
 
 
-[https://docs.linuxserver.io/images/docker-emulatorjs/](https://docs.linuxserver.io/images/docker-em)
+[EmulatorJS Docker Image Documentation](https://docs.linuxserver.io/images/docker-emulatorjs/)
