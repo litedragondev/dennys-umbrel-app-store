@@ -34,9 +34,12 @@ submission: https://github.com/dennysubke/dennys-umbrel-app-store/pull/7
 repo: https://github.com/supabase/supabase
 support: https://supabase.com/support
 gallery:
-  - https://i.imgur.com/qFl2PUA.png
-  - https://i.imgur.com/qFl2PUA.png
-  - https://i.imgur.com/qFl2PUA.png
+  - https://i.imgur.com/CUfEm5O.png
+  - https://i.imgur.com/mHiOReH.png
+  - https://i.imgur.com/Mkp5RuX.png
+  - https://i.imgur.com/sx3Dt3T.png
+  - https://i.imgur.com/w0jhm4X.png
+  - https://i.imgur.com/zYFEhMq.png
 releaseNotes: >-
   This update brings a wave of new tutorials and tools, including a reusable Team component built with Next.js and Shadcn, a Grocery Tracker app using Vue and Supabase, and the new SupaWP plugin for seamless WordPress integration. You’ll also find deep dives into multi-tenancy with Clerk, building AI agents powered by n8n and Supabase, setting up custom SMTP for authentication, and using Supabase MCP in VSCode, Cursor, and Agno. 
  
