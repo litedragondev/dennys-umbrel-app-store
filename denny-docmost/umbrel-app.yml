@@ -3,8 +3,8 @@ id: denny-docmost
 name: Docmost
 tagline: An collaborative wiki and documentation software
 icon: https://i.imgur.com/qKOMBHh.png
-category: In Progress
-version: "2.6.3"
+category: files & productivity
+version: "0.20.4"
 port: 8941
 description: >-
   Docmost is an open source collaborative documentation and knowledge management platform designed to help teams create and maintain structured content together. It serves as a modern alternative to tools like Notion and Confluence with a strong focus on real time collaboration and ease of use.
@@ -33,9 +33,12 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/docmost/docmost
 support: https://github.com/docmost/docmost/issues
 gallery:
-  - https://i.imgur.com/ekkY2ia.png
-  - https://i.imgur.com/ekkY2ia.png
-  - https://i.imgur.com/ekkY2ia.png
+  - https://i.imgur.com/nwC6EnX.png
+  - https://i.imgur.com/ROlwSUK.png
+  - https://i.imgur.com/VcyAvHw.png
+  - https://i.imgur.com/CR1tSbm.png
+  - https://i.imgur.com/UfmtSdM.png
+  - https://i.imgur.com/HNeYoSD.png
 releaseNotes: >-
   This update introduces the ability to copy pages to different spaces, improves handling of SSO URL casing, and fixes previously unhandled exceptions.
 dependencies:
