@@ -1,37 +1,43 @@
 manifestVersion: 1
 id: denny-docmost
 name: Docmost
-tagline: A simple server for sending and receiving messages
-icon: https://i.imgur.com/HakL1r4.png
-category: Test
+tagline: An collaborative wiki and documentation software
+icon: https://i.imgur.com/qKOMBHh.png
+category: In Progress
 version: "2.6.3"
 port: 8941
 description: >-
-  Gotify is an open-source, self-hosted notification server designed to enable real-time push notifications across multiple devices. It is a lightweight, efficient system that allows applications to send messages to the Gotify server via a REST API. These messages are then delivered to connected clients, including web browsers, mobile devices, or other systems that support Gotify’s push notification service.
+  Docmost is an open source collaborative documentation and knowledge management platform designed to help teams create and maintain structured content together. It serves as a modern alternative to tools like Notion and Confluence with a strong focus on real time collaboration and ease of use.
 
 
-  The server is built with Go, known for its high performance and minimal resource consumption, making it suitable for various environments. Gotify’s simple and intuitive web interface allows users to manage notifications, configure applications, and generate API tokens for authentication and access control.
+  At its core Docmost allows multiple users to work on the same document simultaneously without the risk of overwriting each other's changes. Every update appears in real time creating a smooth and intuitive editing experience similar to what users expect from cloud based productivity tools. This real time capability makes Docmost especially suitable for fast moving teams and projects that require collective input and quick iteration.
 
 
-  One of the core features of Gotify is its support for real-time notifications using WebSockets. This allows connected clients to receive notifications instantly, ensuring timely delivery of messages. Additionally, Gotify supports categorizing and prioritizing notifications, helping users organize incoming messages based on importance.
+  The platform features a clean and user friendly rich text editor that supports advanced formatting tables comments and visual content. It integrates with tools such as Excalidraw Drawio and Mermaid to allow for the creation and embedding of diagrams directly within pages. This makes it easier to present ideas processes and relationships visually without needing to switch between applications.
 
 
-  Gotify offers a native Android app, which allows users to receive push notifications directly on their devices. It also provides a web app, ensuring that users can stay updated across different platforms. The system’s architecture is designed for flexibility and scalability, enabling it to handle notifications from a variety of sources, from system alerts and monitoring tools to custom applications.
+  Docmost organizes content through a system of spaces pages and groups with flexible permission settings. This structure allows teams to maintain clear boundaries between departments projects or knowledge areas while keeping navigation straightforward. Users can also search across the entire knowledge base with ease ensuring that information is always accessible when needed.
 
 
-  As a self-hosted solution, Gotify gives users complete control over their notification infrastructure, ensuring privacy and data security. With its open-source nature, it can be customized and extended to suit different use cases. The ability to host notifications locally, without relying on third-party services, makes Gotify an attractive option for those seeking a private, cost-effective solution for delivering real-time notifications.
-developer: Gotify
-website: https://gotify.net/
+  Built with extensibility in mind Docmost includes a plugin system supports translations and provides an API for custom integrations. Teams can self host the platform or opt for a managed cloud version depending on their infrastructure and compliance needs.
+
+
+  The core software is licensed under the AGPL which ensures that it remains free and open while encouraging contributions and transparency. For organizations seeking additional features or enterprise level support Docmost also offers a commercial edition with advanced capabilities and dedicated services.
+
+
+  Overall Docmost provides a powerful yet flexible solution for teams that value collaborative knowledge sharing and want full control over their data and workflows.
+developer: Docmost, Inc.
+website: https://docmost.com/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/gotify/server
-support: https://github.com/gotify/server/issues
+repo: https://github.com/docmost/docmost
+support: https://github.com/docmost/docmost/issues
 gallery:
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
+  - https://i.imgur.com/ekkY2ia.png
+  - https://i.imgur.com/ekkY2ia.png
+  - https://i.imgur.com/ekkY2ia.png
 releaseNotes: >-
-  This update sets the umask to 0 when creating Unix sockets to ensure proper file permissions. It also updates dependencies and fixes the release build process.
+  This update introduces the ability to copy pages to different spaces, improves handling of SSO URL casing, and fixes previously unhandled exceptions.
 dependencies:
 path: ""
 defaultUsername: ""
