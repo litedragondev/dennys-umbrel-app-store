@@ -7,7 +7,7 @@ category: networking
 version: "1.0.0"
 port: 8177
 description: >-
-  Websurfx is an open source meta search engine designed to be self hosted, providing users with a private and customizable alternative to mainstream search services. Built using the Rust programming language, it emphasizes performance, security, and efficient resource management. This choice of technology helps ensure memory safety and fast execution while reducing the risk of vulnerabilities.
+  🌐 Websurfx is an open source meta search engine designed to be self hosted, providing users with a private and customizable alternative to mainstream search services. Built using the Rust programming language, it emphasizes performance, security, and efficient resource management. This choice of technology helps ensure memory safety and fast execution while reducing the risk of vulnerabilities.
 
 
   The core idea behind Websurfx is to aggregate search results from multiple providers into a single, unified interface. By doing so, it avoids displaying ads and focuses on delivering organic and relevant search results. Websurfx features a built in ranking algorithm that reorganizes results to highlight the most pertinent information, creating a clean and distraction free search experience.
