@@ -8,7 +8,7 @@ services:
 
   web:
     image: rojen/amusewiki:package-2.605@sha256:41ac40d23c1eb13acb42ad4b7d071d3adf3f3da7af21be19bdc9da22e5c05c31
-    user: "1000:1000"
+    user: "0:0"
     restart: on-failure
     environment:
       - POST_DOMAIN=umbrel-2.local:8858
