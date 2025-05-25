@@ -15,11 +15,11 @@ services:
       - NODE_DB_URI=mongodb://mongo/habitica
       - BASE_URL=http://${DEVICE_DOMAIN_NAME}:3944
       - INVITE_ONLY=false
-      - EMAIL_SERVER_URL=mail.example.com
-      - EMAIL_SERVER_PORT=587
-      - EMAIL_SERVER_AUTH_USER=mail_user
-      - EMAIL_SERVER_AUTH_PASSWORD=mail_password
-      - ADMIN_EMAIL=mail@example.com
+      # EMAIL_SERVER_URL=mail.example.com
+      # EMAIL_SERVER_PORT=587
+      # EMAIL_SERVER_AUTH_USER=mail_user
+      # EMAIL_SERVER_AUTH_PASSWORD=mail_password
+      # ADMIN_EMAIL=mail@example.com
 
   mongo:
     image: mongo:5@sha256:54bcd8da3ea5eec561b68c605046c55c6b304387dc4c2bf5b3a5f5064fbb7495
