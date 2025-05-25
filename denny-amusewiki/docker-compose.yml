@@ -10,7 +10,7 @@ services:
     image: rojen/amusewiki:package-2.605@sha256:41ac40d23c1eb13acb42ad4b7d071d3adf3f3da7af21be19bdc9da22e5c05c31
     restart: on-failure
     environment:
-      - POST_DOMAIN=localhost
+      - POST_DOMAIN=umbrel-2.local:8858
       - CHANGE_PASSWORD_BEFORE_RUN=true
       - AMW_USERNAME=amusewiki
       - AMW_PASSWORD=changeme
