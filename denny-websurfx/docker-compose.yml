@@ -1,13 +1,13 @@
-version: '3.7'
+version: "3.7"
 
 services:
-  app_proxy:
-    environment:
-      APP_HOST: denny-websurfx_web_1
-      APP_PORT: 8080
+  app:
+    image: neonmmd/websurfx:1.0.0-hybrid@sha256:8835e7901c7dbe89dba7064749c55983a01a3526e39cbb1a76960e6586a214d6
+    ports:
+      - 8177:8080
 
   web:
-    image: neonmmd/websurfx:1.0.0-hybrid@sha256:8835e7901c7dbe89dba7064749c55983a01a3526e39cbb1a76960e6586a214d6
+    image: 
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/websurfx/:/etc/xdg/websurfx/:rw
