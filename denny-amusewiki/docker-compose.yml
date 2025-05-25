@@ -14,6 +14,7 @@ services:
       - CHANGE_PASSWORD_BEFORE_RUN=true
       - AMW_USERNAME=amusewiki
       - AMW_PASSWORD=changeme
+      - AMW_SQLITE_PATH=/var/lib/dbconfig-common/sqlite3/amusewiki/amusewiki/amusewiki.sqlite
     volumes:
       - ${APP_DATA_DIR}/data/repo:/var/lib/amusewiki/repo
       - ${APP_DATA_DIR}/data/thumb:/var/lib/amusewiki/thumbnails
