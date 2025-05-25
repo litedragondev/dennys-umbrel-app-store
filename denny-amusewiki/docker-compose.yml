@@ -8,6 +8,7 @@ services:
 
   web:
     image: rojen/amusewiki:package-2.605@sha256:41ac40d23c1eb13acb42ad4b7d071d3adf3f3da7af21be19bdc9da22e5c05c31
+    user: "1000:1000"
     restart: on-failure
     environment:
       - POST_DOMAIN=umbrel-2.local:8858
@@ -16,8 +17,8 @@ services:
       - AMW_PASSWORD=changeme
       - AMW_SQLITE_PATH=/var/lib/dbconfig-common/sqlite3/amusewiki/amusewiki/amusewiki.sqlite
     volumes:
-      - ${APP_DATA_DIR}/data/repo:/var/lib/amusewiki/repo
-      - ${APP_DATA_DIR}/data/thumb:/var/lib/amusewiki/thumbnails
-      - ${APP_DATA_DIR}/data/staging:/var/lib/amusewiki/staging
-      - ${APP_DATA_DIR}/data/db:/var/lib/dbconfig-common/sqlite3/amusewiki
-      - ${APP_DATA_DIR}/data/web:/etc/nginx/sites-enabled
+      - ${APP_DATA_DIR}/data/repo:/var/lib/amusewiki/repo:rw
+      - ${APP_DATA_DIR}/data/thumb:/var/lib/amusewiki/thumbnails:rw
+      - ${APP_DATA_DIR}/data/staging:/var/lib/amusewiki/staging:rw
+      - ${APP_DATA_DIR}/data/db:/var/lib/dbconfig-common/sqlite3/amusewiki:rw
+      - ${APP_DATA_DIR}/data/web:/etc/nginx/sites-enabled:rw
