@@ -10,12 +10,9 @@ services:
     image: akaunting/akaunting:3.1.17@sha256:93749634bb7c8df4dfd88c9179e2a0cb2a3752294b6d53ab0bc344720bdc2044
     restart: on-failure
     env_file:
-      - ${APP_DATA_DIR}/data/env/run.env
-    environment:
-      AKAUNTING_SETUP: true
+      - ${APP_DATA_DIR}/.env
     volumes:
       - ${APP_DATA_DIR}/data/akaunting-data:/var/www/html:rw
-      - ${APP_DATA_DIR}/data/httpd/custom_httpd.conf:/etc/apache2/sites-available/000-default.conf
     depends_on:
       db:
         condition: service_healthy
@@ -25,8 +22,6 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/akaunting-db:/var/lib/mysql:rw
     restart: on-failure
-    env_file:
-      - ${APP_DATA_DIR}/data/env/db.env
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 10s
