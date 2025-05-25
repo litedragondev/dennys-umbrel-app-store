@@ -42,8 +42,9 @@ safe_search = 2
 -- tokyo-night
 -- tomorrow-night
 -- }}
-colorscheme = "one-dark" -- the colorscheme name that should be used for the website theme
+colorscheme = "nord" -- the colorscheme name that should be used for the website theme
 theme = "simple" -- the theme name that should be used for the website
+animation = "simple-frosted-glow" -- the animation name which should be used with the theme or `nil` if you don't want any animations.
 
 -- ### Caching ###
 redis_url = "" -- redis connection url address on which the client should connect on.
