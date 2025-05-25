@@ -4,7 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: denny-websurfx_web_1
-      APP_PORT: 8177
+      APP_PORT: 8080
 
   web:
     image: neonmmd/websurfx:1.0.0-hybrid@sha256:8835e7901c7dbe89dba7064749c55983a01a3526e39cbb1a76960e6586a214d6
