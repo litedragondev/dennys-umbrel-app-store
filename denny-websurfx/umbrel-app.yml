@@ -25,6 +25,9 @@ description: >-
   Compared to similar meta search engines like SearX, Websurfx places strong emphasis on security and memory safety thanks to its Rust foundation. It also stands out with its clean design, customizable interface, and additional built in tools, catering to users who want a modern and privacy focused search experience.
 
 
+  ⚠️ Please note that to enable full functionality, the app must be configured according to the documentation. This involves setting the appropriate variables in the 'config.lua' file.
+
+
   🎨 For theming and further customizations, please refer to the project documentation available here:
   
   
