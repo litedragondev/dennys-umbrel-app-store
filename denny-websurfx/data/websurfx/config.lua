@@ -43,7 +43,7 @@ safe_search = 2
 -- tomorrow-night
 -- }}
 colorscheme = "one-dark" -- the colorscheme name that should be used for the website theme
-theme = "simple-frosted-glow" -- the theme name that should be used for the website
+theme = "simple" -- the theme name that should be used for the website
 
 -- ### Caching ###
 redis_url = "" -- redis connection url address on which the client should connect on.
