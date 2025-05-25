@@ -46,7 +46,7 @@ colorscheme = "catppuccin-mocha" -- the colorscheme name that should be used for
 theme = "simple" -- the theme name that should be used for the website
 
 -- ### Caching ###
-redis_url = "redis://redis:6379" -- redis connection url address on which the client should connect on.
+redis_url = "" -- redis connection url address on which the client should connect on.
 
 -- ### Search Engines ###
 upstream_search_engines = {
