@@ -12,7 +12,7 @@ services:
     env_file:
       - ${APP_DATA_DIR}/data/env/run.env
     environment:
-      - AKAUNTING_SETUP
+      - AKAUNTING_SETUP: true
     volumes:
       - ${APP_DATA_DIR}/data/akaunting-data:/var/www/html:rw
       - ${APP_DATA_DIR}/data/httpd/custom_httpd.conf:/etc/apache2/sites-available/000-default.conf
