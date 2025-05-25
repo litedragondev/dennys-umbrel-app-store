@@ -24,9 +24,10 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/papra-hq/papra
 support: https://github.com/papra-hq/papra/issues
 gallery:
-  - https://i.imgur.com/Unu7lKt.png
-  - https://i.imgur.com/Unu7lKt.png
-  - https://i.imgur.com/Unu7lKt.png
+  - https://i.imgur.com/3CnrLdD.png
+  - https://i.imgur.com/JDWwBDn.png
+  - https://i.imgur.com/H30rAL6.png
+  - https://i.imgur.com/kweQuE5.png
 releaseNotes: >-
   This update introduces support for Backblaze B2 and Azure Blob storage, webhook management, API keys, and editable searchable document content. It also adds a tag creation button, fixes ingestion configuration, properly handles file names without extensions, and excludes deleted documents from the document count.
 dependencies:
