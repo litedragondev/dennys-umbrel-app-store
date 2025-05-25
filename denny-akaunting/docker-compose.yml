@@ -12,21 +12,23 @@ services:
     env_file:
       - ${APP_DATA_DIR}/data/env/run.env
     environment:
-      - AKAUNTING_SETUP: true
+      AKAUNTING_SETUP: true
     volumes:
       - ${APP_DATA_DIR}/data/akaunting-data:/var/www/html:rw
       - ${APP_DATA_DIR}/data/httpd/custom_httpd.conf:/etc/apache2/sites-available/000-default.conf
     depends_on:
-      - db
+      db:
+        condition: service_healthy
 
   db:
-    image: mariadb:latest@sha256:81e893032978c4bf8ad43710b7a979774ed90787fa32d199162148ce28fe3b76
+    image: mariadb:10.11@sha256:81e893032978c4bf8ad43710b7a979774ed90787fa32d199162148ce28fe3b76
     volumes:
       - ${APP_DATA_DIR}/data/akaunting-db:/var/lib/mysql:rw
     restart: on-failure
     env_file:
       - ${APP_DATA_DIR}/data/env/db.env
-
-volumes:
-  akaunting-data:
-  akaunting-db:
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
