@@ -4,15 +4,14 @@ services:
   app_proxy:
     environment:
       APP_HOST: denny-spis_web_1
-      APP_PORT: 8080  # leitet intern 8080 weiter (SPIS Web UI)
+      APP_PORT: 8080
 
   web:
     image: ghcr.io/gbbirkisson/spis:v0.9.10@sha256:33edcd1e634e868aeaa800a57f926515e7849eee196178372bc83af2c9e93ee0
-    user: 0:0
     restart: on-failure
     environment:
-      SPIS_PROCESSING_SCHEDULE: "0 */5 * * * *"
-      SPIS_PROCESSING_RUN_ON_START: "true"
+      SPIS_PROCESSING_SCHEDULE: "0 0 2 * * *"
+      SPIS_PROCESSING_RUN_ON_START: "false"
       SPIS_FEATURE_FAVORITE: "true"
       SPIS_FEATURE_ARCHIVE: "true"
       SPIS_FEATURE_FOLLOW_SYMLINKS: "true"
@@ -20,10 +19,3 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/spis_data:/var/lib/spis/data:rw
       - ${APP_DATA_DIR}/data/spis_media:/var/lib/spis/media:rw
-
-  nginx:
-    image: nginx:stable-alpine3.21@sha256:aed99734248e851764f1f2146835ecad42b5f994081fa6631cc5d79240891ec9
-    volumes:
-      - ${APP_DATA_DIR}/data/spis_media:/usr/share/nginx/html/assets/media:ro
-      - ${APP_DATA_DIR}/nginx.conf:/etc/nginx/nginx.conf:ro
-    restart: on-failure
