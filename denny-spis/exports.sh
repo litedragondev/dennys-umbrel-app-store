@@ -1,5 +1,3 @@
-#!/bin/bash
-
 UMBREL_DATA_DIR="${UMBREL_ROOT}/data"
 UMBREL_DATA_STORAGE_DIR="${UMBREL_DATA_DIR}/storage"
 SPIS_DATA_DIR="${APP_DATA_DIR}/data/spis_data"
