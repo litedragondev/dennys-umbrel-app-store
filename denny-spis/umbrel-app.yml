@@ -3,7 +3,7 @@ id: denny-spis
 name: SPIS
 tagline: A simple private image server
 icon: https://i.imgur.com/qc2GWEA.png
-category: In Progress
+category: files & productivity
 version: "0.9.10"
 port: 8222
 description: >-
@@ -20,6 +20,9 @@ description: >-
 
 
   SPIS is actively maintained and used by its creator to manage tens of thousands of images on a small device which highlights its real-world effectiveness. The project is open source and welcomes feedback and contributions from the community. It represents a simple yet powerful solution for anyone who wants to enjoy their photos in a private and elegant way.
+
+
+  ⚠️ To upload your photos, use the Umbrel Files app and place them in the Home/Photos folder.
 developer: Guðmundur Björn Birkisson 
 website: https://github.com/gbbirkisson/spis
 submitter: dennysubke
