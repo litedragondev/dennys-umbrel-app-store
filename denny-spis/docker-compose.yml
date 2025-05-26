@@ -9,13 +9,14 @@ services:
   web:
     image: ghcr.io/gbbirkisson/spis:v0.9.10@sha256:33edcd1e634e868aeaa800a57f926515e7849eee196178372bc83af2c9e93ee0
     restart: on-failure
+    command: ["--feature-allow-no-exif"]
     environment:
       SPIS_PROCESSING_SCHEDULE: "*/5 * * * * *"
       SPIS_PROCESSING_RUN_ON_START: "true"
       SPIS_FEATURE_FAVORITE: "true"
       SPIS_FEATURE_ARCHIVE: "true"
       SPIS_FEATURE_FOLLOW_SYMLINKS: "true"
-      SPIS_FEATURE_NO_EXIF: "false"
+      #SPIS_FEATURE_NO_EXIF: "false"
       RUST_LOG: "error,spis=info"
     volumes:
       - ${APP_DATA_DIR}/data/spis_data:/var/lib/spis/data:rw
