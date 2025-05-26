@@ -18,4 +18,4 @@ services:
       RUST_LOG: "error,spis=info"
     volumes:
       - ${APP_DATA_DIR}/data/spis_data:/var/lib/spis/data:rw
-      - ${APP_DATA_DIR}/data/spis_media:/var/lib/spis/media:rw
+      - ${UMBREL_ROOT}/data/storage:/data:/var/lib/spis/media:rw
