@@ -4,7 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: denny-spis_web_1
-      APP_PORT: 8080
+      APP_PORT: 8080  # leitet intern 8080 weiter (SPIS Web UI)
 
   web:
     image: ghcr.io/gbbirkisson/spis:v0.9.10@sha256:33edcd1e634e868aeaa800a57f926515e7849eee196178372bc83af2c9e93ee0
@@ -24,7 +24,7 @@ services:
   nginx:
     image: nginx:alpine
     ports:
-      - "8223:80"           # nginx hört auf Port 8223 auf dem Host
+      - "8223:80"  # Media Dateien über nginx direkt auf 8223 erreichbar
     volumes:
       - ${APP_DATA_DIR}/data/spis_media:/usr/share/nginx/html/assets/media:ro
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
