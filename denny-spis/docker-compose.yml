@@ -10,7 +10,7 @@ services:
     image: ghcr.io/gbbirkisson/spis:v0.9.10@sha256:33edcd1e634e868aeaa800a57f926515e7849eee196178372bc83af2c9e93ee0
     restart: on-failure
     environment:
-      SPIS_PROCESSING_SCHEDULE: "0 0 2 * * *"
+      SPIS_PROCESSING_SCHEDULE: "*/5 * * * * *"
       SPIS_PROCESSING_RUN_ON_START: "true"
       SPIS_FEATURE_FAVORITE: "true"
       SPIS_FEATURE_ARCHIVE: "true"
