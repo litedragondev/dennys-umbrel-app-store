@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+SPIS_MEDIA_DIR="${UMBREL_ROOT}/data/storage/Photos"
 DESIRED_OWNER="0:0"
 
-if [[ -d "${UMBREL_ROOT}" ]]; then
-	owner=$(stat -c "%u:%g" "${UMBREL_ROOT}")
+if [[ ! -d "${SPIS_MEDIA_DIR}" ]]; then
+  mkdir -p "${SPIS_MEDIA_DIR}"
+fi
 
-	if [[ "${owner}" != "${DESIRED_OWNER}" ]]; then
-		chown "${DESIRED_OWNER}" "${UMBREL_ROOT}"
-	fi
+owner=$(stat -c "%u:%g" "${SPIS_MEDIA_DIR}")
+
+if [[ "${owner}" != "${DESIRED_OWNER}" ]]; then
+  chown "${DESIRED_OWNER}" "${SPIS_MEDIA_DIR}"
 fi
