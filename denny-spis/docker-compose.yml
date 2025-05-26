@@ -16,6 +16,7 @@ services:
       SPIS_FEATURE_ARCHIVE: "true"
       SPIS_FEATURE_FOLLOW_SYMLINKS: "true"
       SPIS_FEATURE_NO_EXIF: "true"
+      SPIS_FEATURE_USE_MODIFIED_TIME: "true"
       RUST_LOG: "error,spis=info"
     volumes:
       - ${APP_DATA_DIR}/data/spis_data:/var/lib/spis/data:rw
