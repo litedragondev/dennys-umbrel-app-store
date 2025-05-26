@@ -11,7 +11,7 @@ services:
     restart: on-failure
     environment:
       SPIS_PROCESSING_SCHEDULE: "0 0 2 * * *"
-      SPIS_PROCESSING_RUN_ON_START: "false"
+      SPIS_PROCESSING_RUN_ON_START: "true"
       SPIS_FEATURE_FAVORITE: "true"
       SPIS_FEATURE_ARCHIVE: "true"
       SPIS_FEATURE_FOLLOW_SYMLINKS: "true"
