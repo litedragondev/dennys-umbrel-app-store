@@ -27,9 +27,10 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/gbbirkisson/spis
 support: https://github.com/gbbirkisson/spis/issues
 gallery:
-  - https://i.imgur.com/wsivdcf.png
-  - https://i.imgur.com/wsivdcf.png
-  - https://i.imgur.com/wsivdcf.png
+  - https://i.imgur.com/FFCuhiQ.png
+  - https://i.imgur.com/cPQxQny.png
+  - https://i.imgur.com/TWpL05V.png
+  - https://i.imgur.com/x1qXuTK.png
 releaseNotes: >-
   Version 0.9.10 of SPIS includes several dependency updates, bringing Rust to version 1.87.0 and updating key crates such as actix-web, clap, and tempfile. These changes primarily address maintenance and compatibility improvements without introducing new features.
 dependencies:
