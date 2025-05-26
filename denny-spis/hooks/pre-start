@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SPIS_DATA_DIR="${APP_DATA_DIR}/data/spis_data"
+SPIS_MEDIA_DIR="${UMBREL_ROOT}/data/storage/Photos"
+DESIRED_OWNER="0:0"
+
+spis_ensure_directory() {
+	local -r path="${1}"
+
+	if [[ ! -d "${path}" ]]; then
+		mkdir -p "${path}"
+	fi
+}
+
+spis_correct_permission() {
+	local -r path="${1}"
+
+	if [[ -d "${path}" ]]; then
+		owner=$(stat -c "%u:%g" "${path}")
+
+		if [[ "${owner}" != "${DESIRED_OWNER}" ]]; then
+			chown "${DESIRED_OWNER}" "${path}"
+		fi
+	fi
+}
+
+# Ensure directories exist
+spis_ensure_directory "${SPIS_DATA_DIR}"
+spis_ensure_directory "${SPIS_MEDIA_DIR}"
+
+# Correct ownership
+spis_correct_permission "${SPIS_DATA_DIR}"
+spis_correct_permission "${SPIS_MEDIA_DIR}"
