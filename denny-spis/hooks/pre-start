@@ -11,5 +11,5 @@ fi
 owner=$(stat -c "%u:%g" "${SPIS_MEDIA_DIR}")
 
 if [[ "${owner}" != "${DESIRED_OWNER}" ]]; then
-  chown "${DESIRED_OWNER}" "${SPIS_MEDIA_DIR}"
+  chown -R "${DESIRED_OWNER}" "${SPIS_MEDIA_DIR}"
 fi
