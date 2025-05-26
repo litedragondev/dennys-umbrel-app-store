@@ -8,6 +8,7 @@ services:
 
   web:
     image: ghcr.io/gbbirkisson/spis:v0.9.10@sha256:33edcd1e634e868aeaa800a57f926515e7849eee196178372bc83af2c9e93ee0
+    user: 0:0
     restart: on-failure
     environment:
       SPIS_PROCESSING_SCHEDULE: "0 0 2 * * *"
