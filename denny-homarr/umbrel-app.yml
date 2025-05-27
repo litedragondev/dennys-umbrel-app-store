@@ -32,7 +32,7 @@ gallery:
   - https://i.imgur.com/eDyoTSx.png
   - https://i.imgur.com/yQFazpi.png
   - https://i.imgur.com/24jOHI4.png
-  - https://i.imgur.com/Z2yvIsr.png
+  - https://i.imgur.com/3lPjEaq.png
 releaseNotes: >-
   This update introduces a new Docker widget and includes numerous dependency upgrades. It also fixes several bugs, such as layout issues, reordering problems in the downloads widget, and a missing esbuild dependency.
 dependencies:
