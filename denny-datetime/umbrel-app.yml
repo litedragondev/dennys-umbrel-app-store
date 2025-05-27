@@ -3,7 +3,7 @@ id: denny-datetime
 name: Datetime
 tagline: A powerful time viewing and conversion tool
 icon: https://i.imgur.com/GKGeLDv.png
-category: In Progress
+category: files & productivity
 version: "1.0"
 port: 3771
 description: >-
@@ -27,9 +27,12 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/airyland/datetime.app
 support: https://github.com/airyland/datetime.app/issues
 gallery:
-  - https://i.imgur.com/sT43e4b.png
-  - https://i.imgur.com/sT43e4b.png
-  - https://i.imgur.com/sT43e4b.png
+  - https://i.imgur.com/srPcIpL.png
+  - https://i.imgur.com/xE2dIjs.png
+  - https://i.imgur.com/99xDtcl.png
+  - https://i.imgur.com/QSWfdx2.png
+  - https://i.imgur.com/qQVWiNV.png
+  - https://i.imgur.com/R7bjhaa.png
 releaseNotes: >-
   Datetime does not use versioning and does not maintain a changelog. The application is continuously improved without formal version tags or release notes.
 dependencies:
