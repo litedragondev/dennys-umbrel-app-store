@@ -37,5 +37,5 @@ releaseNotes: >-
   This update includes important bug fixes and enhancements such as improved Podman documentation and better IPv6 support. It addresses issues with login errors, token expiration, UI performance, and containerized deployments. Reviewing the migration guide before upgrading is recommended.
 dependencies:
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "admin"
+defaultPassword: "umbrel"
