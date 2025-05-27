@@ -18,7 +18,7 @@ services:
     restart: on-failure
     
   web:
-      image: quay.io/keycloak/keycloak:legacy
+      image: quay.io/keycloak/keycloak:26.2.4@sha256:4a81762677f8911c6266e3dea57a2d78fa17bd63408debbf23afd8cc46fe256e
       user: "1000:1000"
       restart: on-failure
       environment:
