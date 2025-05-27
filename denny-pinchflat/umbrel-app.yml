@@ -7,7 +7,7 @@ category: media
 version: "2025.3.17"
 port: 8945
 description: >-
-  Pinchflat is a self-hosted application designed for automated downloading and management of YouTube content. It is built using the Elixir programming language and leverages the Phoenix web framework to provide a user-friendly interface. The application utilizes yt-dlp, a powerful tool for downloading videos from YouTube and other platforms, allowing users to regularly download videos from selected YouTube channels or playlists and incorporate them into their personal media libraries.
+  📥 Pinchflat is a self-hosted application designed for automated downloading and management of YouTube content. It is built using the Elixir programming language and leverages the Phoenix web framework to provide a user-friendly interface. The application utilizes yt-dlp, a powerful tool for downloading videos from YouTube and other platforms, allowing users to regularly download videos from selected YouTube channels or playlists and incorporate them into their personal media libraries.
 
 
   The core functionality of Pinchflat revolves around automation. It continuously monitors specified YouTube channels or playlists for new content and downloads these videos without manual intervention. This makes it an ideal solution for users who want to maintain an up-to-date collection of their favorite online media. The downloaded videos can be seamlessly integrated with popular media center software such as Plex, Jellyfin, or Kodi, enabling users to organize and enjoy their content in a familiar environment.
