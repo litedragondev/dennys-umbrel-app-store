@@ -9,8 +9,6 @@ services:
   server:
     image: virolamessenger/virola-server:latest
     container_name: virola-server
-    ports:
-      - "8888:7777/udp"
     volumes:
       - ${APP_DATA_DIR}/data:/virola:rw
     stdin_open: true
