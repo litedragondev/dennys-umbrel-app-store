@@ -3,7 +3,7 @@ id: denny-readeck
 name: Readeck
 tagline: A simple app to save the web's precious content
 icon: https://i.imgur.com/Eygg3GG.png
-category: In Progress
+category: files & productivity
 version: "0.19.0"
 port: 8858
 description: >-
