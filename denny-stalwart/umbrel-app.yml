@@ -20,6 +20,12 @@ description: >-
 
 
   The project is developed and maintained by Stalwart Labs, a company based in the United Kingdom and the United States. Since its founding in 2019, the team has focused on creating a next-generation mail server that is not only powerful and secure but also easy to deploy and manage. With its open-source foundation and modular design, Stalwart is an ideal choice for individuals, small teams, and enterprises looking to regain control over their communications without sacrificing modern features or usability.
+
+
+  ⚙️ Installation and setup are described here:
+  
+  
+  https://github.com/dennysubke/dennys-umbrel-app-store/blob/master/denny-stalwart/README.md
 developer: Stalwart Labs
 website: https://stalw.art/
 submitter: dennysubke
