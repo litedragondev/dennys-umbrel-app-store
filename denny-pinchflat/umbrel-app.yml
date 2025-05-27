@@ -2,7 +2,7 @@ manifestVersion: 1
 id: denny-pinchflat
 name: Pinchflat
 tagline: A YouTube media manager
-icon: https://i.imgur.com/HakL1r4.png
+icon: https://i.imgur.com/qRtb0d0.png
 category: media
 version: "2025.3.17"
 port: 8945
@@ -30,9 +30,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/kieraneglin/pinchflat
 support: https://github.com/kieraneglin/pinchflat/issues
 gallery:
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
+  - https://i.imgur.com/xuSqWWx.png
+  - https://i.imgur.com/xuSqWWx.png
+  - https://i.imgur.com/xuSqWWx.png
 releaseNotes: >-
   The latest release v2025.3.17 includes enhancements such as download rate limiting, suppression of Docker healthcheck logs, and an option to restrict filenames to ASCII characters. These improvements optimize performance and file handling.
 dependencies:
