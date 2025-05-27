@@ -1,15 +1,14 @@
 version: '3.7'
 
 services:
-  app_proxy:
-    environment:
-      APP_HOST: denny-virola_server_1
-      APP_PORT: 7777
-
-  server:
+  virola-server:
     image: virolamessenger/virola-server:latest
+    container_name: virola-server
+    ports:
+      - "9888:7777/tcp"
+      - "9888:7777/udp"
     volumes:
-      - ${APP_DATA_DIR}/data:/virola:rw
+      - ./virola-storage:/virola
     stdin_open: true
     tty: true
-    restart: on-failure
+    restart: unless-stopped
