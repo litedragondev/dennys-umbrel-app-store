@@ -2,7 +2,7 @@ manifestVersion: 1
 id: denny-keycloak
 name: Keycloak
 tagline: An Open Source Identity and Access Management
-icon: https://i.imgur.com/HakL1r4.png
+icon: https://i.imgur.com/SYaIYjZ.png
 category: In Progress
 version: "26.2.4"
 port: 8711
@@ -30,9 +30,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/keycloak/keycloak
 support: https://github.com/keycloak/keycloak/issues
 gallery:
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
+  - https://i.imgur.com/9xljBj3.png
+  - https://i.imgur.com/9xljBj3.png
+  - https://i.imgur.com/9xljBj3.png
 releaseNotes: >-
   This update includes important bug fixes and enhancements such as improved Podman documentation and better IPv6 support. It addresses issues with login errors, token expiration, UI performance, and containerized deployments. Reviewing the migration guide before upgrading is recommended.
 dependencies:
