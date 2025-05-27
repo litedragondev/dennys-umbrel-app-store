@@ -30,9 +30,12 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/keycloak/keycloak
 support: https://github.com/keycloak/keycloak/issues
 gallery:
-  - https://i.imgur.com/9xljBj3.png
-  - https://i.imgur.com/9xljBj3.png
-  - https://i.imgur.com/9xljBj3.png
+  - https://i.imgur.com/CDQn1xH.png
+  - https://i.imgur.com/B9Ekq31.png
+  - https://i.imgur.com/0ad0Ftv.png
+  - https://i.imgur.com/0wsTJXO.png
+  - https://i.imgur.com/lxv8dP2.png
+  - https://i.imgur.com/ggfoJxT.png
 releaseNotes: >-
   This update includes important bug fixes and enhancements such as improved Podman documentation and better IPv6 support. It addresses issues with login errors, token expiration, UI performance, and containerized deployments. Reviewing the migration guide before upgrading is recommended.
 dependencies:
