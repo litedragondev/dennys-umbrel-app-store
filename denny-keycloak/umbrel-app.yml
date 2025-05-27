@@ -3,7 +3,7 @@ id: denny-keycloak
 name: Keycloak
 tagline: An Open Source Identity and Access Management
 icon: https://i.imgur.com/SYaIYjZ.png
-category: In Progress
+category: files & productivity
 version: "26.2.4"
 port: 8711
 description: >-
