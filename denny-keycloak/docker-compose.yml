@@ -39,8 +39,8 @@ services:
       KC_METRICS_ENABLED: "true"
       KC_LOG_LEVEL: INFO
       KC_HEALTH_ENABLED: "true"
-      KC_BOOTSTRAP_ADMIN_USERNAME: umbrel
-      KC_BOOTSTRAP_ADMIN_PASSWORD: umbrelpass
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: umbrel
     depends_on:
       - db
     restart: on-failure
