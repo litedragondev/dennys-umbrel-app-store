@@ -7,31 +7,34 @@ category: In Progress
 version: "26.2.4"
 port: 8711
 description: >-
-  Gotify is an open-source, self-hosted notification server designed to enable real-time push notifications across multiple devices. It is a lightweight, efficient system that allows applications to send messages to the Gotify server via a REST API. These messages are then delivered to connected clients, including web browsers, mobile devices, or other systems that support Gotify’s push notification service.
+  🔐 Keycloak is an open source identity and access management solution that provides authentication and authorization services for modern applications and services. It allows developers and system administrators to delegate the responsibility of managing user identities, roles, and access permissions to a centralized platform, which simplifies the development and security processes of distributed systems.
 
 
-  The server is built with Go, known for its high performance and minimal resource consumption, making it suitable for various environments. Gotify’s simple and intuitive web interface allows users to manage notifications, configure applications, and generate API tokens for authentication and access control.
+  At its core, Keycloak is designed to support modern security protocols such as OpenID Connect, OAuth 2.0, and SAML 2.0. These standards enable seamless integration with a wide range of web applications, APIs, and identity providers. One of the main features of Keycloak is its ability to offer single sign on. This means that users can log in once and gain access to multiple connected applications without having to authenticate again for each service. This improves the user experience and reduces the complexity of managing multiple login systems.
 
 
-  One of the core features of Gotify is its support for real-time notifications using WebSockets. This allows connected clients to receive notifications instantly, ensuring timely delivery of messages. Additionally, Gotify supports categorizing and prioritizing notifications, helping users organize incoming messages based on importance.
+  Keycloak also supports social login integration. This allows users to authenticate using their existing accounts from popular platforms such as Google or GitHub. Additionally, Keycloak offers two factor authentication, account recovery options, and detailed session management features to improve security.
 
 
-  Gotify offers a native Android app, which allows users to receive push notifications directly on their devices. It also provides a web app, ensuring that users can stay updated across different platforms. The system’s architecture is designed for flexibility and scalability, enabling it to handle notifications from a variety of sources, from system alerts and monitoring tools to custom applications.
+  The platform includes an administrative console where administrators can create and manage user accounts, define roles and groups, configure identity providers, and monitor login events. Users can also access a self service account management portal where they can update their profile information, change passwords, and view login history.
 
 
-  As a self-hosted solution, Gotify gives users complete control over their notification infrastructure, ensuring privacy and data security. With its open-source nature, it can be customized and extended to suit different use cases. The ability to host notifications locally, without relying on third-party services, makes Gotify an attractive option for those seeking a private, cost-effective solution for delivering real-time notifications.
-developer: Gotify
-website: https://gotify.net/
+  Another important aspect of Keycloak is its support for multi tenancy through a concept called realms. A realm is a separate space where configurations, users, and roles are isolated from others. This allows organizations to manage different environments or customer bases independently within the same Keycloak instance.
+
+
+  Overall, Keycloak helps developers and organizations secure their applications by centralizing identity management. It removes the need to build and maintain custom login systems and ensures consistent and secure user authentication across different services.
+developer: Keycloak
+website: https://www.keycloak.org/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/gotify/server
-support: https://github.com/gotify/server/issues
+repo: https://github.com/keycloak/keycloak
+support: https://github.com/keycloak/keycloak/issues
 gallery:
   - https://i.imgur.com/qBH4PgI.png
   - https://i.imgur.com/qBH4PgI.png
   - https://i.imgur.com/qBH4PgI.png
 releaseNotes: >-
-  This update sets the umask to 0 when creating Unix sockets to ensure proper file permissions. It also updates dependencies and fixes the release build process.
+  This update includes important bug fixes and enhancements such as improved Podman documentation and better IPv6 support. It addresses issues with login errors, token expiration, UI performance, and containerized deployments. Reviewing the migration guide before upgrading is recommended.
 dependencies:
 path: ""
 defaultUsername: ""
