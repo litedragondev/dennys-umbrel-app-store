@@ -1,37 +1,33 @@
 manifestVersion: 1
 id: denny-stalwart
 name: Stalwart Test
-tagline: A simple server for sending and receiving messages
-icon: https://i.imgur.com/HakL1r4.png
-category: Test
-version: "2.6.3"
+tagline: An all-in-one Mail & Collaboration server
+icon: https://i.imgur.com/Pr0Mauc.png
+category: In Progress
+version: "0.12.2"
 port: 18080
 description: >-
-  Gotify is an open-source, self-hosted notification server designed to enable real-time push notifications across multiple devices. It is a lightweight, efficient system that allows applications to send messages to the Gotify server via a REST API. These messages are then delivered to connected clients, including web browsers, mobile devices, or other systems that support Gotify’s push notification service.
+  📮 Stalwart is a modern open-source mail and collaboration server designed to streamline and modernize traditional email infrastructure. Built from the ground up with performance, scalability, and security in mind, it combines a wide range of functionalities into a single efficient platform. Stalwart supports both legacy and modern protocols, making it compatible with a broad range of clients and services. It allows seamless communication through protocols such as IMAP, SMTP, and POP3, while also supporting next-generation standards like JMAP, CalDAV, and CardDAV.
 
+  One of the core goals of Stalwart is to provide a complete self-hosted solution for communication and collaboration. In addition to email, it includes built-in support for calendars, contacts, and file storage. All of these features are based on open standards, enabling interoperability with other tools and platforms. This eliminates the need for multiple separate systems and simplifies administration and maintenance.
 
-  The server is built with Go, known for its high performance and minimal resource consumption, making it suitable for various environments. Gotify’s simple and intuitive web interface allows users to manage notifications, configure applications, and generate API tokens for authentication and access control.
+  Security is a foundational principle of Stalwart. It offers comprehensive protection through features like end-to-end encryption, strong transport layer security, and robust authentication mechanisms. Its architecture is designed to prevent common attack vectors and ensure data privacy, both in transit and at rest.
 
+  Stalwart is written in Rust, a systems programming language known for its safety and performance. This choice allows it to achieve high efficiency while maintaining a low memory footprint and strong stability. Whether deployed on a single machine or scaled across a distributed infrastructure, Stalwart can handle demanding workloads with ease.
 
-  One of the core features of Gotify is its support for real-time notifications using WebSockets. This allows connected clients to receive notifications instantly, ensuring timely delivery of messages. Additionally, Gotify supports categorizing and prioritizing notifications, helping users organize incoming messages based on importance.
-
-
-  Gotify offers a native Android app, which allows users to receive push notifications directly on their devices. It also provides a web app, ensuring that users can stay updated across different platforms. The system’s architecture is designed for flexibility and scalability, enabling it to handle notifications from a variety of sources, from system alerts and monitoring tools to custom applications.
-
-
-  As a self-hosted solution, Gotify gives users complete control over their notification infrastructure, ensuring privacy and data security. With its open-source nature, it can be customized and extended to suit different use cases. The ability to host notifications locally, without relying on third-party services, makes Gotify an attractive option for those seeking a private, cost-effective solution for delivering real-time notifications.
-developer: Gotify
-website: https://gotify.net/
+  The project is developed and maintained by Stalwart Labs, a company based in the United Kingdom and the United States. Since its founding in 2019, the team has focused on creating a next-generation mail server that is not only powerful and secure but also easy to deploy and manage. With its open-source foundation and modular design, Stalwart is an ideal choice for individuals, small teams, and enterprises looking to regain control over their communications without sacrificing modern features or usability.
+developer: Stalwart Labs
+website: https://stalw.art/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/gotify/server
-support: https://github.com/gotify/server/issues
+repo: https://github.com/stalwartlabs/stalwart
+support: https://github.com/stalwartlabs/stalwart/issues
 gallery:
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
+  - https://i.imgur.com/0Stln1i.png
+  - https://i.imgur.com/0Stln1i.png
+  - https://i.imgur.com/0Stln1i.png
 releaseNotes: >-
-  This update sets the umask to 0 when creating Unix sockets to ensure proper file permissions. It also updates dependencies and fixes the release build process.
+  Version 0.12.2 introduces breaking changes to the database layout, requiring a migration if upgrading from v0.11.x. It adds support for legacy vCard formats in CardDAV and improves WebDAV autodiscovery with SRV records. Additionally, it fixes issues related to deserializing empty values and handling expired FoundationDB transactions during large blob retrieval.
 dependencies:
 path: ""
 defaultUsername: ""
