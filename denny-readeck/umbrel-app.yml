@@ -7,7 +7,7 @@ category: In Progress
 version: "0.19.0"
 port: 8858
 description: >-
-  Readeck is a self-hosted open source application designed to help users save, organize, and archive web content for later reading. Unlike traditional bookmarking tools or commercial read-it-later services, Readeck emphasizes privacy, control, and long-term access. It is a powerful alternative for anyone who wants to collect and revisit articles, blog posts, or other web-based texts without relying on third-party services.
+  📚 Readeck is a self-hosted open source application designed to help users save, organize, and archive web content for later reading. Unlike traditional bookmarking tools or commercial read-it-later services, Readeck emphasizes privacy, control, and long-term access. It is a powerful alternative for anyone who wants to collect and revisit articles, blog posts, or other web-based texts without relying on third-party services.
 
 
   At its core, Readeck lets you capture the content of web pages and store them in a local or remote archive. This archive includes all media such as images and formatting, ensuring that the saved content remains accessible even if the original website goes offline or changes. Each article can be stored permanently and accessed through a clean and distraction-free interface that is optimized for comfortable reading.
