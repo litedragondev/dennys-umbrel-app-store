@@ -11,6 +11,11 @@ services:
     user: "1000:1000"
     volumes:
       - ${APP_DATA_DIR}/data/keycloakdb:/var/lib/postgresql/data:rw
+    healthcheck:
+      test: ["CMD", "pg_isready", "-q", "-d", "keycloak", "-U", "keycloakuser"]
+      timeout: 45s
+      interval: 10s
+      retries: 10
     environment:
       POSTGRES_DB: keycloak
       POSTGRES_USER: keycloakuser
@@ -21,6 +26,8 @@ services:
       image: quay.io/keycloak/keycloak:26.2.4@sha256:4a81762677f8911c6266e3dea57a2d78fa17bd63408debbf23afd8cc46fe256e
       user: "1000:1000"
       restart: on-failure
+      healthcheck:
+       test: curl -f http://localhost:8080/ || exit 1
       environment:
         DB_VENDOR: POSTGRES
         DB_ADDR: db
