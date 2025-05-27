@@ -1,10 +1,10 @@
 manifestVersion: 1
 id: denny-keycloak
 name: Keycloak
-tagline: A simple server for sending and receiving messages
+tagline: An Open Source Identity and Access Management
 icon: https://i.imgur.com/HakL1r4.png
-category: Test
-version: "2.6.3"
+category: In Progress
+version: "26.2.4"
 port: 8711
 description: >-
   Gotify is an open-source, self-hosted notification server designed to enable real-time push notifications across multiple devices. It is a lightweight, efficient system that allows applications to send messages to the Gotify server via a REST API. These messages are then delivered to connected clients, including web browsers, mobile devices, or other systems that support Gotify’s push notification service.
