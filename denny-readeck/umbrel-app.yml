@@ -27,9 +27,11 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/readeck/readeck
 support: https://codeberg.org/readeck/readeck/issues
 gallery:
-  - https://i.imgur.com/YLxATcb.png
-  - https://i.imgur.com/YLxATcb.png
-  - https://i.imgur.com/YLxATcb.png
+  - https://i.imgur.com/S66hUxj.png
+  - https://i.imgur.com/PLoFV2L.png
+  - https://i.imgur.com/1EiKyK1.png
+  - https://i.imgur.com/onJuH0v.png
+  - https://i.imgur.com/CIRzD23.png
 releaseNotes: >-
   Readeck 0.19.0 introduces email sharing of bookmarks with optional EPUB attachments, a new mosaic view for the bookmark list, and improved browser extension onboarding. The update enhances CSRF protection, fixes issues with SVG images and Wallabag imports, and replaces application passwords with API token support for HTTP Basic Authentication. EPUB exports now include author information.
 dependencies:
