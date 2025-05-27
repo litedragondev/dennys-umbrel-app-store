@@ -1,3 +1,8 @@
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/2c02c26d-0505-47dc-a290-67bce1bd42f4" alt="Stalwart Logo" width="120" />
+</p>
+
+
 # Stalwart Setup Guide for Umbrel
 
 ## 🔐 Log in to the Web Interface
