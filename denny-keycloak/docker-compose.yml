@@ -25,7 +25,7 @@ services:
   web:
     image: quay.io/keycloak/keycloak:26.2.4@sha256:4a81762677f8911c6266e3dea57a2d78fa17bd63408debbf23afd8cc46fe256e
     user: "1000:1000"
-    command: ["start"]
+    command: ["start-dev"]
     restart: on-failure
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/realms/master"]
@@ -38,8 +38,8 @@ services:
       KC_DB_URL_DATABASE: keycloak
       KC_DB_USERNAME: keycloakuser
       KC_DB_PASSWORD: keycloakpass
-      KEYCLOAK_ADMIN: umbrel
-      KEYCLOAK_ADMIN_PASSWORD: umbrelpass
       KC_PROXY: edge
+      KC_BOOTSTRAP_ADMIN_USERNAME: umbrel
+      KC_BOOTSTRAP_ADMIN_PASSWORD: umbrelpass
     depends_on:
       - db
