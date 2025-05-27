@@ -8,6 +8,7 @@ services:
 
   db:
     image: postgres:17.5@sha256:6efd0df010dc3cb40d5e33e3ef84acecc5e73161bd3df06029ee8698e5e12c60
+    user: "1000:1000"
     volumes:
       - ${APP_DATA_DIR}/data/keycloakdb:/var/lib/postgresql/data:rw
     environment:
@@ -18,6 +19,7 @@ services:
     
   web:
       image: keycloak/keycloak:26.2.4@sha256:4a81762677f8911c6266e3dea57a2d78fa17bd63408debbf23afd8cc46fe256e
+      user: "1000:1000"
       restart: on-failure
       environment:
         DB_VENDOR: POSTGRES
