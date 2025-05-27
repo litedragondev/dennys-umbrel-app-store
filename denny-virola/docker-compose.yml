@@ -8,7 +8,6 @@ services:
 
   server:
     image: virolamessenger/virola-server:latest
-    container_name: virola-server
     volumes:
       - ${APP_DATA_DIR}/data:/virola:rw
     stdin_open: true
