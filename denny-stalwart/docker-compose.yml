@@ -7,7 +7,7 @@ services:
       APP_PORT: 8080
       PROXY_AUTH_ADD: "false"
 
-  web:
+  server:
     image: stalwartlabs/stalwart:v0.12.2@sha256:a20b499b380d319eb47a3a3ab497f9a6676190b47597bd781972dcf07d3bbb40
     restart: on-failure
     tty: true
