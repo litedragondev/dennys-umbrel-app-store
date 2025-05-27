@@ -21,22 +21,25 @@ services:
       POSTGRES_USER: keycloakuser
       POSTGRES_PASSWORD: keycloakpass
     restart: on-failure
-    
+
   web:
-      image: quay.io/keycloak/keycloak:26.2.4@sha256:4a81762677f8911c6266e3dea57a2d78fa17bd63408debbf23afd8cc46fe256e
-      user: "1000:1000"
-      restart: on-failure
-      healthcheck:
-       test: curl -f http://localhost:8080/ || exit 1
-      environment:
-        DB_VENDOR: POSTGRES
-        DB_ADDR: db
-        DB_DATABASE: keycloak
-        DB_USER: keycloakuser
-        DB_SCHEMA: public
-        DB_PASSWORD: keycloakpass
-        KEYCLOAK_USER: umbrel
-        KEYCLOAK_PASSWORD: umbrelpass
-        PROXY_ADDRESS_FORWARDING: "true"
-      depends_on:
-        - db
+    image: quay.io/keycloak/keycloak:26.2.4@sha256:4a81762677f8911c6266e3dea57a2d78fa17bd63408debbf23afd8cc46fe256e
+    user: "1000:1000"
+    command: ["start"]
+    restart: on-failure
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/realms/master"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+    environment:
+      KC_DB: postgres
+      KC_DB_URL_HOST: db
+      KC_DB_URL_DATABASE: keycloak
+      KC_DB_USERNAME: keycloakuser
+      KC_DB_PASSWORD: keycloakpass
+      KEYCLOAK_ADMIN: umbrel
+      KEYCLOAK_ADMIN_PASSWORD: umbrelpass
+      KC_PROXY: edge
+    depends_on:
+      - db
