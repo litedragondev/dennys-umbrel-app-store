@@ -2,8 +2,8 @@ manifestVersion: 1
 id: denny-bip47-verifier
 name: BIP47 Message Verifier
 tagline: An easy way to verify BIP47 signatures
-icon: https://i.imgur.com/HakL1r4.png
-category: Test
+icon: https://i.imgur.com/DQjlKIv.png
+category: In Progress
 version: "1.0.0"
 port: 8047
 description: >-
@@ -21,9 +21,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/dennysubke/bip47-verifier
 support: https://github.com/dennysubke/bip47-verifier/issues
 gallery:
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
+  - https://i.imgur.com/Gie54YW.png
+  - https://i.imgur.com/Gie54YW.png
+  - https://i.imgur.com/Gie54YW.png
 releaseNotes: >-
   This project does not follow semantic versioning and does not maintain a changelog. Changes may occur at any time without formal version tags or release notes.
 dependencies:
