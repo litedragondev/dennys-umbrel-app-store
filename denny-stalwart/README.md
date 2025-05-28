@@ -45,6 +45,24 @@ To secure communication between the server and clients, you need a valid TLS cer
 
 ---
 
+### 📡 Ports and Their Usage
+
+Stalwart Mail uses the following ports for its various services. Make sure these are correctly mapped and accessible as needed:
+
+- **1443**: HTTPS (alternative to port 443)  
+- **25**: Standard SMTP (used for mail transfer between servers)  
+- **587**: SMTP Submission (used by mail clients to send mail)  
+- **465**: SMTPS (SMTP over SSL, legacy but still supported)  
+- **143**: IMAP (used by mail clients to retrieve emails without SSL)  
+- **993**: IMAPS (IMAP over SSL)  
+- **4190**: Sieve (used for mail filtering rules)  
+- **110**: POP3 (retrieve emails without SSL, legacy protocol)  
+- **995**: POP3S (POP3 over SSL)
+
+Make sure your network or firewall configuration allows traffic through the ports you plan to use.
+
+---
+
 ## ✅ Finish Setup
 
 Once your configuration is complete, restart the app from Umbrel’s menu.
