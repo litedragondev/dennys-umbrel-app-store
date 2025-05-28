@@ -22,7 +22,7 @@ Use these credentials to log in.
 
 After logging in, go to **Settings > Storage**. There, you can define where Stalwart stores data, blobs, full-text indexes, and in-memory storage.
 
-By default, Stalwart is already preconfigured. If you’re happy with the default, you can skip this step.
+By default, Stalwart uses RocksDB, which is already preconfigured. If you’re happy with the default, you can skip this step.
 
 ---
 
