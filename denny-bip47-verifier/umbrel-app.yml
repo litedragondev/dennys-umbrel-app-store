@@ -2,7 +2,7 @@ manifestVersion: 1
 id: denny-bip47-verifier
 name: BIP47 Message Verifier
 tagline: An easy way to verify BIP47 signatures
-icon: https://i.imgur.com/DQjlKIv.png
+icon: https://i.imgur.com/cx0eWsv.png
 category: In Progress
 version: "1.0.0"
 port: 8047
