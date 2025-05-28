@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  bip47-verifier:
+    image: dennysubke/bip47-verifier:1.0.0@sha256:cb5d968eb6b236eb35f4d8ecba6ee3a940a49c0d4ae99fa5299f5e56cbeb2ced
+    container_name: bip47-verifier
+    ports:
+      - "8047:80"
+    restart: unless-stopped
