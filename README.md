@@ -31,7 +31,7 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 | 7   | [Atheos](https://github.com/Atheos/Atheos)           | A web-based IDE framework with a small footprint and minimal requirements| 8728   |
 | 8   | [Baikal](https://github.com/sabre-io/Baikal)         | A lightweight CalDAV+CardDAV server                                      | 8547   |
 | 9   | [BIP47 Message Verifier](https://github.com/dennysubke/bip47-verifier-docker)| An easy way to verify BIP47 signatures           | 8047   |
-| 10   | [BitPlay](https://github.com/aculix/bitplay)         | A seamless way to stream torrents directly in your browser               | 3347   |
+| 10  | [BitPlay](https://github.com/aculix/bitplay)         | A seamless way to stream torrents directly in your browser               | 3347   |
 | 11  | [Bitaxe Webflasher](https://github.com/bitaxeorg/bitaxe-web-flasher) | An easy tool for flashing Bitaxe devices                 | 3640   |
 | 12  | [Black Candy](https://github.com/blackcandy-org/blackcandy) | A self-hosted music streaming server                              | 1980   |
 | 13  | [Blinko](https://github.com/blinko-space/blinko) | An AI-powered hub for your ideas and notes                                   | 1111   |
@@ -110,13 +110,13 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 | 86  | [Lucky](https://github.com/gdy666/lucky)             | An intuitive network management solution with powerful features           | 16601  |
 | 87  | [Mafl](https://github.com/hywax/mafl)                | An intuitive service for organizing your homepage                         | 3069   |
 | 88  | [Mazanoke](https://github.com/civilblur/mazanoke)    | A self-hosted local image optimizer                                       | 3474   |
-| 89  | [Mermaid Live Editor](https://github.com/mermaid-js/mermaid-live-editor) | A live editor for instant Mermaid diagram visualization       | 9084   |
+| 89  | [Mermaid Live Editor](https://github.com/mermaid-js/mermaid-live-editor) | A live editor for instant Mermaid diagram visualization    | 9084   |
 | 90  | [MicroBin](https://github.com/szabodanika/microbin)  | A tiny, self-contained, configurable paste bin and URL shortener          | 8065   |
 | 91  | [Monica](https://github.com/monicahq/monica)         | An open-source CRM for personal relationships                             | 8559   |
 | 92  | [Mullvad Browser](https://github.com/mullvad/mullvad-browser)  | A privacy-focused browser designed to minimize tracking and fingerprinting | 5880   |
 | 93  | [Mumble Server](https://github.com/mumble-voip/mumble) | A low-latency, high-quality voice chat                                  | 8879   |
 | 94  | [MyIP](https://github.com/jason5ng32/MyIP)   | A better IP-Toolbox                                                               | 18966  |
-| 95  | [Neko](https://github.com/m1k1o/neko)        | A self-hosted virtual browser powered by WebRTC                                   | 3880  |
+| 95  | [Neko](https://github.com/m1k1o/neko)        | A self-hosted virtual browser powered by WebRTC                                   | 3880   |
 | 96  | [Nerd*axe Webflasher](https://github.com/shufps/nerdqaxe-web-flasher)   | An easy tool for flashing Nerd*axe devices             | 3639   |
 | 97  | [Netdata](https://github.com/netdata/netdata)        | A high-performance tool for monitoring systems in real time               | 19999  |
 | 98  | [Nexterm](https://github.com/gnmyt/Nexterm)           | An efficient way to manage remote terminals with ease                    | 6989   |
@@ -149,7 +149,7 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 | 125 | [Puter](https://github.com/puterOS/puterOS)          | An advanced, open-source internet operating system                        | 4100   |
 | 126 | [Quake III Arena](https://github.com/id-Software/Quake-III-Arena) | An explosive journey into the heart of '90s gaming madness   | 8789   |
 | 127 | [Quotysco](https://github.com/interaapps/quotysco)   | A creative hub for bloggers, writers, and visionaries                     | 1337   |
-| 128 | [Readeck](https://github.com/readeck/readeck)        | A simple app to save the web's precious content                           | 8858  |
+| 128 | [Readeck](https://github.com/readeck/readeck)        | A simple app to save the web's precious content                           | 8858   |
 | 129 | [Restreamer](https://github.com/datarhei/restreamer)    | An easy to use open source video server                                | 8135   |
 | 130 | [RomM](https://github.com/rommapp/romm)                 | An elegant, powerful, and self-hosted ROM manager for seamless gaming  | 9221   |
 | 131 | [RStudio](https://github.com/rstudio/rstudio)           | An intuitive IDE for data analysis                                     | 8787   |
