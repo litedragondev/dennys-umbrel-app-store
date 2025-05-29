@@ -24,9 +24,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/dennysubke/bip47-verifier
 support: https://github.com/dennysubke/bip47-verifier/issues
 gallery:
-  - https://i.imgur.com/DadZAeX.png
-  - https://i.imgur.com/r5k9yYu.png
-  - https://i.imgur.com/2fts30O.png
+  - https://i.imgur.com/AZci6F3.png
+  - https://i.imgur.com/4lGsevi.png
+  - https://i.imgur.com/YaI40dU.png
 releaseNotes: >-
   This project does not follow semantic versioning and does not maintain a changelog. Changes may occur at any time without formal version tags or release notes.
 dependencies:
