@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    image: stalwartlabs/stalwart:v0.12.2@sha256:a20b499b380d319eb47a3a3ab497f9a6676190b47597bd781972dcf07d3bbb40
+    image: stalwartlabs/stalwart:v0.12.3@sha256:c24e6a79766b281a0df1d5bd6cb4c7f1d9409737b7911e0075f8b244383de2fa
     restart: on-failure
     tty: true
     stdin_open: true
