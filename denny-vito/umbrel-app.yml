@@ -30,9 +30,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/GlobusGroup/vito
 support: https://github.com/GlobusGroup/vito/issues
 gallery:
-  - https://i.imgur.com/3mv7qeO.png
-  - https://i.imgur.com/3mv7qeO.png
-  - https://i.imgur.com/3mv7qeO.png
+  - https://i.imgur.com/WJqNfM9.png
+  - https://i.imgur.com/S3I4PA5.png
+  - https://i.imgur.com/qfnDSm3.png
 releaseNotes: >-
   This update introduces Docker support to simplify self-hosting. Additionally, the backend code was refactored for better maintainability and minor performance optimizations were made.
 dependencies:
