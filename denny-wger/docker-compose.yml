@@ -9,9 +9,9 @@ services:
   web:
     image: wger/server:2.4-dev@sha256:4c2d25734e35c604028cb25d17ee91748713ca9b455b50079ec285d0dd7158ff
     env_file:
-      - ${APP_DATA_DIR}/config/prod.env
+      - ${APP_DATA_DIR}/data/config/prod.env
     volumes:
-      - ${APP_DATA_DIR}/code:/home/wger/src
+      - ${APP_DATA_DIR}/data/wger:/home/wger/src
     restart: on-failure
 
   cache:
