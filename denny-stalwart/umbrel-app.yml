@@ -39,7 +39,7 @@ gallery:
   - https://i.imgur.com/Eb4SdBA.png
   - https://i.imgur.com/ZPPrbIO.png
 releaseNotes: >-
-  Version 0.12.3 introduces breaking changes to the database layout, requiring a migration if upgrading from v0.11.x. It adds support for legacy vCard formats in CardDAV and improves WebDAV autodiscovery with SRV records. Additionally, it fixes issues related to deserializing empty values and handling expired FoundationDB transactions during large blob retrieval.
+  Version 0.12.3 introduces improved changelog tracking by storing vanished IMAP UIDs and WebDAV paths. It also fixes several issues, including an XML CDATA injection vulnerability and problems with CalDAV/CardDAV property tags and macro handling.
 dependencies:
 path: ""
 defaultUsername: ""
