@@ -3,7 +3,7 @@ id: denny-stalwart
 name: Stalwart
 tagline: An all-in-one Mail & Collaboration server
 icon: https://i.imgur.com/Pr0Mauc.png
-category: In Progress
+category: networking
 version: "0.12.2"
 port: 18080
 description: >-
@@ -33,9 +33,11 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/stalwartlabs/stalwart
 support: https://github.com/stalwartlabs/stalwart/issues
 gallery:
-  - https://i.imgur.com/0Stln1i.png
-  - https://i.imgur.com/0Stln1i.png
-  - https://i.imgur.com/0Stln1i.png
+  - https://i.imgur.com/PCCJlCC.png
+  - https://i.imgur.com/l0JiJ8a.png
+  - https://i.imgur.com/ElYh7WO.png
+  - https://i.imgur.com/Eb4SdBA.png
+  - https://i.imgur.com/ZPPrbIO.png
 releaseNotes: >-
   Version 0.12.2 introduces breaking changes to the database layout, requiring a migration if upgrading from v0.11.x. It adds support for legacy vCard formats in CardDAV and improves WebDAV autodiscovery with SRV records. Additionally, it fixes issues related to deserializing empty values and handling expired FoundationDB transactions during large blob retrieval.
 dependencies:
