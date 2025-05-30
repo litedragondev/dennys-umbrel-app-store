@@ -20,6 +20,9 @@ description: >-
 
 
   By choosing Vito, individuals and teams can confidently share secrets in a way that is secure, private, and independent from centralized providers.
+
+
+  ⚠️ Vito requires HTTPS to function properly and ensure that all secrets are transmitted securely. The easiest way to enable HTTPS is by using the Cloudflare app available in the Umbrel App Store. 
 developer: Globus Group 
 website: https://github.com/GlobusGroup/vito
 submitter: dennysubke
@@ -31,7 +34,7 @@ gallery:
   - https://i.imgur.com/3mv7qeO.png
   - https://i.imgur.com/3mv7qeO.png
 releaseNotes: >-
-  This update sets the umask to 0 when creating Unix sockets to ensure proper file permissions. It also updates dependencies and fixes the release build process.
+  This update introduces Docker support to simplify self-hosting. Additionally, the backend code was refactored for better maintainability and minor performance optimizations were made.
 dependencies:
 path: ""
 defaultUsername: ""
