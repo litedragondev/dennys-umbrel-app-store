@@ -1,37 +1,40 @@
 manifestVersion: 1
 id: denny-spotizerr
 name: Spotizerr
-tagline: A simple server for sending and receiving messages
-icon: https://i.imgur.com/HakL1r4.png
-category: Test
-version: "2.6.3"
+tagline: A lossless-powered Spotify music downloader
+icon: https://i.imgur.com/CAtYmhL.png
+category: In Progress
+version: "2.0.1"
 port: 7171
 description: >-
-  Gotify is an open-source, self-hosted notification server designed to enable real-time push notifications across multiple devices. It is a lightweight, efficient system that allows applications to send messages to the Gotify server via a REST API. These messages are then delivered to connected clients, including web browsers, mobile devices, or other systems that support Gotify’s push notification service.
+  💿 Spotizerr is an open-source music downloader designed to allow users to download songs from Spotify and Deezer in lossless quality. It combines the vast music catalog of Spotify with the high audio fidelity provided by Deezer, offering a unique solution for music enthusiasts who want the best of both platforms.
 
 
-  The server is built with Go, known for its high performance and minimal resource consumption, making it suitable for various environments. Gotify’s simple and intuitive web interface allows users to manage notifications, configure applications, and generate API tokens for authentication and access control.
+  The application relies on the deezspot library and operates by first attempting to download tracks from Deezer. If the download fails, it automatically falls back to Spotify, ensuring a high success rate for retrieving music. Users can search for songs either by using the Spotify API directly or by entering Spotify URLs, making it easy to find specific tracks or playlists.
 
 
-  One of the core features of Gotify is its support for real-time notifications using WebSockets. This allows connected clients to receive notifications instantly, ensuring timely delivery of messages. Additionally, Gotify supports categorizing and prioritizing notifications, helping users organize incoming messages based on importance.
+  Spotizerr supports managing multiple downloads simultaneously through a queue system, providing clear progress indicators during the download process. It also offers the ability to manage login credentials for both Spotify and Deezer in an integrated manner, which is necessary because Spotify now requires valid client credentials due to recent changes in their terms of service.
 
 
-  Gotify offers a native Android app, which allows users to receive push notifications directly on their devices. It also provides a web app, ensuring that users can stay updated across different platforms. The system’s architecture is designed for flexibility and scalability, enabling it to handle notifications from a variety of sources, from system alerts and monitoring tools to custom applications.
+  One important consideration when using Spotizerr is security. The application stores login credentials in plaintext, so it is recommended to use it within a secure environment or to add additional layers of protection such as VPNs or authentication gateways when deploying it in open networks.
 
 
-  As a self-hosted solution, Gotify gives users complete control over their notification infrastructure, ensuring privacy and data security. With its open-source nature, it can be customized and extended to suit different use cases. The ability to host notifications locally, without relying on third-party services, makes Gotify an attractive option for those seeking a private, cost-effective solution for delivering real-time notifications.
-developer: Gotify
-website: https://gotify.net/
+  Since its latest update, Spotizerr has adapted to Spotify's new requirements by integrating support for custom client ID and secret keys. The update also introduced configurable options for track numbering and retry mechanisms, enhancing the flexibility and reliability of the downloader.
+
+
+  Spotizerr is licensed under GPL-3.0 and the full source code is available on GitHub, inviting developers and users to contribute or customize the tool according to their needs. Overall, it presents a powerful and flexible way to obtain high-quality music from popular streaming services with ease.
+developer: Xoconoch 
+website: https://github.com/Xoconoch/spotizerr
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/gotify/server
-support: https://github.com/gotify/server/issues
+repo: https://github.com/Xoconoch/spotizerr
+support: https://github.com/Xoconoch/spotizerr/issues
 gallery:
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
+  - https://i.imgur.com/EdmeZKL.png
+  - https://i.imgur.com/EdmeZKL.png
+  - https://i.imgur.com/EdmeZKL.png
 releaseNotes: >-
-  This update sets the umask to 0 when creating Unix sockets to ensure proper file permissions. It also updates dependencies and fixes the release build process.
+  Version 2.0.1 includes a hotpatch that ensures the setup process no longer requires manual creation of directories or config files. These are now automatically generated with default values if they are not found in the expected locations.
 dependencies:
 path: ""
 defaultUsername: ""
