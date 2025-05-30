@@ -3,7 +3,7 @@ id: denny-vito
 name: Vito
 tagline: A secure, self-hosted secret sharing application
 icon: https://i.imgur.com/ocxO8xT.png
-category: In Progress
+category: files & productivity
 version: "0.0.4"
 port: 9998
 description: >-
