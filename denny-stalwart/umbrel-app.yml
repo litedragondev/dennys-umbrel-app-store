@@ -4,7 +4,7 @@ name: Stalwart
 tagline: An all-in-one Mail & Collaboration server
 icon: https://i.imgur.com/Pr0Mauc.png
 category: networking
-version: "0.12.2"
+version: "0.12.3"
 port: 18080
 description: >-
   📮 Stalwart is a modern open-source mail and collaboration server designed to streamline and modernize traditional email infrastructure. Built from the ground up with performance, scalability, and security in mind, it combines a wide range of functionalities into a single efficient platform. Stalwart supports both legacy and modern protocols, making it compatible with a broad range of clients and services. It allows seamless communication through protocols such as IMAP, SMTP, and POP3, while also supporting next-generation standards like JMAP, CalDAV, and CardDAV.
@@ -39,7 +39,7 @@ gallery:
   - https://i.imgur.com/Eb4SdBA.png
   - https://i.imgur.com/ZPPrbIO.png
 releaseNotes: >-
-  Version 0.12.2 introduces breaking changes to the database layout, requiring a migration if upgrading from v0.11.x. It adds support for legacy vCard formats in CardDAV and improves WebDAV autodiscovery with SRV records. Additionally, it fixes issues related to deserializing empty values and handling expired FoundationDB transactions during large blob retrieval.
+  Version 0.12.3 introduces breaking changes to the database layout, requiring a migration if upgrading from v0.11.x. It adds support for legacy vCard formats in CardDAV and improves WebDAV autodiscovery with SRV records. Additionally, it fixes issues related to deserializing empty values and handling expired FoundationDB transactions during large blob retrieval.
 dependencies:
 path: ""
 defaultUsername: ""
