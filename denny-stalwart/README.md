@@ -71,5 +71,9 @@ That’s it – your self-hosted mail and collaboration server is now up and run
 
 ---
 
+![screencast-setup-eaaa5ec230e33ea7507c0db48aca8fc5](https://github.com/user-attachments/assets/b8eeacaa-731f-4ba9-8e4d-aab3b4bb7671)
+
+---
+
 For more information and detailed instructions, please visit the official documentation:  
 https://stalw.art/docs/category/getting-started
