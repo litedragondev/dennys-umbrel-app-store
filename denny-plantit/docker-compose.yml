@@ -4,7 +4,8 @@ services:
   app_proxy:
     environment:
       APP_HOST: denny-plantit_app_1
-      APP_PORT: 3000
+      APP_PORT: 3000  # Achte darauf, dass der Plantit-Container auch wirklich auf Port 3000 lauscht.
+                      # Aktuell wird intern 8080 freigegeben. Möglicherweise musst du APP_PORT: 8080 setzen.
 
   app:
     image: ghcr.io/mdeluise/plant-it-server:0.10.0
@@ -15,21 +16,21 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/upload-dir:/upload-dir
     ports:
-      - 8839:8080
+      - 8839:8080  # Lokaler Port 8839, Container lauscht auf 8080
     environment:
       MYSQL_HOST: db
       MYSQL_USERNAME: root
       MYSQL_PSW: root
       MYSQL_DATABASE: bootdb
-      MYSQL_ROOT_PASSWORD: root
-      JWT_SECRET: putTheSecretHere
+      MYSQL_ROOT_PASSWORD: root  # Dieser Eintrag ist evtl. überflüssig, weil die DB ihn setzt
+      JWT_SECRET: putTheSecretHere  # <-- UNBEDINGT einen sicheren Secret setzen
       JWT_EXP: 1
       USERS_LIMIT: -1
       UPLOAD_DIR: /upload-dir
       API_PORT: 8080
-      FLORACODEX_KEY:
+      FLORACODEX_KEY:   # Optional leer lassen oder setzen
       LOG_LEVEL: DEBUG
-      ALLOWED_ORIGINS: *
+      ALLOWED_ORIGINS: '*'
       CACHE_TTL: 86400
       CACHE_HOST: cache
       CACHE_PORT: 6379
@@ -48,4 +49,3 @@ services:
   cache:
     image: redis:7.2.1
     restart: on-failure
-
