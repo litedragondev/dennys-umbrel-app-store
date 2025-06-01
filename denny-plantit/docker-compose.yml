@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
 
   app:
-    image: msdeluise/plant-it-server:latest
+    image: ghcr.io/mdeluise/plant-it-server:0.10.0
     depends_on:
       - db
       - cache
