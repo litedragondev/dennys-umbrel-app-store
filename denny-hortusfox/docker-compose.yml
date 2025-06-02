@@ -19,6 +19,7 @@ services:
       APP_ADMIN_EMAIL: "admin@admin.com"
       APP_ADMIN_PASSWORD: "umbrel"
       DB_HOST: db
+      DB_PORT: 3306
       DB_DATABASE: hortusfox
       DB_USERNAME: user
       DB_PASSWORD: password
