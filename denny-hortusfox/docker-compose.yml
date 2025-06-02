@@ -27,7 +27,7 @@ services:
       - db
 
   db:
-    image: mariadb
+    image: mariadb:10.11
     restart: on-failure
     environment:
       MYSQL_ROOT_PASSWORD: my-secret-pw
