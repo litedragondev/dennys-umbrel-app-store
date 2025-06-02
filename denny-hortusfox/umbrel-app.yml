@@ -3,7 +3,7 @@ id: denny-hortusfox
 name: HortusFox
 tagline: A collaborative plant tracking and management application
 icon: https://i.imgur.com/67vJT3R.png
-category: In Progress
+category: files & productivity
 version: "5.0"
 port: 8838
 description: >-
@@ -30,9 +30,12 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/danielbrendel/hortusfox-web
 support: https://github.com/danielbrendel/hortusfox-web/issues
 gallery:
-  - https://i.imgur.com/lDvhcSR.png
-  - https://i.imgur.com/lDvhcSR.png
-  - https://i.imgur.com/lDvhcSR.png
+  - https://imgur.com/l22UG9v.png
+  - https://imgur.com/v7IQyz1.png
+  - https://imgur.com/B1dFCh8.png
+  - https://imgur.com/0YafCew.png
+  - https://imgur.com/h7JRzMC.png
+  - https://imgur.com/9FxlSD0.png
 releaseNotes: >-
   Version 5.0 of HortusFox introduces several new features and improvements, including support for Brazilian Portuguese, selectable main gallery photos, and new API endpoints for backups and imports. 
   
