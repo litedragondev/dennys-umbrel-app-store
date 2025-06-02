@@ -1,0 +1,86 @@
+version: '3.7'
+services:
+
+  app_proxy:
+    depends_on:
+      - traefik
+    environment:
+      APP_HOST: denny-headscale_traefik_1
+      APP_PORT: 80
+      PROXY_AUTH_ADD: 'false'
+
+
+  headplane:
+    # https://github.com/tale/headplane/pkgs/container/headplane/versions
+    image: ghcr.io/tale/headplane:0.6.0@sha256:b56ea59fd9424470bdb335f0be5524915fc4c34cc826ce25e583f440e4e56864
+    restart: on-failure
+    volumes:
+      - '${APP_DATA_DIR}/headplane/config/config.yaml:/etc/headplane/config.yaml'
+      # This should match headscale.config_path in your config.yaml
+      - '${APP_DATA_DIR}/config/config.yaml:/etc/headscale/config.yaml'
+      # If using dns.extra_records in Headscale (recommended), this should
+      # match the headscale.dns_records_path in your config.yaml
+      # - '${APP_DATA_DIR}/headscale/config/dns_records.json:/etc/headscale/dns_records.json'
+      # Headplane stores its data in this directory
+      - '${APP_DATA_DIR}/headplane/data:/var/lib/headplane'
+      # If you are using the Docker integration, mount the Docker socket
+      - '/var/run/docker.sock:/var/run/docker.sock:ro'
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.headplane-rtr.rule=Host(`${UMBREL_HOST}`) && PathPrefix(`/admin`)
+      - traefik.http.services.headplane-svc.loadbalancer.server.port=3000
+
+  headscale:
+    # https://github.com/juanfont/headscale/pkgs/container/headscale/versions
+    image: >-
+      ghcr.io/juanfont/headscale:v0.26@sha256:7e6439473c299cde05ff9215fe4e2ae9d83361504876fac0eb8e10f55128838d
+    volumes:
+      - '${APP_DATA_DIR}/config:/etc/headscale'
+      - '${APP_DATA_DIR}/lib:/var/lib/headscale'
+      - '${APP_DATA_DIR}/run:/var/run/headscale'
+    command: serve
+    restart: on-failure
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.headscale-rtr.rule=Host(`${UMBREL_HOST}`) && PathPrefix(`/`)
+      - traefik.http.services.headscale-svc.loadbalancer.server.port=8080
+      # This is needed for Headplane to find it and signal it
+      - me.tale.headplane.target=headscale
+
+  # headscale_ui:
+  #   depends_on:
+  #     - headscale
+  #   # https://github.com/gurucomputing/headscale-ui/pkgs/container/headscale-ui/versions
+  #   image: >-
+  #     ghcr.io/gurucomputing/headscale-ui:2025.05.22@sha256:d5c7d1522e08c04fde00108100602500cc7ed0b52d4adc3a0ef7cea4ffad3e55
+  #   restart: on-failure
+  #   labels:
+  #     - traefik.enable=true
+  #     - traefik.http.routers.headscale-ui-rtr.rule=Host(`${UMBREL_HOST}`) && PathPrefix(`/web`)
+  #     - traefik.http.services.headscale-ui-svc.loadbalancer.server.port=8080
+
+  # headscale_admin:
+  #   depends_on:
+  #     - headscale
+  #   # https://hub.docker.com/r/goodieshq/headscale-admin/tags
+  #   image: >-
+  #     goodieshq/headscale-admin:0.25.6@sha256:d57c1d0e160f5a8aa3082e819050a43c0cd81b572e71da9b1e0cd499d18b48c1
+  #   restart: on-failure
+  #   labels:
+  #     - traefik.enable=true
+  #     - traefik.http.routers.headscale-admin-rtr.rule=Host(`${UMBREL_HOST}`) && PathPrefix(`/ui`)
+  #     - traefik.http.services.headscale-admin-svc.loadbalancer.server.port=80
+
+  traefik:
+    # https://hub.docker.com/_/traefik/tags
+    image: >-
+      traefik:v3.4.1@sha256:cd40ab7bc1f047731d5b22595203812343efcb6538014c4e93221cfc3a77217a
+    restart: on-failure
+    command:
+      - '--api.insecure=true'
+      - '--providers.docker'
+      - '--entrypoints.web.address=:80'
+      - '--entrypoints.websecure.address=:443'
+      - '--global.sendAnonymousUsage=false'
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock:ro'
