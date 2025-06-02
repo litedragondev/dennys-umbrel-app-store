@@ -40,5 +40,5 @@ releaseNotes: >-
   It also fixes issues with weather data display, adds more light level options, and allows removal of individual task items. Additionally, the Docker setup now supports auto-updating Composer dependencies on container start.
 dependencies:
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "admin@admin.com"
+defaultPassword: "umbrel"
