@@ -4,7 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: denny-plantit_app_1
-      APP_PORT: 3000
+      APP_PORT: 8080
 
   app:
     image: ghcr.io/mdeluise/plant-it-server:0.10.0
@@ -15,7 +15,7 @@ services:
     volumes:
       - "./upload-dir:/upload-dir"
     ports:
-      - "8836:8080"
+      - "8836:3000"
     environment:
       # DB
       MYSQL_HOST: db
