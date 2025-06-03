@@ -20,10 +20,10 @@ services:
       # DB
       MYSQL_HOST: db
       MYSQL_PORT: "3306"
-      MYSQL_USERNAME: root
-      MYSQL_PSW: root
+      MYSQL_USERNAME: plantuser
+      MYSQL_PSW: plantpass
       MYSQL_DATABASE: bootdb
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: plantpass
 
       # JWT
       JWT_SECRET: putTheSecretHere
@@ -48,10 +48,10 @@ services:
     volumes:
       - "./db:/var/lib/mysql"
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: plantpass
       MYSQL_DATABASE: bootdb
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
+      MYSQL_USER: plantuser
+      MYSQL_PASSWORD: plantpass
 
 
   cache:
