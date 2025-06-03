@@ -7,13 +7,14 @@ services:
       APP_PORT: 9200
 
   web:
-    image: ${OC_DOCKER_IMAGE:-opencloudeu/opencloud-rolling}:${OC_DOCKER_TAG:-latest}
+    image: opencloudeu/opencloud-rolling:2.3.0
     entrypoint:
       - /bin/sh
     command: ["-c", "opencloud init || true; opencloud server"]
     environment:
       OC_ADD_RUN_SERVICES: ${START_ADDITIONAL_SERVICES}
-      OC_URL: https://${OC_DOMAIN:-cloud.opencloud.test}
+      OC_INSECURE: true
+      OC_URL: http://umbrel-2.local:9200
       OC_LOG_LEVEL: ${LOG_LEVEL:-info}
       OC_LOG_COLOR: "${LOG_PRETTY:-false}"
       OC_LOG_PRETTY: "${LOG_PRETTY:-false}"
