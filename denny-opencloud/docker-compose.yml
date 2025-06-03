@@ -16,7 +16,6 @@ services:
       OC_LOG_COLOR: "${LOG_PRETTY:-false}"
       OC_LOG_PRETTY: "${LOG_PRETTY:-false}"
       PROXY_TLS: "false"
-      OC_INSECURE: "${INSECURE:-false}"
       PROXY_ENABLE_BASIC_AUTH: "${PROXY_ENABLE_BASIC_AUTH:-false}"
       IDM_ADMIN_PASSWORD: "${ADMIN_PASSWORD:-admin}"
       IDM_CREATE_DEMO_USERS: "${DEMO_USERS:-false}"
