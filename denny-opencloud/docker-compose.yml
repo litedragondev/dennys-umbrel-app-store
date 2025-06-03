@@ -8,6 +8,9 @@ services:
 
   web:
     image: opencloudeu/opencloud-rolling:2.3.0
+    entrypoint:
+      - /bin/sh
+    command: ["-c", "opencloud init || true; opencloud server"]
     environment:
       OC_ADD_RUN_SERVICES: ${START_ADDITIONAL_SERVICES}
       OC_INSECURE: true
@@ -36,5 +39,12 @@ services:
       - ${APP_DATA_DIR}/config:/etc/opencloud
       - ${APP_DATA_DIR}/data:/var/lib/opencloud
       - ${APP_DATA_DIR}/apps:/var/lib/opencloud/web/assets/apps
+    logging:
+      driver: ${LOG_DRIVER:-local}
     restart: always
+    networks:
+      - opencloud-net
 
+networks:
+  opencloud-net:
+    driver: bridge
