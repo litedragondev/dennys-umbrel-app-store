@@ -1,0 +1,50 @@
+version: '3.7'
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-opencloud_web_1
+      APP_PORT: 9200
+
+  web:
+    image: ${OC_DOCKER_IMAGE:-opencloudeu/opencloud-rolling}:${OC_DOCKER_TAG:-latest}
+    entrypoint:
+      - /bin/sh
+    command: ["-c", "opencloud init || true; opencloud server"]
+    environment:
+      OC_ADD_RUN_SERVICES: ${START_ADDITIONAL_SERVICES}
+      OC_URL: https://${OC_DOMAIN:-cloud.opencloud.test}
+      OC_LOG_LEVEL: ${LOG_LEVEL:-info}
+      OC_LOG_COLOR: "${LOG_PRETTY:-false}"
+      OC_LOG_PRETTY: "${LOG_PRETTY:-false}"
+      PROXY_TLS: "false"
+      OC_INSECURE: "${INSECURE:-false}"
+      PROXY_ENABLE_BASIC_AUTH: "${PROXY_ENABLE_BASIC_AUTH:-false}"
+      IDM_ADMIN_PASSWORD: "${ADMIN_PASSWORD:-admin}"
+      IDM_CREATE_DEMO_USERS: "${DEMO_USERS:-false}"
+      NOTIFICATIONS_SMTP_HOST: "${SMTP_HOST}"
+      NOTIFICATIONS_SMTP_PORT: "${SMTP_PORT}"
+      NOTIFICATIONS_SMTP_SENDER: "${SMTP_SENDER:-OpenCloud notifications <notifications@${OC_DOMAIN:-cloud.opencloud.test}>}"
+      NOTIFICATIONS_SMTP_USERNAME: "${SMTP_USERNAME}"
+      NOTIFICATIONS_SMTP_PASSWORD: "${SMTP_PASSWORD}"
+      NOTIFICATIONS_SMTP_INSECURE: "${SMTP_INSECURE}"
+      NOTIFICATIONS_SMTP_AUTHENTICATION: "${SMTP_AUTHENTICATION}"
+      NOTIFICATIONS_SMTP_ENCRYPTION: "${SMTP_TRANSPORT_ENCRYPTION:-none}"
+      FRONTEND_ARCHIVER_MAX_SIZE: "10000000000"
+      PROXY_CSP_CONFIG_FILE_LOCATION: /etc/opencloud/csp.yaml
+      OC_PASSWORD_POLICY_BANNED_PASSWORDS_LIST: banned-password-list.txt
+    volumes:
+      - ${APP_DATA_DIR}/config/csp.yaml:/etc/opencloud/csp.yaml
+      - ${APP_DATA_DIR}/config/banned-password-list.txt:/etc/opencloud/banned-password-list.txt
+      - ${APP_DATA_DIR}/config:/etc/opencloud
+      - ${APP_DATA_DIR}/data:/var/lib/opencloud
+      - ${APP_DATA_DIR}/apps:/var/lib/opencloud/web/assets/apps
+    logging:
+      driver: ${LOG_DRIVER:-local}
+    restart: always
+    networks:
+      - opencloud-net
+
+networks:
+  opencloud-net:
+    driver: bridge
