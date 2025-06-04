@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   vert:
-    image: vert-sh/vert:latest
+    image: ghcr.io/vert-sh/vert:latest
     container_name: vert
     environment:
       - PUB_HOSTNAME=vert.sh
