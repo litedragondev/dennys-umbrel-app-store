@@ -4,11 +4,6 @@ services:
   vert:
     image: ghcr.io/vert-sh/vert:latest
     container_name: vert
-    environment:
-      - PUB_HOSTNAME=vert.sh
-      - PUB_PLAUSIBLE_URL=https://plausible.example.com
-      - PUB_ENV=production
-      - PUB_VERTD_URL=https://vertd.vert.sh
     restart: unless-stopped
     ports:
       - "8732:80"
