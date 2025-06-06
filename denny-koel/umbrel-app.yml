@@ -11,6 +11,9 @@ description: >-
 
 
   For those looking for even more functionality, Koel Plus expands on the core experience by introducing cloud storage integration, individual user libraries, and collaborative playlist creation, making it suitable for both personal use and small, private music-sharing setups among friends or family. By self-hosting Koel, users bypass the limitations and data privacy concerns of commercial streaming services, gaining the freedom to curate and enjoy their music collection on their own terms while maintaining full control over their server and data. Whether you’re someone who loves rediscovering old favorites, carefully curates themed playlists, or simply wants an independent, always-accessible music server, Koel provides a versatile, high-performance alternative that balances functionality with an elegant, user-friendly experience.
+
+
+  ⚠️ Please make sure to follow the installation instructions before setting up Koel: https://github.com/dennysubke/dennys-umbrel-app-store/blob/master/denny-koel/README.md
 developer: Phan An
 website: https://koel.dev/
 submitter: dennysubke
