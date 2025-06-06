@@ -8,6 +8,7 @@ if [[ ! -d "${UMBREL_STORAGE_DOWNLOADS_MUSIC_DIR}" ]]; then
 	mkdir -p "${UMBREL_STORAGE_DOWNLOADS_MUSIC_DIR}"
 fi
 
+# Set owner and permissions
 denny-koel_correct_permission() {
 	local -r path="${1}"
 
@@ -15,8 +16,11 @@ denny-koel_correct_permission() {
 		owner=$(stat -c "%u:%g" "${path}")
 
 		if [[ "${owner}" != "${DESIRED_OWNER}" ]]; then
-			chown "${DESIRED_OWNER}" "${path}"
+			chown -R "${DESIRED_OWNER}" "${path}"
 		fi
+
+		# Give read/write/execute permissions to everyone
+		chmod -R 777 "${path}"
 	fi
 }
 
