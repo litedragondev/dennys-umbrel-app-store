@@ -7,7 +7,7 @@ services:
       APP_PORT: 80
 
   server:
-    image: phanan/koel:7.2.0@sha256:f9e23069a4f90b2ac2dfde2ce05e788a1c362d08b0494bc7eaead377572b209f
+    image: phanan/koel:7.5.2@sha256:2c7d7548882d6c737a8d44909a36850b2715c40e6bdf202fd63e2fdeacb4a883
     depends_on:
       - database
     environment:
