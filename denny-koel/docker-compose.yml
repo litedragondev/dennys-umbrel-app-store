@@ -8,6 +8,7 @@ services:
 
   server:
     image: phanan/koel:7.5.2@sha256:2c7d7548882d6c737a8d44909a36850b2715c40e6bdf202fd63e2fdeacb4a883
+    user: 1000:1000
     depends_on:
       - database
     environment:
@@ -24,6 +25,7 @@ services:
 
   database:
     image: postgres:13@sha256:a4c9ad5add8a2e4c86e123bfdaf940d120c0541b782f317ab4e630ab3d391650
+    user: 1000:1000
     volumes:
       - ${APP_DATA_DIR}/data/db:/var/lib/postgresql/data
     environment:
