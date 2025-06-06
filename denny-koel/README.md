@@ -7,7 +7,7 @@ Install **Koel**
 
 ## 2. Open the Terminal  
 Go to:  
-`Koel → Troubleshoot → Terminal → App`
+`Settings → Advanced Settings → Terminal → App`
 
 ## 3. Run the Setup Command  
 In the terminal, run the following command:
