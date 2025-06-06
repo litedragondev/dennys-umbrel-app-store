@@ -23,7 +23,7 @@ This is where Koel will scan and manage your audio files.
 
 For example:
 - `/music`
-- `/data/music`
+- `/downloads/music`
 
 Make sure the folder is accessible by the container and contains supported audio formats like `.mp3`, `.flac`, or `.m4a`.
 
