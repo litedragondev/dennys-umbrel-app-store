@@ -18,7 +18,7 @@ services:
       - DB_PASSWORD=admin
       - DB_DATABASE=koel
     volumes:
-      - ${UMBREL_ROOT}/data/storage/downloads/music:/music:rw
+      - ${APP_DATA_DIR}/music:/music:rw
       - ${APP_DATA_DIR}/data/covers:/var/www/html/public/img/covers:rw
       - ${APP_DATA_DIR}/data/search_index:/var/www/html/storage/search-indexes:rw
 
