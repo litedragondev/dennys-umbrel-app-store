@@ -3,7 +3,7 @@ id: denny-emby
 name: Emby
 tagline: A personal media server
 icon: https://i.imgur.com/OfOArez.png
-category: In Progress
+category: media
 version: "4.9.1.0"
 port: 8097
 description: >-
@@ -27,9 +27,13 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/MediaBrowser/Emby
 support: https://github.com/MediaBrowser/Emby/issues
 gallery:
-  - https://i.imgur.com/RikFIVf.png
-  - https://i.imgur.com/RikFIVf.png
-  - https://i.imgur.com/RikFIVf.png
+  - https://i.imgur.com/Jx26bNJ.png
+  - https://i.imgur.com/vim3opE.png
+  - https://i.imgur.com/MB3tIss.png
+  - https://i.imgur.com/scM1EwK.png
+  - https://i.imgur.com/Uz60KZZ.png
+  - https://i.imgur.com/KcxHUAu.png
+  - https://i.imgur.com/xGyIp5c.png
 releaseNotes: >-
   The Emby 4.9.1.0 introduces numerous enhancements and fixes, including improved performance for library scans, live TV guide updates, and database operations. It brings full .NET 8 and SQLite 3.49.2 support, refined transcoding and subtitle handling, expanded customization options for users and libraries, and new UI features like drag-and-drop reordering and playback tweaks. 
   
