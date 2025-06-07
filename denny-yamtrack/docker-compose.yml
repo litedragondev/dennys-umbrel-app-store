@@ -19,7 +19,7 @@ services:
         REDIS_URL: redis://redis:6379
         TMDB_NSFW: true #or false
         MAL_NSFW: true #or false
-        TZ: Europe/Bucharest
+        TZ: Europe/Berlin
         #TMDB_API: YOUR_TMDB_API_KEY
         #MAL_API: YOUR_MAL_API_KEY
     volumes:
