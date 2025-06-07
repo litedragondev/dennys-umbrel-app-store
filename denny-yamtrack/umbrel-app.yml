@@ -3,7 +3,7 @@ id: denny-yamtrack
 name: Yamtrack
 tagline: A self hosted media tracker
 icon: https://i.imgur.com/iHsO88r.png
-category: In Progress
+category: media
 version: "0.23.1"
 port: 8742
 description: >-
