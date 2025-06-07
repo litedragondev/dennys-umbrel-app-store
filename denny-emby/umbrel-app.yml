@@ -1,38 +1,40 @@
 manifestVersion: 1
 id: denny-emby
 name: Emby
-tagline: A lightweight CalDAV+CardDAV server
+tagline: A personal media server
 icon: https://i.imgur.com/OfOArez.png
 category: In Progress
-version: "0.9.5"
+version: "4.9.1"
 port: 8097
 description: >-
-  🪆 Baikal Server is a lightweight CalDAV and CardDAV server designed for users who want to manage their calendar and contact information securely on their own server. This robust application offers an extensive web interface that simplifies the management of users, address books, and calendars, making it accessible for both beginners and experienced users.
+  ▶️ Emby is a powerful media server software designed to help users manage, stream, and enjoy their personal collection of movies, TV shows, music, photos, and home videos across a wide range of devices. It acts as a central hub for all your digital media, automatically organizing content and enriching it with metadata like cover art, descriptions, and ratings. Emby provides a clean and intuitive interface that allows users to easily browse and play their media, whether they are at home or on the go.
 
 
-  One of the key features of Baikal is its ease of installation and configuration. It requires only a basic PHP-capable server, which means you don’t need extensive technical knowledge to get started. The server supports both MySQL and SQLite databases for data storage, providing flexibility depending on your preferences and needs.
+  The system supports a broad array of devices including smart TVs, smartphones, tablets, computers, streaming boxes, and game consoles. It offers live TV functionality and DVR support if compatible tuner hardware is connected. One of Emby's standout features is its ability to transcode media in real time, adjusting video quality and format to suit the capabilities of the device being used and the speed of the internet connection.
 
 
-  Baikal allows users to seamlessly access their contacts and calendars from any device. It is compatible with a wide range of applications, including iOS, macOS, DAVx5 on Android, Mozilla Thunderbird, and many other CalDAV and CardDAV capable applications. This compatibility ensures that you can sync your data across multiple platforms without any hassle.
+  Emby includes user management tools that allow families to create separate accounts with customized access restrictions and parental controls. This is particularly useful for households with children, as it helps tailor the media experience based on age and content preferences.
 
 
-  In addition to its user-friendly features, Baikal emphasizes privacy and data security. By hosting your calendars and contacts yourself, you maintain full control over your personal information, protecting it from potential breaches and unauthorized access. This is particularly important in an era where data privacy is a growing concern.
+  Emby is often compared to other media servers like Plex and Jellyfin. Unlike Jellyfin, which is fully open source, Emby transitioned to a proprietary license, which led to the creation of Jellyfin as a community-driven fork. Despite this, Emby continues to develop rapidly and maintains a strong user base thanks to its blend of ease of use, rich feature set, and professional polish.
 
 
-  Whether you are an individual looking for a reliable personal organizer or a small team needing a collaborative solution, Baikal Server provides a practical and efficient way to manage your scheduling and contact needs while ensuring your data remains private and secure. With its fast performance and straightforward interface, Baikal is an excellent choice for anyone seeking a self-hosted calendar and contact management solution.
-
-developer: fruux GmbH
-website: https://sabre.io/baikal/
+  In summary, Emby is an ideal solution for anyone looking to take full control of their media library and stream it seamlessly across different devices while maintaining a personalized and private environment.
+developer: Emby LLC
+website: https://emby.media/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/sabre-io/Baikal
-support: https://github.com/sabre-io/Baikal/issues
+repo: https://github.com/MediaBrowser/Emby
+support: https://github.com/MediaBrowser/Emby/issues
 gallery:
   - https://i.imgur.com/RikFIVf.png
   - https://i.imgur.com/RikFIVf.png
   - https://i.imgur.com/RikFIVf.png
 releaseNotes: >-
-  The latest update includes dependency upgrades that enhance compatibility with PHP 8.2 and features the inclusion of sabre/dav version 4.6.0.
+  The Emby 4.9.1.0 introduces numerous enhancements and fixes, including improved performance for library scans, live TV guide updates, and database operations. It brings full .NET 8 and SQLite 3.49.2 support, refined transcoding and subtitle handling, expanded customization options for users and libraries, and new UI features like drag-and-drop reordering and playback tweaks. 
+  
+  
+  This update significantly boosts server stability, efficiency, and the overall user experience.
 dependencies:
 path: ""
 defaultUsername: ""
