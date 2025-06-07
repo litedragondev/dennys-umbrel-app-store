@@ -12,10 +12,10 @@ services:
       - db
     environment:
       DB_CONNECTION: mysql
-      DB_HOST: database
+      DB_HOST: db
       DB_DATABASE: koel
       DB_USERNAME: koel
-      DB_PASSWORD: koelpassword123
+      DB_PASSWORD: koelpassword
       APP_KEY: base64:Ni5+ZF4mJrGc6BQ1ErQ1s9QmpF0j/3e5LzhGkyz9fOE=
     volumes:
       - ${APP_DATA_DIR}/music:/music:rw
@@ -29,6 +29,6 @@ services:
       MYSQL_ROOT_PASSWORD: rootpassword123
       MYSQL_DATABASE: koel
       MYSQL_USER: koel
-      MYSQL_PASSWORD: koelpassword123
+      MYSQL_PASSWORD: koelpassword
     volumes:
       - ${APP_DATA_DIR}/data/db:/var/lib/mysql
