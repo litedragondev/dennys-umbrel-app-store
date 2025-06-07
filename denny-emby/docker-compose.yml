@@ -3,7 +3,7 @@ version: '3.7'
 services:
   app_proxy:
     environment:
-      APP_HOST: server
+      APP_HOST: denny-emby_server_1
       APP_PORT: 8096
 
   server:
@@ -12,8 +12,6 @@ services:
       TZ: Europe/Berlin
       UID: 1000
       GID: 1000
-    ports:
-      - 8098:8096
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/config:/config:rw
