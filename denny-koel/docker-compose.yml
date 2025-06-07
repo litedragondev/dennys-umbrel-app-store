@@ -9,26 +9,24 @@ services:
   server:
     image: phanan/koel:7.5.2@sha256:2c7d7548882d6c737a8d44909a36850b2715c40e6bdf202fd63e2fdeacb4a883
     depends_on:
-      - db
+      - database
     environment:
-      DB_CONNECTION: mysql
-      DB_HOST: db
-      DB_DATABASE: koel
-      DB_USERNAME: koel
-      DB_PASSWORD: koelpassword
-      APP_KEY: base64:Ni5+ZF4mJrGc6BQ1ErQ1s9QmpF0j/3e5LzhGkyz9fOE=
+      - DB_CONNECTION=pgsql
+      - DB_HOST=database
+      - DB_PORT=5432
+      - DB_USERNAME=koel
+      - DB_PASSWORD=admin
+      - DB_DATABASE=koel
     volumes:
       - ${APP_DATA_DIR}/music:/music:rw
       - ${APP_DATA_DIR}/data/covers:/var/www/html/public/img/covers:rw
       - ${APP_DATA_DIR}/data/search_index:/var/www/html/storage/search-indexes:rw
 
-  db:
-    image: mariadb:10.11
-    restart: on-failure
-    environment:
-      MYSQL_ROOT_PASSWORD: rootpassword123
-      MYSQL_DATABASE: koel
-      MYSQL_USER: koel
-      MYSQL_PASSWORD: koelpassword
+  database:
+    image: postgres:13@sha256:a4c9ad5add8a2e4c86e123bfdaf940d120c0541b782f317ab4e630ab3d391650
     volumes:
-      - ${APP_DATA_DIR}/data/db:/var/lib/mysql
+      - ${APP_DATA_DIR}/data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=koel
+      - POSTGRES_USER=koel
+      - POSTGRES_PASSWORD=admin
