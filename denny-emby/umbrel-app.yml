@@ -2,8 +2,8 @@ manifestVersion: 1
 id: denny-emby
 name: Emby
 tagline: A lightweight CalDAV+CardDAV server
-icon: https://i.imgur.com/h3B1DaG.png
-category: test
+icon: https://i.imgur.com/OfOArez.png
+category: In Progress
 version: "0.9.5"
 port: 8097
 description: >-
@@ -28,9 +28,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/sabre-io/Baikal
 support: https://github.com/sabre-io/Baikal/issues
 gallery:
-  - https://i.imgur.com/InOvJFa.png
-  - https://i.imgur.com/hIQ1ZIv.png
-  - https://i.imgur.com/nobRqdE.png
+  - https://i.imgur.com/RikFIVf.png
+  - https://i.imgur.com/RikFIVf.png
+  - https://i.imgur.com/RikFIVf.png
 releaseNotes: >-
   The latest update includes dependency upgrades that enhance compatibility with PHP 8.2 and features the inclusion of sabre/dav version 4.6.0.
 dependencies:
