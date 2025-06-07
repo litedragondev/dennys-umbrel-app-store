@@ -1,38 +1,43 @@
 manifestVersion: 1
 id: denny-projectsend
-name: Projectsend
-tagline: A lightweight CalDAV+CardDAV server
-icon: https://i.imgur.com/h3B1DaG.png
-category: test
-version: "0.9.5"
+name: ProjectSend
+tagline: A private file sharing platform for client access
+icon: https://i.imgur.com/YLl4zWp.png
+category: files & productivity
+version: "r1720"
 port: 8181
 description: >-
-  🪆 Baikal Server is a lightweight CalDAV and CardDAV server designed for users who want to manage their calendar and contact information securely on their own server. This robust application offers an extensive web interface that simplifies the management of users, address books, and calendars, making it accessible for both beginners and experienced users.
+  📤 ProjectSend is a self-hosted file sharing application that allows individuals or organizations to securely upload and share files with clients, teams, or collaborators. It is open-source software released under the GPL v2 license and is designed to be installed on a private server or shared hosting environment, giving users complete control over their data and infrastructure. Unlike commercial file sharing platforms that rely on third-party storage, ProjectSend provides a privacy-focused solution where all files and user data remain on your own server.
 
 
-  One of the key features of Baikal is its ease of installation and configuration. It requires only a basic PHP-capable server, which means you don’t need extensive technical knowledge to get started. The server supports both MySQL and SQLite databases for data storage, providing flexibility depending on your preferences and needs.
+  The core concept behind ProjectSend is to simplify the process of distributing large files to specific users while maintaining a professional and organized interface. Each user has a private login and can only access the files assigned to them. This makes the platform ideal for photographers, designers, agencies, educational institutions, and small to medium-sized businesses that need to share sensitive materials with clients or team members. Administrators can manage user accounts, monitor activity through detailed logs, and control permissions for both uploading and downloading files.
 
 
-  Baikal allows users to seamlessly access their contacts and calendars from any device. It is compatible with a wide range of applications, including iOS, macOS, DAVx5 on Android, Mozilla Thunderbird, and many other CalDAV and CardDAV capable applications. This compatibility ensures that you can sync your data across multiple platforms without any hassle.
+  ProjectSend features a clean and responsive interface that works well on both desktop and mobile devices. It supports custom branding, so users can replace logos and color schemes to match their organization’s identity. The platform is also multilingual and supports many translations contributed by the community. Because it is open-source, developers have the freedom to modify and extend the functionality as needed, making it a flexible solution for a wide range of use cases.
 
 
-  In addition to its user-friendly features, Baikal emphasizes privacy and data security. By hosting your calendars and contacts yourself, you maintain full control over your personal information, protecting it from potential breaches and unauthorized access. This is particularly important in an era where data privacy is a growing concern.
+  The software is continually improved through community involvement, and the source code is available on GitHub. However, because it is self-hosted, users are responsible for maintaining their installation, applying updates, and ensuring server security. This includes staying up to date with patches, especially in light of previously discovered security vulnerabilities that have since been addressed in newer versions.
 
 
-  Whether you are an individual looking for a reliable personal organizer or a small team needing a collaborative solution, Baikal Server provides a practical and efficient way to manage your scheduling and contact needs while ensuring your data remains private and secure. With its fast performance and straightforward interface, Baikal is an excellent choice for anyone seeking a self-hosted calendar and contact management solution.
+  ProjectSend is a focused alternative to larger collaboration platforms. While it does not offer real-time collaboration tools or integrated messaging, it excels at what it was built for: fast, secure, and controlled file sharing between users. For anyone looking for a private and customizable solution to replace commercial cloud storage services for client-facing file distribution, ProjectSend is a powerful and professional choice.
 
-developer: fruux GmbH
-website: https://sabre.io/baikal/
+
+  ⚠️ Configure the database with the following settings: host set to db, database name projectsend, username psuser, password pspassword, and table prefix tbl_.
+developer: ProjectSend
+website: https://www.projectsend.org/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/sabre-io/Baikal
-support: https://github.com/sabre-io/Baikal/issues
+repo: https://github.com/projectsend/projectsend
+support: https://github.com/projectsend/projectsend/issues
 gallery:
-  - https://i.imgur.com/InOvJFa.png
-  - https://i.imgur.com/hIQ1ZIv.png
-  - https://i.imgur.com/nobRqdE.png
+  - https://i.imgur.com/sXd4DOF.png
+  - https://i.imgur.com/JyiUs0C.png
+  - https://i.imgur.com/2I1UONV.png
+  - https://i.imgur.com/Oj6BSdE.png
+  - https://i.imgur.com/BBKMXsE.png
+  - https://i.imgur.com/EQbqojh.png
 releaseNotes: >-
-  The latest update includes dependency upgrades that enhance compatibility with PHP 8.2 and features the inclusion of sabre/dav version 4.6.0.
+  The latest ProjectSend update (r1720) introduces highly requested folders and subfolders with drag-and-drop rearrangement and breadcrumb navigation. It also adds features like showing image dimensions, support for SVG branding images, improved file management options, SMTP environment variable support, and multiple bug fixes including PHP 8 warnings and 2FA validation. Admin pages have been improved for session handling, and security updates address vulnerabilities and dependency upgrades.
 dependencies:
 path: ""
 defaultUsername: ""
