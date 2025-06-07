@@ -16,7 +16,7 @@ services:
       DB_DATABASE: koel
       DB_USERNAME: koel
       DB_PASSWORD: koelpassword123
-      APP_KEY: X/KU/6FF/qq6X4SsRBkmLOAjDFOkw76P7qtkO7owtfY=
+      APP_KEY: base64:Ni5+ZF4mJrGc6BQ1ErQ1s9QmpF0j/3e5LzhGkyz9fOE=
     volumes:
       - ${APP_DATA_DIR}/music:/music:rw
       - ${APP_DATA_DIR}/data/covers:/var/www/html/public/img/covers:rw
