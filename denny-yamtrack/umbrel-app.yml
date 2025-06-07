@@ -24,9 +24,12 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/FuzzyGrim/Yamtrack
 support: https://github.com/FuzzyGrim/Yamtrack/issues
 gallery:
-  - https://i.imgur.com/PlNJCNe.png
-  - https://i.imgur.com/PlNJCNe.png
-  - https://i.imgur.com/PlNJCNe.png
+  - https://i.imgur.com/1hYjNNo.png
+  - https://i.imgur.com/HaT1tgl.png
+  - https://i.imgur.com/OhBXJDf.png
+  - https://i.imgur.com/PLNypgQ.png
+  - https://i.imgur.com/DmRUjSi.png
+  - https://i.imgur.com/zqjPIVV.png
 releaseNotes: >-
   Version 0.23.1 improves book search results from OpenLibrary for specific editions and fixes an issue with Trakt imports failing when a season is not found in TMDB.
 dependencies:
