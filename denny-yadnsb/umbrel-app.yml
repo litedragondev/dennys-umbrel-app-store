@@ -1,38 +1,34 @@
 manifestVersion: 1
 id: denny-yadnsb
 name: YaDNSb
-tagline: A lightweight CalDAV+CardDAV server
-icon: https://i.imgur.com/h3B1DaG.png
-category: test
-version: "0.9.5"
+tagline: An advanced tool for testing DNS performance
+icon: https://i.imgur.com/9TzUVpe.png
+category: In Progress
+version: "0.0.6"
 port: 3933
 description: >-
-  🪆 Baikal Server is a lightweight CalDAV and CardDAV server designed for users who want to manage their calendar and contact information securely on their own server. This robust application offers an extensive web interface that simplifies the management of users, address books, and calendars, making it accessible for both beginners and experienced users.
+  YaDNSb, short for Yet Another DNS Benchmark, is an open source tool designed to measure and compare the performance of various DNS servers and protocols. It was developed to provide users with an accessible and reliable way to analyze how different DNS configurations behave in real-world scenarios. By simulating typical DNS queries and tracking response times, YaDNSb enables users to assess the speed and efficiency of DNS servers using modern encrypted DNS protocols such as DNS over HTTPS, DNS over TLS, and DNS over QUIC, alongside traditional DNS over UDP or TCP.
 
 
-  One of the key features of Baikal is its ease of installation and configuration. It requires only a basic PHP-capable server, which means you don’t need extensive technical knowledge to get started. The server supports both MySQL and SQLite databases for data storage, providing flexibility depending on your preferences and needs.
+  The project is aimed at developers, network administrators, and privacy-conscious users who want to evaluate the impact of different DNS protocols on performance. It is particularly useful for those who are exploring alternatives to their default DNS provider and wish to make informed decisions based on measurable data. The tool is available as a Docker container, making deployment and usage straightforward on a wide range of systems.
 
 
-  Baikal allows users to seamlessly access their contacts and calendars from any device. It is compatible with a wide range of applications, including iOS, macOS, DAVx5 on Android, Mozilla Thunderbird, and many other CalDAV and CardDAV capable applications. This compatibility ensures that you can sync your data across multiple platforms without any hassle.
+  YaDNSb comes with a clean web interface where results are visualized in an intuitive way, allowing users to see which servers respond fastest under different conditions. A public instance is also available online for those who want to try the tool without hosting it themselves. The project is licensed under the GPL version 3 and is actively maintained, with contributions welcome from the open source community.
 
 
-  In addition to its user-friendly features, Baikal emphasizes privacy and data security. By hosting your calendars and contacts yourself, you maintain full control over your personal information, protecting it from potential breaches and unauthorized access. This is particularly important in an era where data privacy is a growing concern.
-
-
-  Whether you are an individual looking for a reliable personal organizer or a small team needing a collaborative solution, Baikal Server provides a practical and efficient way to manage your scheduling and contact needs while ensuring your data remains private and secure. With its fast performance and straightforward interface, Baikal is an excellent choice for anyone seeking a self-hosted calendar and contact management solution.
-
-developer: fruux GmbH
-website: https://sabre.io/baikal/
+  In a time where DNS encryption and privacy are becoming increasingly important, YaDNSb serves as a practical resource for understanding and optimizing DNS performance using both classic and modern protocols.
+developer: Renan Altendorf 
+website: https://github.com/altendorfme/yadnsb
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/sabre-io/Baikal
-support: https://github.com/sabre-io/Baikal/issues
+repo: https://github.com/altendorfme/yadnsb
+support: https://github.com/altendorfme/yadnsb/issues
 gallery:
-  - https://i.imgur.com/InOvJFa.png
-  - https://i.imgur.com/hIQ1ZIv.png
-  - https://i.imgur.com/nobRqdE.png
+  - https://i.imgur.com/c1yt7CJ.png
+  - https://i.imgur.com/c1yt7CJ.png
+  - https://i.imgur.com/c1yt7CJ.png
 releaseNotes: >-
-  The latest update includes dependency upgrades that enhance compatibility with PHP 8.2 and features the inclusion of sabre/dav version 4.6.0.
+  Release v0.0.6 introduces server name logging and updates the test domains using OpenRank's top list. Additionally, the tool now supports multiple languages.
 dependencies:
 path: ""
 defaultUsername: ""
