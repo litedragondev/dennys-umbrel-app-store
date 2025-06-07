@@ -7,7 +7,7 @@ category: In Progress
 version: "0.0.6"
 port: 3933
 description: >-
-  YaDNSb, short for Yet Another DNS Benchmark, is an open source tool designed to measure and compare the performance of various DNS servers and protocols. It was developed to provide users with an accessible and reliable way to analyze how different DNS configurations behave in real-world scenarios. By simulating typical DNS queries and tracking response times, YaDNSb enables users to assess the speed and efficiency of DNS servers using modern encrypted DNS protocols such as DNS over HTTPS, DNS over TLS, and DNS over QUIC, alongside traditional DNS over UDP or TCP.
+  YaDNSb, short for Yet another DNS Benchmark, is an open source tool designed to measure and compare the performance of various DNS servers and protocols. It was developed to provide users with an accessible and reliable way to analyze how different DNS configurations behave in real-world scenarios. By simulating typical DNS queries and tracking response times, YaDNSb enables users to assess the speed and efficiency of DNS servers using modern encrypted DNS protocols such as DNS over HTTPS, DNS over TLS, and DNS over QUIC, alongside traditional DNS over UDP or TCP.
 
 
   The project is aimed at developers, network administrators, and privacy-conscious users who want to evaluate the impact of different DNS protocols on performance. It is particularly useful for those who are exploring alternatives to their default DNS provider and wish to make informed decisions based on measurable data. The tool is available as a Docker container, making deployment and usage straightforward on a wide range of systems.
