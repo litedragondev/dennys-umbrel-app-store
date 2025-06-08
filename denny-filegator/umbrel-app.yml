@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: denny-filegator
 name: FileGator 
-tagline: A lightweight CalDAV+CardDAV server
+tagline: An application for managing files and folders
 icon: https://i.imgur.com/uamUiRU.png
 category: In Progress
 version: "7.13.0"
