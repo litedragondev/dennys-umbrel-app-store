@@ -1,39 +1,35 @@
 manifestVersion: 1
 id: denny-filegator
-name: Filegator
+name: FileGator 
 tagline: A lightweight CalDAV+CardDAV server
-icon: https://i.imgur.com/h3B1DaG.png
-category: test
-version: "0.9.5"
+icon: https://i.imgur.com/uamUiRU.png
+category: In Progress
+version: "7.13.0"
 port: 8434
 description: >-
-  🪆 Baikal Server is a lightweight CalDAV and CardDAV server designed for users who want to manage their calendar and contact information securely on their own server. This robust application offers an extensive web interface that simplifies the management of users, address books, and calendars, making it accessible for both beginners and experienced users.
+  🐊 FileGator is a self-hosted web application designed for managing files and folders through a browser-based interface. It offers a clean and intuitive user experience that allows individuals or teams to securely upload, download, organize, and share files without relying on third-party cloud storage providers. FileGator is built with simplicity and privacy in mind, making it especially attractive for users who want full control over their data and infrastructure.
 
 
-  One of the key features of Baikal is its ease of installation and configuration. It requires only a basic PHP-capable server, which means you don’t need extensive technical knowledge to get started. The server supports both MySQL and SQLite databases for data storage, providing flexibility depending on your preferences and needs.
+  FileGator supports a variety of file operations including uploading large files, extracting and compressing archives, renaming, moving, deleting, and previewing files directly in the browser. It also features chunked uploads to handle large files efficiently and ensures that each user can only interact with the directories they are authorized to access. This makes the tool especially useful in settings where privacy and file integrity are priorities.
 
 
-  Baikal allows users to seamlessly access their contacts and calendars from any device. It is compatible with a wide range of applications, including iOS, macOS, DAVx5 on Android, Mozilla Thunderbird, and many other CalDAV and CardDAV capable applications. This compatibility ensures that you can sync your data across multiple platforms without any hassle.
+  Security is a core focus of FileGator. It includes measures such as restricting access to specific folders, disabling the execution of uploaded scripts, and offering encryption options for sensitive file transfers. Users interact with the system using a modern and responsive interface that works well across devices and screen sizes.
 
 
-  In addition to its user-friendly features, Baikal emphasizes privacy and data security. By hosting your calendars and contacts yourself, you maintain full control over your personal information, protecting it from potential breaches and unauthorized access. This is particularly important in an era where data privacy is a growing concern.
-
-
-  Whether you are an individual looking for a reliable personal organizer or a small team needing a collaborative solution, Baikal Server provides a practical and efficient way to manage your scheduling and contact needs while ensuring your data remains private and secure. With its fast performance and straightforward interface, Baikal is an excellent choice for anyone seeking a self-hosted calendar and contact management solution.
-
-developer: fruux GmbH
-website: https://sabre.io/baikal/
+  FileGator is a practical solution for schools, freelancers, small businesses, or anyone needing a private and reliable file management platform. Its minimalistic design does not compromise on features, and its self-contained nature makes it easy to maintain. Overall, FileGator provides an efficient way to manage files online while ensuring that users remain in complete control of their data.
+developer: FileGator 
+website: https://filegator.io/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/sabre-io/Baikal
-support: https://github.com/sabre-io/Baikal/issues
+repo: https://github.com/filegator/filegator
+support: https://github.com/filegator/filegator/issues
 gallery:
-  - https://i.imgur.com/InOvJFa.png
-  - https://i.imgur.com/hIQ1ZIv.png
-  - https://i.imgur.com/nobRqdE.png
+  - https://i.imgur.com/x9vSNj0.png
+  - https://i.imgur.com/x9vSNj0.png
+  - https://i.imgur.com/x9vSNj0.png
 releaseNotes: >-
-  The latest update includes dependency upgrades that enhance compatibility with PHP 8.2 and features the inclusion of sabre/dav version 4.6.0.
+  Version 7.13.0 of FileGator introduces several improvements, including a new column for displaying chmod permissions, external SCSS theme files, and configurable pagination. It also fixes an issue where all images were being loaded at once when opening the gallery view.
 dependencies:
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "admin"
+defaultPassword: "admin123"
