@@ -1,38 +1,42 @@
 manifestVersion: 1
 id: denny-timetagger
-name: Timetagger
-tagline: A lightweight CalDAV+CardDAV server
-icon: https://i.imgur.com/h3B1DaG.png
-category: test
-version: "0.9.5"
+name: TimeTagger
+tagline: An open source time tracker
+icon: https://i.imgur.com/LPCm8KZ.png
+category: files & productivity
+version: "24.12.2"
 port: 8905
 description: >-
-  🪆 Baikal Server is a lightweight CalDAV and CardDAV server designed for users who want to manage their calendar and contact information securely on their own server. This robust application offers an extensive web interface that simplifies the management of users, address books, and calendars, making it accessible for both beginners and experienced users.
+  ⏱️ TimeTagger is a modern and privacy-friendly time tracking application designed for individuals and freelancers who value simplicity, control, and flexibility. It allows users to log their activities through a tag-based system instead of rigid project structures. This tag approach offers an intuitive and adaptable way to categorize time entries, making it easy to track what you work on throughout the day.
 
 
-  One of the key features of Baikal is its ease of installation and configuration. It requires only a basic PHP-capable server, which means you don’t need extensive technical knowledge to get started. The server supports both MySQL and SQLite databases for data storage, providing flexibility depending on your preferences and needs.
+  At the core of TimeTagger is a visually rich and interactive timeline interface. Users can scroll through their time entries with natural gestures and see at a glance how their time is distributed across various tasks and activities. The timeline is not only a visual aid but also an editing surface, allowing users to quickly adjust, move, or delete entries without switching views.
 
 
-  Baikal allows users to seamlessly access their contacts and calendars from any device. It is compatible with a wide range of applications, including iOS, macOS, DAVx5 on Android, Mozilla Thunderbird, and many other CalDAV and CardDAV capable applications. This compatibility ensures that you can sync your data across multiple platforms without any hassle.
+  TimeTagger supports both short-term focus techniques and long-term time management. Built-in tools such as a Pomodoro timer help users maintain concentration during work sessions, while goal tracking features encourage consistent progress toward daily, weekly, or monthly targets. The application also includes export options, enabling users to generate reports in PDF or CSV format for personal reflection or client invoicing.
 
 
-  In addition to its user-friendly features, Baikal emphasizes privacy and data security. By hosting your calendars and contacts yourself, you maintain full control over your personal information, protecting it from potential breaches and unauthorized access. This is particularly important in an era where data privacy is a growing concern.
+  One of the standout features of TimeTagger is its strong focus on privacy and transparency. It is fully open source and released under the GPL license. Users can choose to host the app themselves, either locally or on their own server using Docker or a Python environment. For those who prefer convenience, TimeTagger also offers a hosted version with an affordable pricing model and no invasive tracking. Authentication is handled through Auth0, and the hosted service uses no cookies unless required for login.
 
 
-  Whether you are an individual looking for a reliable personal organizer or a small team needing a collaborative solution, Baikal Server provides a practical and efficient way to manage your scheduling and contact needs while ensuring your data remains private and secure. With its fast performance and straightforward interface, Baikal is an excellent choice for anyone seeking a self-hosted calendar and contact management solution.
+  The backend is written in Python, while the frontend uses a lightweight JavaScript framework called PScript. Together, they deliver a smooth and responsive experience across platforms. TimeTagger has gained a loyal following among developers, digital nomads, and privacy-conscious professionals who appreciate its independence from large commercial platforms.
 
-developer: fruux GmbH
-website: https://sabre.io/baikal/
+
+  In summary, TimeTagger combines a clean user experience with a deep respect for user autonomy. It is an ideal solution for people who want to track their time in a meaningful way, without sacrificing privacy or relying on overly complex tools.
+developer: Almar Klein
+website: https://timetagger.app/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/sabre-io/Baikal
-support: https://github.com/sabre-io/Baikal/issues
+repo: https://github.com/almarklein/timetagger/
+support: https://github.com/almarklein/timetagger//issues
 gallery:
-  - https://i.imgur.com/InOvJFa.png
-  - https://i.imgur.com/hIQ1ZIv.png
-  - https://i.imgur.com/nobRqdE.png
+  - https://i.imgur.com/hnsiXzQ.png
+  - https://i.imgur.com/V2NUVob.png
+  - https://i.imgur.com/AuOV9iT.png
+  - https://i.imgur.com/dEDUjOC.png
+  - https://i.imgur.com/NbqyPe9.png
 releaseNotes: >-
-  The latest update includes dependency upgrades that enhance compatibility with PHP 8.2 and features the inclusion of sabre/dav version 4.6.0.
+  TimeTagger version 24.12.2 is a security update that adds a localhost authentication check and changes the default server binding from 0.0.0.0:80 to 127.0.0.1:8080.
 dependencies:
 path: ""
 defaultUsername: ""
