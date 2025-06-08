@@ -11,7 +11,7 @@ services:
       APP_PORT: 3000
 
   web:
-    image: flomp/wanderer-web
+    image: flomp/wanderer-web:v0.17.0-beta@sha256:41a9ca330bfc6766fafa785566e09a10b884b5be391db855c66ac9dfaa49e1d5
     depends_on:
       search:
         condition: service_healthy
@@ -33,7 +33,7 @@ services:
     restart: on-failure
 
   search:
-    image: getmeili/meilisearch:v1.11.3
+    image: getmeili/meilisearch:v1.14.0@sha256:8cd411ba5d9ec2dfce02e241305208eebacce0fd74a72bece21cadd03dc566ce
     environment:
       <<: *cenv
       MEILI_NO_ANALYTICS: true
@@ -50,7 +50,7 @@ services:
       timeout: 10s
 
   db:
-    image: flomp/wanderer-db
+    image: flomp/wanderer-db:v0.17.0-beta@sha256:ac7ca89696bd8ce17d8b1bbce7b87382ee8d813154b167151fc25e2eb1224628
     depends_on:
       search:
         condition: service_healthy
