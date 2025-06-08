@@ -1,38 +1,43 @@
 manifestVersion: 1
 id: denny-webtor
 name: Webtor
-tagline: A lightweight CalDAV+CardDAV server
-icon: https://i.imgur.com/h3B1DaG.png
-category: test
-version: "0.9.5"
+tagline: An instant torrent stream in your browser
+icon: https://i.imgur.com/IsJkn1w.png
+category: media
+version: "1.0.4"
 port: 8488
 description: >-
-  🪆 Baikal Server is a lightweight CalDAV and CardDAV server designed for users who want to manage their calendar and contact information securely on their own server. This robust application offers an extensive web interface that simplifies the management of users, address books, and calendars, making it accessible for both beginners and experienced users.
+  🎬 Webtor is a web-based torrent streaming and downloading service that allows users to interact with torrent files directly through their browser without the need for a traditional torrent client. It functions as a cloud-based torrent engine that fetches, processes, and delivers torrent content entirely server-side. Users can upload a .torrent file or paste a magnet link, and Webtor will download and convert the content for immediate playback or download.
 
 
-  One of the key features of Baikal is its ease of installation and configuration. It requires only a basic PHP-capable server, which means you don’t need extensive technical knowledge to get started. The server supports both MySQL and SQLite databases for data storage, providing flexibility depending on your preferences and needs.
+  One of the main features of Webtor is its ability to stream video and audio files directly in the browser using adaptive HLS technology. Supported formats include common video and audio containers like MP4, MKV, AVI, WEBM, MP3, and FLAC. This streaming begins almost instantly and continues while the file is still being downloaded, providing a seamless media experience. For users who prefer to download the content instead of streaming it, Webtor offers the option to download individual files or the entire torrent as a ZIP archive.
 
 
-  Baikal allows users to seamlessly access their contacts and calendars from any device. It is compatible with a wide range of applications, including iOS, macOS, DAVx5 on Android, Mozilla Thunderbird, and many other CalDAV and CardDAV capable applications. This compatibility ensures that you can sync your data across multiple platforms without any hassle.
+  Webtor emphasizes user privacy and ease of use. Because all torrenting activity occurs on Webtor’s servers, the user’s IP address is never exposed to the peer-to-peer network. All traffic is encrypted using HTTPS, and from an internet service provider’s perspective, the interaction looks like ordinary web browsing. This offers an added layer of privacy and reduces the need for VPNs or special anonymizing tools.
 
 
-  In addition to its user-friendly features, Baikal emphasizes privacy and data security. By hosting your calendars and contacts yourself, you maintain full control over your personal information, protecting it from potential breaches and unauthorized access. This is particularly important in an era where data privacy is a growing concern.
+  Technically, Webtor is built using a modern microservices architecture and is fully open-source under the MIT license. Its backend is written primarily in Go and relies on popular technologies such as FFmpeg for media transcoding and Kubernetes for container orchestration. It uses the anacrolix/torrent library to fetch torrents and perform sequential downloading to allow streaming before the entire file is downloaded.
 
 
-  Whether you are an individual looking for a reliable personal organizer or a small team needing a collaborative solution, Baikal Server provides a practical and efficient way to manage your scheduling and contact needs while ensuring your data remains private and secure. With its fast performance and straightforward interface, Baikal is an excellent choice for anyone seeking a self-hosted calendar and contact management solution.
+  Webtor also provides a Chrome browser extension that enables users to handle magnet links directly in the browser. Developers and advanced users can self-host the entire platform using Docker and Kubernetes, and there is a public SDK available for integration into other projects.
 
-developer: fruux GmbH
-website: https://sabre.io/baikal/
+
+  Despite its technical robustness and open nature, users should be cautious about the content they choose to access, especially considering the legal and ethical implications of torrenting copyrighted material. Some online safety platforms have flagged Webtor as medium-risk, mainly due to its association with file sharing and the potential for abuse. However, Webtor has been active for several years, uses standard security practices like SSL encryption and domain protection via Cloudflare, and is generally considered legitimate by the open-source community.
+
+
+  In summary, Webtor offers a modern, privacy-conscious way to stream or download torrents directly in the browser. It is ideal for users who want quick access to media content without exposing their identity within torrent networks.
+developer: Pavel Tatarskiy
+website: https://webtor.io/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/sabre-io/Baikal
-support: https://github.com/sabre-io/Baikal/issues
+repo: https://github.com/webtor-io/self-hosted
+support: https://github.com/webtor-io/self-hosted/issues
 gallery:
-  - https://i.imgur.com/InOvJFa.png
-  - https://i.imgur.com/hIQ1ZIv.png
-  - https://i.imgur.com/nobRqdE.png
+  - https://i.imgur.com/zbaUMZP.png
+  - https://i.imgur.com/vJrqOO6.png
+  - https://i.imgur.com/ihhQVcy.png
 releaseNotes: >-
-  The latest update includes dependency upgrades that enhance compatibility with PHP 8.2 and features the inclusion of sabre/dav version 4.6.0.
+  Version 1.0.4 focuses on increased stability.
 dependencies:
 path: ""
 defaultUsername: ""
