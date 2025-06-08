@@ -18,6 +18,8 @@ services:
       - GALLERY_API_SERVER_TIMEOUT=60
       - GALLERY_OPEN_BROWSER=false
       - GALLERY_WATCH_POLL_INTERVAL=300
+      - GALLERY_BASE_DIR=data
+      - GALLERY_CONFIG_DIR=data/config
     volumes:
       - ${APP_DATA_DIR}/data/hg_data:/data
       - ${APP_DATA_DIR}/data/pictures:/data/Pictures
