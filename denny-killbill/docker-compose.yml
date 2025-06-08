@@ -22,9 +22,5 @@ services:
       - KAUI_KILLBILL_URL=http://killbill:8080
   db:
     image: killbill/mariadb:0.24
-    volumes:
-      - type: volume
-        source: db
-        target: /var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=killbill
