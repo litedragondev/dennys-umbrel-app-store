@@ -1,5 +1,9 @@
 version: '3.7'
 
+x-common-env: &cenv
+  MEILI_URL: http://search:7700
+  MEILI_MASTER_KEY: vODkljPcfFANYNepCHyDyGjzAMPcdHnrb6X5KyXQPWo
+
 services:
   app_proxy:
     environment:
@@ -28,11 +32,6 @@ services:
       - ${APP_DATA_DIR}/data/uploads:/app/uploads
     restart: on-failure
 
-x-common-env: &cenv
-  MEILI_URL: http://search:7700
-  MEILI_MASTER_KEY: vODkljPcfFANYNepCHyDyGjzAMPcdHnrb6X5KyXQPWo
-
-services:
   search:
     image: getmeili/meilisearch:v1.11.3
     environment:
@@ -49,6 +48,7 @@ services:
       retries: 10
       start_period: 20s
       timeout: 10s
+
   db:
     image: flomp/wanderer-db
     depends_on:
