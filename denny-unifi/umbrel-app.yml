@@ -14,6 +14,18 @@ description: >-
 
 
   One of the key benefits of the UniFi Network Server is its user-friendly interface, which simplifies network management tasks. It provides a streamlined approach for both experienced network administrators and those new to managing network infrastructures. The platform can be deployed either on local servers or through cloud-based solutions, offering flexibility depending on the needs of the organization. Overall, the UniFi Network Server is an essential tool for businesses and individuals looking to manage and optimize their UniFi-based network infrastructure efficiently.
+
+
+  ⚙️ The UniFi Network Application requires several ports for proper functionality:
+
+
+  Port 8893 is used for the web interface of the controller and is only accessible via HTTPS. Port 3478/UDP is the STUN port, which allows devices outside the local network to connect. Port 10001/UDP is required for discovering UniFi access points within the local network. Port 8080 is used for communication between the controller and UniFi devices.
+
+
+  Port 1900/UDP is necessary when the “Make controller discoverable on L2 network” option is enabled. Ports 8843 and 8880 are used for the UniFi guest portal — 8893 for HTTPS redirects and 8892 for HTTP redirects. Port 6789 enables throughput testing via the UniFi mobile app. Finally, port 5514/UDP is used to send remote syslog data to external logging systems.
+
+
+  ⚠️ Important: The web interface only works with TLS (HTTPS). Access over plain HTTP is not possible. Reverse proxies or Cloudflare Tunnel setups must forward HTTPS traffic directly to port 8893.
 developer: Ubiquiti Inc.
 website: https://ui.com/eu/en
 submitter: dennysubke
