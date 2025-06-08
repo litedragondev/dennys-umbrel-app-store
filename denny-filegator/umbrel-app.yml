@@ -3,7 +3,7 @@ id: denny-filegator
 name: FileGator 
 tagline: An application for managing files and folders
 icon: https://i.imgur.com/uamUiRU.png
-category: In Progress
+category: files & productivity
 version: "7.13.0"
 port: 8434
 description: >-
@@ -24,9 +24,11 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/filegator/filegator
 support: https://github.com/filegator/filegator/issues
 gallery:
-  - https://i.imgur.com/x9vSNj0.png
-  - https://i.imgur.com/x9vSNj0.png
-  - https://i.imgur.com/x9vSNj0.png
+  - https://i.imgur.com/aIqPLSE.png
+  - https://i.imgur.com/2Q5E8zv.png
+  - https://i.imgur.com/70ACnOx.png
+  - https://i.imgur.com/u6ORBCj.png
+  - https://i.imgur.com/PJk4PCU.png
 releaseNotes: >-
   Version 7.13.0 of FileGator introduces several improvements, including a new column for displaying chmod permissions, external SCSS theme files, and configurable pagination. It also fixes an issue where all images were being loaded at once when opening the gallery view.
 dependencies:
