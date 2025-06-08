@@ -7,7 +7,7 @@ sources:
     # Hier liegt dein Pictures-Volume: ${APP_DATA_DIR}/data/pictures ist im Container /data/Pictures
 
 server:
-  port: 3000
+  port: 3334
   host: '0.0.0.0'
   openBrowser: false
 
