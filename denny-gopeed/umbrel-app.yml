@@ -3,7 +3,7 @@ id: denny-gopeed
 name: Gopeed
 tagline: A modern download manager
 icon: https://i.imgur.com/QhdDkla.png
-category: files & productivity
+category: media
 version: "1.6.11"
 port: 9999
 description: >-
