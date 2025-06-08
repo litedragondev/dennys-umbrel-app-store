@@ -1,38 +1,35 @@
 manifestVersion: 1
 id: denny-wanderer
 name: Wanderer
-tagline: A lightweight CalDAV+CardDAV server
-icon: https://i.imgur.com/h3B1DaG.png
-category: test
-version: "0.9.5"
+tagline: A self-hosted trail database
+icon: https://i.imgur.com/TM3MZUK.png
+category: files & productivity
+version: "0.17.0"
 port: 3111
 description: >-
-  🪆 Baikal Server is a lightweight CalDAV and CardDAV server designed for users who want to manage their calendar and contact information securely on their own server. This robust application offers an extensive web interface that simplifies the management of users, address books, and calendars, making it accessible for both beginners and experienced users.
+  🗺️ Wanderer is a self-hosted, open-source platform designed for outdoor enthusiasts who want to manage, explore, and share hiking and biking routes on their own terms. It provides a clean and modern interface for uploading GPX files, drawing new routes on an interactive map, and organizing them with detailed metadata such as difficulty, duration, and elevation gain. Wanderer supports full-text search and powerful filtering to help users find exactly the route they are looking for based on various criteria like region, length, or type of activity.
 
 
-  One of the key features of Baikal is its ease of installation and configuration. It requires only a basic PHP-capable server, which means you don’t need extensive technical knowledge to get started. The server supports both MySQL and SQLite databases for data storage, providing flexibility depending on your preferences and needs.
+  The app places a strong emphasis on user privacy and data ownership, offering a fully offline experience that can be run on your own server without any third-party involvement. It uses open map layers from providers like OpenStreetMap and allows for GPX export so routes can be used with common navigation devices.
 
 
-  Baikal allows users to seamlessly access their contacts and calendars from any device. It is compatible with a wide range of applications, including iOS, macOS, DAVx5 on Android, Mozilla Thunderbird, and many other CalDAV and CardDAV capable applications. This compatibility ensures that you can sync your data across multiple platforms without any hassle.
-
-
-  In addition to its user-friendly features, Baikal emphasizes privacy and data security. By hosting your calendars and contacts yourself, you maintain full control over your personal information, protecting it from potential breaches and unauthorized access. This is particularly important in an era where data privacy is a growing concern.
-
-
-  Whether you are an individual looking for a reliable personal organizer or a small team needing a collaborative solution, Baikal Server provides a practical and efficient way to manage your scheduling and contact needs while ensuring your data remains private and secure. With its fast performance and straightforward interface, Baikal is an excellent choice for anyone seeking a self-hosted calendar and contact management solution.
-
-developer: fruux GmbH
-website: https://sabre.io/baikal/
+  Wanderer is especially popular among people who enjoy organizing their personal collection of trails or sharing curated outdoor experiences with a group, club, or local community. It is easy to deploy on self-hosting platforms such as YunoHost and supports collaborative features that make it useful for small teams or families planning outdoor activities together. Its clean design, strong focus on privacy, and independence from commercial platforms make it an ideal solution for anyone who values control over their outdoor data.
+developer: Flomp
+website: https://wanderer.to/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/sabre-io/Baikal
-support: https://github.com/sabre-io/Baikal/issues
+repo: https://github.com/Flomp/wanderer
+support: https://github.com/Flomp/wanderer/issues
 gallery:
-  - https://i.imgur.com/InOvJFa.png
-  - https://i.imgur.com/hIQ1ZIv.png
-  - https://i.imgur.com/nobRqdE.png
+  - https://i.imgur.com/s5JxJAx.png
+  - https://i.imgur.com/kDzYM1w.png
+  - https://i.imgur.com/yf274Us.png
+  - https://i.imgur.com/kMR6rOq.png
+  - https://i.imgur.com/1sEXkQz.png
+  - https://i.imgur.com/hYBfUp2.png
+  - https://i.imgur.com/Qck7fBO.png
 releaseNotes: >-
-  The latest update includes dependency upgrades that enhance compatibility with PHP 8.2 and features the inclusion of sabre/dav version 4.6.0.
+  Version 0.17.0 of Wanderer brings improved performance when displaying many trails on the map and now recalculates elevation data on import for more accurate stats. It also fixes several issues, including missing tags on the front page, broken direct links to lists, and problems with uploading trails containing waypoints or summit logs.
 dependencies:
 path: ""
 defaultUsername: ""
