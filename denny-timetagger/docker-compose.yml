@@ -7,7 +7,7 @@ services:
       APP_PORT: 80
 
   app:
-    image: ghcr.io/almarklein/timetagger
+    image: ghcr.io/almarklein/timetagger:v24.12.2@sha256:e2d1a8b8154449b495f7f527d206bcfff5935b5160cfe4e151fecb231b642dc9
     restart: on-failure
     environment:
       - TIMETAGGER_BIND=0.0.0.0:80
