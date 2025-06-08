@@ -1,0 +1,19 @@
+# HomeGallery configuration file
+
+baseDir: '/data'  # entspricht deinem Volume-Pfad in Docker: ${APP_DATA_DIR}/data/hg_data ist in Container /data
+
+sources:
+  - dir: '{baseDir}/Pictures'
+    # Hier liegt dein Pictures-Volume: ${APP_DATA_DIR}/data/pictures ist im Container /data/Pictures
+
+server:
+  port: 3000
+  host: '0.0.0.0'
+  openBrowser: false
+
+logger:
+  - type: console
+    level: info
+  - type: file
+    level: debug
+    file: '{baseDir}/gallery.log'
