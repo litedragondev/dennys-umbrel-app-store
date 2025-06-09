@@ -34,5 +34,5 @@ releaseNotes: >-
   Version 0.93.0 fixes broken check-ins for static services and improves overall reliability.
 dependencies:
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "admin"
+defaultPassword: "admin"
