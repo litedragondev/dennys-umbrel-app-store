@@ -1,38 +1,37 @@
 manifestVersion: 1
 id: denny-statping-ng
-name: Statping-ng
-tagline: A lightweight CalDAV+CardDAV server
-icon: https://i.imgur.com/h3B1DaG.png
-category: test
-version: "0.0.1"
+name: Statping NG
+tagline: A web and app status monitoring tool
+icon: https://i.imgur.com/3j7knnT.png
+category: In Progress
+version: "0.93.0"
 port: 8722
 description: >-
-  🪆 Baikal Server is a lightweight CalDAV and CardDAV server designed for users who want to manage their calendar and contact information securely on their own server. This robust application offers an extensive web interface that simplifies the management of users, address books, and calendars, making it accessible for both beginners and experienced users.
+  🟢 Statping NG is a modern open source status page and monitoring tool designed for self-hosting. It is the actively maintained fork of the original Statping project, developed in Go for backend performance and using Vue.js for a sleek frontend experience. Its primary purpose is to help individuals and organizations keep track of the availability and response time of various services, including HTTP, TCP, UDP, ICMP, and gRPC endpoints. It runs efficiently on a wide range of systems, from full servers to lightweight environments like Raspberry Pi, and is well-suited for both small personal projects and larger infrastructures.
 
 
-  One of the key features of Baikal is its ease of installation and configuration. It requires only a basic PHP-capable server, which means you don’t need extensive technical knowledge to get started. The server supports both MySQL and SQLite databases for data storage, providing flexibility depending on your preferences and needs.
+  Statping NG offers an intuitive web interface where users can view the live status of services, check uptime history, analyze response metrics, and receive detailed logs of outages and incidents. It includes support for alert notifications through many channels such as email, Slack, Discord, Telegram, Twilio, and custom webhooks. The system is designed to be highly configurable, allowing you to adapt its appearance and functionality to match your brand or workflow. Customization is possible through SASS variables and a flexible settings dashboard that simplifies setup without requiring deep technical knowledge.
 
 
-  Baikal allows users to seamlessly access their contacts and calendars from any device. It is compatible with a wide range of applications, including iOS, macOS, DAVx5 on Android, Mozilla Thunderbird, and many other CalDAV and CardDAV capable applications. This compatibility ensures that you can sync your data across multiple platforms without any hassle.
+  One of the standout features is the ability to export metrics to Prometheus, making it easier to integrate Statping NG into a broader observability stack. It also provides a companion mobile app for Android and iOS, which allows you to receive push notifications and monitor systems on the go. Deployment is straightforward, with official Docker images available that support SQLite by default and can be extended to work with PostgreSQL or MySQL for more robust data handling.
 
 
-  In addition to its user-friendly features, Baikal emphasizes privacy and data security. By hosting your calendars and contacts yourself, you maintain full control over your personal information, protecting it from potential breaches and unauthorized access. This is particularly important in an era where data privacy is a growing concern.
+  Despite its advantages, Statping NG has seen sporadic development activity and there are concerns within the community about unresolved bugs and security issues. For example, a known vulnerability allows unauthenticated access to sensitive API endpoints if the application is not properly secured. Therefore, it is strongly recommended to run it behind a reverse proxy with authentication and restrict public access to the backend API unless necessary.
 
 
-  Whether you are an individual looking for a reliable personal organizer or a small team needing a collaborative solution, Baikal Server provides a practical and efficient way to manage your scheduling and contact needs while ensuring your data remains private and secure. With its fast performance and straightforward interface, Baikal is an excellent choice for anyone seeking a self-hosted calendar and contact management solution.
-
-developer: fruux GmbH
-website: https://sabre.io/baikal/
+  Overall, Statping NG is a powerful tool for visualizing service uptime and presenting a professional status page. However, due diligence is advised before using it in production environments. It remains a popular choice among enthusiasts and developers who appreciate its feature set and the flexibility it offers, especially when paired with proper safeguards.
+developer: Statping NG
+website: https://statping-ng.github.io/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/sabre-io/Baikal
-support: https://github.com/sabre-io/Baikal/issues
+repo: https://github.com/statping-ng/statping-ng
+support: https://github.com/statping-ng/statping-ng/issues
 gallery:
-  - https://i.imgur.com/InOvJFa.png
-  - https://i.imgur.com/hIQ1ZIv.png
-  - https://i.imgur.com/nobRqdE.png
+  - https://i.imgur.com/zkctiGl.png
+  - https://i.imgur.com/zkctiGl.png
+  - https://i.imgur.com/zkctiGl.png
 releaseNotes: >-
-  The latest update includes dependency upgrades that enhance compatibility with PHP 8.2 and features the inclusion of sabre/dav version 4.6.0.
+  Version 0.93.0 fixes broken check-ins for static services and improves overall reliability.
 dependencies:
 path: ""
 defaultUsername: ""
