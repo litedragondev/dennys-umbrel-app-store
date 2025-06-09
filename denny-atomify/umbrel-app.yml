@@ -1,38 +1,29 @@
 manifestVersion: 1
 id: denny-atomify
 name: Atomify
-tagline: A lightweight CalDAV+CardDAV server
-icon: https://i.imgur.com/h3B1DaG.png
-category: test
+tagline: A customizable ambient atmosphere creator
+icon: https://i.imgur.com/V4t4B6V.png
+category: media
 version: "0.0.1"
 port: 3821
 description: >-
-  🪆 Baikal Server is a lightweight CalDAV and CardDAV server designed for users who want to manage their calendar and contact information securely on their own server. This robust application offers an extensive web interface that simplifies the management of users, address books, and calendars, making it accessible for both beginners and experienced users.
+  🌌 Atmoify is a web-based ambient sound generator designed to help you create a personal atmosphere for focus, relaxation, or sleep. It offers a clean and intuitive interface where users can blend various audio sources into a seamless sound experience. One of its core features is the ability to play YouTube videos in audio-only mode, allowing for an endless selection of background music, nature sounds, or white noise without the distraction of visuals. In addition to YouTube integration, Atmoify includes a collection of built-in ambient effects such as rain, wind, fireplace, or ocean waves, which can be layered and individually adjusted in volume.
 
 
-  One of the key features of Baikal is its ease of installation and configuration. It requires only a basic PHP-capable server, which means you don’t need extensive technical knowledge to get started. The server supports both MySQL and SQLite databases for data storage, providing flexibility depending on your preferences and needs.
-
-
-  Baikal allows users to seamlessly access their contacts and calendars from any device. It is compatible with a wide range of applications, including iOS, macOS, DAVx5 on Android, Mozilla Thunderbird, and many other CalDAV and CardDAV capable applications. This compatibility ensures that you can sync your data across multiple platforms without any hassle.
-
-
-  In addition to its user-friendly features, Baikal emphasizes privacy and data security. By hosting your calendars and contacts yourself, you maintain full control over your personal information, protecting it from potential breaches and unauthorized access. This is particularly important in an era where data privacy is a growing concern.
-
-
-  Whether you are an individual looking for a reliable personal organizer or a small team needing a collaborative solution, Baikal Server provides a practical and efficient way to manage your scheduling and contact needs while ensuring your data remains private and secure. With its fast performance and straightforward interface, Baikal is an excellent choice for anyone seeking a self-hosted calendar and contact management solution.
-
-developer: fruux GmbH
-website: https://sabre.io/baikal/
+  The application lets you create and save custom sound profiles, making it easy to return to your preferred soundscape anytime. A built-in timer allows you to set a duration for playback, which is especially useful for work sessions, meditation, or falling asleep. With its focus on simplicity and mood-enhancing audio, Atmoify offers a peaceful, distraction-free space tailored to your needs.
+developer: Alex McCormick
+website: https://atmoify.com/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/sabre-io/Baikal
-support: https://github.com/sabre-io/Baikal/issues
+repo: https://github.com/bluegoosemedia/atmoify
+support: https://github.com/bluegoosemedia/atmoify/issues
 gallery:
-  - https://i.imgur.com/InOvJFa.png
-  - https://i.imgur.com/hIQ1ZIv.png
-  - https://i.imgur.com/nobRqdE.png
+  - https://i.imgur.com/mODSl1m.png
+  - https://i.imgur.com/VHoscVu.png
+  - https://i.imgur.com/265azKd.png
+  - https://i.imgur.com/aYU67df.png
 releaseNotes: >-
-  The latest update includes dependency upgrades that enhance compatibility with PHP 8.2 and features the inclusion of sabre/dav version 4.6.0.
+  Atmoify does not use versioning at this time. There are no official release notes available. Updates may be applied without changelogs or version tags.
 dependencies:
 path: ""
 defaultUsername: ""
