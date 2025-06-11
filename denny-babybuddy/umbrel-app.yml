@@ -36,5 +36,5 @@ releaseNotes: >-
   Version of Baby Buddy is now rebased on Alpine 3.20; existing users should update their Nginx configuration to avoid HTTP/2 deprecation warnings. Upstream changes include improved numeric input on mobile devices, a fix for the non-functional database URL configuration, and a correction for percentile plotting errors related to weight and height.
 dependencies:
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "admin"
+defaultPassword: "admin"
