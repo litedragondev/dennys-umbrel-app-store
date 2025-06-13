@@ -3,7 +3,7 @@ id: denny-filebrowser-quantum
 name: FileBrowser Quantum
 tagline: A better filebrowser than Filebrowser
 icon: https://i.imgur.com/CDhQ081.png
-category: In Progress
+category: files & productivity
 version: "0.7.8"
 port: 8633
 description: >-
