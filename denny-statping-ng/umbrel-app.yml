@@ -3,7 +3,7 @@ id: denny-statping-ng
 name: Statping NG
 tagline: A web and app status monitoring tool
 icon: https://i.imgur.com/3j7knnT.png
-category: In Progress
+category: networking
 version: "0.93.0"
 port: 8722
 description: >-
