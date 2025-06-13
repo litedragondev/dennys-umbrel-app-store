@@ -24,9 +24,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/gtsteffaniak/filebrowser
 support: https://github.com/gtsteffaniak/filebrowser/issues
 gallery:
-  - https://i.imgur.com/XUzL5Q2.png
-  - https://i.imgur.com/XUzL5Q2.png
-  - https://i.imgur.com/XUzL5Q2.png
+  - https://i.imgur.com/TVjnjhF.png
+  - https://i.imgur.com/TVjnjhF.png
+  - https://i.imgur.com/TVjnjhF.png
 releaseNotes: >-
   This version 0.7.8-beta of Filebrowser Quantum fixes OIDC login issues and adds more control over OIDC user creation, requiring explicit enabling for automatic user creation and supporting admin group mapping. It also resolves bugs related to file saving in the editor, Ctrl-select on macOS and Windows, and respects non-default base URLs during OIDC login.
 dependencies:
