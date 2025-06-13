@@ -27,9 +27,11 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/statping-ng/statping-ng
 support: https://github.com/statping-ng/statping-ng/issues
 gallery:
-  - https://i.imgur.com/zkctiGl.png
-  - https://i.imgur.com/zkctiGl.png
-  - https://i.imgur.com/zkctiGl.png
+  - https://i.imgur.com/IG8SzII.png
+  - https://i.imgur.com/p9y38kR.png
+  - https://i.imgur.com/aaEe8nP.png
+  - https://i.imgur.com/YAeHGx2.png
+  - https://i.imgur.com/QTGqcWF.png
 releaseNotes: >-
   Version 0.93.0 fixes broken check-ins for static services and improves overall reliability.
 dependencies:
