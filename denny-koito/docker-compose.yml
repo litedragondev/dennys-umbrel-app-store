@@ -11,19 +11,19 @@ services:
     depends_on:
       - db
     environment:
-      - KOITO_DATABASE_URL=postgres://postgres:secret_password@db:5432/denny-koito_db_1
+      - KOITO_DATABASE_URL=postgres://postgres:secret_password@db:5432/koitodb
       - KOITO_ALLOWED_HOSTS=*
       - KOITO_DEFAULT_USERNAME=admin
-      - KOITO_DEFAULT_PASSWORD=umbrel
-    volumes:
-      - ${APP_DATA_DIR}/data/koito_data:/etc/koito
+      - KOITO_DEFAULT_PASSWORD=changeme
     restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data/koito_data:/etc/koito # optional: wenn du Import-Ordner / Cache willst
 
   db:
     image: postgres:16
     restart: on-failure
     environment:
-      POSTGRES_DB: denny-koito_db_1
+      POSTGRES_DB: koitodb
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: secret_password
     volumes:
