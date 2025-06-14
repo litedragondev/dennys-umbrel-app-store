@@ -11,7 +11,7 @@ services:
     depends_on:
       - db
     environment:
-      - KOITO_DATABASE_URL=postgres://postgres:secret_password@db:5432/denny-koito_db_1
+      - KOITO_DATABASE_URL=postgres://postgres:postgrespassword@db:5432/denny-koito_db_1
       - KOITO_ALLOWED_HOSTS=*
       - KOITO_DEFAULT_USERNAME=admin
       - KOITO_DEFAULT_PASSWORD=umbrel
@@ -25,6 +25,6 @@ services:
     environment:
       POSTGRES_DB: denny-koito_db_1
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: secret_password
+      POSTGRES_PASSWORD: postgrespassword
     volumes:
       - ${APP_DATA_DIR}/data/db_data:/var/lib/postgresql/data
