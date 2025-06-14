@@ -8,7 +8,6 @@ services:
 
   web:
     image: trailbase/trailbase:0.14.1@sha256:61b87d51a1d9cdc0710cd184a7ee931d639bd964283906bea4738fb60a519179
-    user: 1000:1000
     restart: on-failure
     environment:
       # Override the default env-logger.
