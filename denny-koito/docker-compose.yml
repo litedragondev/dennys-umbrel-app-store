@@ -11,7 +11,7 @@ services:
     depends_on:
       - db
     environment:
-      - KOITO_DATABASE_URL=postgres://postgres:secret_password@db:5432/koitodb
+      - KOITO_DATABASE_URL=postgres://postgres:secret_password@db:5432/denny-koito_db_1
       - KOITO_ALLOWED_HOSTS=*
     volumes:
       - ${APP_DATA_DIR}/data/koito_data:/etc/koito
@@ -21,7 +21,7 @@ services:
     image: postgres:16
     restart: on-failure
     environment:
-      POSTGRES_DB: koitodb
+      POSTGRES_DB: denny-koito_db_1
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: secret_password
     volumes:
