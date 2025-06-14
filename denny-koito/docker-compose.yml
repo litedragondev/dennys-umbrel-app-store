@@ -13,6 +13,8 @@ services:
     environment:
       - KOITO_DATABASE_URL=postgres://postgres:secret_password@db:5432/denny-koito_db_1
       - KOITO_ALLOWED_HOSTS=*
+      - KOITO_DEFAULT_USERNAME=admin
+      - KOITO_DEFAULT_PASSWORD=umbrel
     volumes:
       - ${APP_DATA_DIR}/data/koito_data:/etc/koito
     restart: on-failure
