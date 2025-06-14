@@ -2,7 +2,7 @@ manifestVersion: 1
 id: denny-dockerizalo
 name: Dockerizalo
 tagline: A simple deployment platform
-icon: https://i.imgur.com/q74pFrS.png
+icon: https://i.imgur.com/MXkGtSz.png
 category: In Progress
 version: "1.4.0"
 port: 8522
