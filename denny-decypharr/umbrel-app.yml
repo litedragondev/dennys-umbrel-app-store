@@ -1,39 +1,36 @@
 manifestVersion: 1
 id: denny-decypharr
 name: Decypharr
-tagline: An all-in-one baby tracker
-icon: https://i.imgur.com/yiIkWBI.png
-category: test
-version: "2.7.1"
+tagline: An advanced solution for automated Debrid downloads
+icon: https://i.imgur.com/KllfrRz.png
+category: files & productivity
+version: "1.0.2"
 port: 8282
 description: >-
-  Baby Buddy is an open source web application designed to help parents and caregivers track and manage all essential aspects of caring for a baby. Built with Django and intended for self-hosting, the platform offers a centralized and privacy-respecting way to log daily activities such as feeding, sleeping, diaper changes, tummy time, and more. Its goal is to reduce the mental load of remembering and organizing a baby’s needs, while also offering valuable insights through data visualization and statistics.
+  🧩 Decypharr is an open source application written in Go that acts as a qBittorrent compatible API while integrating support for popular Debrid services such as Real Debrid, All Debrid, Torbox and Debrid Link. It is designed for seamless integration with automation tools like Sonarr, Radarr and Lidarr which can interact with it as if it were a standard qBittorrent client. This allows users to automate the process of downloading torrents through their premium Debrid accounts without needing to run a traditional torrent client or maintain their own seedbox.
 
 
-  The user interface is clean, responsive, and optimized for use on both desktop and mobile devices. Baby Buddy can be installed using Docker or directly on a server, and supports a range of databases such as SQLite, PostgreSQL, or MySQL. It also includes a fully functional API, making it easy to connect with third-party tools or mobile apps. A dedicated Android app is available that connects securely to the Baby Buddy server and allows for quick data entry, even when offline.
+  The core functionality of Decypharr centers on intercepting torrent and magnet links from the connected automation tools and passing them to the configured Debrid services. These services handle the torrent download on their own infrastructure and provide direct download links which Decypharr then manages locally. The software includes a simple and functional web user interface that gives users the ability to monitor and manage the status of their downloads.
 
 
-  What makes Baby Buddy especially powerful is its ability to generate real-time graphs and reports that help users identify patterns in their baby’s routines. This includes tracking the frequency and duration of feeds or naps, monitoring weight and growth, and analyzing sleep cycles over days or weeks. The application also includes a live timer system, allowing users to start and stop tracking activities like sleep or nursing with a single tap.
+  In addition to its API compatibility and Debrid integration Decypharr offers a built in WebDAV server for accessing downloaded files as well as a symlink manager that ensures files are correctly linked for media library updates. It also includes repair workers that check for missing or broken symlinks and automatically correct them providing a reliable experience especially when dealing with large automated libraries. Decypharr is actively maintained and offers a modern alternative to older tools like Zurg by combining speed simplicity and advanced features such as WebDAV and symlink repair in a single solution.
 
 
-  Baby Buddy is multilingual and supported by an active open source community that frequently contributes translations, new features, and improvements. It is also popular among users of Home Assistant, as it can integrate into smart home dashboards to automate notifications or visualize baby-related data on wall-mounted displays.
-
-
-  With Baby Buddy, parents have full control over their data and can tailor the system to meet their individual needs. It is a flexible and secure solution for families who want to keep track of their child’s development in a structured and meaningful way, without relying on commercial cloud-based baby tracking apps.
-developer: Christopher Charbonneau Wells
-website: https://demo.baby-buddy.net
+  ⚙️ For configuration, you should visit the official documentation at https://sirrobot01.github.io/decypharr/.
+developer: Mukhtar Akere
+website: https://github.com/sirrobot01/decypharr
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/linuxserver/docker-babybuddy
-support: https://github.com/linuxserver/docker-babybuddy/issues
+repo: https://github.com/sirrobot01/decypharr
+support: https://github.com/sirrobot01/decypharr/issues
 gallery:
-  - https://i.imgur.com/VkR4OnT.png
-  - https://i.imgur.com/te5p6tu.png
-  - https://i.imgur.com/NNSVhO6.png
-  - https://i.imgur.com/b9fxe4q.png
-  - https://i.imgur.com/ScvpH8m.png
+  - https://i.imgur.com/RsNT472.png
+  - https://i.imgur.com/RsNT472.png
+  - https://i.imgur.com/RsNT472.png
+  - https://i.imgur.com/RsNT472.png
+  - https://i.imgur.com/RsNT472.png
 releaseNotes: >-
-  Version of Baby Buddy is now rebased on Alpine 3.20; existing users should update their Nginx configuration to avoid HTTP/2 deprecation warnings. Upstream changes include improved numeric input on mobile devices, a fix for the non-functional database URL configuration, and a correction for percentile plotting errors related to weight and height.
+  Version 1.0.2 introduces support for per-file deletion and per-file repair instead of per-torrent repair. It also includes fixes for LoadLocation issues and minor TorBox-related bugs.
 dependencies:
 path: ""
 defaultUsername: ""
