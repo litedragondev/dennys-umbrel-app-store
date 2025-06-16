@@ -5,7 +5,7 @@ tagline: An all-in-one baby tracker
 icon: https://i.imgur.com/yiIkWBI.png
 category: test
 version: "2.7.1"
-port: 8283
+port: 8282
 description: >-
   Baby Buddy is an open source web application designed to help parents and caregivers track and manage all essential aspects of caring for a baby. Built with Django and intended for self-hosting, the platform offers a centralized and privacy-respecting way to log daily activities such as feeding, sleeping, diaper changes, tummy time, and more. Its goal is to reduce the mental load of remembering and organizing a baby’s needs, while also offering valuable insights through data visualization and statistics.
 
