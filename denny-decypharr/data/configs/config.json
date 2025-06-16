@@ -8,7 +8,7 @@
     }
   ],
   "qbittorrent": {
-    "download_folder": "/mnt/symlinks/",
+    "download_folder": "${UMBREL_ROOT}/data/storage/downloads",
     "categories": ["sonarr", "radarr"]
   },
   "use_auth": false,
