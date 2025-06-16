@@ -16,7 +16,7 @@ description: >-
   In addition to its API compatibility and Debrid integration Decypharr offers a built in WebDAV server for accessing downloaded files as well as a symlink manager that ensures files are correctly linked for media library updates. It also includes repair workers that check for missing or broken symlinks and automatically correct them providing a reliable experience especially when dealing with large automated libraries. Decypharr is actively maintained and offers a modern alternative to older tools like Zurg by combining speed simplicity and advanced features such as WebDAV and symlink repair in a single solution.
 
 
-  ⚙️ For configuration, you should visit the official documentation at 
+  ⚙️ For configuration, you should visit the official documentation at:
   
   
   https://sirrobot01.github.io/decypharr/.
