@@ -19,11 +19,10 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://codeberg.org/c4ffe14e/phice
 support: https://codeberg.org/c4ffe14e/phice/issues
 gallery:
-  - https://i.imgur.com/VkR4OnT.png
-  - https://i.imgur.com/te5p6tu.png
-  - https://i.imgur.com/NNSVhO6.png
-  - https://i.imgur.com/b9fxe4q.png
-  - https://i.imgur.com/ScvpH8m.png
+  - https://i.imgur.com/vK8uiTq.png
+  - https://i.imgur.com/6Dr5Iue.png
+  - https://i.imgur.com/1dw6Gbm.png
+  - https://i.imgur.com/F85d3x0.png
 releaseNotes: >-
   Phice currently provides only a latest tag for releases. There are no specific versioned tags or detailed release notes available at this time.
 dependencies:
