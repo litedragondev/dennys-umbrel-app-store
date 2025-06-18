@@ -7,7 +7,7 @@ services:
       APP_PORT: 8080
 
   web:
-    image: ghcr.io/rajsinghtech/tsflow:sha-ce960af@sha256:a03215f436fd63640658dec080096b66254a8fa8725a920d749f59cab55cc001
+    image: ghcr.io/rajsinghtech/tsflow:latest@sha256:a03215f436fd63640658dec080096b66254a8fa8725a920d749f59cab55cc001
     restart: on-failure
     env_file:
       - .env
