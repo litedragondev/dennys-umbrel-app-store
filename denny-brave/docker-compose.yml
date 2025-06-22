@@ -7,7 +7,8 @@ services:
       APP_PORT: 3001
 
   web:
-    image: ghcr.io/linuxserver/brave:1.79.126@sha256:82448700fd7125d71740d08350caaa58275cf8dcc556203c34fb715855b5db22
+    image: ghcr.io/linuxserver/brave:1.79.126
+    container_name: denny-brave_web_1
     restart: on-failure
     security_opt:
       - no-new-privileges:true
@@ -16,6 +17,6 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data:/config:rw
     environment:
-     CUSTOM_USER: admin
-     PASSWORD: umbrel
-     TZ: Europe/Berlin
+      CUSTOM_USER: admin
+      PASSWORD: umbrel
+      TZ: Europe/Berlin
