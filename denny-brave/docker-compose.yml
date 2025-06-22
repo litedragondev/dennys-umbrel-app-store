@@ -24,8 +24,8 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data:/config:rw
     environment:
-     CUSTOM_USER: admin
-     PASSWORD: umbrel
-     TZ: Europe/Berlin
+     #CUSTOM_USER: admin
+     #PASSWORD: umbrel
+     #TZ: Europe/Berlin
      PUID: 1000
      PGID: 1000
