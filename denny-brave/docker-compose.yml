@@ -4,7 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: denny-brave_web_1
-      APP_PORT: 6901
+      APP_PORT: 4901
 
   web:
     image: kasmweb/brave:1.15.0-rolling@sha256:8918ba5b01f0e5ed9e4f765fdf949ed401f420fba9726217142ac579b6753f15
