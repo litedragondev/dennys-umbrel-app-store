@@ -4,11 +4,26 @@ services:
   app_proxy:
     environment:
       APP_HOST: denny-brave_web_1
-      APP_PORT: 4901
+      APP_PORT: 3000
 
   web:
-    image: kasmweb/brave:1.15.0-rolling@sha256:8918ba5b01f0e5ed9e4f765fdf949ed401f420fba9726217142ac579b6753f15
+    image: ghcr.io/linuxserver/brave:1.79.126@sha256:82448700fd7125d71740d08350caaa58275cf8dcc556203c34fb715855b5db22
     restart: on-failure
-    shm_size: "2gb"
+    ports:
+      - 3935:3001
+    healthcheck:
+      test: timeout 10s bash -c ':> /dev/tcp/127.0.0.1/3000' || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 90s
+    security_opt:
+      - no-new-privileges:true
+      - seccomp:unconfined
+    shm_size: "4gb"
+    volumes:
+      - ${APP_DATA_DIR}/data:/config:rw
     environment:
-      - VNC_PW=umbrel
+     CUSTOM_USER: admin
+     PASSWORD: umbrel
+     TZ: Europe/Berlin
