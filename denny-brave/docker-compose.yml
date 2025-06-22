@@ -4,7 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: denny-brave_web_1
-      APP_PORT: 3000
+      APP_PORT: 3001
 
   web:
     image: ghcr.io/linuxserver/brave:1.79.126@sha256:82448700fd7125d71740d08350caaa58275cf8dcc556203c34fb715855b5db22
