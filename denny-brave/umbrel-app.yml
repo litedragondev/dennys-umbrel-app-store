@@ -22,7 +22,10 @@ description: >-
   At its core, Brave redefines the relationship between users and the web. It challenges the status quo of data-driven business models by proving that a faster, safer, and more respectful internet is not only possible but already here. It’s a browser that respects your time, protects your data, and restores the sense of trust and autonomy that has long been missing from the modern web.
 
 
-  ⚙️ The application is available at https://umbrel.local:3935. Since a self signed SSL certificate is used, your browser will show a security warning when accessing the page for the first time. You need to manually accept it to continue.
+  ⚙️ The application is available at https://umbrel.local:3935. 
+  
+  
+  Since a self signed SSL certificate is used, your browser will show a security warning when accessing the page for the first time. You need to manually accept it to continue.
 developer: Brave Software
 website: https://brave.com/
 submitter: dennysubke
