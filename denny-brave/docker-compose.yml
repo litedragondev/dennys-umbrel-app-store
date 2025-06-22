@@ -10,9 +10,6 @@ services:
     image: ghcr.io/linuxserver/brave:1.79.119-ls1@sha256:e54149a2c79cdf82a62db02dca1a37f576ce7002cf7b4ffe6296440b51d43797
     container_name: denny-brave_web_1
     restart: on-failure
-    security_opt:
-      - no-new-privileges:true
-      - seccomp:unconfined
     shm_size: "2gb"
     volumes:
       - ${APP_DATA_DIR}/data:/config:rw
