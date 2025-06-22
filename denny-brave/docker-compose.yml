@@ -4,16 +4,11 @@ services:
   app_proxy:
     environment:
       APP_HOST: denny-brave_web_1
-      APP_PORT: 3000
+      APP_PORT: 6901
 
   web:
-    image: ghcr.io/linuxserver/brave:1.79.119-ls1@sha256:e54149a2c79cdf82a62db02dca1a37f576ce7002cf7b4ffe6296440b51d43797
-    container_name: denny-brave_web_1
+    image: kasmweb/brave:1.15.0-rolling@sha256:8918ba5b01f0e5ed9e4f765fdf949ed401f420fba9726217142ac579b6753f15
     restart: on-failure
     shm_size: "2gb"
-    volumes:
-      - ${APP_DATA_DIR}/data:/config:rw
     environment:
-      CUSTOM_USER: admin
-      PASSWORD: umbrel
-      TZ: Europe/Berlin
+      - VNC_PW=umbrel
