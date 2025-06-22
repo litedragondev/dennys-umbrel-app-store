@@ -18,7 +18,7 @@ services:
     security_opt:
       - no-new-privileges:true
       - seccomp:unconfined
-    shm_size: "4gb"
+    shm_size: "2gb"
     volumes:
       - ${APP_DATA_DIR}/data:/config:rw
     environment:
