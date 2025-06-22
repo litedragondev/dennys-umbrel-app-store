@@ -25,3 +25,4 @@ services:
     environment:
      CUSTOM_USER: admin
      PASSWORD: umbrel
+     TZ: Europe/Berlin
