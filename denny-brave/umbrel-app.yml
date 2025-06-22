@@ -1,40 +1,38 @@
 manifestVersion: 1
 id: denny-brave
 name: Brave
-tagline: An all-in-one baby tracker
-icon: https://i.imgur.com/yiIkWBI.png
-category: test
+tagline: A browser that puts you first
+icon: https://i.imgur.com/pABO7O7.png
+category: networking
 version: "1.79.126"
 port: 3934
 description: >-
-  Baby Buddy is an open source web application designed to help parents and caregivers track and manage all essential aspects of caring for a baby. Built with Django and intended for self-hosting, the platform offers a centralized and privacy-respecting way to log daily activities such as feeding, sleeping, diaper changes, tummy time, and more. Its goal is to reduce the mental load of remembering and organizing a baby’s needs, while also offering valuable insights through data visualization and statistics.
+  Brave is a modern web browser designed to give users full control over their online experience by placing privacy, security, and speed at the forefront. Unlike traditional browsers that often expose users to tracking technologies and aggressive advertising networks, Brave is built to shield its users from the moment they start browsing. It blocks third-party ads, trackers, and cross-site cookies by default, significantly reducing data collection and page load times. This streamlined browsing experience not only improves performance but also enhances user safety by minimizing exposure to malicious scripts and hidden surveillance techniques.
 
 
-  The user interface is clean, responsive, and optimized for use on both desktop and mobile devices. Baby Buddy can be installed using Docker or directly on a server, and supports a range of databases such as SQLite, PostgreSQL, or MySQL. It also includes a fully functional API, making it easy to connect with third-party tools or mobile apps. A dedicated Android app is available that connects securely to the Baby Buddy server and allows for quick data entry, even when offline.
+  Built on the Chromium engine, Brave ensures compatibility with most modern web standards while going beyond the typical offerings of a standard browser. It includes a suite of privacy-focused features that are deeply integrated rather than added as optional extensions. These features include automatic HTTPS upgrades, advanced fingerprinting protection, script and cookie blocking, and an intuitive privacy dashboard that allows users to monitor and control their browsing footprint in real time.
 
 
-  What makes Baby Buddy especially powerful is its ability to generate real-time graphs and reports that help users identify patterns in their baby’s routines. This includes tracking the frequency and duration of feeds or naps, monitoring weight and growth, and analyzing sleep cycles over days or weeks. The application also includes a live timer system, allowing users to start and stop tracking activities like sleep or nursing with a single tap.
+  Brave also empowers users to explore the internet without compromise by removing the reliance on external privacy tools. It gives users the confidence that their personal information remains on their device and is never harvested or monetized behind the scenes. Its default settings are carefully designed to protect privacy without requiring complicated configuration, making it accessible even to users who are not technically inclined.
 
 
-  Baby Buddy is multilingual and supported by an active open source community that frequently contributes translations, new features, and improvements. It is also popular among users of Home Assistant, as it can integrate into smart home dashboards to automate notifications or visualize baby-related data on wall-mounted displays.
+  Beyond privacy, Brave introduces new ways to engage with the evolving landscape of the internet. It supports decentralized technologies like IPFS and offers native tools for interacting with emerging web protocols in a secure and user-friendly way. The browser is also committed to transparency and open development, with its codebase available for public inspection and contribution.
 
 
-  With Baby Buddy, parents have full control over their data and can tailor the system to meet their individual needs. It is a flexible and secure solution for families who want to keep track of their child’s development in a structured and meaningful way, without relying on commercial cloud-based baby tracking apps.
-developer: Christopher Charbonneau Wells
-website: https://demo.baby-buddy.net
+  At its core, Brave redefines the relationship between users and the web. It challenges the status quo of data-driven business models by proving that a faster, safer, and more respectful internet is not only possible but already here. It’s a browser that respects your time, protects your data, and restores the sense of trust and autonomy that has long been missing from the modern web.
+developer: Brave Software
+website: https://brave.com/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/linuxserver/docker-babybuddy
-support: https://github.com/linuxserver/docker-babybuddy/issues
+repo: https://github.com/linuxserver/docker-brave
+support: https://github.com/linuxserver/docker-brave/issues
 gallery:
-  - https://i.imgur.com/VkR4OnT.png
-  - https://i.imgur.com/te5p6tu.png
-  - https://i.imgur.com/NNSVhO6.png
-  - https://i.imgur.com/b9fxe4q.png
-  - https://i.imgur.com/ScvpH8m.png
+  - https://i.imgur.com/8jNBZTM.png
+  - https://i.imgur.com/8jNBZTM.png
+  - https://i.imgur.com/8jNBZTM.png
 releaseNotes: >-
-  Version of Baby Buddy is now rebased on Alpine 3.20; existing users should update their Nginx configuration to avoid HTTP/2 deprecation warnings. Upstream changes include improved numeric input on mobile devices, a fix for the non-functional database URL configuration, and a correction for percentile plotting errors related to weight and height.
+  This version addresses multiple stability issues, including crashes related to the shields panel and Google sign-in navigation. It also resolves a problem with importing from Trezor wallets when Trezor Connect is outdated. Additionally, Chromium has been updated to version 137.0.7151.119.
 dependencies:
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "admin"
+defaultPassword: "umbrel"
