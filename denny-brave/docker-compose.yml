@@ -1,14 +1,7 @@
-version: '3.7'
-
 services:
-  app_proxy:
-    environment:
-      APP_HOST: denny-brave_web_1
-      APP_PORT: 3000
-
-  web:
-    image: ghcr.io/linuxserver/brave:1.79.126@sha256:82448700fd7125d71740d08350caaa58275cf8dcc556203c34fb715855b5db22
-    restart: on-failure
+  brave:
+    container_name: Brave
+    image: ghcr.io/linuxserver/brave:latest
     healthcheck:
       test: timeout 10s bash -c ':> /dev/tcp/127.0.0.1/3000' || exit 1
       interval: 10s
@@ -19,9 +12,14 @@ services:
       - no-new-privileges:true
       - seccomp:unconfined
     shm_size: "2gb"
+    restart: on-failure:5
+    ports:
+      - 3934:3000
     volumes:
-      - ${APP_DATA_DIR}/data:/config:rw
+      - /volume1/docker/brave:/config:rw
     environment:
      CUSTOM_USER: admin
      PASSWORD: umbrel
-     TZ: Europe/Berlin
+     TZ: Europe/Bucharest
+     PUID: 1026
+     PGID: 100
