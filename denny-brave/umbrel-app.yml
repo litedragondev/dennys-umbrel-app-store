@@ -20,6 +20,9 @@ description: >-
 
 
   At its core, Brave redefines the relationship between users and the web. It challenges the status quo of data-driven business models by proving that a faster, safer, and more respectful internet is not only possible but already here. It’s a browser that respects your time, protects your data, and restores the sense of trust and autonomy that has long been missing from the modern web.
+
+
+ ⚙️ The application is available at https://umbrel.local:3935. Since a self signed SSL certificate is used, your browser will show a security warning when accessing the page for the first time. You need to manually accept it to continue.
 developer: Brave Software
 website: https://brave.com/
 submitter: dennysubke
@@ -27,9 +30,10 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/linuxserver/docker-brave
 support: https://github.com/linuxserver/docker-brave/issues
 gallery:
-  - https://i.imgur.com/8jNBZTM.png
-  - https://i.imgur.com/8jNBZTM.png
-  - https://i.imgur.com/8jNBZTM.png
+  - https://i.imgur.com/prr0EA5.png
+  - https://i.imgur.com/sz343KI.png
+  - https://i.imgur.com/Qztoo9i.png
+  - https://i.imgur.com/70381Rh.png
 releaseNotes: >-
   This version addresses multiple stability issues, including crashes related to the shields panel and Google sign-in navigation. It also resolves a problem with importing from Trezor wallets when Trezor Connect is outdated. Additionally, Chromium has been updated to version 137.0.7151.119.
 dependencies:
