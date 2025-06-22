@@ -40,6 +40,6 @@ gallery:
 releaseNotes: >-
   This version addresses multiple stability issues, including crashes related to the shields panel and Google sign-in navigation. It also resolves a problem with importing from Trezor wallets when Trezor Connect is outdated. Additionally, Chromium has been updated to version 137.0.7151.119.
 dependencies:
-path: "https://umbrel-2.local:3935"
+path: "https://umbrel.local:3935"
 defaultUsername: ""
 defaultPassword: ""
