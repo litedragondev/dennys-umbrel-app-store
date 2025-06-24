@@ -4,7 +4,7 @@ name: Yamtrack
 tagline: A self hosted media tracker
 icon: https://i.imgur.com/iHsO88r.png
 category: media
-version: "0.23.1"
+version: "0.24.4 "
 port: 8742
 description: >-
   🎬 Yamtrack is an open-source self-hosted media tracking application designed to help users organize and keep track of a wide range of entertainment content including movies, TV shows, anime, manga, video games, books, and comics. It provides a comprehensive platform where users can record detailed information about their media consumption such as ratings, viewing status, progress, start and end dates, and personal notes. Every action performed within the application is logged, enabling users to maintain a history of their interactions such as adding new media, starting to watch or read, and resuming paused content.
@@ -31,7 +31,7 @@ gallery:
   - https://i.imgur.com/DmRUjSi.png
   - https://i.imgur.com/zqjPIVV.png
 releaseNotes: >-
-  Version 0.23.1 improves book search results from OpenLibrary for specific editions and fixes an issue with Trakt imports failing when a season is not found in TMDB.
+  This update optimizes database migration queries to improve performance. Additionally, the development dependency fakeredis was updated from version 2.30.0 to 2.30.1.
 dependencies:
 path: ""
 defaultUsername: ""
