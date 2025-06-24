@@ -1,39 +1,35 @@
 manifestVersion: 1
 id: denny-palmr
 name: Palmr
-tagline: A browser that puts you first
-icon: https://i.imgur.com/yiIkWBI.png
-category: test
-version: "1.79.126"
+tagline: A private alternative to WeTransfer
+icon: https://i.imgur.com/dpOBOQJ.png
+category: files & productivity
+version: "3.0.0-beta.11"
 port: 5487
 description: >-
-  Brave is a modern web browser designed to give users full control over their online experience by placing privacy, security, and speed at the forefront. Unlike traditional browsers that often expose users to tracking technologies and aggressive advertising networks, Brave is built to shield its users from the moment they start browsing. It blocks third-party ads, trackers, and cross-site cookies by default, significantly reducing data collection and page load times. This streamlined browsing experience not only improves performance but also enhances user safety by minimizing exposure to malicious scripts and hidden surveillance techniques.
+  🌴 Palmr is an open source file sharing platform that gives you full control over your uploads and downloads. It is designed for secure and private transfers without relying on third party services.
 
 
-  Built on the Chromium engine, Brave ensures compatibility with most modern web standards while going beyond the typical offerings of a standard browser. It includes a suite of privacy-focused features that are deeply integrated rather than added as optional extensions. These features include automatic HTTPS upgrades, advanced fingerprinting protection, script and cookie blocking, and an intuitive privacy dashboard that allows users to monitor and control their browsing footprint in real time.
+  With a clean and modern interface, Palmr makes it easy to send and receive files of any size, limited only by your available storage. The app is lightweight, fast, and easy to use, built with technologies like Fastify, Next.js, and SQLite for optimal performance.
 
 
-  Brave also empowers users to explore the internet without compromise by removing the reliance on external privacy tools. It gives users the confidence that their personal information remains on their device and is never harvested or monetized behind the scenes. Its default settings are carefully designed to protect privacy without requiring complicated configuration, making it accessible even to users who are not technically inclined.
-
-
-  Beyond privacy, Brave introduces new ways to engage with the evolving landscape of the internet. It supports decentralized technologies like IPFS and offers native tools for interacting with emerging web protocols in a secure and user-friendly way. The browser is also committed to transparency and open development, with its codebase available for public inspection and contribution.
-
-
-  At its core, Brave redefines the relationship between users and the web. It challenges the status quo of data-driven business models by proving that a faster, safer, and more respectful internet is not only possible but already here. It’s a browser that respects your time, protects your data, and restores the sense of trust and autonomy that has long been missing from the modern web.
-developer: Brave Software
-website: https://brave.com/
+  It supports features like password protection, user authentication, customizable branding, and optional single sign on through OpenID Connect. Palmr is ideal for anyone who wants a simple yet powerful file sharing tool that runs directly on their Umbrel server.
+developer: Kyantech Solutions
+website: https://palmr.kyantech.com.br/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/linuxserver/docker-brave
-support: https://github.com/linuxserver/docker-brave/issues
+repo: https://github.com/kyantech/Palmr
+support: https://github.com/kyantech/Palmr/issues
 gallery:
-  - https://i.imgur.com/VkR4OnT.png
-  - https://i.imgur.com/te5p6tu.png
-  - https://i.imgur.com/NNSVhO6.png
-  - https://i.imgur.com/b9fxe4q.png
-  - https://i.imgur.com/ScvpH8m.png
+  - https://i.imgur.com/J5xM2k0.png
+  - https://i.imgur.com/1gHHvro.png
+  - https://i.imgur.com/csHgBwp.png
+  - https://i.imgur.com/3nRaQnn.png
 releaseNotes: >-
-  This version addresses multiple stability issues, including crashes related to the shields panel and Google sign-in navigation. It also resolves a problem with importing from Trezor wallets when Trezor Connect is outdated. Additionally, Chromium has been updated to version 137.0.7151.119.
+  The latest v3.0.0-beta.11 release of Palmr focuses on a complete overhaul of the translation system by removing automatic translations and enforcing manual human reviews. It also introduces a new SMTP connection test feature for administrators, along with multi-language updates and bulk file actions in reverse shares for better user experience. 
+  
+  
+  Additionally, this version includes various UI improvements, code refactoring, and the removal of outdated translation scripts to streamline the workflow.
 dependencies:
 path: ""
 defaultUsername: ""
