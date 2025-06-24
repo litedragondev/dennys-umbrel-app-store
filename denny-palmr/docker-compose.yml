@@ -10,7 +10,7 @@ services:
     image: kyantech/palmr:v3.0.0-beta.11@sha256:01a48368338a4fae0fbd1e0a1a5768f324375cdb164a3269ed10f0d4b9b06e9e
     restart: on-failure
     #ports:
-      # 3333:3333 - API port (OPTIONAL EXPOSED - ONLY IF YOU WANT TO ACCESS THE API DIRECTLY)
+      # 3333:3333 - API port (ONLY EXPOSE IF DIRECT API ACCESS IS NEEDED)
     healthcheck:
       test: ["CMD-SHELL", "nc -z 127.0.0.1 5487 || exit 1"]
       interval: 10s
