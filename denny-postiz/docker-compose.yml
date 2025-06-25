@@ -5,7 +5,9 @@ services:
     environment:
       APP_HOST: denny-postiz_web_1
       APP_PORT: 5000
-      
+    networks:
+      - postiz-network
+
   web:
     image: ghcr.io/gitroomhq/postiz-app:latest
     restart: on-failure
@@ -14,8 +16,8 @@ services:
       FRONTEND_URL: "http://umbrel-2.local:4442"
       NEXT_PUBLIC_BACKEND_URL: "http://umbrel-2.local:4442/api"
       JWT_SECRET: "9vE2wB#xR7mN!qZpT4Js6fUaLcY0HdGh"
-      DATABASE_URL: "postgresql://postiz-user:postiz-password@postiz-postgres:5432/postiz-db-local"
-      REDIS_URL: "redis://postiz-redis:6379"
+      DATABASE_URL: "postgresql://postiz-user:postiz-password@postgres:5432/postiz-db-local"
+      REDIS_URL: "redis://redis:6379"
       BACKEND_INTERNAL_URL: "http://localhost:3000"
       IS_GENERAL: "true"
       DISABLE_REGISTRATION: "false"
@@ -31,6 +33,8 @@ services:
         condition: service_healthy
       redis:
         condition: service_healthy
+    networks:
+      - postiz-network
 
   postgres:
     image: postgres:17-alpine
@@ -46,6 +50,8 @@ services:
       interval: 10s
       timeout: 3s
       retries: 3
+    networks:
+      - postiz-network
 
   redis:
     image: redis:7.2
@@ -57,4 +63,9 @@ services:
       interval: 10s
       timeout: 3s
       retries: 3
+    networks:
+      - postiz-network
 
+networks:
+  postiz-network:
+    external: false
