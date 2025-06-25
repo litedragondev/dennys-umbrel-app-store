@@ -13,7 +13,7 @@ services:
       MAIN_URL: "http://umbrel-2.local:4442"
       FRONTEND_URL: "http://umbrel-2.local:4442"
       NEXT_PUBLIC_BACKEND_URL: "http://umbrel-2.local:4442/api"
-      JWT_SECRET: "change-this-to-a-unique-random-string"
+      JWT_SECRET: "9vE2wB#xR7mN!qZpT4Js6fUaLcY0HdGh"
       DATABASE_URL: "postgresql://postiz-user:postiz-password@postiz-postgres:5432/postiz-db-local"
       REDIS_URL: "redis://postiz-redis:6379"
       BACKEND_INTERNAL_URL: "http://localhost:3000"
