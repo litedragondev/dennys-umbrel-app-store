@@ -7,20 +7,22 @@ services:
       APP_PORT: 5000
       
   web:
-    image: ghcr.io/gitroomhq/postiz-app:v1.36.1-amd64
+    image: ghcr.io/gitroomhq/postiz-app:latest
     restart: on-failure
     environment:
       MAIN_URL: "http://umbrel-2.local:4442"
       FRONTEND_URL: "http://umbrel-2.local:4442"
       NEXT_PUBLIC_BACKEND_URL: "http://umbrel-2.local:4442/api"
-      JWT_SECRET: "xTb4uYZ!qR7eK6mJ&zP9VwA2Nc@L1dF0"
+      JWT_SECRET: "change-this-to-a-unique-random-string"
       DATABASE_URL: "postgresql://postiz-user:postiz-password@postiz-postgres:5432/postiz-db-local"
       REDIS_URL: "redis://postiz-redis:6379"
       BACKEND_INTERNAL_URL: "http://localhost:3000"
       IS_GENERAL: "true"
+      DISABLE_REGISTRATION: "false"
       STORAGE_PROVIDER: "local"
       UPLOAD_DIRECTORY: "/uploads"
       NEXT_PUBLIC_UPLOAD_DIRECTORY: "/uploads"
+      NOT_SECURED: "true"
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
       - ${APP_DATA_DIR}/data/uploads:/uploads
@@ -30,7 +32,7 @@ services:
       postiz-redis:
         condition: service_healthy
 
-  postiz-postgres:
+  postgres:
     image: postgres:17-alpine
     restart: on-failure
     environment:
@@ -38,20 +40,21 @@ services:
       POSTGRES_USER: postiz-user
       POSTGRES_DB: postiz-db-local
     volumes:
-      - ${APP_DATA_DIR}/data/db:/var/lib/postgresql/data
+      - ${APP_DATA_DIR}/postgres:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "postiz-user", "-d", "postiz-db-local"]
       interval: 10s
       timeout: 3s
       retries: 3
 
-  postiz-redis:
+  redis:
     image: redis:7.2
     restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/redis:/data
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
       interval: 10s
       timeout: 3s
       retries: 3
-    volumes:
-      - ${APP_DATA_DIR}/data/redis:/data
+
