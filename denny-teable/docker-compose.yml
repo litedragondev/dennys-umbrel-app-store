@@ -40,7 +40,7 @@ services:
       retries: 3
 
   db:
-    image: postgres:15.4
+    image: postgres:15.13@sha256:e652befe0cc7d0e312828d71522aed8ed3762d6b71b6a5a823821ff06c186a20
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/db:/var/lib/postgresql/data:rw
@@ -55,7 +55,7 @@ services:
       retries: 3
 
   cache:
-    image: redis:7.2.4
+    image: redis:8.0.2@sha256:1b835e5a8d5db58e8b718850bf43a68ef5a576fc68301fd08a789b20b4eecb61
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/cache:/data:rw
