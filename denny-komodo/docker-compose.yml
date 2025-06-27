@@ -18,6 +18,7 @@ services:
       POSTGRES_USER: komodo_user
       POSTGRES_PASSWORD: komodo_pass
       POSTGRES_DB: postgres
+      POSTGRES_PORT: 5432
 
   ferretdb:
     image: ghcr.io/ferretdb/ferretdb
