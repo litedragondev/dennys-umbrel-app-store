@@ -11,6 +11,7 @@ services:
     environment:
       - RUST_LOG=info
     restart: on-failure
+    user: "1000:1000"
     security_opt:
       - no-new-privileges:true
     cap_drop:
