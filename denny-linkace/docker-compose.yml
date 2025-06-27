@@ -14,7 +14,7 @@ services:
       - db
       - redis
     volumes:
-      - ${APP_DATA_DIR}/data/linkace_data:/app/storage
+      - ${APP_DATA_DIR}/data/linkace_data:/app/storage:rw
     environment:
       APP_KEY: base64:vUSm5IuZpWi9Rb7y0gljDWGoTzCkpWMMScJxU8ypaTI=
       DB_CONNECTION: mysql
@@ -32,7 +32,7 @@ services:
   db:
     image: mariadb:12.0.1-rc@sha256:3e2de56a31d3710b2c28e3ee4de2016d3caddf8ac46abaf80f0f8781ef48e0f3
     restart: on-failure
-    user: "1000:1000"
+    user: "0:0"
     command: mariadbd --character-set-server=utf8mb4 --collation-server=utf8mb4_bin
     environment:
       MYSQL_ROOT_PASSWORD: s8QpJrNvXt7eGZ24
@@ -40,7 +40,7 @@ services:
       MYSQL_PASSWORD: s8QpJrNvXt7eGZ24
       MYSQL_DATABASE: linkace
     volumes:
-      - ${APP_DATA_DIR}/mysql:/var/lib/mysql
+      - ${APP_DATA_DIR}/mysql:/var/lib/mysql:rw
 
   redis:
     image: redis:8.0.2@sha256:1b835e5a8d5db58e8b718850bf43a68ef5a576fc68301fd08a789b20b4eecb61
@@ -49,4 +49,4 @@ services:
     environment:
       REDIS_PASSWORD: dFp72AxYjLkZ9vRN
     volumes:
-      - ${APP_DATA_DIR}/data/redis:/data
+      - ${APP_DATA_DIR}/data/redis:/data:rw
