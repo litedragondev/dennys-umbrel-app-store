@@ -7,7 +7,7 @@ services:
       APP_PORT: 80
 
   app:
-    image: docker.io/linkace/linkace:latest
+    image: linkace/linkace:v2.1.8@sha256:266ea7ffe222bda918204b6b1bdaede8152f35ba6c24b693288af9df34e5a8f0
     restart: on-failure
     user: "1000:1000"
     depends_on:
@@ -28,9 +28,8 @@ services:
       REDIS_PORT: 6379
 
   db:
-    image: docker.io/library/mariadb:11.5
+    image: mariadb:12.0.1-rc@sha256:3e2de56a31d3710b2c28e3ee4de2016d3caddf8ac46abaf80f0f8781ef48e0f3
     restart: on-failure
-    user: "1000:1000"
     command: mariadbd --character-set-server=utf8mb4 --collation-server=utf8mb4_bin
     environment:
       MYSQL_ROOT_PASSWORD: myLinkAceDB2025!
@@ -41,9 +40,8 @@ services:
       - ${APP_DATA_DIR}/data/mysql:/var/lib/mysql
 
   redis:
-    image: docker.io/bitnami/redis:7.4
+    image: redis:8.0.2@sha256:1b835e5a8d5db58e8b718850bf43a68ef5a576fc68301fd08a789b20b4eecb61
     restart: on-failure
-    user: "1000:1000"
     environment:
       REDIS_PASSWORD: myLinkAceDB2025!
     volumes:
