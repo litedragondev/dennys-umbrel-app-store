@@ -3,7 +3,7 @@ id: denny-komodo
 name: Komodo
 tagline: A tool to build and deploy software
 icon: https://i.imgur.com/GmeSNMl.png
-category: test
+category: developer tools
 version: "1.18.4"
 port: 9120
 description: >-
