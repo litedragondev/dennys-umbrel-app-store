@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: denny-komodo_core_1  # Core-Service-Hostname in Umbrel
+      APP_HOST: denny-komodo_core_1
       APP_PORT: 9120
 
   mongo:
@@ -18,7 +18,7 @@ services:
       - ${APP_DATA_DIR}/data/mongo/config:/data/configdb
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
-      MONGO_INITDB_ROOT_PASSWORD: Start-12345!  # Mongo Root Passwort
+      MONGO_INITDB_ROOT_PASSWORD: Start-12345!
 
   core:
     image: ghcr.io/moghtech/komodo-core:latest
@@ -31,17 +31,17 @@ services:
     environment:
       TZ: Etc/UTC
       KOMODO_DATABASE_ADDRESS: mongo:27017
-      KOMODO_DATABASE_USERNAME: admin
-      KOMODO_DATABASE_PASSWORD: Start-12345!   # Mongo User Passwort (muss mit oben übereinstimmen)
-      KOMODO_PASSKEY: S3curePasskey2025!       # Sichere Passkey für Core <-> Periphery
+      KOMODO_DB_USERNAME: admin
+      KOMODO_DB_PASSWORD: umbrel
+      KOMODO_PASSKEY: S3curePasskey2025!
       KOMODO_HOST: https://demo.komo.do
       KOMODO_TITLE: Komodo
       KOMODO_FIRST_SERVER: https://periphery:8120
       KOMODO_DISABLE_CONFIRM_DIALOG: "false"
       KOMODO_MONITORING_INTERVAL: 15-sec
       KOMODO_RESOURCE_POLL_INTERVAL: 1-hr
-      KOMODO_WEBHOOK_SECRET: W3bh00kS3cret!2025 # Secret für Webhooks
-      KOMODO_JWT_SECRET: JwtS3cretKey!2025      # JWT Secret
+      KOMODO_WEBHOOK_SECRET: W3bh00kS3cret!2025
+      KOMODO_JWT_SECRET: JwtS3cretKey!2025    
       KOMODO_JWT_TTL: 1-day
       KOMODO_LOCAL_AUTH: "true"
       KOMODO_DISABLE_USER_REGISTRATION: "false"
@@ -67,7 +67,7 @@ services:
     environment:
       TZ: Etc/UTC
       PERIPHERY_ROOT_DIRECTORY: /etc/komodo
-      PERIPHERY_PASSKEYS: S3curePasskey2025!  # Muss identisch mit KOMODO_PASSKEY sein
+      PERIPHERY_PASSKEYS: S3curePasskey2025!
       PERIPHERY_DISABLE_TERMINALS: "false"
       PERIPHERY_SSL_ENABLED: "true"
       PERIPHERY_INCLUDE_DISK_MOUNTS: /etc/hostname
