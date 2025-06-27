@@ -1,33 +1,31 @@
 manifestVersion: 1
 id: denny-komodo
-name: komodo
-tagline: A privacy first markdown app
-icon: https://i.imgur.com/fG52Wny.png
+name: Komodo
+tagline: A tool to build and deploy software
+icon: https://i.imgur.com/GmeSNMl.png
 category: test
-version: "0.1.4"
+version: "1.18.4"
 port: 9120
 description: >-
-  Haptic is a minimalist and privacy focused markdown note taking application designed to keep your data local and under your control. It offers a simple and clean interface that allows users to create and manage markdown notes without the complexity of plugins or overwhelming menus. Unlike many note taking apps that rely on cloud services, Haptic stores all notes directly on your device ensuring maximum privacy and security.
+  🦎 Komodo is an open-source platform focused on streamlining and automating the management of servers, application builds, deployments, and containerized environments. It offers a unified interface that enables users to monitor critical system metrics such as CPU load, memory consumption, and disk usage across multiple servers, providing comprehensive operational visibility. A key feature of Komodo is its ability to manage Docker containers and Docker Compose applications, delivering real-time insights into their status, logs, and uptime. This detailed container management simplifies troubleshooting and operational oversight, making it easier for teams to maintain and optimize their deployments.
 
 
-  The project is actively evolving with plans to include features such as device synchronization, mobile support, collaborative editing, versioning, and support for advanced markdown elements like LaTeX. While it does not aim to replace more complex note taking systems, Haptic is perfect for those who want a straightforward and lightweight solution for managing markdown notes that emphasizes privacy and ease of use.
+  Built on a core-periphery architecture, Komodo consists of a central control unit that coordinates with lightweight agents running on connected hosts. This structure allows for secure and scalable communication, enabling users to execute commands remotely, trigger automated builds and deployments, and access shell sessions across their infrastructure with ease. The platform’s robust management of environment variables and secrets ensures sensitive information is handled securely and flexibly, supporting features like global variables and secret interpolation.
 
 
-  Overall it is a well designed tool for anyone looking for a clean and secure markdown experience without the distractions of large feature sets or cloud dependency.
-developer: Christo Todorov
-website: https://www.haptic.md/
+  Komodo exposes extensive REST and WebSocket APIs that empower teams to automate workflows, integrate with external tools, and customize infrastructure management processes programmatically. It also supports multi-user authentication with role-based access controls and OAuth integration, ensuring secure collaboration within teams. As a powerful alternative to Portainer, Komodo consolidates monitoring, deployment, and management capabilities into a single platform, helping organizations increase efficiency, reduce manual overhead, and maintain clear oversight of their distributed environments. 
+developer: mogh.tech 
+website: https://komo.do/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/chroxify/haptic
-support: https://github.com/chroxify/haptic/issues
+repo: https://github.com/moghtech/komodo
+support: https://github.com/moghtech/komodo/issues
 gallery:
-  - https://i.imgur.com/ucxXRog.png
-  - https://i.imgur.com/VSd7FZT.png
-  - https://i.imgur.com/y3AuJ5I.png
-  - https://i.imgur.com/EBqT9kL.png
-  - https://i.imgur.com/ahjhaZ4.png
+  - https://i.imgur.com/CM4uh1N.png
+  - https://i.imgur.com/CM4uh1N.png
+  - https://i.imgur.com/CM4uh1N.png
 releaseNotes: >-
-  Version 0.1.4 introduces a starting screen and a pre-built Docker image, with 24 commits added to the main branch since the previous release.
+  Komodo version 1.18.4 introduces support for resource templates that serve as starting points when creating new resources, enhancing workflow flexibility. It also adds container port display and linking features for easier navigation, along with improvements to environment variable handling, server statistics, and internal code refactoring to increase stability and consistency. Both Core and Periphery agents should be updated to ensure full compatibility.
 dependencies:
 path: ""
 defaultUsername: ""
