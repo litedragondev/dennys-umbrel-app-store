@@ -53,8 +53,8 @@ services:
       KOMODO_OIDC_ENABLED: "false"
       KOMODO_GITHUB_OAUTH_ENABLED: "false"
       KOMODO_GOOGLE_OAUTH_ENABLED: "false"
-      KOMODO_AWS_ACCESS_KEY_ID:
-      KOMODO_AWS_SECRET_ACCESS_KEY:
+      #KOMODO_AWS_ACCESS_KEY_ID:
+      #KOMODO_AWS_SECRET_ACCESS_KEY:
     volumes:
       - ${APP_DATA_DIR}/data/repo-cache:/repo-cache
 
