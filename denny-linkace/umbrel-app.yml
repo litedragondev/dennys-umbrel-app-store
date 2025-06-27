@@ -1,0 +1,34 @@
+manifestVersion: 1
+id: denny-linkace
+name: LinkAce
+tagline: A privacy first markdown app
+icon: https://i.imgur.com/fG52Wny.png
+category: test
+version: "0.1.4"
+port: 8577
+description: >-
+  Haptic is a minimalist and privacy focused markdown note taking application designed to keep your data local and under your control. It offers a simple and clean interface that allows users to create and manage markdown notes without the complexity of plugins or overwhelming menus. Unlike many note taking apps that rely on cloud services, Haptic stores all notes directly on your device ensuring maximum privacy and security.
+
+
+  The project is actively evolving with plans to include features such as device synchronization, mobile support, collaborative editing, versioning, and support for advanced markdown elements like LaTeX. While it does not aim to replace more complex note taking systems, Haptic is perfect for those who want a straightforward and lightweight solution for managing markdown notes that emphasizes privacy and ease of use.
+
+
+  Overall it is a well designed tool for anyone looking for a clean and secure markdown experience without the distractions of large feature sets or cloud dependency.
+developer: Christo Todorov
+website: https://www.haptic.md/
+submitter: dennysubke
+submission: https://github.com/getumbrel/umbrel-apps/pull/
+repo: https://github.com/chroxify/haptic
+support: https://github.com/chroxify/haptic/issues
+gallery:
+  - https://i.imgur.com/ucxXRog.png
+  - https://i.imgur.com/VSd7FZT.png
+  - https://i.imgur.com/y3AuJ5I.png
+  - https://i.imgur.com/EBqT9kL.png
+  - https://i.imgur.com/ahjhaZ4.png
+releaseNotes: >-
+  Version 0.1.4 introduces a starting screen and a pre-built Docker image, with 24 commits added to the main branch since the previous release.
+dependencies:
+path: ""
+defaultUsername: ""
+defaultPassword: ""
