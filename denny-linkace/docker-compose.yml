@@ -22,27 +22,31 @@ services:
       DB_PORT: 3306
       DB_DATABASE: linkace
       DB_USERNAME: linkace
-      DB_PASSWORD: myLinkAceDB2025!
+      DB_PASSWORD: s8QpJrNvXt7eGZ24
       REDIS_HOST: redis
-      REDIS_PASSWORD: myLinkAceDB2025!
+      REDIS_PASSWORD: dFp72AxYjLkZ9vRN
       REDIS_PORT: 6379
+      XDG_CONFIG_HOME: /app/storage/config
+      XDG_DATA_HOME: /app/storage/data
 
   db:
     image: mariadb:12.0.1-rc@sha256:3e2de56a31d3710b2c28e3ee4de2016d3caddf8ac46abaf80f0f8781ef48e0f3
     restart: on-failure
+    user: "1000:1000"
     command: mariadbd --character-set-server=utf8mb4 --collation-server=utf8mb4_bin
     environment:
-      MYSQL_ROOT_PASSWORD: myLinkAceDB2025!
+      MYSQL_ROOT_PASSWORD: s8QpJrNvXt7eGZ24
       MYSQL_USER: linkace
-      MYSQL_PASSWORD: myLinkAceDB2025!
+      MYSQL_PASSWORD: s8QpJrNvXt7eGZ24
       MYSQL_DATABASE: linkace
     volumes:
-      - ${APP_DATA_DIR}/data/mysql:/var/lib/mysql
+      - ${APP_DATA_DIR}/mysql:/var/lib/mysql
 
   redis:
     image: redis:8.0.2@sha256:1b835e5a8d5db58e8b718850bf43a68ef5a576fc68301fd08a789b20b4eecb61
     restart: on-failure
+    user: "1000:1000"
     environment:
-      REDIS_PASSWORD: myLinkAceDB2025!
+      REDIS_PASSWORD: dFp72AxYjLkZ9vRN
     volumes:
-      - ${APP_DATA_DIR}/data/redis:/bitnami/redis/data
+      - ${APP_DATA_DIR}/data/redis:/data
