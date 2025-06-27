@@ -12,7 +12,7 @@ services:
     labels:
       komodo.skip:
     command: --quiet --wiredTigerCacheSizeGB 0.25
-    restart: unless-stopped
+    restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/mongo/data:/data/db
       - ${APP_DATA_DIR}/data/mongo/config:/data/configdb
@@ -25,7 +25,7 @@ services:
     user: "1000:1000"
     labels:
       komodo.skip:
-    restart: unless-stopped
+    restart: on-failure
     depends_on:
       - mongo
     environment:
@@ -63,7 +63,7 @@ services:
     user: "1000:1000"
     labels:
       komodo.skip:
-    restart: unless-stopped
+    restart: on-failure
     environment:
       TZ: Etc/UTC
       PERIPHERY_ROOT_DIRECTORY: /etc/komodo
