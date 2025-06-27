@@ -21,3 +21,4 @@ services:
       - /tmp
     volumes:
       - ${APP_DATA_DIR}/data:/data:rw
+      - ${APP_DATA_DIR}/blobs:/blobs:rw
