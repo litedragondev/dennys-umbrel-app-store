@@ -20,6 +20,7 @@ services:
 
   ferretdb:
     image: ghcr.io/ferretdb/ferretdb
+    user: "1000:1000"
     labels:
       komodo.skip:
     restart: on-failure
