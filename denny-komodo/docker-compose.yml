@@ -8,6 +8,7 @@ services:
 
   postgres:
     image: ghcr.io/ferretdb/postgres-documentdb
+    user: "1000:1000"
     labels:
       komodo.skip:
     restart: on-failure
@@ -33,6 +34,7 @@ services:
 
   web:
     image: ghcr.io/moghtech/komodo-core:latest
+    user: "1000:1000"
     labels:
       komodo.skip:
     restart: on-failure
@@ -70,6 +72,7 @@ services:
 
   periphery:
     image: ghcr.io/moghtech/komodo-periphery:latest
+    user: "1000:1000"
     labels:
       komodo.skip:
     restart: on-failure
