@@ -7,7 +7,7 @@ services:
       APP_PORT: 9120
 
   mongo:
-    image: mongo:8.0.10@sha256:98028cf281bb5d49ace5e1ddbd4509e8f1382fe80ef1cf101eeefdc106d76cd4
+    image: mongo:4.4@sha256:52c42cbab240b3c5b1748582cc13ef46d521ddacae002bbbda645cebed270ec0
     user: "1000:1000"
     labels:
       komodo.skip:
