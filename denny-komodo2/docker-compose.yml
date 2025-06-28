@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: denny-komodo_core_1
+      APP_HOST: denny-komodo2_core_1
       APP_PORT: 9120
 
   postgres:
