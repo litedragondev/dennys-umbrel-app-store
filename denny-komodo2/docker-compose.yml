@@ -20,7 +20,7 @@ services:
 
   ferretdb:
     image: ghcr.io/ferretdb/ferretdb
-    user: "0:0"
+    user: "1000:1000"
     labels:
       komodo.skip:
     restart: unless-stopped
