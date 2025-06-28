@@ -6,73 +6,85 @@ services:
       APP_HOST: denny-komodo_core_1
       APP_PORT: 9120
 
-  mongo:
-    image: mongo:4.4@sha256:52c42cbab240b3c5b1748582cc13ef46d521ddacae002bbbda645cebed270ec0
-    user: "1000:1000"
+  postgres:
+    image: ghcr.io/ferretdb/postgres-documentdb:17-0.104.0@sha256:1d709fc03dcb82faa2e3aa02c0f80ea10e483b38aff08a05da36a6faa2098608
     labels:
       komodo.skip:
-    command: --quiet --wiredTigerCacheSizeGB 0.25
     restart: on-failure
     volumes:
-      - ${APP_DATA_DIR}/data/mongo/data:/data/db
-      - ${APP_DATA_DIR}/data/mongo/config:/data/configdb
+      - ${APP_DATA_DIR}/data/postgres:/var/lib/postgresql/data
     environment:
-      MONGO_INITDB_ROOT_USERNAME: admin
-      MONGO_INITDB_ROOT_PASSWORD: Start-12345!
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: postgres
 
-  core:
-    image: ghcr.io/moghtech/komodo-core:1.18.4@sha256:b9a0c8757dd9e8f77a5e541c3afd66d37c5dbb1fa4a4687a2c6146741f18850e
-    user: "1000:1000"
+  ferretdb:
+    image: ghcr.io/ferretdb/ferretdb:2.3.1@sha256:1170bd36c39378614edd3f1d2b92f0c5a9b30e482a79ea0c3fc0fe11baba3afa
+    user: "0:0"
     labels:
       komodo.skip:
     restart: on-failure
     depends_on:
-      - mongo
+      - postgres
+    volumes:
+      - ${APP_DATA_DIR}/data/ferretdb:/state
     environment:
-      TZ: Europe/Berlin
-      KOMODO_DATABASE_ADDRESS: mongo:27017
+      FERRETDB_POSTGRESQL_URL: postgres://admin:admin@postgres:5432/postgres
+
+  core:
+    image: ghcr.io/moghtech/komodo-core:1.18.4@sha256:b9a0c8757dd9e8f77a5e541c3afd66d37c5dbb1fa4a4687a2c6146741f18850e
+    labels:
+      komodo.skip:
+    restart: on-failure
+    depends_on:
+      - ferretdb
+    environment:
+      KOMODO_DATABASE_ADDRESS: ferretdb:27017
       KOMODO_DATABASE_USERNAME: admin
-      KOMODO_DATABASE_PASSWORD: Start-12345!
+      KOMODO_DATABASE_PASSWORD: admin
+      COMPOSE_KOMODO_IMAGE_TAG: latest
       KOMODO_PASSKEY: S3curePasskey2025!
+      TZ: Europe/Berlin
       KOMODO_HOST: https://demo.komo.do
       KOMODO_TITLE: Komodo
       KOMODO_FIRST_SERVER: https://periphery:8120
-      KOMODO_DISABLE_CONFIRM_DIALOG: "false"
-      KOMODO_MONITORING_INTERVAL: 15-sec
-      KOMODO_RESOURCE_POLL_INTERVAL: 1-hr
+      KOMODO_DISABLE_CONFIRM_DIALOG: false
+      KOMODO_MONITORING_INTERVAL: "15-sec"
+      KOMODO_RESOURCE_POLL_INTERVAL: "1-hr"
       KOMODO_WEBHOOK_SECRET: W3bh00kS3cret!2025
       KOMODO_JWT_SECRET: JwtS3cretKey!2025
-      KOMODO_JWT_TTL: 1-day
-      KOMODO_LOCAL_AUTH: "true"
-      KOMODO_DISABLE_USER_REGISTRATION: "false"
-      KOMODO_ENABLE_NEW_USERS: "false"
-      KOMODO_DISABLE_NON_ADMIN_CREATE: "false"
-      KOMODO_TRANSPARENT_MODE: "false"
-      KOMODO_LOGGING_PRETTY: "false"
-      KOMODO_PRETTY_STARTUP_CONFIG: "false"
-      KOMODO_OIDC_ENABLED: "false"
-      KOMODO_GITHUB_OAUTH_ENABLED: "false"
-      KOMODO_GOOGLE_OAUTH_ENABLED: "false"
-      #KOMODO_AWS_ACCESS_KEY_ID:
-      #KOMODO_AWS_SECRET_ACCESS_KEY:
+      KOMODO_JWT_TTL: "1-day"
+      KOMODO_LOCAL_AUTH: true
+      KOMODO_DISABLE_USER_REGISTRATION: false
+      KOMODO_ENABLE_NEW_USERS: false
+      KOMODO_DISABLE_NON_ADMIN_CREATE: false
+      KOMODO_TRANSPARENT_MODE: false
+      KOMODO_LOGGING_PRETTY: false
+      KOMODO_PRETTY_STARTUP_CONFIG: false
+      KOMODO_OIDC_ENABLED: false
+      KOMODO_GITHUB_OAUTH_ENABLED: false
+      KOMODO_GOOGLE_OAUTH_ENABLED: false
+      KOMODO_AWS_ACCESS_KEY_ID:
+      KOMODO_AWS_SECRET_ACCESS_KEY:
     volumes:
-      - ${APP_DATA_DIR}/data/repo-cache:/repo-cache
+      - ${APP_DATA_DIR}/data/core:/repo-cache
 
   periphery:
     image: ghcr.io/moghtech/komodo-periphery:1.18.4@sha256:0a3ccd9294b13d3c5942d1e20392c81e28369ba1aaba6b17bfd5b35907760b98
-    user: "1000:1000"
     labels:
       komodo.skip:
     restart: on-failure
     environment:
+      COMPOSE_KOMODO_IMAGE_TAG: latest
+      KOMODO_PASSKEY: S3curePasskey2025!
       TZ: Europe/Berlin
       PERIPHERY_ROOT_DIRECTORY: /etc/komodo
       PERIPHERY_PASSKEYS: S3curePasskey2025!
-      PERIPHERY_DISABLE_TERMINALS: "false"
-      PERIPHERY_SSL_ENABLED: "true"
+      PERIPHERY_DISABLE_TERMINALS: false
+      PERIPHERY_SSL_ENABLED: true
       PERIPHERY_INCLUDE_DISK_MOUNTS: /etc/hostname
-      PERIPHERY_LOGGING_PRETTY: "false"
-      PERIPHERY_PRETTY_STARTUP_CONFIG: "false"
+      PERIPHERY_LOGGING_PRETTY: false
+      PERIPHERY_PRETTY_STARTUP_CONFIG: false
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /proc:/proc
