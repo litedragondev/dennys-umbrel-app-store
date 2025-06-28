@@ -16,4 +16,4 @@ services:
     tmpfs:
       - /tmp
     volumes:
-      - ${APP_DATA_DIR}/data/blob-files:/data:rw
+      - ${UMBREL_ROOT}/data/storage/Documents:/data:rw
