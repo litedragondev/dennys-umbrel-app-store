@@ -8,6 +8,7 @@ services:
 
   postgres:
     image: ghcr.io/ferretdb/postgres-documentdb:17-0.104.0@sha256:1d709fc03dcb82faa2e3aa02c0f80ea10e483b38aff08a05da36a6faa2098608
+    user: "1000:1000"
     labels:
       komodo.skip:
     restart: on-failure
@@ -33,6 +34,7 @@ services:
 
   core:
     image: ghcr.io/moghtech/komodo-core:1.18.4@sha256:b9a0c8757dd9e8f77a5e541c3afd66d37c5dbb1fa4a4687a2c6146741f18850e
+    user: "1000:1000"
     labels:
       komodo.skip:
     restart: on-failure
@@ -48,29 +50,30 @@ services:
       KOMODO_HOST: https://demo.komo.do
       KOMODO_TITLE: Komodo
       KOMODO_FIRST_SERVER: https://periphery:8120
-      KOMODO_DISABLE_CONFIRM_DIALOG: false
+      KOMODO_DISABLE_CONFIRM_DIALOG: "false"
       KOMODO_MONITORING_INTERVAL: "15-sec"
       KOMODO_RESOURCE_POLL_INTERVAL: "1-hr"
       KOMODO_WEBHOOK_SECRET: W3bh00kS3cret!2025
       KOMODO_JWT_SECRET: JwtS3cretKey!2025
       KOMODO_JWT_TTL: "1-day"
-      KOMODO_LOCAL_AUTH: true
-      KOMODO_DISABLE_USER_REGISTRATION: false
-      KOMODO_ENABLE_NEW_USERS: false
-      KOMODO_DISABLE_NON_ADMIN_CREATE: false
-      KOMODO_TRANSPARENT_MODE: false
-      KOMODO_LOGGING_PRETTY: false
-      KOMODO_PRETTY_STARTUP_CONFIG: false
-      KOMODO_OIDC_ENABLED: false
-      KOMODO_GITHUB_OAUTH_ENABLED: false
-      KOMODO_GOOGLE_OAUTH_ENABLED: false
-      KOMODO_AWS_ACCESS_KEY_ID:
-      KOMODO_AWS_SECRET_ACCESS_KEY:
+      KOMODO_LOCAL_AUTH: "true"
+      KOMODO_DISABLE_USER_REGISTRATION: "false"
+      KOMODO_ENABLE_NEW_USERS: "false"
+      KOMODO_DISABLE_NON_ADMIN_CREATE: "false"
+      KOMODO_TRANSPARENT_MODE: "false"
+      KOMODO_LOGGING_PRETTY: "false"
+      KOMODO_PRETTY_STARTUP_CONFIG: "false"
+      KOMODO_OIDC_ENABLED: "false"
+      KOMODO_GITHUB_OAUTH_ENABLED: "false"
+      KOMODO_GOOGLE_OAUTH_ENABLED: "false"
+      #KOMODO_AWS_ACCESS_KEY_ID:
+      #KOMODO_AWS_SECRET_ACCESS_KEY:
     volumes:
       - ${APP_DATA_DIR}/data/core:/repo-cache
 
   periphery:
     image: ghcr.io/moghtech/komodo-periphery:1.18.4@sha256:0a3ccd9294b13d3c5942d1e20392c81e28369ba1aaba6b17bfd5b35907760b98
+    user: "1000:1000"
     labels:
       komodo.skip:
     restart: on-failure
@@ -80,11 +83,11 @@ services:
       TZ: Europe/Berlin
       PERIPHERY_ROOT_DIRECTORY: /etc/komodo
       PERIPHERY_PASSKEYS: S3curePasskey2025!
-      PERIPHERY_DISABLE_TERMINALS: false
-      PERIPHERY_SSL_ENABLED: true
+      PERIPHERY_DISABLE_TERMINALS: "false"
+      PERIPHERY_SSL_ENABLED: "true"
       PERIPHERY_INCLUDE_DISK_MOUNTS: /etc/hostname
-      PERIPHERY_LOGGING_PRETTY: false
-      PERIPHERY_PRETTY_STARTUP_CONFIG: false
+      PERIPHERY_LOGGING_PRETTY: "false"
+      PERIPHERY_PRETTY_STARTUP_CONFIG: "false"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /proc:/proc
