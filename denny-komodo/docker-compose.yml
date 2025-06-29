@@ -7,7 +7,7 @@ services:
       APP_PORT: 9120
 
   docker:
-    image: docker:28.0.4-dind@sha256:ddb0033088b4fab74881ade341a582e3c6c8021b82377703ba1a6106bd3ded44
+    image: docker:28.3.0-dind@sha256:d33eb93fe02683e984e6f8a93c0b3d85bb74f56ec83922bc39fb34ba23ab42bc
     privileged: "true"
     network_mode: host
     stop_grace_period: 1m
@@ -41,7 +41,7 @@ services:
 
   ferretdb:
     image: ghcr.io/ferretdb/ferretdb:2.3.1@sha256:1170bd36c39378614edd3f1d2b92f0c5a9b30e482a79ea0c3fc0fe11baba3afa
-    user: "0:0"
+    user: "1000:1000"
     labels:
       komodo.skip:
     restart: on-failure
