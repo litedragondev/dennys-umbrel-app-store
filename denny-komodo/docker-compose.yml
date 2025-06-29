@@ -90,10 +90,7 @@ services:
       #KOMODO_AWS_SECRET_ACCESS_KEY:
     volumes:
       - ${APP_DATA_DIR}/data/core:/repo-cache
-    extra_hosts:
-      - host.docker.internal:host-gateway
-      - ${APP_DOMAIN}:host-gateway
-
+      
   periphery:
     image: ghcr.io/moghtech/komodo-periphery:1.18.4@sha256:0a3ccd9294b13d3c5942d1e20392c81e28369ba1aaba6b17bfd5b35907760b98
     user: "1000:1000"
