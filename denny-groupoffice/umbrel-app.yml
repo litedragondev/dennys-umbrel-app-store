@@ -2,7 +2,7 @@ manifestVersion: 1
 id: denny-groupoffice
 name: Group Office
 tagline: An enterprise CRM and groupware tool
-icon: https://i.imgur.com/hE4GAqa.png
+icon: https://i.imgur.com/rZQW6tq.png
 category: files & productivity
 version: "25.0.33"
 port: 9090
@@ -24,10 +24,11 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/Intermesh/groupoffice
 support: https://github.com/Intermesh/groupoffice/issues
 gallery:
-  - https://i.imgur.com/g5OrQeH.png
-  - https://i.imgur.com/mBpVuWm.png
-  - https://i.imgur.com/sEwPlvg.png
-  - https://i.imgur.com/X15IAVJ.png
+  - https://i.imgur.com/vzGL2MK.png
+  - https://i.imgur.com/s6wOkP5.png
+  - https://i.imgur.com/YGQt4Cs.png
+  - https://i.imgur.com/SeLaFJC.png
+  - https://i.imgur.com/x3UCdUn.png
 releaseNotes: >-
   Version 25.0.33 adds validation for expression handling, improving cron job execution in core system modules.
 dependencies:
