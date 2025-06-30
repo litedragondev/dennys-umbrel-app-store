@@ -1,0 +1,36 @@
+manifestVersion: 1
+id: denny-groupoffice
+name: Group Office
+tagline: An enterprise CRM and groupware tool
+icon: https://i.imgur.com/hE4GAqa.png
+category: files & productivity
+version: "25.0.33"
+port: 9090
+description: >-
+  📧 Group Office is a powerful and flexible collaboration and customer relationship management platform developed by Intermesh BV. It helps teams manage communication, schedules, tasks, files, and client interactions in one unified interface. The software is available as a free and open source Community edition as well as a Professional edition that includes extended business tools such as project management, time tracking, invoicing, and helpdesk functionality.
+
+
+  The application runs as a web-based platform and includes integrated email with support for IMAP and S MIME, a shared calendar, contact and CRM features, a document system with real-time collaboration, and task management. Its modular structure allows for customization and extension depending on the specific needs of the team or organization.
+
+
+  Group Office is built with PHP and supports standards like CalDAV, CardDAV, WebDAV, and ActiveSync, enabling synchronization with a wide range of clients and devices. It is available in over 20 languages and is designed to comply with strict data privacy standards such as the GDPR.
+
+
+  With its comprehensive feature set and focus on productivity and secure collaboration, Group Office is well suited for small and medium-sized teams looking for an integrated solution to manage their daily operations.
+developer: Intermesh BV
+website: https://www.group-office.com/
+submitter: dennysubke
+submission: https://github.com/getumbrel/umbrel-apps/pull/
+repo: https://github.com/Intermesh/groupoffice
+support: https://github.com/Intermesh/groupoffice/issues
+gallery:
+  - https://i.imgur.com/g5OrQeH.png
+  - https://i.imgur.com/mBpVuWm.png
+  - https://i.imgur.com/sEwPlvg.png
+  - https://i.imgur.com/X15IAVJ.png
+releaseNotes: >-
+  Version 25.0.33 adds validation for expression handling, improving cron job execution in core system modules.
+dependencies:
+path: ""
+defaultUsername: ""
+defaultPassword: ""
