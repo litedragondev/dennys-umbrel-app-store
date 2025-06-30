@@ -2,7 +2,7 @@ manifestVersion: 1
 id: denny-groupoffice
 name: Group Office
 tagline: An enterprise CRM and groupware tool
-icon: https://i.imgur.com/URcYwBy.png
+icon: https://i.imgur.com/OwTDaVe.png
 category: files & productivity
 version: "25.0.33"
 port: 9090
