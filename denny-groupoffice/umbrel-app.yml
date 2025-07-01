@@ -30,7 +30,7 @@ gallery:
   - https://i.imgur.com/SeLaFJC.png
   - https://i.imgur.com/x3UCdUn.png
 releaseNotes: >-
-  Version 25.0.33 adds validation for expression handling, improving cron job execution in core system modules.
+  Version 25.0.33 introduces enhanced validation for expression handling, significantly improving the reliability and accuracy of cron job executions within core system modules. This update helps prevent execution errors and ensures smoother scheduling workflows, contributing to overall system stability and performance.
 dependencies:
 path: ""
 defaultUsername: ""
