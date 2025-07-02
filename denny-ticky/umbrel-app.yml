@@ -28,5 +28,5 @@ releaseNotes: >-
   Additionally, a Discord community has been created for users to share ideas and receive support.
 dependencies:
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "admin@ticky.com"
+defaultPassword: "abc123"
