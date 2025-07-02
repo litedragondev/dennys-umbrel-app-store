@@ -17,7 +17,7 @@ services:
       - DB_USERNAME=ticky
       - DB_PASSWORD=your-secure-password
       # - FULLY_OFFLINE=true
-      - SMTP_ENABLED=true
+      - SMTP_ENABLED=false
       - SMTP_HOST=your-smtp-host
       - SMTP_PORT=your-smtp-port
       - SMTP_DISPLAY_NAME=Ticky
