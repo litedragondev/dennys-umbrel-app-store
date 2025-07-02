@@ -12,7 +12,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/ticky_data:/app/wwwroot/uploaded
     environment:
-      DB_HOST: ticky-db_1 
+      DB_HOST: ticky-db
       DB_NAME: ticky
       DB_USERNAME: ticky
       DB_PASSWORD: s3cur3p@ssw0rd123
