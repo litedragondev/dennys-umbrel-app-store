@@ -21,9 +21,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/chrisvel/tududi
 support: https://github.com/chrisvel/tududi/issues
 gallery:
-  - https://i.imgur.com/ZbkVi08.png
-  - https://i.imgur.com/ZbkVi08.png
-  - https://i.imgur.com/ZbkVi08.png
+  - https://i.imgur.com/RyF7IXp.png
+  - https://i.imgur.com/RyF7IXp.png
+  - https://i.imgur.com/RyF7IXp.png
 releaseNotes: >-
   Version 0.61 fixes issues with empty tags, inbox and project modals, and the disappearing plus icon. It also hides the calendar as a work in progress, resolves test problems, and improves the notes layout.
 dependencies:
