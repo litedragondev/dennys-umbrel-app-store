@@ -12,8 +12,8 @@ services:
     environment:
       TUDUDI_USER_EMAIL: login@tududi.admin
       TUDUDI_USER_PASSWORD: umbrel
-      TUDUDI_SESSION_SECRET: E5EC171D9CBEAD1CFDD24240DEFE5DCE
+      TUDUDI_SESSION_SECRET: 2f1a8d6c3b9e2f6d4e8f9b1c7a3d0c2e6b4a1f9d8e7c3a6b0d5f1e3a7c2b6d1
       TUDUDI_INTERNAL_SSL_ENABLED: "false"
-      TUDUDI_ALLOWED_ORIGINS: http://${DEVICE_DOMAIN_NAME}:3002
+      TUDUDI_ALLOWED_ORIGINS: http://${DEVICE_DOMAIN_NAME}:3382
     volumes:
       - ${APP_DATA_DIR}/data/db:/app/backend/db
