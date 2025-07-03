@@ -1,0 +1,37 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-ticky_web_1
+      APP_PORT: 8080
+
+  web:
+    image: ghcr.io/dkorecko/ticky:v1.5.0@sha256:af2e73cf1cd1a877938c3a9a60265c4ee7f21fa1ee9a73540d62b492ee17596d
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data/ticky_data:/app/wwwroot/uploaded
+    environment:
+      DB_HOST: ticky-db
+      DB_NAME: ticky
+      DB_USERNAME: ticky
+      DB_PASSWORD: s3cur3p@ssw0rd123
+      SMTP_ENABLED: false
+    depends_on:
+      ticky-db:
+        condition: service_healthy
+
+  ticky-db:
+    image: mysql:9.3.0@sha256:f1049ce35b3986b84c08184de43a0b2109ae037a4a10a23ecf373a893daeadf7
+    restart: on-failure
+    environment:
+      MYSQL_DATABASE: ticky
+      MYSQL_USER: ticky
+      MYSQL_ROOT_PASSWORD: s3cur3p@ssw0rd123
+      MYSQL_PASSWORD: s3cur3p@ssw0rd123
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 2s
+      retries: 30
+    volumes:
+      - ${APP_DATA_DIR}/data/db:/var/lib/mysql
