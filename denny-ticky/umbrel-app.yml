@@ -3,7 +3,7 @@ id: denny-ticky
 name: Ticky
 tagline: A modern Kanban board app
 icon: https://i.imgur.com/dyIQOeh.png
-category: test
+category: files & productivity
 version: "1.5.0"
 port: 4088
 description: >-
