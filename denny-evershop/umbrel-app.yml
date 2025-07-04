@@ -1,0 +1,32 @@
+manifestVersion: 1
+id: denny-evershop
+name: Evershop
+tagline: A modern Kanban board app
+icon: https://i.imgur.com/dyIQOeh.png
+category: test
+version: "1.5.0"
+port: 3341
+description: >-
+  Ticky is a modern self hosted Kanban application built with ASP NET Core Blazor, designed to offer a powerful yet user friendly task management experience. It provides all the core functionalities expected from a Kanban tool such as projects, boards, columns, and cards, while introducing advanced features like time tracking, subtask support, reminders, priority labeling, and even linked tasks in a way reminiscent of professional platforms like Jira.
+
+
+  One of the standout aspects of Ticky is its emphasis on simplicity without sacrificing functionality. Users can create multiple boards within projects, customize columns with color coded limits and automatic sorting, and use drag and drop interactions across a responsive and visually clean interface. Cards can contain subtasks, descriptions, files, deadlines with dynamic visual indicators, and are organized intuitively for maximum clarity. There is also a built in commenting system and activity tracking, making it easy for teams to stay aligned on what is happening and who is doing what.
+developer: dkorecko
+website: https://github.com/dkorecko/Ticky
+submitter: dennysubke
+submission: https://github.com/getumbrel/umbrel-apps/pull/
+repo: https://github.com/dkorecko/Ticky
+support: https://github.com/dkorecko/Ticky/issues
+gallery:
+  - https://i.imgur.com/o8GKKCj.png
+  - https://i.imgur.com/P3wySYH.png
+  - https://i.imgur.com/j6pWzoc.png
+releaseNotes: >-
+  Version 1.5.0 introduces a responsive design and an early mobile version, making the app functional on various devices. New features include a confetti effect when tasks are completed and an icon indicating descriptions on cards, along with several bug fixes and visual improvements. 
+  
+  
+  Additionally, a Discord community has been created for users to share ideas and receive support.
+dependencies:
+path: ""
+defaultUsername: "admin@ticky.com"
+defaultPassword: "abc123"

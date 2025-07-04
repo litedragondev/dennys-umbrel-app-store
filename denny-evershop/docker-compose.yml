@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-evershop_app_1
+      APP_PORT: 3000
+
+  app:
+    image: evershop/evershop:latest
+    restart: on-failure
+    environment:
+      DB_HOST: denny-database_1
+      DB_PASSWORD: postgres
+      DB_USER: postgres
+      DB_NAME: postgres
+    depends_on:
+      - database
+
+  database:
+    image: postgres:16
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data/postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
