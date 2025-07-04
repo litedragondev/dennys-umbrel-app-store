@@ -10,7 +10,7 @@ services:
     image: evershop/evershop:latest
     restart: on-failure
     environment:
-      DB_HOST: denny-database_1
+      DB_HOST: database
       DB_PASSWORD: postgres
       DB_USER: postgres
       DB_NAME: postgres
