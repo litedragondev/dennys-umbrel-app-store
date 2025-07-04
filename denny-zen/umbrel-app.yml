@@ -1,28 +1,36 @@
 manifestVersion: 1
 id: denny-zen
 name: Zen
-tagline: A modern Kanban board app
-icon: https://i.imgur.com/dyIQOeh.png
-category: test
-version: "1.5.0"
+tagline: A simple app for focused and private note-taking
+icon: https://i.imgur.com/zAf0Le8.png
+category: files & productivity
+version: "1.0.0"
 port: 8094
 description: >-
-  Ticky is a modern self hosted Kanban application built with ASP NET Core Blazor, designed to offer a powerful yet user friendly task management experience. It provides all the core functionalities expected from a Kanban tool such as projects, boards, columns, and cards, while introducing advanced features like time tracking, subtask support, reminders, priority labeling, and even linked tasks in a way reminiscent of professional platforms like Jira.
+  📒 Zen is a minimalist note-taking application focused on providing a simple and efficient way to capture and manage information. It allows users to create notes using Markdown, supporting a wide range of formatting options such as tables, checklists, code blocks, and text highlighting. All notes are stored locally in a lightweight SQLite database, ensuring that your data remains private and fully under your control.
 
 
-  One of the standout aspects of Ticky is its emphasis on simplicity without sacrificing functionality. Users can create multiple boards within projects, customize columns with color coded limits and automatic sorting, and use drag and drop interactions across a responsive and visually clean interface. Cards can contain subtasks, descriptions, files, deadlines with dynamic visual indicators, and are organized intuitively for maximum clarity. There is also a built in commenting system and activity tracking, making it easy for teams to stay aligned on what is happening and who is doing what.
-developer: dkorecko
-website: https://github.com/dkorecko/Ticky
+  The application offers a clean and distraction-free interface designed for ease of use on both desktop and mobile devices. It includes a powerful full-text search function that enables users to quickly find relevant notes as they type, and uses tags instead of traditional folders to organize content flexibly. Users can upload and preview images directly within their notes, helping to enrich the information stored.
+
+
+  Zen also provides features like soft-delete and archiving, which help keep your workspace organized without permanently losing information. Keyboard shortcuts improve productivity by allowing fast navigation and editing without relying solely on the mouse. The app supports offline use through its progressive web app functionality, so you can access and edit your notes even without an internet connection.
+
+
+  Overall, Zen serves as a lightweight, fast, and privacy-focused tool for personal knowledge management, journaling, or simple note-taking, giving you full control over your data in a user-friendly environment.
+developer: Sheshbabu
+website: https://www.sheshbabu.com/zen/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/dkorecko/Ticky
-support: https://github.com/dkorecko/Ticky/issues
+repo: https://github.com/sheshbabu/zen
+support: https://github.com/sheshbabu/zen/issues
 gallery:
-  - https://i.imgur.com/o8GKKCj.png
-  - https://i.imgur.com/P3wySYH.png
-  - https://i.imgur.com/j6pWzoc.png
+  - https://i.imgur.com/GdlW4D7.png
+  - https://i.imgur.com/83xecRM.png
+  - https://i.imgur.com/6bkkM7X.png
+  - https://i.imgur.com/VkDaMeB.png
+  - https://i.imgur.com/SUB62To.png
 releaseNotes: >-
-  Version 1.5.0 introduces a responsive design and an early mobile version, making the app functional on various devices. New features include a confetti effect when tasks are completed and an icon indicating descriptions on cards, along with several bug fixes and visual improvements. 
+  No detailed changelogs or versioning are available since the app is distributed using only a continuously updated latest tag. Users always receive the most current version without separate version histories.
   
   
   Additionally, a Discord community has been created for users to share ideas and receive support.
