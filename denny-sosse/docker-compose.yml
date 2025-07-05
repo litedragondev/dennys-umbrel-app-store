@@ -1,0 +1,32 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-sosse_web_1
+      APP_PORT: 80
+
+  web:
+    image: biolds/sosse:1.13.2@sha256:6e233969dc1055eeac3d0aff5d425189db1dce1dd0101b900b92df4e053e08d4
+    restart: on-failure
+    depends_on:
+      - postgres
+    environment:
+      # Available configuration variables can be found on https://sosse.readthedocs.io/en/stable/config_file.html
+      # any option can be set by using the SOSSE_ prefix
+      - SOSSE_DB_NAME=sosse_db
+      - SOSSE_DB_USER=sosse_user
+      - SOSSE_DB_PASS=sosse_password
+      - SOSSE_DB_HOST=postgres
+    volumes:
+      - ${APP_DATA_DIR}/data/sosse_data:/var/lib/sosse
+    
+  postgres:
+    image: postgres:14.18@sha256:c0aab7962b283cf24a0defa5d0d59777f5045a7be59905f21ba81a20b1a110c9
+    restart: on-failure
+    environment:
+      POSTGRES_USER: sosse_user
+      POSTGRES_PASSWORD: sosse_password
+      POSTGRES_DB: sosse_db
+    volumes:
+      - ${APP_DATA_DIR}/data/postgres_data:/var/lib/postgresql/data
