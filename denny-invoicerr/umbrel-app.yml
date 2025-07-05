@@ -3,7 +3,7 @@ id: denny-invoicerr
 name: invoicerr
 tagline: A freelance-focused invoicing app
 icon: https://i.imgur.com/kTT83Mu.png
-category: test
+category: finance
 version: "1.0.8"
 port: 8092
 description: >-
