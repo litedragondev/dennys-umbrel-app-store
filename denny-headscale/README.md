@@ -4,60 +4,82 @@
 
 # Headscale Self-Hosting Guide
 
-## Introduction
+## 📦 Introduction
 
-This guide provides instructions for setting up and configuring a self-hosted Headscale installation on Umbrel.
+This guide provides detailed instructions for setting up and configuring a self-hosted **Headscale** instance on your **Umbrel server**.
 
-## Initial Setup After Installation
+---
 
-After installing Headscale from the Umbrel app store, you need to configure the server's host information:
+## ⚙️ Initial Setup After Installation
 
-1.  Open the Files app from the Umbrel dashboard.
-2.  Navigate to `apps` → `denny-headscale`.
-3.  Locate and download the `exports.sh` file to your computer.
-4.  Open the file in a text editor and update the following line with your Umbrel's IP address:
+Once you’ve installed Headscale from the Umbrel App Store, a few configuration steps are required.
 
-    ```bash
-    # Replace with your Umbrel's IP or host name
-    export UMBREL_HOST="172.17.0.2" # your's might be different
-    ```
+### 🔧 Configure Server Host Address
 
-5.  Save the file and upload it back to the same location.
-6.  Next, navigate into the `config` directory within the `denny-headscale` app folder (`apps` → `denny-headscale` → `config`).
-7.  Locate and download the `config.yaml` file to your computer.
-8.  Open `config.yaml` in a text editor and find the `server_url` parameter replace `umbrel.local` with your Umbrel's actual IP address. If that's how you access your Umbrel:
+1. Open the **Files** app from the Umbrel dashboard.  
+2. Navigate to: `apps → denny-headscale`.  
+3. Download the `exports.sh` file to your computer.  
+4. Open it in a text editor and update the following line with your Umbrel's IP address or hostname:
 
-    ```yaml
-    server_url: http://172.17.0.2:37070
-    # OR if you prefer to use the local hostname:
-    # server_url: http://umbrel.local:37070
-    ```
+   ```bash
+   export UMBREL_HOST="172.17.0.2"  # your value may differ
+   ```
 
-9.  Save the `config.yaml` file and upload it back to the `config` directory.
-10. Restart the Headscale app from the Umbrel dashboard.
+5. Save the file and upload it back to the same location.
 
-This configuration is essential for proper function of Headscale, ensuring both the server's host and the client connection URL are correctly set.
+### 🛠️ Update `config.yaml`
 
-## Generating API Keys and Accessing the Web UI
+1. Go to the folder: `apps → denny-headscale → config`.  
+2. Download the `config.yaml` file.  
+3. Open it in a text editor.  
+4. Locate the `server_url:` setting and replace `umbrel.local` with your actual Umbrel IP or hostname:
 
-### Generating an API Key
+   ```yaml
+   server_url: http://172.17.0.2:37070
+   # Or if you prefer to use the local hostname:
+   # server_url: http://umbrel.local:37070
+   ```
 
-To generate an API key for Headscale, execute the following command in your terminal:
+5. Save the file and upload it back to the `config` folder.  
+6. **Restart the Headscale app** from the Umbrel dashboard.
+
+> ✅ Proper configuration is essential for Headscale to function correctly. Ensure both the server’s host and the client connection URL are properly set.
+
+---
+
+## 🔐 Generating an API Key
+
+To create an API key for using the web interface, run the following command on your Umbrel host:
 
 ```bash
 sudo docker exec -it denny-headscale_headscale_1 headscale apikeys create
 ```
 
-**Important:** Store the generated API key securely as you will not be able to retrieve it later. You can generate as many API keys as needed.
+> ⚠️ **Important:** The key will only be shown once. Make sure to store it securely.  
+> You can generate multiple API keys if needed.
 
-### Accessing the Web UI
+---
 
-The Headscale web user interface (UI) can be accessed by navigating to either of the following paths in your web browser, appended to your Umbrel's IP address or hostname and the Headscale port (37070):
+## 🌐 Accessing the Web UI
 
-* `/web`
-* `/admin`
+The Headscale web interface can be accessed in your browser at:
 
-For example:
-- If your Umbrel's IP address is 172.17.0.2, you'd access the web UI by going to http://172.17.0.2:37070/web or http://172.17.0.2:37070/admin.
+```text
+http://<YOUR-UMBREL-IP>:37070/web
+http://<YOUR-UMBREL-IP>:37070/admin
+```
 
-- If you're using umbrel.local to access your Umbrel, you'd go to http://umbrel.local:37070/web or http://umbrel.local:37070/admin.
+Examples:
+
+- Using IP address: `http://172.17.0.2:37070/web`  
+- Using hostname: `http://umbrel.local:37070/admin`
+
+---
+
+## ➕ Adding Devices
+
+For instructions on how to connect devices to your Headscale server, please refer to the official guide:
+
+🔗 [Connecting Devices (Headscale Docs)](https://github.com/juanfont/headscale/tree/main/docs/usage/connect)
+
+---
