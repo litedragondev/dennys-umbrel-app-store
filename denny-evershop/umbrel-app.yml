@@ -24,9 +24,12 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/evershopcommerce/evershop
 support: https://github.com/evershopcommerce/evershop/issues
 gallery:
-  - https://i.imgur.com/yOKUDkZ.png
-  - https://i.imgur.com/yOKUDkZ.png
-  - https://i.imgur.com/yOKUDkZ.png
+  - https://i.imgur.com/N3IDeX8.png
+  - https://i.imgur.com/UI5mgPx.png
+  - https://i.imgur.com/x9SUCL0.png
+  - https://i.imgur.com/FrYwyoI.png
+  - https://i.imgur.com/1wmYFRN.png
+  - https://i.imgur.com/cBYTgki.png
 releaseNotes: >-
   Version 1.2.2 of EverShop introduces improvements to order status management and allows order cancellations directly from the admin panel. It adds scheduled jobs, customizable admin page footer and logo options, and enhances payment integrations with Stripe and PayPal, including refund and capture support. The update also improves cart and address book functions, fixes multiple bugs, and addresses security vulnerabilities for better stability.
 dependencies:
