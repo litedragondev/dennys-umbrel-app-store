@@ -37,6 +37,7 @@ gallery:
   - https://i.imgur.com/p4q1EgC.png
   - https://i.imgur.com/Y1o4K3b.png
   - https://i.imgur.com/yfNzG2A.png
+  - https://i.imgur.com/mwdjJsv.png
 releaseNotes: >-
   Version 0.26.1 includes a security fix that ensures nodes match both node key and machine key when connecting.
 dependencies:
