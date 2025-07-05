@@ -1,3 +1,7 @@
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/2de4e418-8574-4b52-996c-3819f4f76abe" alt="headscale3-dots" width="160" />
+</p>
+
 # Headscale Self-Hosting Guide
 
 ## Introduction
