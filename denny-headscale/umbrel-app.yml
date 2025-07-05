@@ -4,7 +4,7 @@ name: Headscale
 tagline: An open-source, self-hosted VPN solution built with WireGuard
 icon: https://i.imgur.com/OVtGI7Y.png
 category: networking
-version: "0.26.0"
+version: "0.26.1"
 port: 37070
 description: >-
   Headscale is an open-source, self-hosted VPN solution that empowers users to take full control over their private networks. Designed as a modern alternative to commercial VPN services, Headscale is built on the reliable and high-performance WireGuard protocol, which ensures fast, secure, and efficient connections between devices. Unlike traditional VPN services that rely on third-party infrastructure, Headscale allows you to host your own VPN server, giving you complete autonomy over your network’s privacy, security, and scalability.
@@ -38,7 +38,7 @@ gallery:
   - https://i.imgur.com/Y1o4K3b.png
   - https://i.imgur.com/yfNzG2A.png
 releaseNotes: >-
-  The recent updates include improvements in compatibility, such as enhanced WebSocket support for the built-in DERP server and SSH agent forwarding for nodes. Several bug fixes were made, including adjustments to hostname and field processing in requests, and more flexible server URL and domain checks. New features include CLI support for managing users with an identifier, an added configuration option for extra DNS records, and support for PKCE verification in OIDC.
+  Version 0.26.1 includes a security fix that ensures nodes match both node key and machine key when connecting.
 dependencies:
 path: "/web"
 defaultUsername: ""
