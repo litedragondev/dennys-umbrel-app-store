@@ -3,7 +3,7 @@ id: denny-headscale
 name: Headscale
 tagline: An open-source, self-hosted VPN solution built with WireGuard
 icon: https://i.imgur.com/OVtGI7Y.png
-category: In Progress
+category: networking
 version: "0.26.0"
 port: 37070
 description: >-
@@ -34,9 +34,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/juanfont/headscale
 support: https://github.com/juanfont/headscale/issues
 gallery:
-  - https://i.imgur.com/hS4hFp8.png
-  - https://i.imgur.com/hS4hFp8.png
-  - https://i.imgur.com/hS4hFp8.png
+  - https://i.imgur.com/p4q1EgC.png
+  - https://i.imgur.com/Y1o4K3b.png
+  - https://i.imgur.com/yfNzG2A.png
 releaseNotes: >-
   The recent updates include improvements in compatibility, such as enhanced WebSocket support for the built-in DERP server and SSH agent forwarding for nodes. Several bug fixes were made, including adjustments to hostname and field processing in requests, and more flexible server URL and domain checks. New features include CLI support for managing users with an identifier, an added configuration option for extra DNS records, and support for PKCE verification in OIDC.
 dependencies:
