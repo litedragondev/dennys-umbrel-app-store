@@ -20,7 +20,7 @@ services:
       - ${APP_DATA_DIR}/data/sosse_data:/var/lib/sosse
 
   postgres:
-    image: postgres:14.18@sha256:c0aab7962b283cf24a0defa5d0d59777f5045a7be59905f21ba81a20b1a110c9
+    image: postgres:17.5@sha256:3962158596daaef3682838cc8eb0e719ad1ce520f88e34596ce8d5de1b6330a1
     restart: on-failure
     environment:
       POSTGRES_USER: sosse_user
