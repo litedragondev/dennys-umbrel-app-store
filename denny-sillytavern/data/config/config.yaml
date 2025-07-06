@@ -1,3 +1,4 @@
 # SillyTavern Konfiguration
-whitelistMode: false
-listen: true
+whitelistMode: true
+whitelistDockerHosts: true
+
