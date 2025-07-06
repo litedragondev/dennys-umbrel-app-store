@@ -1,2 +1,11 @@
-# SillyTavern Konfiguration
-whitelistMode: false
+dataRoot: ./data
+listen: false
+listenAddress:
+  ipv4: 0.0.0.0
+protocol:
+  ipv4: true
+  ipv6: false
+port: 8000
+whitelistMode: true
+whitelistDockerHosts: true
+enableForwardedWhitelist: true
