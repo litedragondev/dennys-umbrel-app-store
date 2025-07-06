@@ -1,11 +1,21 @@
-dataRoot: ./data
-listen: false
+listen: true
 listenAddress:
   ipv4: 0.0.0.0
+  ipv6: '[::]'
 protocol:
   ipv4: true
   ipv6: false
-port: 8000
+
+# Whitelist einschalten, IP deines LAN oder Umbrel Hosts hinzufügen
 whitelistMode: true
+whitelist:
+  - 127.0.0.1       # localhost
+  - umbrel-2.local  # Hostname, manchmal funktioniert besser IP
+  - 10.21.0.1       # Beispiel Docker Gateway IP (bitte anpassen)
+
+# Alternativ whitelistDockerHosts aktivieren, wenn Umbrel Docker-IPs automatisch hinzugefügt werden sollen
 whitelistDockerHosts: true
-enableForwardedWhitelist: true
+
+# Browser nicht automatisch starten, da Umbrel Headless läuft
+browserLaunch:
+  enabled: false
