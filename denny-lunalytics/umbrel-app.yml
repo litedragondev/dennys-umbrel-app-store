@@ -4,7 +4,7 @@ name: Lunalytics
 tagline: A monitoring tool for teams
 icon: https://i.imgur.com/gFmN9B9.png
 category: networking
-version: "1.0.0"
+version: "0.9.7"
 port: 8183
 description: >-
   🔍 Lunalytics offers a rich set of features designed to give you full visibility into the health of your services. It continuously monitors HTTP and TCP endpoints and provides detailed uptime and latency statistics with precise response time tracking.
@@ -36,7 +36,7 @@ gallery:
   - https://i.imgur.com/bIwCvPk.png
   - https://i.imgur.com/KAKENvU.png
 releaseNotes: >-
-  This app does not use versioning and no changelogs are available.
+  Version 0.9.7 introduces new monitoring types: Ping and JSON Query. It also fixes Telegram-related issues, including support for negative Chat IDs and proper Markdown escaping.
 dependencies:
 path: ""
 defaultUsername: ""
