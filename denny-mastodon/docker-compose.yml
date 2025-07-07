@@ -5,7 +5,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: denny-mastodon_web_1  # Muss gleich dem Container-Namen des Webdienstes sein
-      APP_PORT: 80  # Mastodon-Webserver hört intern auf Port 80
+      APP_PORT: 3000
 
   # Redis-Instanz für Mastodon
   redis:
