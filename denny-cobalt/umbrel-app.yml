@@ -4,7 +4,7 @@ name: Cobalt
 tagline: A media downloader that doesn't piss you off
 icon: https://i.imgur.com/jzNsNYz.png
 category: media
-version: "10.9.4"
+version: "11.2.2"
 port: 9009
 description: >-
   Cobalt is a powerful and intuitive media downloader built to simplify the process of saving your favorite content from the web. Designed for users who want to enjoy their media without the interruptions of ads, trackers, or paywalls, Cobalt offers a streamlined experience. Whether you're downloading videos, music, images, or other types of media, Cobalt acts as a proxy that fetches content directly from its source, ensuring a fast and seamless process.
@@ -30,7 +30,7 @@ gallery:
   - https://i.imgur.com/t6Zqege.png
   - https://i.imgur.com/xIerJrO.png
 releaseNotes: >-
-  Cobalt 10.6 introduces performance improvements, better YouTube support with codec fallback and video quality selection, and expanded support for services like Loom, Facebook, and Instagram. The web app also gets a redesign, improved error messages, and better accessibility, alongside performance optimizations for stability.
+  Version 11.2.2 brings major upgrades including full local processing enabled by default, support for video subtitles across many platforms, and audio covers for YouTube and SoundCloud downloads. Alongside performance improvements and expanded media link support, the web app is now more compatible with older browsers and includes several user interface enhancements.
 dependencies:
 path: ""
 defaultUsername: ""
