@@ -30,7 +30,7 @@ gallery:
   - https://i.imgur.com/t6Zqege.png
   - https://i.imgur.com/xIerJrO.png
 releaseNotes: >-
-  Version 11.2.2 brings major upgrades including full local processing enabled by default, support for video subtitles across many platforms, and audio covers for YouTube and SoundCloud downloads. Alongside performance improvements and expanded media link support, the web app is now more compatible with older browsers and includes several user interface enhancements.
+  Version 11.2.3 brings major upgrades including full local processing enabled by default, support for video subtitles across many platforms, and audio covers for YouTube and SoundCloud downloads. Alongside performance improvements and expanded media link support, the web app is now more compatible with older browsers and includes several user interface enhancements.
 dependencies:
 path: ""
 defaultUsername: ""
