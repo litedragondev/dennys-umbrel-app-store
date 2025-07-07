@@ -7,7 +7,7 @@ services:
       APP_PORT: 9001
       PROXY_AUTH_ADD: "false"
   web:
-    image: dennysubke/cobalt:11.1@sha256:5210b82e87653f3cb394ba7736b35ed10426894e8c678942b18e2047af6f4cdd
+    image: dennysubke/cobalt:11.2.2@sha256:f0a997d581f35154db80f7fa930941948d388db98eeb4453ba68d1a65c5372a5
     read_only: true
     restart: on-failure
     user: "1000:1000"
