@@ -1,28 +1,25 @@
 manifestVersion: 1
 id: denny-beaverhabits
 name: Beaverhabits
-tagline: An All-in-One Open Source E-commerce Solution
+tagline: A self-hosted habit tracking app without "Goals"
 icon: https://i.imgur.com/AHRkBdg.png
 category: test
 version: "1.2.2"
 port: 8732
 description: >-
-  🛒 Evershop is a powerful and versatile e-commerce platform designed to provide extensive functionality for managing and operating online stores. It offers a comprehensive administrative dashboard that gives store owners complete control over their business operations. Within this dashboard, users can efficiently manage a wide range of aspects including product catalogs, inventory levels, pricing, promotions, customer information, and order fulfillment processes. The platform streamlines these tasks to ensure smooth day-to-day store management.
+  BeaverHabits is a habit tracking app designed to support consistency and mindfulness in daily routines. Instead of pushing users toward fixed goals or productivity metrics, it encourages a gentle, repetition-based approach to habit formation. The app centers around the idea that long-term change comes from showing up every day, even if progress is gradual. It allows users to track a wide range of habits—whether simple daily tasks, wellness activities, or creative practices—and gives a clear visual overview of what has been completed and what still needs attention.
 
 
-  On the customer-facing side, Evershop delivers a highly customizable storefront experience. Store owners can modify the appearance and layout using adaptable themes and a variety of widgets, enabling the creation of a unique and engaging shopping environment that reflects their brand identity. This flexibility extends to user experience features such as navigation, product display, and checkout flows, all designed to optimize customer satisfaction and conversion rates.
+  Users can define custom schedules for each habit, such as specific days of the week or intervals like every three days. This flexibility makes it easy to tailor the experience to individual rhythms and preferences. The interface is clean, focused, and free from distractions, placing emphasis on the actual act of tracking rather than overwhelming users with stats or gamification. Over time, users can spot patterns, maintain streaks, and develop a deeper awareness of their behavior.
 
 
-  Evershop also supports integration with multiple popular payment gateways, enabling secure and convenient payment options for customers. This includes support for major providers like Stripe, PayPal, and Klarna, among others, which helps cater to diverse customer preferences and regional payment standards. Beyond payments, the platform is built around a modular architecture, allowing developers and store owners to extend its core capabilities by adding custom extensions and modules. This modularity ensures that the platform can adapt to evolving business needs, whether that involves adding new features, integrating third-party services, or tailoring specific workflows.
-
-
-  Overall, Evershop is engineered to combine robust functionality with flexibility, empowering businesses to build and maintain online stores that meet complex requirements while providing a seamless shopping experience. Its focus on extensibility and customization makes it suitable for a wide range of e-commerce use cases, from small boutique shops to larger enterprises seeking tailored solutions.
-developer: EverShop
-website: https://evershop.io/
+  BeaverHabits is ideal for anyone looking to build structure, maintain balance, or bring more intention into their daily life. Whether you're trying to drink more water, meditate regularly, or simply remember to stretch, it provides a simple and effective way to stay on track.
+developer: Henry Zhu
+website: https://beaverhabits.com/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/evershopcommerce/evershop
-support: https://github.com/evershopcommerce/evershop/issues
+repo: https://github.com/daya0576/beaverhabits
+support: https://github.com/daya0576/beaverhabits/issues
 gallery:
   - https://i.imgur.com/Jv7FiQF.png
   - https://i.imgur.com/vVYrnBA.png
