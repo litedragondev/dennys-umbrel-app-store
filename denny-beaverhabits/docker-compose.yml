@@ -19,4 +19,4 @@ services:
       - INDEX_HABIT_DATE_REVERSE=true
       - DARK_MODE=true
     volumes:
-      - ${APP_DATA_DIR}/data:/app/.user/
+      - ${APP_DATA_DIR}/data/:/app/.user/
