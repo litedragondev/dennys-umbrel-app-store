@@ -4,10 +4,10 @@ name: Beaverhabits
 tagline: A self-hosted habit tracking app without "Goals"
 icon: https://i.imgur.com/AHRkBdg.png
 category: test
-version: "1.2.2"
+version: "0.6.2"
 port: 8732
 description: >-
-  BeaverHabits is a habit tracking app designed to support consistency and mindfulness in daily routines. Instead of pushing users toward fixed goals or productivity metrics, it encourages a gentle, repetition-based approach to habit formation. The app centers around the idea that long-term change comes from showing up every day, even if progress is gradual. It allows users to track a wide range of habits—whether simple daily tasks, wellness activities, or creative practices—and gives a clear visual overview of what has been completed and what still needs attention.
+  🦫 BeaverHabits is a habit tracking app designed to support consistency and mindfulness in daily routines. Instead of pushing users toward fixed goals or productivity metrics, it encourages a gentle, repetition-based approach to habit formation. The app centers around the idea that long-term change comes from showing up every day, even if progress is gradual. It allows users to track a wide range of habits—whether simple daily tasks, wellness activities, or creative practices—and gives a clear visual overview of what has been completed and what still needs attention.
 
 
   Users can define custom schedules for each habit, such as specific days of the week or intervals like every three days. This flexibility makes it easy to tailor the experience to individual rhythms and preferences. The interface is clean, focused, and free from distractions, placing emphasis on the actual act of tracking rather than overwhelming users with stats or gamification. Over time, users can spot patterns, maintain streaks, and develop a deeper awareness of their behavior.
@@ -26,7 +26,7 @@ gallery:
   - https://i.imgur.com/EqEMD8n.png
   - https://i.imgur.com/SkmDlrb.png
 releaseNotes: >-
-  Version 1.2.2 of EverShop introduces improvements to order status management and allows order cancellations directly from the admin panel. It adds scheduled jobs, customizable admin page footer and logo options, and enhances payment integrations with Stripe and PayPal, including refund and capture support. The update also improves cart and address book functions, fixes multiple bugs, and addresses security vulnerabilities for better stability.
+  Version 0.6.2 introduces light mode, support for custom CSS themes, and improvements to the API, including new options for periods and tags. It also fixes a PWA startup issue and resolves a potential memory leak.
 dependencies:
 path: ""
 defaultUsername: ""
