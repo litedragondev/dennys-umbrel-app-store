@@ -2,8 +2,8 @@ manifestVersion: 1
 id: denny-beaverhabits
 name: Beaverhabits
 tagline: A self-hosted habit tracking app without "Goals"
-icon: https://i.imgur.com/AHRkBdg.png
-category: test
+icon: https://i.imgur.com/TJ6pzA4.png
+category: files & productivity
 version: "0.6.2"
 port: 8732
 description: >-
@@ -21,10 +21,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/daya0576/beaverhabits
 support: https://github.com/daya0576/beaverhabits/issues
 gallery:
-  - https://i.imgur.com/Jv7FiQF.png
-  - https://i.imgur.com/vVYrnBA.png
-  - https://i.imgur.com/EqEMD8n.png
-  - https://i.imgur.com/SkmDlrb.png
+  - https://i.imgur.com/vD0hqUt.png
+  - https://i.imgur.com/epVCyZL.png
+  - https://i.imgur.com/EGcj76H.png
 releaseNotes: >-
   Version 0.6.2 introduces light mode, support for custom CSS themes, and improvements to the API, including new options for periods and tags. It also fixes a PWA startup issue and resolves a potential memory leak.
 dependencies:
