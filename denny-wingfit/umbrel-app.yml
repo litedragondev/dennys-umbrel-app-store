@@ -1,32 +1,33 @@
 manifestVersion: 1
 id: denny-wingfit
 name: Wingfit
-tagline: A self-hosted habit tracking app without "Goals"
-icon: https://i.imgur.com/AHRkBdg.png
-category: test
-version: "0.6.2"
+tagline: An open-source minimalist fitness app
+icon: https://i.imgur.com/UCfXoRH.png
+category: files & productivity
+version: "5.2.2"
 port: 8950
 description: >-
-  🦫 BeaverHabits is a habit tracking app designed to support consistency and mindfulness in daily routines. Instead of pushing users toward fixed goals or productivity metrics, it encourages a gentle, repetition-based approach to habit formation. The app centers around the idea that long-term change comes from showing up every day, even if progress is gradual. It allows users to track a wide range of habits—whether simple daily tasks, wellness activities, or creative practices—and gives a clear visual overview of what has been completed and what still needs attention.
+  🦾 Wingfit is a focused and thoughtfully designed fitness application that enables users to take full control of their workout routines and long-term training progress. At its core, the app provides a seamless way to create, customize, and log workouts, whether you're engaged in weightlifting, running, calisthenics, or any other type of physical activity. Users can define their own exercises and organize them into workout sessions that reflect their unique training style. Every detail of a workout can be recorded, including sets, repetitions, weights, distances, times, rest periods, and notes, allowing for precise and meaningful tracking.
 
 
-  Users can define custom schedules for each habit, such as specific days of the week or intervals like every three days. This flexibility makes it easy to tailor the experience to individual rhythms and preferences. The interface is clean, focused, and free from distractions, placing emphasis on the actual act of tracking rather than overwhelming users with stats or gamification. Over time, users can spot patterns, maintain streaks, and develop a deeper awareness of their behavior.
+  The app also supports the tracking of personal records, so users can set performance benchmarks and see how they evolve over time. A dedicated timeline view displays a history of all logged workouts, making it easy to identify patterns, spot gaps, and maintain consistency. Wingfit encourages structured progress with tools that support progressive overload and habit formation, without enforcing rigid templates or fixed routines.
 
 
-  BeaverHabits is ideal for anyone looking to build structure, maintain balance, or bring more intention into their daily life. Whether you're trying to drink more water, meditate regularly, or simply remember to stretch, it provides a simple and effective way to stay on track.
-developer: Henry Zhu
-website: https://beaverhabits.com/
+  Unlike many fitness apps that overwhelm with gamification, notifications, or social feeds, Wingfit is intentionally minimalistic and distraction-free. It is built for people who are serious about their training and want a clear, intuitive interface to support their physical goals. The experience centers around empowering users to reflect on their performance, make data-driven adjustments, and grow at their own pace. With flexible logging, strong visualization of past progress, and full control over the structure of each session, Wingfit is an ideal companion for athletes, hobbyists, and anyone committed to improving their fitness journey.
+developer: Kovacs
+website: https://wingfit.fr/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/daya0576/beaverhabits
-support: https://github.com/daya0576/beaverhabits/issues
+repo: https://github.com/itskovacs/wingfit
+support: https://github.com/itskovacs/wingfit/issues
 gallery:
-  - https://i.imgur.com/Jv7FiQF.png
-  - https://i.imgur.com/vVYrnBA.png
-  - https://i.imgur.com/EqEMD8n.png
-  - https://i.imgur.com/SkmDlrb.png
+  - https://i.imgur.com/aSojdJH.png
+  - https://i.imgur.com/0myq2Vf.png
+  - https://i.imgur.com/aIOg3Vt.png
+  - https://i.imgur.com/LRc132X.png
+  - https://i.imgur.com/oGtdhq1.png
 releaseNotes: >-
-  Version 0.6.2 introduces light mode, support for custom CSS themes, and improvements to the API, including new options for periods and tags. It also fixes a PWA startup issue and resolves a potential memory leak.
+  Version 5.2.2 includes improvements to the weekday graph user interface with optimizations for the year and month views.
 dependencies:
 path: ""
 defaultUsername: ""
