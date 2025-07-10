@@ -1,33 +1,39 @@
 manifestVersion: 1
 id: denny-readur
 name: Readur
-tagline: A self-hosted habit tracking app without "Goals"
+tagline: An intuitive OCR platform for documents
 icon: https://i.imgur.com/AHRkBdg.png
-category: test
+category: files & productivity
 version: "2.3.1"
 port: 8111
 description: >-
-  🦫 BeaverHabits is a habit tracking app designed to support consistency and mindfulness in daily routines. Instead of pushing users toward fixed goals or productivity metrics, it encourages a gentle, repetition-based approach to habit formation. The app centers around the idea that long-term change comes from showing up every day, even if progress is gradual. It allows users to track a wide range of habits—whether simple daily tasks, wellness activities, or creative practices—and gives a clear visual overview of what has been completed and what still needs attention.
+  📄 Readur is a powerful and modern document management system designed to help individuals and teams efficiently organize, process, and access their digital documents. It combines a high-performance backend with a sleek and intuitive web interface to deliver a smooth and reliable user experience.
 
 
-  Users can define custom schedules for each habit, such as specific days of the week or intervals like every three days. This flexibility makes it easy to tailor the experience to individual rhythms and preferences. The interface is clean, focused, and free from distractions, placing emphasis on the actual act of tracking rather than overwhelming users with stats or gamification. Over time, users can spot patterns, maintain streaks, and develop a deeper awareness of their behavior.
+  Users can easily upload various types of files such as PDFs, images, text documents, and Office files using a simple drag and drop method. One of the key strengths of Readur is its advanced optical character recognition technology which automatically extracts text from scanned documents and images. This OCR functionality enables users to transform otherwise static or image-based files into searchable content, greatly enhancing the ability to locate information within documents.
 
 
-  BeaverHabits is ideal for anyone looking to build structure, maintain balance, or bring more intention into their daily life. Whether you're trying to drink more water, meditate regularly, or simply remember to stretch, it provides a simple and effective way to stay on track.
-developer: Henry Zhu
-website: https://beaverhabits.com/
+  The system continuously monitors designated folders for new files, processing them in a non-destructive way that preserves the original data. Once processed, the documents become fully searchable thanks to sophisticated full-text search capabilities supported by a robust database. This search feature includes powerful filtering and ranking mechanisms that make finding relevant documents fast and precise.
+
+
+  Security is a priority in Readur, with user authentication handled through secure token-based methods and strong password hashing. The user interface is built to be responsive and visually appealing, focusing on ease of use and productivity.
+
+
+  Overall, Readur leverages intelligent OCR and efficient document processing to provide a seamless experience for managing large volumes of documents while ensuring quick access to the information that matters most.
+developer: Jon Fuller
+website: https://github.com/readur/readur
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/daya0576/beaverhabits
-support: https://github.com/daya0576/beaverhabits/issues
+repo: https://github.com/readur/readur
+support: https://github.com/readur/readur/issues
 gallery:
   - https://i.imgur.com/Jv7FiQF.png
   - https://i.imgur.com/vVYrnBA.png
   - https://i.imgur.com/EqEMD8n.png
   - https://i.imgur.com/SkmDlrb.png
 releaseNotes: >-
-  Version 0.6.2 introduces light mode, support for custom CSS themes, and improvements to the API, including new options for periods and tags. It also fixes a PWA startup issue and resolves a potential memory leak.
+  Version 2.3.1 improves WebDAV features by adding smart scanning, better subdirectory detection, and crash recovery. It also fixes multiple test and OCR retry issues to enhance stability. Additionally, dependencies were updated and minor documentation cleanup was performed.
 dependencies:
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "admin"
+defaultPassword: "readur2024"
