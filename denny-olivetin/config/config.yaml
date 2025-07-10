@@ -1,0 +1,100 @@
+actions:
+  - title: Show running Docker containers
+    icon: list
+    shell: docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+
+  - title: Stop a Docker container
+    icon: stop
+    shell: docker stop {{ container_name }}
+    arguments:
+      - name: container_name
+        title: Container name
+        type: ascii_identifier
+        default: example_container
+
+  - title: Start a Docker container
+    icon: play
+    shell: docker start {{ container_name }}
+    arguments:
+      - name: container_name
+        title: Container name
+        type: ascii_identifier
+        default: example_container
+
+  - title: Restart a Docker container
+    icon: refresh
+    shell: docker restart {{ container_name }}
+    arguments:
+      - name: container_name
+        title: Container name
+        type: ascii_identifier
+        default: example_container
+
+  - title: Show Docker container logs
+    icon: terminal
+    shell: docker logs {{ container_name }} --tail 50
+    arguments:
+      - name: container_name
+        title: Container name
+        type: ascii_identifier
+        default: example_container
+
+  - title: Show disk usage
+    icon: disk
+    shell: df -h
+
+  - title: Show memory usage
+    icon: memory
+    shell: free -h
+
+  - title: Show CPU usage
+    icon: cpu
+    shell: top -b -n 1 | head -20
+
+  - title: Show current date and time
+    icon: clock
+    shell: date
+
+  - title: Show system uptime
+    icon: clock
+    shell: uptime
+
+  - title: Show IP address
+    icon: globe
+    shell: hostname -I
+
+  - title: Show open ports
+    icon: network
+    shell: sudo netstat -tuln
+
+  - title: Show logged-in users
+    icon: user
+    shell: who
+
+  - title: Show running processes
+    icon: list
+    shell: ps aux --sort=-%mem | head -20
+
+  - title: Reboot system
+    icon: refresh
+    shell: sudo reboot
+
+  - title: Shut down system
+    icon: power
+    shell: sudo poweroff
+
+  - title: Update package lists (Debian/Ubuntu)
+    icon: download
+    shell: sudo apt update
+
+  - title: Upgrade installed packages (Debian/Ubuntu)
+    icon: install
+    shell: sudo apt upgrade -y
+
+  - title: Show /tmp folder contents
+    icon: folder
+    shell: ls -lh /tmp
+
+  - title: Show latest system logs
+    icon: book
+    shell: journalctl -n 50
