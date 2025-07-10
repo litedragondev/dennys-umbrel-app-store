@@ -8,6 +8,7 @@ services:
 
   web:
     image: ksjaay/lunalytics:0.9.7@sha256:ff5550db6b19c763fbd3a89e122dd732fee68f75abf5f16671f08eb0847588e5
+    user: "1000:1000"
     restart: on-failure
     healthcheck:
       test: ["CMD-SHELL", "nc -z 127.0.0.1 2308 || exit 1"]
