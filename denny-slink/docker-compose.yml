@@ -20,7 +20,8 @@ services:
       - ${APP_DATA_DIR}/data/images:/app/slink/images:rw
     command: >
       sh -c "
-        ./slink user:activate --email=admin@admin.com &&
-        ./slink user:grant:role --email=admin@admin.com ROLE_ADMIN &&
-        ./slink serve
+        sleep 5 &&
+        slink user:activate --email=admin@admin.com &&
+        slink user:grant:role --email=admin@admin.com ROLE_ADMIN &&
+        slink serve
       "
