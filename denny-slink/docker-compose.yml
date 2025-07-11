@@ -8,7 +8,7 @@ services:
 
   app:
     image: anirdev/slink:v1.6.0@sha256:6823434c2bdfbac46bf3989767c58b8c0db8060ef7721cd8baaf154540c59a79
-    user: "0:0"
+    user: "1000:1000"
     restart: on-failure
     environment:
       - TZ=UTC
@@ -18,3 +18,9 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/slink_data:/app/var/data:rw
       - ${APP_DATA_DIR}/data/images:/app/slink/images:rw
+    command: >
+      sh -c "
+        ./slink user:activate --email=admin@admin.com &&
+        ./slink user:grant:role --email=admin@admin.com ROLE_ADMIN &&
+        ./slink serve
+      "
