@@ -2,7 +2,7 @@ manifestVersion: 1
 id: denny-erugo
 name: Erugo
 tagline: A powerful file sharing platform
-icon: https://i.imgur.com/AHRkBdg.png
+icon: https://i.imgur.com/rDb969I.png
 category: files & productivity
 version: "0.1.1"
 port: 8564
@@ -27,10 +27,11 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/ErugoOSS/Erugo
 support: https://github.com/ErugoOSS/Erugo/issues
 gallery:
-  - https://i.imgur.com/Jv7FiQF.png
-  - https://i.imgur.com/vVYrnBA.png
-  - https://i.imgur.com/EqEMD8n.png
-  - https://i.imgur.com/SkmDlrb.png
+  - https://i.imgur.com/rBDQKrz.png
+  - https://i.imgur.com/4wzEmv8.png
+  - https://i.imgur.com/kxUBQaQ.png
+  - https://i.imgur.com/tJPCXA7.png
+  - https://i.imgur.com/nCvi6Qb.png
 releaseNotes: >-
   Version 0.1.1 marks Erugo’s shift to semantic versioning, making it easier to track updates and understand the scope of each release.
 
