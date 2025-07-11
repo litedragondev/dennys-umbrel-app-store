@@ -7,7 +7,7 @@ category: test
 version: "0.6.2"
 port: 8951
 description: >-
-  OliveTin provides a simple web interface for executing predefined shell commands through buttons, forms, and dropdowns. It turns custom scripts and system operations into user-friendly web actions without exposing the terminal. Users interact with a clean UI where each action is clearly labeled and optionally configurable with parameters. Commands are defined in a YAML file, allowing for easy setup and customization. OliveTin ensures secure and controlled access by validating inputs and supporting various authentication methods. It is ideal for tasks like restarting services, managing containers, monitoring system status, or running scripts with just a click.
+  🫒 OliveTin provides a simple web interface for executing predefined shell commands through buttons, forms, and dropdowns. It turns custom scripts and system operations into user-friendly web actions without exposing the terminal. Users interact with a clean UI where each action is clearly labeled and optionally configurable with parameters. Commands are defined in a YAML file, allowing for easy setup and customization. OliveTin ensures secure and controlled access by validating inputs and supporting various authentication methods. It is ideal for tasks like restarting services, managing containers, monitoring system status, or running scripts with just a click.
 
 
   🛠️ To customize the available actions, open the Files app in Umbrel and navigate to apps → denny-olivetin → config. Inside, you'll find a config.yaml file where you can define or modify the commands shown in the web interface.
