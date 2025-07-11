@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-reubah_app_1
+      APP_PORT: 8081
+
+  app:
+    image: ghcr.io/dendianugerah/reubah:latest
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    restart: on-failure
