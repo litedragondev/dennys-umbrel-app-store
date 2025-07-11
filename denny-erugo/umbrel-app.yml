@@ -20,6 +20,9 @@ description: >-
 
 
   By providing a simple and calm alternative to the big names in file transfer, Erugo redefines what file sharing can be. It delivers an experience that is clear, efficient, and truly enjoyable to use.
+
+
+  ⚠️ Erugo delivers its full potential only when accessible from the internet. It is recommended to use the Cloudflare app available in the Umbrel App Store for easy and secure exposure.
 developer: ErugoOSS
 website: https://erugo.app/
 submitter: dennysubke
