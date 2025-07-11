@@ -14,7 +14,7 @@ services:
       DATABASE_USER: kuvaszuser
       DATABASE_PASSWORD: kuvaszpass
       ADMIN_USER: admin
-      ADMIN_PASSWORD: umbrel
+      ADMIN_PASSWORD: umbrelUmbrel123
       ADMIN_API_KEY: dOxZYTTZgXKMHkqLBIQVImayQXAVWdzGBPuFJKggzcgvgPJPXpWzqzKaUOIOGGIr
     volumes:
       - ${APP_DATA_DIR}/data/config/kuvasz.yml:/config/kuvasz.yml
