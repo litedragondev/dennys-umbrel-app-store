@@ -8,7 +8,7 @@ services:
 
   app:
     image: anirdev/slink:v1.6.0@sha256:6823434c2bdfbac46bf3989767c58b8c0db8060ef7721cd8baaf154540c59a79
-    user: "1000:1000"
+    user: "0:0"
     restart: on-failure
     environment:
       - TZ=UTC
