@@ -7,10 +7,10 @@ services:
       APP_PORT: 1337
 
   app:
-    image: jamesread/olivetin
+    image: jamesread/olivetin:2025.6.22@sha256:49beb85eb27fc655f2201ae44565cc7f83c8721172fbe5e0f4957998f20d3772
     volumes:
       - ${APP_DATA_DIR}/config:/config 
-    restart: unless-stopped
+    restart: on-failure
 
 
 volumes:
