@@ -28,7 +28,7 @@ gallery:
   - https://i.imgur.com/dPHUkpM.png
   - https://i.imgur.com/8OF3pNc.png
 releaseNotes: >-
-  Mazanoke v1.0.1 introduces several enhancements, including multi-file uploads, zip download of all optimized images, and support for converting GIF and SVG to PNG. It also includes performance improvements for thumbnails and proper handling of unsupported file types.
+  Version 1.1.5 focuses on strengthening the core foundation and expanding file format support, including TIFF and ICO conversions, while maintaining a simple user experience. It adds basic authentication for Docker setups, improves image optimization speed and UI feedback, fixes issues with image downloads and HEIC resizing, and updates documentation for setup and dependencies. The project has seen significant user growth and recent media features.
 dependencies:
 path: ""
 defaultUsername: ""
