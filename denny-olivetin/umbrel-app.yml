@@ -2,9 +2,9 @@ manifestVersion: 1
 id: denny-olivetin
 name: OliveTin
 tagline: A command center that fits in your browser
-icon: https://i.imgur.com/AHRkBdg.png
-category: test
-version: "0.6.2"
+icon: https://i.imgur.com/5EnsMji.png
+category: networking
+version: "2025.6.22"
 port: 8951
 description: >-
   🫒 OliveTin provides a simple web interface for executing predefined shell commands through buttons, forms, and dropdowns. It turns custom scripts and system operations into user-friendly web actions without exposing the terminal. Users interact with a clean UI where each action is clearly labeled and optionally configurable with parameters. Commands are defined in a YAML file, allowing for easy setup and customization. OliveTin ensures secure and controlled access by validating inputs and supporting various authentication methods. It is ideal for tasks like restarting services, managing containers, monitoring system status, or running scripts with just a click.
@@ -18,10 +18,11 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/OliveTin/OliveTin
 support: https://github.com/OliveTin/OliveTin/issues
 gallery:
-  - https://i.imgur.com/Jv7FiQF.png
-  - https://i.imgur.com/vVYrnBA.png
-  - https://i.imgur.com/EqEMD8n.png
-  - https://i.imgur.com/SkmDlrb.png
+  - https://i.imgur.com/B834vej.png
+  - https://i.imgur.com/L375QoC.png
+  - https://i.imgur.com/hyYsWsc.png
+  - https://i.imgur.com/eZo9XYf.png
+  - https://i.imgur.com/hzzr0UC.png
 releaseNotes: >-
   Version 2025.6.22 introduces a new feature that enables triggered actions to reuse arguments from previous actions. It also includes minor fixes for dashboards without entities and removes leftover code from an old pull request, with no breaking changes since the last release.
 dependencies:
