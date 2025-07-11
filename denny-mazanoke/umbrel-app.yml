@@ -4,7 +4,7 @@ name: Mazanoke
 tagline: A self-hosted local image optimizer
 icon: https://i.imgur.com/HIQ0f45.png
 category: files & productivity
-version: "1.0.1"
+version: "1.1.5"
 port: 3474
 description: >-
   Mazanoke is a privacy-focused image optimizer designed to run entirely in the browser without relying on any external servers. Developed as a Progressive Web App (PWA), it offers a seamless offline experience and can be installed directly on devices for easy access. The core philosophy behind Mazanoke is to empower users to optimize and convert images without compromising their privacy or uploading sensitive data to the cloud.
