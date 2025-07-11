@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: denny-reubah
 name: Reubah
-tagline: A self-hosted habit tracking app without "Goals"
+tagline: A tool for processing images and converting documents
 icon: https://i.imgur.com/AHRkBdg.png
 category: test
 version: "0.6.2"
