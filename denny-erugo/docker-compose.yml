@@ -9,7 +9,6 @@ services:
   web:
     image: wardy784/erugo:0.1.1@sha256:88d88c04088f79aca29a830f5ad76b2058fdcb6404b0444bffb62cb8085e2b4b
     restart: on-failure
-    user: "1000:1000"
     environment:
       VITE_API_URL: http://${DEVICE_DOMAIN_NAME}:8564
       JWT_SECRET: dOxZYTTZgXKMHkqLBIQVImayQXAVWdzGBPuFJKggzcgvgPJPXpWzqzKaUOIOGGIr
