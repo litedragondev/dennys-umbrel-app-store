@@ -4,7 +4,7 @@ name: OmniTools
 tagline: An all-in-one collection of powerful web-based tools for everyday tasks
 icon: https://i.imgur.com/TKwp0iD.png
 category: files & productivity
-version: "0.2.0"
+version: "0.5.0"
 port: 8678
 description: >-
   🛠️ OmniTools is a self-hosted, open-source web application that brings together a wide range of practical online utilities in one unified interface. Developed by Ibrahima Gaye Coulibaly, the platform is designed with simplicity and privacy in mind—there are no ads, no tracking mechanisms, and all functionality is accessible directly in the browser. The project focuses on providing everyday tools that can handle tasks across various domains, such as image and video processing, text manipulation, data formatting, and mathematical operations.
@@ -27,7 +27,7 @@ gallery:
   - https://i.imgur.com/UukaTO7.png
   - https://i.imgur.com/d1UxbD3.png
 releaseNotes: >-
-  OmniTools v0.2.0 introduces a wide range of new features, including AI-powered background removal for PNGs, various PDF manipulation options, and powerful text editing tools like line deduplication, case randomization, and palindrome generation. This release also adds utilities for JSON, CSV, video trimming, number sequences, and time conversions, expanding its role as a versatile, privacy-friendly toolbox for everyday tasks.
+  Version 0.5.0 introduces a wide range of new tools across various categories: image editing (crop, rotate, filters, watermark), PDF editing and conversion, video-to-GIF, and several audio tools like trimming, merging, and speed adjustment. It also adds handy utilities like a Crontab explainer, text censoring, and XML validation and beautification.
 dependencies:
 path: ""
 defaultUsername: ""
