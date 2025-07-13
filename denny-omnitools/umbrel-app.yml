@@ -7,13 +7,16 @@ category: files & productivity
 version: "0.5.0"
 port: 8678
 description: >-
-  🛠️ OmniTools is a self-hosted, open-source web application that brings together a wide range of practical online utilities in one unified interface. Developed by Ibrahima Gaye Coulibaly, the platform is designed with simplicity and privacy in mind—there are no ads, no tracking mechanisms, and all functionality is accessible directly in the browser. The project focuses on providing everyday tools that can handle tasks across various domains, such as image and video processing, text manipulation, data formatting, and mathematical operations.
+  🛠️ OmniTools is a versatile all in one web application that offers a comprehensive collection of over 80 practical utilities designed to simplify everyday digital tasks. It acts as a Swiss Army knife for your browser enabling you to handle a wide range of file formats conversions and manipulations all without relying on external servers or cloud uploads.
 
 
-  Built using modern web technologies like React, TypeScript, and Material UI, OmniTools offers a clean and responsive user experience. It runs on Vite for fast performance and can be deployed easily via Docker, making it suitable for both personal and professional use. Whether it's resizing images, formatting JSON, converting time zones, or generating prime numbers, the application delivers fast, intuitive solutions for users who prefer local control over their digital workflows.
+  With OmniTools you can easily edit images by removing backgrounds resizing or converting formats manipulate PDFs by merging splitting or annotating documents trim and modify videos and transform text through various formatting and conversion options. It also includes powerful data helpers such as CSV and JSON viewers and converters XML parsing tools and handy utilities for generating QR codes.
 
 
-  Because it’s entirely self-hosted, OmniTools offers an added layer of data sovereignty, allowing individuals or teams to run their own private instance. This is especially appealing to users who want a reliable, offline-capable toolbox without the noise or privacy concerns associated with many commercial online services. The project is actively maintained on GitHub and welcomes contributions, making it a compelling choice for anyone looking to integrate a comprehensive set of tools into their daily workflow.
+  Beyond file processing OmniTools provides useful calculators and converters for dates times units and mathematical operations making it a true multi purpose companion for digital workflows. Each feature is designed to work efficiently and privately within your browser ensuring your data never leaves your control.
+
+
+  Whether you are a creative professional needing quick image edits a developer working with data formats or simply someone looking to streamline common file related tasks OmniTools offers a lightweight user friendly environment that brings a broad spectrum of functionality into one convenient place. It focuses on privacy performance and ease of use empowering you to get more done with less hassle.
 developer: Ibrahima Gaye Coulibaly
 website: https://omnitools.app/
 submitter: dennysubke
