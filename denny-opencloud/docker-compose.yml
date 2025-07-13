@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-opencloud_web_1
+      APP_PORT: 9200
+
+  web:
+    image: opencloudeu/opencloud-rolling:latest
+    entrypoint: ["/bin/sh"]
+    command: ["-c", "opencloud init || true; opencloud server"]
+    environment:
+      OC_ADD_RUN_SERVICES: "notifications"
+      OC_URL: http://192.168.178.85:8844
+      OC_LOG_LEVEL: "info"
+      OC_LOG_COLOR: "false"
+      OC_LOG_PRETTY: "false"
+      PROXY_TLS: "false"
+      OC_INSECURE: "true"
+      IDM_ADMIN_PASSWORD: "admin123"
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/etc/opencloud
+      - ${APP_DATA_DIR}/data/data:/var/lib/opencloud
+      - ${APP_DATA_DIR}/data/apps:/var/lib/opencloud/web/assets/apps
+    logging:
+      driver: "local"
+    restart: always
