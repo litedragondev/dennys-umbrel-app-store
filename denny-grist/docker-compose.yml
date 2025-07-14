@@ -7,7 +7,7 @@ services:
       APP_PORT: 8484
       PROXY_AUTH_ADD: "false"
   server:
-    image: gristlabs/grist:1.2.1@sha256:a96916d6a70601ab86fba6eb1fef7023b206001f023622c4f22616ecfd01588c
+    image: gristlabs/grist:1.6.1@sha256:d9d35c82799bfa2e0438bb60385fb0b550465dabde2a6e0ceca8afec1aae3305
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data:/persist
