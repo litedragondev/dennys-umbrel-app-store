@@ -4,7 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: denny-browserless_web_1
-      APP_PORT: 3353
+      APP_PORT: 3000
 
   web:
     image: ghcr.io/browserless/base:v2.33.0
