@@ -1,15 +1,13 @@
 version: "3.7"
 
 services:
-  app_proxy:
+  app:
+    image: ghcr.io/browserless/chromium:latest
+    restart: always
+    ports:
+      - "3353:3000"
     environment:
-      APP_HOST: denny-browserless_web_1
-      APP_PORT: 3353
-
-  web:
-    image: ghcr.io/browserless/chromium
-    restart: unless-stopped
-    environment:
-      - CONCURRENT=10
-      - TOKEN=6R0W53R135510
-
+      - MAX_CONCURRENT_SESSIONS=10
+      - ENABLE_DEBUGGER=true
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
