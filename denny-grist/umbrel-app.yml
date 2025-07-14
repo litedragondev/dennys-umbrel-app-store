@@ -4,7 +4,7 @@ name: Grist
 tagline: A modern, open source spreadsheet that goes beyond the grid
 icon: https://i.imgur.com/6yHfkEx.png
 category: files & productivity
-version: "1.2.1"
+version: "1.6.1"
 port: 8484
 description: >-
   Grist is a flexible, database-driven application that allows users to manage and analyze their data in a structured format. It combines the functionalities of a spreadsheet with those of a database, enabling users to create complex data models, establish relationships between data, and generate data visualizations.
@@ -40,13 +40,10 @@ gallery:
   - https://i.imgur.com/R3j4SLu.png
   - https://i.imgur.com/yuS4ljP.png
 releaseNotes: >-
-  For multi-organization setups, a new site switcher feature has been introduced, allowing for the selection of logos specific to each organization. Additionally, new API endpoints have been added for managing installation and site configuration.
-
-
-  Docker images are now built using Debian Bookworm and Node.js version 22. Furthermore, the maximum size of a document's history can now be configured through environment variables.
-
-
-  This update also includes new translations and various bug fixes.
+  Version 1.6.1 fully removes Python 2 support, requiring any existing Python 2 formulas to be migrated to Python 3. Grist now automatically checks for updates by default on the official Docker images. 
+  
+  
+  Additionally, proxy environment variables were updated, and various translations and bug fixes were made.
 dependencies:
 path: ""
 defaultUsername: ""
