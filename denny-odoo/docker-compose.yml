@@ -8,18 +8,24 @@ services:
 
   web:
     image: odoo:17.0
+    container_name: denny-odoo_web_1
     depends_on:
       - db
     volumes:
-      - ${APP_DATA_DIR}/data/odoo_data:/var/lib/odoo
-      - ${APP_DATA_DIR}/data/config:/etc/odoo
-      - ${APP_DATA_DIR}/data/addons:/mnt/extra-addons
+      - odoo-web-data:/var/lib/odoo
+      - ${APP_DATA_DIR}/data/config:/etc/odoo           
+      - ${APP_DATA_DIR}/data/addons:/mnt/extra-addons   
 
   db:
     image: postgres:15
+    container_name: denny-odoo_db_1
     environment:
       - POSTGRES_DB=postgres
-      - POSTGRES_PASSWORD=myodoo
       - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=myodoo
     volumes:
-      - ${APP_DATA_DIR}/data/db_data:/var/lib/postgresql/data/pgdata
+      - odoo-db-data:/var/lib/postgresql/data/pgdata
+
+volumes:
+  odoo-web-data:
+  odoo-db-data:
