@@ -8,17 +8,15 @@ services:
 
   web:
     image: odoo:17.0
-    user: "1000:1000"
     depends_on:
       - db
     environment:
-      - HOST=db
-      - USER=odoo
-      - PASSWORD=myodoo
+      - HOME=/var/lib/odoo
     volumes:
       - ${APP_DATA_DIR}/data/odoo_data:/var/lib/odoo
       - ${APP_DATA_DIR}/data/config:/etc/odoo
       - ${APP_DATA_DIR}/data/addons:/mnt/extra-addons
+    user: "1000:1000"
 
   db:
     image: postgres:15
