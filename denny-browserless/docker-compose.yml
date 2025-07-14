@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-browserless_web_1
+      APP_PORT: 3000
+
+  web:
+    image: ghcr.io/browserless/chromium
+    restart: unless-stopped
+    environment:
+      - CONCURRENT=10
+      - TOKEN=6R0W53R135510
+
