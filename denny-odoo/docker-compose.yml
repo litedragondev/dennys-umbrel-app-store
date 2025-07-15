@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-odoo_web_1
+      APP_PORT: 8069
+
+  web:
+    image: odoo:17.0
+    depends_on:
+      - db
+    volumes:
+      - ${APP_DATA_DIR}/data/odoo_data:/var/lib/odoo
+      - ${APP_DATA_DIR}/data/config:/etc/odoo
+      - ${APP_DATA_DIR}/data/addons:/mnt/extra-addons
+
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=myodoo
+      - POSTGRES_USER=odoo
+    volumes:
+      - ${APP_DATA_DIR}/data/db_data:/var/lib/postgresql/data/pgdata
