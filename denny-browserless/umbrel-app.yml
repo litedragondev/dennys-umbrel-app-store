@@ -3,7 +3,7 @@ id: denny-browserless
 name: Browserless
 tagline: A powerful browser automation service
 icon: https://i.imgur.com/x0fJbj6.png
-category: test
+category: developer tools
 version: "2.33.0"
 port: 3353
 description: >-
