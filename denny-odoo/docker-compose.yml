@@ -20,6 +20,6 @@ services:
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD=myodoo
-      - POSTGRES_USER=odoo
+      - POSTGRES_USER=odoo 
     volumes:
       - ${APP_DATA_DIR}/data/db_data:/var/lib/postgresql/data/pgdata
