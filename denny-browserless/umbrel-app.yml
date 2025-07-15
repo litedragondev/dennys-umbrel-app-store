@@ -2,7 +2,7 @@ manifestVersion: 1
 id: denny-browserless
 name: Browserless
 tagline: A powerful browser automation service
-icon: https://i.imgur.com/x0fJbj6
+icon: https://i.imgur.com/x0fJbj6.png
 category: test
 version: "2.33.0"
 port: 3353
