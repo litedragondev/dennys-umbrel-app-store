@@ -1,37 +1,43 @@
 manifestVersion: 1
 id: denny-bytebase
 name: Bytebase
-tagline: A simple server for sending and receiving messages
-icon: https://i.imgur.com/HakL1r4.png
-category: Test
+tagline: A GitOps platform for databases
+icon: https://i.imgur.com/zMvAokG.png
+category: developer tools
 version: "3.8.1"
 port: 8999
 description: >-
-  Gotify is an open-source, self-hosted notification server designed to enable real-time push notifications across multiple devices. It is a lightweight, efficient system that allows applications to send messages to the Gotify server via a REST API. These messages are then delivered to connected clients, including web browsers, mobile devices, or other systems that support Gotify’s push notification service.
+  Bytebase is a platform that helps teams manage database changes and data access in a controlled, trackable, and collaborative way. It enables structured workflows for making and reviewing schema or data changes, ensuring that every modification is properly reviewed, approved, and documented.
 
 
-  The server is built with Go, known for its high performance and minimal resource consumption, making it suitable for various environments. Gotify’s simple and intuitive web interface allows users to manage notifications, configure applications, and generate API tokens for authentication and access control.
+  The system includes built-in rules for checking SQL quality, detecting schema drift, and supporting rollback when needed. This helps maintain consistency and prevent errors across multiple environments.
 
 
-  One of the core features of Gotify is its support for real-time notifications using WebSockets. This allows connected clients to receive notifications instantly, ensuring timely delivery of messages. Additionally, Gotify supports categorizing and prioritizing notifications, helping users organize incoming messages based on importance.
+  Bytebase also allows temporary access to databases through approval-based workflows. Access is time-limited, logged, and governed by fine-grained control rules, making it easier to meet compliance and security requirements.
 
 
-  Gotify offers a native Android app, which allows users to receive push notifications directly on their devices. It also provides a web app, ensuring that users can stay updated across different platforms. The system’s architecture is designed for flexibility and scalability, enabling it to handle notifications from a variety of sources, from system alerts and monitoring tools to custom applications.
+  It provides a web-based SQL editor for executing and sharing queries. Every query is versioned and auditable, allowing teams to collaborate more effectively and reduce risk.
 
 
-  As a self-hosted solution, Gotify gives users complete control over their notification infrastructure, ensuring privacy and data security. With its open-source nature, it can be customized and extended to suit different use cases. The ability to host notifications locally, without relying on third-party services, makes Gotify an attractive option for those seeking a private, cost-effective solution for delivering real-time notifications.
-developer: Gotify
-website: https://gotify.net/
+  With its API-first design, Bytebase can be automated and integrated into existing development workflows. This brings the discipline of version control and review processes to the database, aligning it with modern DevOps practices.
+developer: Bytebase
+website: https://www.bytebase.com/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/gotify/server
-support: https://github.com/gotify/server/issues
+repo: https://github.com/bytebase/bytebase
+support: https://github.com/bytebase/bytebase/issues
 gallery:
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
+  - https://i.imgur.com/1oI5SvN.png
+  - https://i.imgur.com/1oI5SvN.png
+  - https://i.imgur.com/1oI5SvN.png
 releaseNotes: >-
-  This update sets the umask to 0 when creating Unix sockets to ensure proper file permissions. It also updates dependencies and fixes the release build process.
+  Version 3.8.0 introduces major improvements to schema synchronization and rollback, enhancing compatibility across MySQL, PostgreSQL, TiDB, SQL Server, and Oracle. It also retires the Issue Subscription feature and renames the Review Center to Plans.
+
+
+  This release adds support for query result row limits, multi-domain configuration, and a simplified input for default values. Approval workflows now list all approvers with hoverable detail views.
+
+
+  Bug fixes include improved display of JSON data types in ClickHouse queries and the addition of a use_ssl field in Terraform SSL configuration.
 dependencies:
 path: ""
 defaultUsername: ""
