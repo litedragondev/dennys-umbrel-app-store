@@ -16,13 +16,13 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/postgres_data:/var/lib/postgresql/data
 
-  app:
+  web:
     image: bytebase/bytebase:3.8.1@sha256:cdd708c61bfdddc77239ef91310a5fa07b2765062c40d7b16010425497eecbe8
     init: true
     restart: on-failure
     depends_on:
       - db
     environment:
-      PG_URL: postgresql://user:secret@bytebase_postgres_1:5432/bytebase 
+      PG_URL: postgresql://user:secret@denny-bytebase_postgres_1:5432/bytebase 
     volumes:
       - ${APP_DATA_DIR}/data/bytebase_data:/var/opt/bytebase
