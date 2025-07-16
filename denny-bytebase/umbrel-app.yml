@@ -27,9 +27,13 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/bytebase/bytebase
 support: https://github.com/bytebase/bytebase/issues
 gallery:
-  - https://i.imgur.com/1oI5SvN.png
-  - https://i.imgur.com/1oI5SvN.png
-  - https://i.imgur.com/1oI5SvN.png
+  - https://imgur.com/1rnSrqR.png
+  - https://imgur.com/yYsQw1B.png
+  - https://imgur.com/vTfSMBy.png
+  - https://imgur.com/jC8ft52.png
+  - https://imgur.com/WFeB88l.png
+  - https://imgur.com/ABSANMX.png
+  - https://imgur.com/rxHKrp6.png
 releaseNotes: >-
   Version 3.8.0 introduces major improvements to schema synchronization and rollback, enhancing compatibility across MySQL, PostgreSQL, TiDB, SQL Server, and Oracle. It also retires the Issue Subscription feature and renames the Review Center to Plans.
 
