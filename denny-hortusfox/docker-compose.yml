@@ -7,7 +7,7 @@ services:
       APP_PORT: 80
 
   app:
-    image: ghcr.io/danielbrendel/hortusfox-web:v5.0@sha256:83927e273c8c2fe24c5f1250e463768f372bdfc7bb749d4c371850ee46bcd08a
+    image: ghcr.io/danielbrendel/hortusfox-web:v5.1@sha256:d1052b754099fe8e70c4b4db01b425ef054727aaa14d59d331731cf214eb5b10
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/images:/var/www/html/public/img
