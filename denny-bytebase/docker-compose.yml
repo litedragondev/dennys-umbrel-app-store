@@ -23,6 +23,6 @@ services:
     depends_on:
       - db
     environment:
-      PG_URL: postgresql://user:secret@denny-bytebase_postgres_1:5432/bytebase 
+      PG_URL: postgres://user:secret@db:5432/bytebase
     volumes:
       - ${APP_DATA_DIR}/data/bytebase_data:/var/opt/bytebase
