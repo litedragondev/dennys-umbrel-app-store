@@ -8,7 +8,12 @@ services:
 
   redis:
     image: redis:7-alpine
-    command: redis-server --save "" --appendonly no
+    command: >
+      redis-server
+      --save ""
+      --appendonly no
+      --maxmemory 1gb
+      --maxmemory-policy allkeys-lru
     tmpfs:
       - /data
 
