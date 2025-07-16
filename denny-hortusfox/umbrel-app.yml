@@ -4,7 +4,7 @@ name: HortusFox
 tagline: A collaborative plant tracking and management application
 icon: https://i.imgur.com/67vJT3R.png
 category: files & productivity
-version: "5.0"
+version: "5.1"
 port: 8838
 description: >-
   🌿 HortusFox is a self-hosted web application designed for plant lovers who want to manage their houseplants and gardens in a structured and privacy-respecting way. It is completely free and open-source, allowing users to customize and extend the software to suit their personal needs. Whether you're taking care of a few potted plants on your windowsill or managing a large garden, HortusFox provides a digital space to track, organize, and plan all aspects of plant care.
@@ -37,10 +37,7 @@ gallery:
   - https://imgur.com/h7JRzMC.png
   - https://imgur.com/9FxlSD0.png
 releaseNotes: >-
-  Version 5.0 of HortusFox introduces several new features and improvements, including support for Brazilian Portuguese, selectable main gallery photos, and new API endpoints for backups and imports. 
-  
-  
-  It also fixes issues with weather data display, adds more light level options, and allows removal of individual task items. Additionally, the Docker setup now supports auto-updating Composer dependencies on container start.
+  Version 5.1 of HortusFox adds Russian language support and fixes several issues, including backup inconsistencies, API authentication errors, and group item linking. The location API endpoint now supports pagination.
 dependencies:
 path: ""
 defaultUsername: "admin@admin.com"
