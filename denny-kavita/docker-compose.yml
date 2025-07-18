@@ -16,3 +16,5 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/config:/kavita/config:rw
       - ${APP_DATA_DIR}/data/kavita_data:/manga:rw
+      - ${UMBREL_ROOT}/data/storage/documents:/documents
+      - ${UMBREL_ROOT}/data/storage/downloads:/downloads
