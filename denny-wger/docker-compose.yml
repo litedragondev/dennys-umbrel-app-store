@@ -3,44 +3,106 @@ version: '3.7'
 services:
   app_proxy:
     environment:
-      APP_HOST: denny-wger_web_1
-      APP_PORT: 8000
+      APP_HOST: denny-wger_nginx_1
+      APP_PORT: 80
 
   web:
-    image: wger/wger:latest
-    restart: unless-stopped
+    image: wger/server:latest
     depends_on:
-      - db
-    environment:
-      POSTGRES_HOST: db
-      POSTGRES_PORT: 5432
-      POSTGRES_DB: wger
-      POSTGRES_USER: wger
-      POSTGRES_PASSWORD: wger
-      DJANGO_SETTINGS_MODULE: wger.settings.live
-      UWSGI_STATIC_MAP: /static=/home/wger/static
-      UWSGI_MEDIA_MAP: /media=/home/wger/media
+      db:
+        condition: service_healthy
+      cache:
+        condition: service_healthy
+    env_file:
+      - ${APP_DATA_DIR}/config/prod.env
     volumes:
-      - static:${APP_DATA_DIR}/static
-      - media:${APP_DATA_DIR}/media
-    command: >
-      bash -c "
-        python3 manage.py migrate &&
-        python3 manage.py collectstatic --noinput &&
-        gunicorn wsgi:application -b 0.0.0.0:8000
-      "
+      - ${APP_DATA_DIR}/static:/home/wger/static
+      - ${APP_DATA_DIR}/media:/home/wger/media
+    expose:
+      - 8000
+    healthcheck:
+      test: wget --no-verbose --tries=1 --spider http://localhost:8000
+      interval: 10s
+      timeout: 5s
+      start_period: 300s
+      retries: 5
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:stable
+    depends_on:
+      - web
+    volumes:
+      - ${APP_DATA_DIR}/config/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ${APP_DATA_DIR}/static:/wger/static:ro
+      - ${APP_DATA_DIR}/media:/wger/media:ro
+    expose:
+      - 80
+    healthcheck:
+      test: service nginx status
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
 
   db:
-    image: postgres:13
-    restart: unless-stopped
+    image: postgres:15-alpine
     environment:
-      POSTGRES_DB: wger
-      POSTGRES_USER: wger
-      POSTGRES_PASSWORD: wger
+      - POSTGRES_USER=wger
+      - POSTGRES_PASSWORD=wger
+      - POSTGRES_DB=wger
+      - TZ=Europe/Berlin
     volumes:
-      - db_data:/var/lib/postgresql/data
+      - ${APP_DATA_DIR}/postgres-data:/var/lib/postgresql/data/
+    expose:
+      - 5432
+    healthcheck:
+      test: pg_isready -U wger
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
 
-volumes:
-  db_data:
-  static:
-  media:
+  cache:
+    image: redis
+    expose:
+      - 6379
+    volumes:
+      - ${APP_DATA_DIR}/redis-data:/data
+    healthcheck:
+      test: redis-cli ping
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+
+  celery_worker:
+    image: wger/server:latest
+    command: /start-worker
+    env_file:
+      - ${APP_DATA_DIR}/config/prod.env
+    volumes:
+      - ${APP_DATA_DIR}/media:/home/wger/media
+    depends_on:
+      web:
+        condition: service_healthy
+    healthcheck:
+      test: celery -A wger inspect ping
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  celery_beat:
+    image: wger/server:latest
+    command: /start-beat
+    volumes:
+      - ${APP_DATA_DIR}/celery-beat:${APP_DATA_DIR}/beat/
+    env_file:
+      - ${APP_DATA_DIR}/config/prod.env
+    depends_on:
+      celery_worker:
+        condition: service_healthy
