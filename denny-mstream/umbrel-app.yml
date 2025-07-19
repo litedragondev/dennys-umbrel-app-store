@@ -1,6 +1,6 @@
 manifestVersion: 1
 id: denny-mstream
-name: mstream
+name: mStream
 tagline: A private music server
 icon: https://i.imgur.com/wnBEJOR.png
 category: In Progress
