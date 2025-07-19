@@ -70,9 +70,9 @@ services:
     expose:
       - 6379
     volumes:
-      - ${APP_DATA_DIR}/config/redis.conf:/usr/local/etc/redis/redis.conf
+      # ${APP_DATA_DIR}/config/redis.conf:/usr/local/etc/redis/redis.conf
       - redis-data:/data
-    command: [ "redis-server", "/usr/local/etc/redis/redis.conf"]
+    #command: [ "redis-server", "/usr/local/etc/redis/redis.conf"]
     healthcheck:
       test: redis-cli ping
       interval: 10s
