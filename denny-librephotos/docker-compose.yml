@@ -42,7 +42,7 @@ services:
     image: reallibrephotos/librephotos:2025w28@sha256:40fd192cd99a96ee496007e3451c36381a6b376d2dba15e7e81058284d4af96d
     restart: on-failure
     volumes:
-      - ${APP_DATA_DIR}/scan:/data
+      - ${UMBREL_ROOT}/data/storage/photos:/data
       - ${APP_DATA_DIR}/data/protected_media:/protected_media
       - ${APP_DATA_DIR}/data/logs:/logs
       - ${APP_DATA_DIR}/data/cache:/root/.cache
