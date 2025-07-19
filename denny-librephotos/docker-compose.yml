@@ -7,11 +7,11 @@ services:
       APP_PORT: 80
 
   proxy:
-    image: reallibrephotos/librephotos-proxy:latest
+    image: reallibrephotos/librephotos-proxy:2025w28@sha256:e1fa9b1eb33fbb11b13c7d01940e1ce354958f97580487555fa6c7fc3d91050c
     container_name: denny-librephotos_proxy_1
     restart: on-failure
     volumes:
-      - ${APP_DATA_DIR}/scan:/data
+      - ${UMBREL_ROOT}/data/storage/photos:/data
       - ${APP_DATA_DIR}/data/protected_media:/protected_media
     expose:
       - "80"
@@ -20,8 +20,7 @@ services:
       - frontend
 
   db:
-    image: pgautoupgrade/pgautoupgrade:latest
-    container_name: denny-librephotos_db_1
+    image: pgautoupgrade/pgautoupgrade:17-alpine3.22@sha256:2ec008ae5f0a2e5dd8f4d2475df41cf3ccc9562acf49bd668fcc0c061944b9bf
     restart: on-failure
     environment:
       POSTGRES_USER: librephotos
@@ -36,13 +35,11 @@ services:
       retries: 5
 
   frontend:
-    image: reallibrephotos/librephotos-frontend:latest
-    container_name: denny-librephotos_frontend_1
+    image: reallibrephotos/librephotos-frontend:2025w28@sha256:52a440d336205a900b7d6ed4ecb9fdab906e42bb1321f43de1a7350ed85e1ed0
     restart: on-failure
 
   backend:
-    image: reallibrephotos/librephotos:latest
-    container_name: denny-librephotos_backend_1
+    image: reallibrephotos/librephotos:2025w28@sha256:40fd192cd99a96ee496007e3451c36381a6b376d2dba15e7e81058284d4af96d
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/scan:/data
@@ -52,9 +49,9 @@ services:
     environment:
       SECRET_KEY: changeme123
       BACKEND_HOST: backend
-      ADMIN_EMAIL: admin@example.com
+      ADMIN_EMAIL: admin@admin.com
       ADMIN_USERNAME: admin
-      ADMIN_PASSWORD: password
+      ADMIN_PASSWORD: umbrel
       DB_BACKEND: postgresql
       DB_NAME: librephotos
       DB_USER: librephotos
