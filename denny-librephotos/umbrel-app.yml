@@ -1,37 +1,37 @@
 manifestVersion: 1
 id: denny-librephotos
 name: LibrePhotos
-tagline: A simple server for sending and receiving messages
-icon: https://i.imgur.com/HakL1r4.png
+tagline: A photo management service
+icon: https://i.imgur.com/O7S9k6W.png
 category: Test
-version: "3.8.1"
+version: "2025w28"
 port: 8150
 description: >-
-  Gotify is an open-source, self-hosted notification server designed to enable real-time push notifications across multiple devices. It is a lightweight, efficient system that allows applications to send messages to the Gotify server via a REST API. These messages are then delivered to connected clients, including web browsers, mobile devices, or other systems that support Gotify’s push notification service.
+  🖼️ LibrePhotos is a photo management application that helps users organize and browse their photo and video collections with ease. It provides features like face recognition that automatically detects and groups people in photos to make searching simpler. The app uses artificial intelligence to identify objects and scenes in images, enabling users to perform semantic searches based on the content of their photos.
 
 
-  The server is built with Go, known for its high performance and minimal resource consumption, making it suitable for various environments. Gotify’s simple and intuitive web interface allows users to manage notifications, configure applications, and generate API tokens for authentication and access control.
+  It supports a wide variety of file formats including RAW and HEIC and allows for automatic album creation based on events, dates, and locations. Users can explore their media chronologically through a timeline view and search their photos by metadata such as GPS coordinates and EXIF information.
 
 
-  One of the core features of Gotify is its support for real-time notifications using WebSockets. This allows connected clients to receive notifications instantly, ensuring timely delivery of messages. Additionally, Gotify supports categorizing and prioritizing notifications, helping users organize incoming messages based on importance.
+  The application also supports multi-user access with customizable permissions, enabling different users to interact with the photo library according to their roles. Additional features include reverse geocoding to assign place names to photo locations and an integrated mobile app that facilitates offline access and synchronization.
 
 
-  Gotify offers a native Android app, which allows users to receive push notifications directly on their devices. It also provides a web app, ensuring that users can stay updated across different platforms. The system’s architecture is designed for flexibility and scalability, enabling it to handle notifications from a variety of sources, from system alerts and monitoring tools to custom applications.
-
-
-  As a self-hosted solution, Gotify gives users complete control over their notification infrastructure, ensuring privacy and data security. With its open-source nature, it can be customized and extended to suit different use cases. The ability to host notifications locally, without relying on third-party services, makes Gotify an attractive option for those seeking a private, cost-effective solution for delivering real-time notifications.
-developer: Gotify
-website: https://gotify.net/
+  Overall, LibrePhotos aims to provide a comprehensive, intelligent, and user-friendly way to manage large collections of photos and videos.
+developer: LibrePhotos
+website: https://docs.librephotos.com/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/gotify/server
-support: https://github.com/gotify/server/issues
+repo: https://github.com/LibrePhotos/librephotos-docker
+support: https://github.com/LibrePhotos/librephotos-docker/issues
 gallery:
   - https://i.imgur.com/qBH4PgI.png
   - https://i.imgur.com/qBH4PgI.png
   - https://i.imgur.com/qBH4PgI.png
 releaseNotes: >-
-  This update sets the umask to 0 when creating Unix sockets to ensure proper file permissions. It also updates dependencies and fixes the release build process.
+  Version 2025w28 brings several improvements to LibrePhotos, including a fix for video scanning by correcting aspect ratio detection and improved support for media from Nextcloud. 
+  
+  
+  The FaceDashboard frontend now handles cache invalidation more reliably, and the upload documentation was clarified. Dependencies and language strings were also updated.
 dependencies:
 path: ""
 defaultUsername: ""
