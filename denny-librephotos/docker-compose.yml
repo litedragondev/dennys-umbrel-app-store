@@ -59,6 +59,8 @@ services:
       DB_PORT: 5432
       MAPBOX_API_KEY: ""
       WEB_CONCURRENCY: 2
+      HEAVYWEIGHT_PROCESS: 1
+      FIXPERMISSIONS: "true"
       SKIP_PATTERNS: ""
       ALLOW_UPLOAD: "true"
       CSRF_TRUSTED_ORIGINS: ""
