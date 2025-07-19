@@ -106,10 +106,3 @@ services:
     depends_on:
       celery_worker:
         condition: service_healthy
-
-volumes:
-  postgres-data:
-  celery-beat:
-  redis-data:
-  media:
-  static:
