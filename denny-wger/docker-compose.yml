@@ -54,7 +54,7 @@ services:
       - POSTGRES_DB=wger
       - TZ=Europe/Berlin
     volumes:
-      - postgres-data:/var/lib/postgresql/data/
+      - ${APP_DATA_DIR}/postgres-data:/var/lib/postgresql/data/
     expose:
       - 5432
     healthcheck:
@@ -70,7 +70,7 @@ services:
     expose:
       - 6379
     volumes:
-      - redis-data:/data
+      - ${APP_DATA_DIR}/redis-data:/data
     healthcheck:
       test: redis-cli ping
       interval: 10s
@@ -100,7 +100,7 @@ services:
     image: wger/server:latest
     command: /start-beat
     volumes:
-      - celery-beat:${APP_DATA_DIR}/beat/
+      - ${APP_DATA_DIR}/celery-beat:${APP_DATA_DIR}/beat/
     env_file:
       - ${APP_DATA_DIR}/config/prod.env
     depends_on:
