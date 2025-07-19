@@ -3,7 +3,7 @@ id: denny-librephotos
 name: LibrePhotos
 tagline: A photo management service
 icon: https://i.imgur.com/O7S9k6W.png
-category: Test
+category: files & productivity
 version: "2025w28"
 port: 8150
 description: >-
@@ -24,9 +24,12 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/LibrePhotos/librephotos-docker
 support: https://github.com/LibrePhotos/librephotos-docker/issues
 gallery:
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
+  - https://i.imgur.com/QIpDZOG.png
+  - https://i.imgur.com/euxmRSv.png
+  - https://i.imgur.com/HF8ihW7.png
+  - https://i.imgur.com/Hq0kUeX.png
+  - https://i.imgur.com/Pevxbtq.png
+  - https://i.imgur.com/mYaPi1L.png
 releaseNotes: >-
   Version 2025w28 brings several improvements to LibrePhotos, including a fix for video scanning by correcting aspect ratio detection and improved support for media from Nextcloud. 
   
@@ -34,5 +37,5 @@ releaseNotes: >-
   The FaceDashboard frontend now handles cache invalidation more reliably, and the upload documentation was clarified. Dependencies and language strings were also updated.
 dependencies:
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "admin"
+defaultPassword: "umbrel"
