@@ -2,7 +2,7 @@ manifestVersion: 1
 id: denny-trip
 name: TRIP
 tagline: A minimalist map tracker and trip planner
-icon: https://i.imgur.com/D4BrEsp.png
+icon: https://i.imgur.com/bBiP9Xi.png
 category: In Progress
 version: "1.3.0"
 port: 8952
@@ -21,9 +21,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/itskovacs/trip
 support: https://github.com/itskovacs/trip/issues
 gallery:
-  - https://i.imgur.com/bDFxheU.png
-  - https://i.imgur.com/bDFxheU.png
-  - https://i.imgur.com/bDFxheU.png
+  - https://i.imgur.com/kheuz00.png
+  - https://i.imgur.com/kheuz00.png
+  - https://i.imgur.com/kheuz00.png
 releaseNotes: >-
   Version 1.3.0 introduces the ability to display the route of a trip day when you click on that day.
 dependencies:
