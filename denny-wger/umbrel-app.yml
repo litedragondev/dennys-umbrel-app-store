@@ -5,7 +5,7 @@ tagline: An open-source fitness tracker for workouts and nutrition
 icon: https://i.imgur.com/7VzJnqi.png
 category: In Progress
 version: "2.3"
-port: 8811
+port: 8450
 description: >-
   wger is a powerful and flexible open-source fitness management software designed to assist users in planning, tracking, and optimizing their workouts, nutrition, and overall fitness progress. Whether you are an individual looking to improve your training efficiency, a personal trainer managing multiple clients, or a gym owner searching for a digital solution to streamline workout programming, wger provides a feature-rich platform tailored to various fitness needs.
 
