@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: denny-wger
 name: wger
-tagline: An open-source fitness tracker for workouts and nutrition
+tagline: A fitness tracker for workouts and nutrition
 icon: https://i.imgur.com/7VzJnqi.png
 category: files & productivity
 version: "2.4"
