@@ -59,9 +59,9 @@ services:
       DB_HOST: db
       DB_PORT: 5432
       MAPBOX_API_KEY: ""
-      WEB_CONCURRENCY: 1
+      WEB_CONCURRENCY: 2
       SKIP_PATTERNS: ""
-      ALLOW_UPLOAD: "false"
+      ALLOW_UPLOAD: "true"
       CSRF_TRUSTED_ORIGINS: ""
       DEBUG: "0"
     depends_on:
