@@ -1,37 +1,33 @@
 manifestVersion: 1
 id: denny-mstream
 name: mstream
-tagline: A simple server for sending and receiving messages
-icon: https://i.imgur.com/HakL1r4.png
-category: Test
-version: "3.8.1"
+tagline: A private music server
+icon: https://i.imgur.com/wnBEJOR.png
+category: In Progress
+version: "5.13.1"
 port: 3840
 description: >-
-  Gotify is an open-source, self-hosted notification server designed to enable real-time push notifications across multiple devices. It is a lightweight, efficient system that allows applications to send messages to the Gotify server via a REST API. These messages are then delivered to connected clients, including web browsers, mobile devices, or other systems that support Gotify’s push notification service.
+  💿 mStream is a self-hosted music streaming server that allows you to stream your personal music collection from anywhere using a web browser or compatible app. Once installed, it scans your local music directory and creates a library that you can access remotely, making your music available on your phone, tablet, or computer without relying on third-party services.
 
 
-  The server is built with Go, known for its high performance and minimal resource consumption, making it suitable for various environments. Gotify’s simple and intuitive web interface allows users to manage notifications, configure applications, and generate API tokens for authentication and access control.
+  It supports high-quality audio formats such as FLAC and offers gapless playback for a smooth and uninterrupted listening experience. The user interface is clean, responsive, and easy to navigate, providing a familiar experience similar to commercial music platforms.
 
 
-  One of the core features of Gotify is its support for real-time notifications using WebSockets. This allows connected clients to receive notifications instantly, ensuring timely delivery of messages. Additionally, Gotify supports categorizing and prioritizing notifications, helping users organize incoming messages based on importance.
-
-
-  Gotify offers a native Android app, which allows users to receive push notifications directly on their devices. It also provides a web app, ensuring that users can stay updated across different platforms. The system’s architecture is designed for flexibility and scalability, enabling it to handle notifications from a variety of sources, from system alerts and monitoring tools to custom applications.
-
-
-  As a self-hosted solution, Gotify gives users complete control over their notification infrastructure, ensuring privacy and data security. With its open-source nature, it can be customized and extended to suit different use cases. The ability to host notifications locally, without relying on third-party services, makes Gotify an attractive option for those seeking a private, cost-effective solution for delivering real-time notifications.
-developer: Gotify
-website: https://gotify.net/
+  Because mStream is open source and runs entirely on your own hardware, all your music and data remain private. There are no ads, no subscriptions, and no data collection, making it a reliable and privacy-focused solution for managing and enjoying your music library on your own terms.
+developer: Iros Software
+website: https://mstream.io/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/gotify/server
-support: https://github.com/gotify/server/issues
+repo: https://github.com/IrosTheBeggar/mStream
+support: https://github.com/IrosTheBeggar/mStream/issues
 gallery:
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
+  - https://i.imgur.com/dQPCy3a.png
+  - https://i.imgur.com/0nrJtJo.png
+  - https://i.imgur.com/SHKGTkC.png
+  - https://i.imgur.com/CICKqLT.png
+  - https://i.imgur.com/7OAQ06X.png
 releaseNotes: >-
-  This update sets the umask to 0 when creating Unix sockets to ensure proper file permissions. It also updates dependencies and fixes the release build process.
+  Version 5.13.1 includes several improvements. Additionally, the 32-bit Windows installer has been removed for now.
 dependencies:
 path: ""
 defaultUsername: ""
