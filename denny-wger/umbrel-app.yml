@@ -35,7 +35,7 @@ gallery:
   - https://i.imgur.com/CMzngcr.png
   - https://i.imgur.com/eVmMa5Z.png
   - https://i.imgur.com/MKSrHK0.png
-  - https://i.imgur.com/Zm8OTRK.png
+  - https://i.imgur.com/qBlfyeT.png
 releaseNotes: >-
   The latest wger update introduces several new features, bug fixes, and improvements. Notable additions include support for exercise videos, ingredient images, and improved exercise recognition, as well as enhancements to the nutrition planner and API functionality. Various bugs have been resolved, such as issues with calorie tracking, exercise downloads, and user preferences, while updates to dependencies and infrastructure ensure better performance and stability.
 dependencies:
