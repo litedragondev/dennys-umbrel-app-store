@@ -7,7 +7,7 @@ services:
       APP_PORT: 80
 
   web:
-    image: wger/server:latest
+    image: wger/server:2.4-dev@sha256:8e2fcacc32157468a3502d7516897e1b16dc5c609a3fe7698291c0e20bb378b5
     user: "1000:1000"
     depends_on:
       db:
@@ -27,10 +27,10 @@ services:
       timeout: 5s
       start_period: 300s
       retries: 5
-    restart: unless-stopped
+    restart: on-failure
 
   nginx:
-    image: nginx:stable
+    image: nginx:alpine3.22@sha256:d67ea0d64d518b1bb04acde3b00f722ac3e9764b3209a9b0a98924ba35e4b779
     depends_on:
       - web
     volumes:
@@ -45,10 +45,10 @@ services:
       timeout: 5s
       retries: 5
       start_period: 30s
-    restart: unless-stopped
+    restart: on-failure
 
   db:
-    image: postgres:15-alpine
+    image: postgres:17.5-alpine@sha256:6567bca8d7bc8c82c5922425a0baee57be8402df92bae5eacad5f01ae9544daa
     user: "1000:1000"
     environment:
       POSTGRES_USER: wger
@@ -65,10 +65,10 @@ services:
       timeout: 5s
       retries: 5
       start_period: 30s
-    restart: unless-stopped
+    restart: on-failure
 
   cache:
-    image: redis
+    image: redis:8.0.3-alpine@sha256:25c0ae32c6c2301798579f5944af53729766a18eff5660bbef196fc2e6214a9c
     user: "1000:1000"
     expose:
       - 6379
@@ -80,10 +80,10 @@ services:
       timeout: 5s
       retries: 5
       start_period: 30s
-    restart: unless-stopped
+    restart: on-failure
 
   celery_worker:
-    image: wger/server:latest
+    image: wger/server:2.4-dev@sha256:8e2fcacc32157468a3502d7516897e1b16dc5c609a3fe7698291c0e20bb378b5
     user: "1000:1000"
     command: /start-worker
     env_file:
@@ -99,10 +99,10 @@ services:
       timeout: 5s
       retries: 5
       start_period: 30s
-    restart: unless-stopped
+    restart: on-failure
 
   celery_beat:
-    image: wger/server:latest
+    image: wger/server:2.4-dev@sha256:8e2fcacc32157468a3502d7516897e1b16dc5c609a3fe7698291c0e20bb378b5
     user: "1000:1000"
     command: /start-beat
     volumes:
@@ -112,4 +112,4 @@ services:
     depends_on:
       celery_worker:
         condition: service_healthy
-    restart: unless-stopped
+    restart: on-failure
