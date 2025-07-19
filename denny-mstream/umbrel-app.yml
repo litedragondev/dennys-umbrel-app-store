@@ -3,7 +3,7 @@ id: denny-mstream
 name: mStream
 tagline: A private music server
 icon: https://i.imgur.com/wnBEJOR.png
-category: In Progress
+category: media
 version: "5.13.1"
 port: 3840
 description: >-
