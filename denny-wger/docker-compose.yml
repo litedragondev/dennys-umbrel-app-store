@@ -16,8 +16,8 @@ services:
     env_file:
       - ${APP_DATA_DIR}/config/prod.env
     volumes:
-      - ${APP_DATA_DIR}/static:/home/wger/static
-      - ${APP_DATA_DIR}/media:/home/wger/media
+      - static:${APP_DATA_DIR}/static
+      - media:${APP_DATA_DIR}/media
     expose:
       - 8000
     healthcheck:
@@ -34,8 +34,8 @@ services:
       - web
     volumes:
       - ${APP_DATA_DIR}/config/nginx.conf:/etc/nginx/conf.d/default.conf
-      - ${APP_DATA_DIR}/static:/wger/static:ro
-      - ${APP_DATA_DIR}/media:/wger/media:ro
+      - static:/wger/static:ro
+      - media:/wger/media:ro
     expose:
       - 80
     healthcheck:
@@ -70,7 +70,9 @@ services:
     expose:
       - 6379
     volumes:
+      # ${APP_DATA_DIR}/config/redis.conf:/usr/local/etc/redis/redis.conf
       - redis-data:/data
+    #command: [ "redis-server", "/usr/local/etc/redis/redis.conf"]
     healthcheck:
       test: redis-cli ping
       interval: 10s
@@ -85,7 +87,7 @@ services:
     env_file:
       - ${APP_DATA_DIR}/config/prod.env
     volumes:
-      - ${APP_DATA_DIR}/media:/home/wger/media
+      - media:${APP_DATA_DIR}/media
     depends_on:
       web:
         condition: service_healthy
@@ -100,7 +102,7 @@ services:
     image: wger/server:latest
     command: /start-beat
     volumes:
-      - ${APP_DATA_DIR}/beat:/home/wger/beat/
+      - celery-beat:${APP_DATA_DIR}/beat/
     env_file:
       - ${APP_DATA_DIR}/config/prod.env
     depends_on:
@@ -111,3 +113,5 @@ volumes:
   postgres-data:
   celery-beat:
   redis-data:
+  media:
+  static:
