@@ -1,37 +1,31 @@
 manifestVersion: 1
 id: denny-trip
-name: Trip
-tagline: A simple server for sending and receiving messages
-icon: https://i.imgur.com/HakL1r4.png
-category: Test
-version: "3.8.1"
+name: TRIP
+tagline: A minimalist map tracker and trip planner
+icon: https://i.imgur.com/D4BrEsp.png
+category: In Progress
+version: "1.3.0"
 port: 8952
 description: >-
-  Gotify is an open-source, self-hosted notification server designed to enable real-time push notifications across multiple devices. It is a lightweight, efficient system that allows applications to send messages to the Gotify server via a REST API. These messages are then delivered to connected clients, including web browsers, mobile devices, or other systems that support Gotify’s push notification service.
+  🗺️ TRIP is a minimalist and privacy-focused trip planner that helps you organize your travel ideas and points of interest on an interactive map. Designed for self-hosting, it allows you to manage your travel data without relying on third-party services or cloud storage. The application combines a clean visual interface with a structured planning tool that resembles a spreadsheet, making it easy to document and categorize each destination.
 
 
-  The server is built with Go, known for its high performance and minimal resource consumption, making it suitable for various environments. Gotify’s simple and intuitive web interface allows users to manage notifications, configure applications, and generate API tokens for authentication and access control.
+  With TRIP, you can add detailed metadata to your points of interest such as whether a location is dog-friendly, how much it costs, or how long it takes to explore. The interface supports filtering and search functions so you can quickly navigate through your entries and refine your travel plans as needed. You can also import and export your data at any time, ensuring that your information remains portable and under your control.
 
 
-  One of the core features of Gotify is its support for real-time notifications using WebSockets. This allows connected clients to receive notifications instantly, ensuring timely delivery of messages. Additionally, Gotify supports categorizing and prioritizing notifications, helping users organize incoming messages based on importance.
-
-
-  Gotify offers a native Android app, which allows users to receive push notifications directly on their devices. It also provides a web app, ensuring that users can stay updated across different platforms. The system’s architecture is designed for flexibility and scalability, enabling it to handle notifications from a variety of sources, from system alerts and monitoring tools to custom applications.
-
-
-  As a self-hosted solution, Gotify gives users complete control over their notification infrastructure, ensuring privacy and data security. With its open-source nature, it can be customized and extended to suit different use cases. The ability to host notifications locally, without relying on third-party services, makes Gotify an attractive option for those seeking a private, cost-effective solution for delivering real-time notifications.
-developer: Gotify
-website: https://gotify.net/
+  The platform places strong emphasis on privacy, offering a telemetry-free experience where nothing is tracked or shared. Everything runs locally, and the source code is fully open, allowing you to inspect, adapt, or contribute as you see fit. Whether you're planning a weekend getaway or a multi-country adventure, TRIP helps you stay organized while keeping your data safe and fully in your hands.
+developer: Kovacs
+website: https://itskovacs-trip.netlify.app/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/gotify/server
-support: https://github.com/gotify/server/issues
+repo: https://github.com/itskovacs/trip
+support: https://github.com/itskovacs/trip/issues
 gallery:
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
-  - https://i.imgur.com/qBH4PgI.png
+  - https://i.imgur.com/bDFxheU.png
+  - https://i.imgur.com/bDFxheU.png
+  - https://i.imgur.com/bDFxheU.png
 releaseNotes: >-
-  This update sets the umask to 0 when creating Unix sockets to ensure proper file permissions. It also updates dependencies and fixes the release build process.
+  Version 1.3.0 introduces the ability to display the route of a trip day when you click on that day.
 dependencies:
 path: ""
 defaultUsername: ""
