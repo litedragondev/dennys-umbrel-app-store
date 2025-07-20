@@ -9,12 +9,10 @@ services:
   web:
     image: ghcr.io/marimo-team/marimo:0.14.12
     restart: unless-stopped
-    command: ["marimo", "run", "app.marimo", "--host", "0.0.0.0", "-p", "8080"]
-    volumes:
-      - ${APP_DATA_DIR}/data/app.marimo:/app/app.marimo:ro
-    expose:
-      - 8080
-    environment:
-      UV_SYSTEM_PYTHON: "1"
-    working_dir: /app
+command: ["python", "app.py"]
+volumes:
+  - ${APP_DATA_DIR}/data/app.py:/app/app.py:ro
+working_dir: /app
+environment:
+  UV_SYSTEM_PYTHON: "1"
 
