@@ -1,0 +1,32 @@
+{
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": [
+        "from marimo import Marimo\n",
+        "\n",
+        "app = Marimo()\n",
+        "\n",
+        "@app.route(\"/\")\n",
+        "def hello():\n",
+        "    return \"Hello from Marimo!\"\n",
+        "\n",
+        "if __name__ == \"__main__\":\n",
+        "    app.run()"
+      ],
+      "metadata": {}
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python",
+      "version": "3.x"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
