@@ -202,7 +202,7 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 | 178 | [Spotube](https://github.com/KRTirtho/spotube)       | An open-source Spotify client for every platform                          | 30123  |
 | 179 | [Stalwart](https://github.com/stalwartlabs/stalwart)     | An all-in-one Mail & Collaboration server                             | 18080  |
 | 180 | [Statping NG](https://github.com/statping-ng/statping-ng)| A web and app status monitoring tool                                  | 8722   |
-| 181 | [Statusnook](https://github.com/goksan/statusnook)       | An effortless solution for setting up a status page and monitoring endpoints in minutes | 8444  |
+| 181 | [Statusnook](https://github.com/goksan/statusnook)    | An effortless solution for setting up a status page and monitoring endpoints in minutes | 8444  |
 | 182 | [Stremio](https://github.com/tsaridas/stremio-docker) | An all-in-one streaming hub for all your entertainment needs             | 10470  |
 | 183 | [Supabase](https://github.com/supabase/supabase)      | An open source Firebase alternative                                      | 53000  |
 | 184 | [Super Productivity](https://github.com/johannesjo/super-productivity) | An efficient way to manage tasks, time, and projects all in one place  | 8020   |
