@@ -48,7 +48,7 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 | 24  | [Cheshire Cat AI](https://github.com/cheshire-cat-ai/core) | A framework to build custom AIs on top of any language model       | 1865   |
 | 25  | [Chevereto](https://github.com/chevereto)            | A fast, reliable way to store and share your images                      | 8048   |
 | 26  | [Cloudreve](https://github.com/cloudreve/Cloudreve)  | A self-hosted file management system with multi-cloud support            | 8189   |
-| 27  | [Cobalt](https://github.com/imputnet/cobalt)               | A media downloader that doesn't piss you off                       | 9001   |
+| 27  | [Cobalt](https://github.com/imputnet/cobalt)         | A media downloader that doesn't piss you off                             | 9001   |
 | 28  | [ConvertX](https://github.com/C4illin/ConvertX)      | A self-hosted online file converter that converts tons of file types     | 13000  |
 | 29  | [Crafty Controller](https://github.com/RMDC-Crafty/crafty) | An intuitive way to automate and manage your Minecraft server with ease | 18443  |
 | 30  | [CyberChef](https://github.com/gchq/CyberChef)       | An intuitive web app for exploring and decoding data effortlessly        | 8817   |
