@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-marimo_web_1
+      APP_PORT: 8080
+
+  web:
+    image: ghcr.io/marimo-team/marimo:0.14.12
+    command: marimo run --host 0.0.0.0
+    restart: on-failure
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - ${APP_DATA_DIR}/notebooks:/notebooks
+    working_dir: /notebooks
