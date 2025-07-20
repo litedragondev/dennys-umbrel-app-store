@@ -9,8 +9,8 @@ services:
   web:
     image: ghcr.io/marimo-team/marimo:0.14.12
     command: >
-      bash -c "echo '@marimo.app\ndef hello():\n    return \"Hello from Marimo!\"' > /notebooks/default.py &&
-               marimo run /notebooks/default.py --host 0.0.0.0 --no-token --headless"
+      bash -c "printf '@marimo.app\ndef hello():\n    return \"Hello from Marimo!\"\n' > /notebooks/default.py && \
+      marimo run /notebooks/default.py --host 0.0.0.0 --no-token --headless"
     restart: on-failure
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080"]
