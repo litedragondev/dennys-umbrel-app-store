@@ -79,9 +79,9 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 | 55  | [FileGator](https://github.com/filegator/filegator)  | An application for managing files and folders                             | 8434   |
 | 56  | [Flatnotes](https://github.com/dullage/flatnotes)    | A self-hosted note-taking app with flat Markdown file storage             | 8061   |
 | 57  | [FluidCalendar](https://github.com/dotnetfactory/fluid-calendar) | An open-source intelligent calendar for smarter scheduling    | 3411   |
-| 58  | [FreeTube](https://github.com/FreeTubeApp/FreeTube)    | An Open Source YouTube app for privacy                                  | 3422   |
+| 58  | [FreeTube](https://github.com/FreeTubeApp/FreeTube)  | An Open Source YouTube app for privacy                                    | 3422   |
 | 59  | [Gatus](https://github.com/TwiN/gatus)               | An uptime guardian for critical endpoints                                 | 8443   |
-| 60  | [Ghost](https://github.com/TryGhost/Ghost)          | A platform for creators to publish, grow, and monetize their content       | 3368   |
+| 60  | [Ghost](https://github.com/TryGhost/Ghost)           | A platform for creators to publish, grow, and monetize their content      | 3368   |
 | 61  | [Gimp](https://github.com/GNOME/gimp)                | An open-source powerhouse for image editing                               | 3388   |
 | 62  | [Github Desktop](https://github.com/desktop/desktop) | An efficient way to manage your code                                      | 3303   |
 | 63  | [Gitingest](https://github.com/cyclotruc/gitingest)  | An effortless way to make Git repositories LLM-friendly                   | 8895   |
