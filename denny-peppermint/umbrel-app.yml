@@ -3,7 +3,7 @@ id: denny-peppermint
 name: Peppermint
 tagline: An issue management & help desk solution
 icon: https://i.imgur.com/ZpMFFgn.png
-category: Test
+category: In Progress
 version: "0.5.5"
 port: 3588
 description: >-
