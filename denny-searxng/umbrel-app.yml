@@ -2,12 +2,12 @@ manifestVersion: 1
 id: denny-searxng
 name: SearXNG
 tagline: A free internet metasearch engine
-icon: https://i.imgur.com/ZpMFFgn.png
-category: files & productivity
+icon: https://i.imgur.com/0hLmHXx.png
+category: networking
 version: "2025.7.19"
 port: 8088
 description: >-
-  SearxNG is a metasearch engine that enables users to search the internet by combining results from multiple search providers into one comprehensive list. When a user submits a query, SearxNG sends that query simultaneously to a variety of external search engines and services. It then collects and merges the responses, presenting the user with a unified set of search results. This approach allows users to access a wider range of information from different sources without having to search each one individually.
+  🔍 SearxNG is a metasearch engine that enables users to search the internet by combining results from multiple search providers into one comprehensive list. When a user submits a query, SearxNG sends that query simultaneously to a variety of external search engines and services. It then collects and merges the responses, presenting the user with a unified set of search results. This approach allows users to access a wider range of information from different sources without having to search each one individually.
 
 
   The application emphasizes delivering diverse and balanced search outcomes by aggregating results from many different platforms. By pooling these various results, SearxNG helps reduce bias that might come from relying on a single search engine, offering users a more neutral and varied perspective on their search topics. The system is designed to handle many types of searches, from web pages to images, videos, news, and other categories, depending on which providers are queried.
@@ -21,9 +21,11 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/searxng/searxng
 support: https://github.com/searxng/searxng/issues
 gallery:
-  - https://i.imgur.com/fX11XhT.png
-  - https://i.imgur.com/fX11XhT.png
-  - https://i.imgur.com/fX11XhT.png
+  - https://i.imgur.com/nUiae47.png
+  - https://i.imgur.com/NiddhLW.png
+  - https://i.imgur.com/hbDb15I.png
+  - https://i.imgur.com/ilrtZFH.png
+  - https://i.imgur.com/k8loz8T.png
 releaseNotes: >-
   Version 2025.7.19 updates translations from Weblate and fixes the container by removing the static path mount.
 dependencies:
