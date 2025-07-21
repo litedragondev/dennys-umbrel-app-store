@@ -25,7 +25,7 @@ services:
 
   app:
     image: listmonk/listmonk:v5.0.3@sha256:d8f1a7fe7852a529139389564f32a914c278d394c75cb72bcde55bb2324f182e
-    command: [sh, -c, "yes | ./listmonk --install"] # only first startup ! or the db wipe every time
+    # command: [sh, -c, "yes | ./listmonk --install"]  # Nur beim ersten Start aktivieren!
     security_opt:
       - no-new-privileges:true
     user: 1000:1000
@@ -36,7 +36,7 @@ services:
     environment:
       TZ: Europe/Berlin
       LISTMONK_app__address: 0.0.0.0:9000
-      LISTMONK_db__host: listmonk-db
+      LISTMONK_db__host: db
       LISTMONK_db__port: 5432
       LISTMONK_db__user: listmonkuser
       LISTMONK_db__password: listmonkpass
