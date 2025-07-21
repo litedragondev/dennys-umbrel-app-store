@@ -38,7 +38,7 @@ services:
     environment:
       TZ: Europe/Berlin
       LISTMONK_app__address: 0.0.0.0:9000
-      LISTMONK_db__host: listmonk_db_1
+      LISTMONK_db__host: denny-listmonk_db_1
       LISTMONK_db__user: listmonkuser
       LISTMONK_db__password: listmonkpass
       LISTMONK_db__database: listmonk
