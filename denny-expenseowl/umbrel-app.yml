@@ -1,40 +1,37 @@
 manifestVersion: 1
 id: denny-expenseowl
 name: ExpenseOwl
-tagline: An issue management & help desk solution
-icon: https://i.imgur.com/ZpMFFgn.png
+tagline: A beautifully simple expense tracker
+icon: https://i.imgur.com/CvIuYxz.png
 category: Test
 version: "4.0"
-port: 5006
+port: 5007
 description: >-
-  🍵 Peppermint is a ticket management and helpdesk application that helps teams organize and respond to support requests in a structured and efficient way. It collects incoming messages, usually from email, and automatically turns them into individual tickets that can be tracked, assigned, and updated as the conversation continues. Each ticket keeps the full history of replies, attachments, and internal notes, allowing support agents to see the entire context of an issue at a glance and respond with confidence.
+  ExpenseOwl is a simple and focused expense tracking application that allows users to quickly log and review their financial activity. It supports adding income and expenses with just a date, amount, and category, while also offering optional tags for further organization. The app provides a clean and responsive user interface with both light and dark themes, making it easy to navigate and visually appealing.
 
 
-  Teams can communicate directly with users through the ticket interface while also discussing matters privately using internal comments. Tickets can be given a status such as open, pending, or resolved, and can be assigned to specific team members for accountability. The system groups and sorts tickets by various criteria like date or status, making it easy to prioritize work and prevent important issues from being overlooked.
+  The main dashboard features a monthly pie chart that breaks down expenses by category, along with a cashflow summary that shows total income, total expenses, and the resulting balance. Users can interact with the chart by hiding or showing categories to tailor the view. A detailed table lists all transactions chronologically and supports easy searching and deletion.
 
 
-  Peppermint also includes tagging and filtering tools so teams can categorize tickets and find related cases quickly. Its search function makes it easy to locate previous conversations or track ongoing issues over time. The interface is clean and designed to keep the focus on the support task itself without adding unnecessary complexity or distractions.
+  Recurring transactions are supported for both income and expenses, and users can fully customize their categories, currency symbol, and the starting day of each month. Tags are automatically highlighted when used, helping users identify spending patterns. The app also includes CSV import and export functionality for easy data management.
 
 
-  The application works with existing email addresses and can automatically convert incoming emails into tickets. When a support agent replies inside the app, the response is sent back to the original sender by email, and their reply will be captured as part of the ongoing ticket. This creates a seamless flow between the user and the support team without requiring any special setup from the user’s side.
-
-
-  Peppermint helps teams stay organized, improves the speed and quality of responses, and provides a clear and simple system for handling support interactions from start to finish.
-developer: Peppermint Labs
-website: https://peppermint.sh/
+  ExpenseOwl is designed to give a clear and instant overview of personal finances without the distractions of budgeting features or account management. It focuses entirely on fast, straightforward tracking and clean visualization.
+developer: Tanishq
+website: https://github.com/Tanq16/ExpenseOwl
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/Peppermint-Lab/peppermint
-support: https://github.com/Peppermint-Lab/peppermint/issues
+repo: https://github.com/Tanq16/ExpenseOwl
+support: https://github.com/Tanq16/ExpenseOwl/issues
 gallery:
-  - https://i.imgur.com/fX11XhT.png
-  - https://i.imgur.com/fX11XhT.png
-  - https://i.imgur.com/fX11XhT.png
+  - https://i.imgur.com/PmeXIQO.png
+  - https://i.imgur.com/PmeXIQO.png
+  - https://i.imgur.com/PmeXIQO.png
 releaseNotes: >-
-  Version 0.5.5 introduces dynamic role-based access control, allowing custom roles with different access levels instead of just admin and user. It also adds a server log panel in the admin interface, a right-click context menu for faster issue handling, and several internal improvements including better session management, cleaner code, and enhanced webhook payloads. 
+  Version 4.0 introduces a completely refactored backend along with partial frontend updates that include multiple bug fixes and new features. 
   
   
-  Additionally, this release fixes multiple CVE vulnerabilities identified in a recent internal audit.
+  It adds recurring expenses, optional tags for better categorization, improved UI elements, support for negative expenses and positive income, smart CSV import, the option to use Postgres as a backend, and expanded currency options with customizable decimal and separator formats.
 dependencies:
 path: ""
 defaultUsername: "admin@admin.com"
