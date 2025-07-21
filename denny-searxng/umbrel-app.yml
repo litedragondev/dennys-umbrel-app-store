@@ -25,11 +25,8 @@ gallery:
   - https://i.imgur.com/fX11XhT.png
   - https://i.imgur.com/fX11XhT.png
 releaseNotes: >-
-  Version 0.5.5 introduces dynamic role-based access control, allowing custom roles with different access levels instead of just admin and user. It also adds a server log panel in the admin interface, a right-click context menu for faster issue handling, and several internal improvements including better session management, cleaner code, and enhanced webhook payloads. 
-  
-  
-  Additionally, this release fixes multiple CVE vulnerabilities identified in a recent internal audit.
+  Version 2025.7.19 updates translations from Weblate and fixes the container by removing the static path mount.
 dependencies:
 path: ""
-defaultUsername: "admin@admin.com"
-defaultPassword: "1234"
+defaultUsername: ""
+defaultPassword: ""
