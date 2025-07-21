@@ -3,11 +3,11 @@ id: denny-expenseowl
 name: ExpenseOwl
 tagline: A beautifully simple expense tracker
 icon: https://i.imgur.com/CvIuYxz.png
-category: Test
+category: In Progress
 version: "4.0"
 port: 5007
 description: >-
-  ExpenseOwl is a simple and focused expense tracking application that allows users to quickly log and review their financial activity. It supports adding income and expenses with just a date, amount, and category, while also offering optional tags for further organization. The app provides a clean and responsive user interface with both light and dark themes, making it easy to navigate and visually appealing.
+  🦉 ExpenseOwl is a simple and focused expense tracking application that allows users to quickly log and review their financial activity. It supports adding income and expenses with just a date, amount, and category, while also offering optional tags for further organization. The app provides a clean and responsive user interface with both light and dark themes, making it easy to navigate and visually appealing.
 
 
   The main dashboard features a monthly pie chart that breaks down expenses by category, along with a cashflow summary that shows total income, total expenses, and the resulting balance. Users can interact with the chart by hiding or showing categories to tailor the view. A detailed table lists all transactions chronologically and supports easy searching and deletion.
@@ -34,5 +34,5 @@ releaseNotes: >-
   It adds recurring expenses, optional tags for better categorization, improved UI elements, support for negative expenses and positive income, smart CSV import, the option to use Postgres as a backend, and expanded currency options with customizable decimal and separator formats.
 dependencies:
 path: ""
-defaultUsername: "admin@admin.com"
-defaultPassword: "1234"
+defaultUsername: ""
+defaultPassword: ""
