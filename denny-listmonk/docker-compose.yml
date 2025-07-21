@@ -19,8 +19,8 @@ services:
       - ${APP_DATA_DIR}/data/uploads:/listmonk/uploads
       - ${APP_DATA_DIR}/config/config.toml:/listmonk/config.toml
     environment:
-      LISTMONK_ADMIN_USER: ${LISTMONK_ADMIN_USER:-}
-      LISTMONK_ADMIN_PASSWORD: ${LISTMONK_ADMIN_PASSWORD:-}
+      LISTMONK_ADMIN_USER: admin
+      LISTMONK_ADMIN_PASSWORD: umbrel
 
   db:
     image: postgres:17-alpine
