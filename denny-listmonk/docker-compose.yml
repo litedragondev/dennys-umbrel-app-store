@@ -25,7 +25,7 @@ services:
 
   app:
     image: listmonk/listmonk:v5.0.3@sha256:d8f1a7fe7852a529139389564f32a914c278d394c75cb72bcde55bb2324f182e
-    # command: [sh, -c, "yes | ./listmonk --install"]  # Nur beim ersten Start
+    command: [sh, -c, "yes | ./listmonk --install"] 
     security_opt:
       - no-new-privileges:true
     healthcheck:
