@@ -1,31 +1,25 @@
 manifestVersion: 1
 id: denny-searxng
 name: SearXNG
-tagline: An issue management & help desk solution
+tagline: A free internet metasearch engine
 icon: https://i.imgur.com/ZpMFFgn.png
-category: Test
-version: "4.0"
+category: files & productivity
+version: "2025.7.19"
 port: 8088
 description: >-
-  🍵 Peppermint is a ticket management and helpdesk application that helps teams organize and respond to support requests in a structured and efficient way. It collects incoming messages, usually from email, and automatically turns them into individual tickets that can be tracked, assigned, and updated as the conversation continues. Each ticket keeps the full history of replies, attachments, and internal notes, allowing support agents to see the entire context of an issue at a glance and respond with confidence.
+  SearxNG is a metasearch engine that enables users to search the internet by combining results from multiple search providers into one comprehensive list. When a user submits a query, SearxNG sends that query simultaneously to a variety of external search engines and services. It then collects and merges the responses, presenting the user with a unified set of search results. This approach allows users to access a wider range of information from different sources without having to search each one individually.
 
 
-  Teams can communicate directly with users through the ticket interface while also discussing matters privately using internal comments. Tickets can be given a status such as open, pending, or resolved, and can be assigned to specific team members for accountability. The system groups and sorts tickets by various criteria like date or status, making it easy to prioritize work and prevent important issues from being overlooked.
+  The application emphasizes delivering diverse and balanced search outcomes by aggregating results from many different platforms. By pooling these various results, SearxNG helps reduce bias that might come from relying on a single search engine, offering users a more neutral and varied perspective on their search topics. The system is designed to handle many types of searches, from web pages to images, videos, news, and other categories, depending on which providers are queried.
 
 
-  Peppermint also includes tagging and filtering tools so teams can categorize tickets and find related cases quickly. Its search function makes it easy to locate previous conversations or track ongoing issues over time. The interface is clean and designed to keep the focus on the support task itself without adding unnecessary complexity or distractions.
-
-
-  The application works with existing email addresses and can automatically convert incoming emails into tickets. When a support agent replies inside the app, the response is sent back to the original sender by email, and their reply will be captured as part of the ongoing ticket. This creates a seamless flow between the user and the support team without requiring any special setup from the user’s side.
-
-
-  Peppermint helps teams stay organized, improves the speed and quality of responses, and provides a clear and simple system for handling support interactions from start to finish.
-developer: Peppermint Labs
-website: https://peppermint.sh/
+  In addition, SearxNG is built to respect user privacy by not storing search histories or personal data. This means that every search is treated independently, and no personal tracking or profiling takes place. The anonymity of searches helps users feel more secure when looking up information online. Overall, SearxNG functions as a powerful tool for searching by leveraging the strengths of multiple search engines while protecting user privacy and promoting an open, unbiased search experience.
+developer: SearXNG
+website: https://docs.searxng.org/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/Peppermint-Lab/peppermint
-support: https://github.com/Peppermint-Lab/peppermint/issues
+repo: https://github.com/searxng/searxng
+support: https://github.com/searxng/searxng/issues
 gallery:
   - https://i.imgur.com/fX11XhT.png
   - https://i.imgur.com/fX11XhT.png
