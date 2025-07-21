@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-searxng_web_1
+      APP_PORT: 8080
+
+  web:
+    image: searxng/searxng
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data:/etc/searxng
