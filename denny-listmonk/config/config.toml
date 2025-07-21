@@ -1,6 +1,15 @@
-db.user = "listmonk"
-db.password = "listmonk"
-db.database = "listmonk"
-db.host = "db"
-db.port = 5432
-db.ssl_mode = "disable"
+[app]
+address = "0.0.0.0:9000"
+admin_username = "admin"
+admin_password = "umbrel"
+
+[db]
+host = "db"
+port = 5432
+user = "listmonk"
+password = "listmonk"
+database = "listmonk"
+ssl_mode = "disable"
+
+[uploads]
+dir = "./uploads"
