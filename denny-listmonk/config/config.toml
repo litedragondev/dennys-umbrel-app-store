@@ -2,17 +2,13 @@ app.name = "listmonk"
 app.url = "http://localhost:9000"
 app.address = "0.0.0.0:9000"
 app.upload_dir = "./uploads"
-
 db.host = "db"
 db.port = 5432
 db.user = "listmonk"
 db.password = "listmonk"
 db.database = "listmonk"
 db.ssl_mode = "disable"
-
 log.level = "info"
-
 app.timezone = "UTC"
-
 admin_username = "user"
 admin_password = "umbrel"
