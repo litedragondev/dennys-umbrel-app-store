@@ -37,5 +37,5 @@ releaseNotes: >-
   Additionally, this release fixes multiple CVE vulnerabilities identified in a recent internal audit.
 dependencies:
 path: ""
-defaultUsername: "admin@admin.com"
-defaultPassword: "1234"
+defaultUsername: ""
+defaultPassword: ""
