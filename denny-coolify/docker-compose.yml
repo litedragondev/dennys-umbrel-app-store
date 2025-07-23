@@ -9,12 +9,12 @@ services:
   web:
     image: "ghcr.io/coollabsio/coolify:latest"
     volumes:
-      - ${APP_DATA_DIR}/data/ssh:/var/www/html/storage/app/ssh
-      - ${APP_DATA_DIR}/data/applications:/var/www/html/storage/app/applications
-      - ${APP_DATA_DIR}/data/databases:/var/www/html/storage/app/databases
-      - ${APP_DATA_DIR}/data/services:/var/www/html/storage/app/services
-      - ${APP_DATA_DIR}/data/backups:/var/www/html/storage/app/backups
-      - ${APP_DATA_DIR}/data/webhooks:/var/www/html/storage/app/webhooks-during-maintenance
+      - ${APP_DATA_DIR}/data/ssh:/var/www/html/storage/app/ssh:rw
+      - ${APP_DATA_DIR}/data/applications:/var/www/html/storage/app/applications:rw
+      - ${APP_DATA_DIR}/data/databases:/var/www/html/storage/app/databases:rw
+      - ${APP_DATA_DIR}/data/services:/var/www/html/storage/app/services:rw
+      - ${APP_DATA_DIR}/data/backups:/var/www/html/storage/app/backups:rw
+      - ${APP_DATA_DIR}/data/webhooks:/var/www/html/storage/app/webhooks-during-maintenance:rw
     environment:
       APP_ENV: production
       APP_NAME: Coolify
@@ -81,7 +81,7 @@ services:
   soketi:
     image: ghcr.io/coollabsio/coolify-realtime:1.0.1
     volumes:
-      - ${APP_DATA_DIR}/data/ssh:/var/www/html/storage/app/ssh
+      - ${APP_DATA_DIR}/data/ssh:/var/www/html/storage/app/ssh:rw
     environment:
       APP_NAME: Coolify
       SOKETI_DEBUG: "false"
