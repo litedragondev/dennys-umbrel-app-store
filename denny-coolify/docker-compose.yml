@@ -9,7 +9,6 @@ services:
   web:
     image: "ghcr.io/coollabsio/coolify:latest"
     volumes:
-      - ${APP_DATA_DIR}/data/ssh:/var/www/html/storage/app/ssh:rw
       - ${APP_DATA_DIR}/data/applications:/var/www/html/storage/app/applications:rw
       - ${APP_DATA_DIR}/data/databases:/var/www/html/storage/app/databases:rw
       - ${APP_DATA_DIR}/data/services:/var/www/html/storage/app/services:rw
@@ -80,8 +79,6 @@ services:
 
   soketi:
     image: ghcr.io/coollabsio/coolify-realtime:1.0.1
-    volumes:
-      - ${APP_DATA_DIR}/data/ssh:/var/www/html/storage/app/ssh:rw
     environment:
       APP_NAME: Coolify
       SOKETI_DEBUG: "false"
