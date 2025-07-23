@@ -39,7 +39,7 @@ services:
       PUSHER_APP_KEY: 39de8e3779f24c8f85d2cfe00a5473a7
       PUSHER_APP_SECRET: d6c1cbd804354157b4a52a29fa59b4cf
       SELF_HOSTED: "true"
-      SSH_MUX_ENABLED=false
+      SSH_MUX_ENABLED: "false"
     healthcheck:
       test: curl --fail http://127.0.0.1:80/api/health || exit 1
       interval: 5s
