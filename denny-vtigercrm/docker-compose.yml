@@ -3,15 +3,15 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: denny-vtigercrm_1
+      APP_HOST: denny-vtigercrm_web_1
       APP_PORT: 80
 
-  vtigeropensource:
+  web:
     image: vtigercrm/vtigercrm-8.2.0:latest
-    restart: unless-stopped
+    restart: on-failure
     environment:
       mysql_user: admin
-      mysql_pass: admin
+      mysql_pass: umbrel
     volumes:
       - ${APP_DATA_DIR}/data/html:/var/www/html
       - ${APP_DATA_DIR}/data/mysql:/var/lib/mysql
