@@ -8,7 +8,7 @@ services:
 
   web:
     image: vtigercrm/vtigercrm-8.2.0:latest
-    user: 1000:1000
+    user: 0:0
     restart: on-failure
     environment:
       mysql_user: admin
