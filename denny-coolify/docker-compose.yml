@@ -8,6 +8,7 @@ services:
 
   web:
     image: "ghcr.io/coollabsio/coolify:latest"
+    user: "1000:1000"
     volumes:
       - ${APP_DATA_DIR}/data/ssh:/var/www/html/storage/app/ssh
       - ${APP_DATA_DIR}/data/applications:/var/www/html/storage/app/applications
