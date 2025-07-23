@@ -14,5 +14,5 @@ services:
       mysql_user: admin
       mysql_pass: umbrel
     volumes:
-      - ${APP_DATA_DIR}/data/html:/var/www/html
+      # ${APP_DATA_DIR}/data/html:/var/www/html
       - ${APP_DATA_DIR}/data/mysql:/var/lib/mysql
