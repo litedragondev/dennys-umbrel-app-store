@@ -1,35 +1,35 @@
 manifestVersion: 1
 id: denny-fusion
 name: Fusion
-tagline: An All-in-One Open Source E-commerce Solution
-icon: https://i.imgur.com/AHRkBdg.png
-category: test
+tagline: A lightweight RSS reader
+icon: https://i.imgur.com/Fq3fMKW.png
+category: files & productivity
 version: "0.9.8"
 port: 8899
 description: >-
-  🛒 Evershop is a powerful and versatile e-commerce platform designed to provide extensive functionality for managing and operating online stores. It offers a comprehensive administrative dashboard that gives store owners complete control over their business operations. Within this dashboard, users can efficiently manage a wide range of aspects including product catalogs, inventory levels, pricing, promotions, customer information, and order fulfillment processes. The platform streamlines these tasks to ensure smooth day-to-day store management.
+  Fusion is a web application that functions as a personal feed reader, enabling users to collect, organize, and read content from a wide range of online sources that publish RSS, Atom, or JSON feeds. It is designed for individuals who prefer to consume news and updates from multiple websites in a centralized and distraction-free environment. Once set up, Fusion automatically fetches new entries from subscribed feeds at regular intervals and stores them in a local database, ensuring that content is always available and up to date.
 
 
-  On the customer-facing side, Evershop delivers a highly customizable storefront experience. Store owners can modify the appearance and layout using adaptable themes and a variety of widgets, enabling the creation of a unique and engaging shopping environment that reflects their brand identity. This flexibility extends to user experience features such as navigation, product display, and checkout flows, all designed to optimize customer satisfaction and conversion rates.
+  The application presents articles in a clean and responsive interface that works seamlessly across devices, including desktops, tablets, and smartphones. It supports full-text previews, dark and light themes, and quick navigation using keyboard shortcuts, making it a convenient tool for frequent readers. Feeds can be organized into custom categories, and individual entries can be bookmarked for later reading. Fusion also includes a powerful search function that allows users to quickly locate articles based on keywords or phrases, even across large numbers of feed entries.
 
 
-  Evershop also supports integration with multiple popular payment gateways, enabling secure and convenient payment options for customers. This includes support for major providers like Stripe, PayPal, and Klarna, among others, which helps cater to diverse customer preferences and regional payment standards. Beyond payments, the platform is built around a modular architecture, allowing developers and store owners to extend its core capabilities by adding custom extensions and modules. This modularity ensures that the platform can adapt to evolving business needs, whether that involves adding new features, integrating third-party services, or tailoring specific workflows.
+  Fusion respects user privacy by operating without tracking or relying on external services. It supports multilingual interfaces, including English, German, French, Spanish, Chinese, Russian, and others, making it accessible to a global audience. The application allows easy import and export of subscriptions using the widely supported OPML format, so users can migrate their reading lists from other feed readers or share them with others.
 
 
-  Overall, Evershop is engineered to combine robust functionality with flexibility, empowering businesses to build and maintain online stores that meet complex requirements while providing a seamless shopping experience. Its focus on extensibility and customization makes it suitable for a wide range of e-commerce use cases, from small boutique shops to larger enterprises seeking tailored solutions.
-developer: EverShop
-website: https://evershop.io/
+  Built with performance and simplicity in mind, Fusion uses a lightweight backend written in Go and stores its data in a SQLite database. It can be deployed effortlessly via Docker or as a standalone binary, and it requires minimal system resources. This makes it particularly well-suited for small servers, Raspberry Pi setups, or any environment that values efficiency and privacy. Fusion is an ideal solution for users who want complete control over their feed-reading experience without relying on third-party platforms.
+developer: Yuan
+website: https://github.com/0x2E/fusion
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/evershopcommerce/evershop
-support: https://github.com/evershopcommerce/evershop/issues
+repo: https://github.com/0x2E/fusion
+support: https://github.com/0x2E/fusion/issues
 gallery:
-  - https://i.imgur.com/Jv7FiQF.png
-  - https://i.imgur.com/vVYrnBA.png
-  - https://i.imgur.com/EqEMD8n.png
-  - https://i.imgur.com/SkmDlrb.png
+  - https://i.imgur.com/yzh3RMX.png
+  - https://i.imgur.com/R9d3JDm.png
+  - https://i.imgur.com/222SUoF.png
+  - https://i.imgur.com/rRsSnad.png
 releaseNotes: >-
-  Version 1.2.2 of EverShop introduces improvements to order status management and allows order cancellations directly from the admin panel. It adds scheduled jobs, customizable admin page footer and logo options, and enhances payment integrations with Stripe and PayPal, including refund and capture support. The update also improves cart and address book functions, fixes multiple bugs, and addresses security vulnerabilities for better stability.
+  Version 0.9.8 includes important fixes such as using the update time when an item lacks a publish time. It also ensures that the load process is properly retriggered when item filters are updated.
 dependencies:
 path: ""
 defaultUsername: ""
