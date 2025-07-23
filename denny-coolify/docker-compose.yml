@@ -1,0 +1,95 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-coolify_web_1
+      APP_PORT: 80
+
+  web:
+    image: "ghcr.io/coollabsio/coolify:latest"
+    volumes:
+      - ${APP_DATA_DIR}/data/ssh:/var/www/html/storage/app/ssh
+      - ${APP_DATA_DIR}/data/applications:/var/www/html/storage/app/applications
+      - ${APP_DATA_DIR}/data/databases:/var/www/html/storage/app/databases
+      - ${APP_DATA_DIR}/data/services:/var/www/html/storage/app/services
+      - ${APP_DATA_DIR}/data/backups:/var/www/html/storage/app/backups
+      - ${APP_DATA_DIR}/data/webhooks:/var/www/html/storage/app/webhooks-during-maintenance
+    environment:
+      APP_ENV: production
+      APP_NAME: Coolify
+      APP_KEY: base64:Pbav8J0bUyjjkZCl8rrzpDHYZc3J7w4JH41m6zDn16Q=
+      APP_URL: http://umbrel-2.local:8899
+      APP_DEBUG: "false"
+      DB_DATABASE: coolify
+      DB_USERNAME: coolify
+      DB_PASSWORD: eLRNfOSeg7G8epUN+71MZwb+Fx3A2b0RE2NOcOwPXuk=
+      DB_HOST: database
+      DB_PORT: 5432
+      DB_CONNECTION: pgsql
+      QUEUE_CONNECTION: redis
+      REDIS_HOST: redis
+      REDIS_PASSWORD: z1pv5Zp9fImF3fdmPj0Q3fBzOZ3h8y0JqF2E9g9p3so=
+      PHP_MEMORY_LIMIT: 512M
+      PUSHER_HOST: soketi
+      PUSHER_BACKEND_HOST: soketi
+      PUSHER_PORT: 6001
+      PUSHER_BACKEND_PORT: 6001
+      PUSHER_SCHEME: http
+      PUSHER_APP_ID: 7efb2f7ab5d74cb79d896d98f859f998
+      PUSHER_APP_KEY: 39de8e3779f24c8f85d2cfe00a5473a7
+      PUSHER_APP_SECRET: d6c1cbd804354157b4a52a29fa59b4cf
+      SELF_HOSTED: "true"
+    healthcheck:
+      test: curl --fail http://127.0.0.1:80/api/health || exit 1
+      interval: 5s
+      retries: 10
+      timeout: 2s
+    depends_on:
+      database:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      soketi:
+        condition: service_healthy
+
+  database:
+    image: postgres:15
+    volumes:
+      - ${APP_DATA_DIR}/postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: coolify
+      POSTGRES_PASSWORD: eLRNfOSeg7G8epUN+71MZwb+Fx3A2b0RE2NOcOwPXuk=
+      POSTGRES_DB: coolify
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U coolify -d coolify"]
+      interval: 5s
+      retries: 10
+      timeout: 2s
+
+  redis:
+    image: redis:alpine
+    command: redis-server --save 20 1 --loglevel warning --requirepass z1pv5Zp9fImF3fdmPj0Q3fBzOZ3h8y0JqF2E9g9p3so=
+    volumes:
+      - ${APP_DATA_DIR}/redis:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "z1pv5Zp9fImF3fdmPj0Q3fBzOZ3h8y0JqF2E9g9p3so=", "ping"]
+      interval: 5s
+      retries: 10
+      timeout: 2s
+
+  soketi:
+    image: ghcr.io/coollabsio/coolify-realtime:1.0.1
+    volumes:
+      - ${APP_DATA_DIR}/data/ssh:/var/www/html/storage/app/ssh
+    environment:
+      APP_NAME: Coolify
+      SOKETI_DEBUG: "false"
+      SOKETI_DEFAULT_APP_ID: 7efb2f7ab5d74cb79d896d98f859f998
+      SOKETI_DEFAULT_APP_KEY: 39de8e3779f24c8f85d2cfe00a5473a7
+      SOKETI_DEFAULT_APP_SECRET: d6c1cbd804354157b4a52a29fa59b4cf
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:6001/ready && wget -qO- http://127.0.0.1:6002/ready || exit 1"]
+      interval: 5s
+      retries: 10
+      timeout: 2s
