@@ -7,7 +7,7 @@ category: files & productivity
 version: "0.9.8"
 port: 8899
 description: >-
-  Fusion is a web application that functions as a personal feed reader, enabling users to collect, organize, and read content from a wide range of online sources that publish RSS, Atom, or JSON feeds. It is designed for individuals who prefer to consume news and updates from multiple websites in a centralized and distraction-free environment. Once set up, Fusion automatically fetches new entries from subscribed feeds at regular intervals and stores them in a local database, ensuring that content is always available and up to date.
+  📰 Fusion is a web application that functions as a personal feed reader, enabling users to collect, organize, and read content from a wide range of online sources that publish RSS, Atom, or JSON feeds. It is designed for individuals who prefer to consume news and updates from multiple websites in a centralized and distraction-free environment. Once set up, Fusion automatically fetches new entries from subscribed feeds at regular intervals and stores them in a local database, ensuring that content is always available and up to date.
 
 
   The application presents articles in a clean and responsive interface that works seamlessly across devices, including desktops, tablets, and smartphones. It supports full-text previews, dark and light themes, and quick navigation using keyboard shortcuts, making it a convenient tool for frequent readers. Feeds can be organized into custom categories, and individual entries can be bookmarked for later reading. Fusion also includes a powerful search function that allows users to quickly locate articles based on keywords or phrases, even across large numbers of feed entries.
