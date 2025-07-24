@@ -24,9 +24,12 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/vas3k/TaxHacker
 support: https://github.com/vas3k/TaxHacker
 gallery:
-  - https://i.imgur.com/DnUouhA.png
-  - https://i.imgur.com/DnUouhA.png
-  - https://i.imgur.com/DnUouhA.png
+  - https://i.imgur.com/Q4MAApV.png
+  - https://i.imgur.com/ilTwWK3.png
+  - https://i.imgur.com/p0KyxiQ.png
+  - https://i.imgur.com/LkZVhXL.png
+  - https://i.imgur.com/Mg2HCTJ.png
+  - https://i.imgur.com/3Rb0bLF.png
 releaseNotes: >-
   Version 0.6.0 introduces support for custom LLM providers like OpenAI, Google Gemini and Mistral, along with improved item detection that can split invoices into multiple transactions. 
   
