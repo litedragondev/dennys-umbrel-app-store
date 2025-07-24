@@ -153,7 +153,7 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 | 129 | [OliveTin](https://github.com/OliveTin/OliveTin)     | A command center that fits in your browser                                | 8951   |
 | 130 | [OmniTools](https://github.com/iib0011/omni-tools)   | An all-in-one collection of powerful web-based tools for everyday tasks   | 8678   |
 | 131 | [Onedev](https://github.com/theonedev/onedev)        | A powerful Git server with CI/CD, kanban, and packages                    | 6610   |
-| 132 | [Opengist](https://github.com/thomiceli/opengist)        | A self-hosted Pastebin powered by Git                                 | 6157   |
+| 132 | [Opengist](https://github.com/thomiceli/opengist)    | A self-hosted Pastebin powered by Git                                     | 6157   |
 | 133 | [openHAB](https://github.com/openhab)                | An open platform for seamless integration and automation in smart homes   | 8780   |
 | 134 | [OpenHands](https://github.com/All-Hands-AI/OpenHands) | A local AI agent for writing and improving code                         | 3993   |
 | 135 | [OpenReader WebUI](https://github.com/richardr1126/OpenReader-WebUI) | A document reader with Text-to-Speech capabilities        | 3391   |
