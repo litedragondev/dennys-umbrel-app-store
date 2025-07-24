@@ -3,7 +3,7 @@ id: denny-taxhacker
 name: Taxhacker
 tagline: A powerful AI accounting app
 icon: https://i.imgur.com/EA897C9.png
-category: In Progress
+category: finance
 version: "0.6.0"
 port: 7331
 description: >-
