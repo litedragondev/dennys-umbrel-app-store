@@ -211,7 +211,7 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 | 187 | [Supabase](https://github.com/supabase/supabase)      | An open source Firebase alternative                                      | 53000  |
 | 188 | [Super Productivity](https://github.com/johannesjo/super-productivity) | An efficient way to manage tasks, time, and projects all in one place  | 8020   |
 | 189 | [Swing Music](https://github.com/swingmx/swingmusic) | A beautiful, self-hosted music player for your local audio files          | 1970   |
-| 190 | [TaxHacker](https://github.com/vas3k/TaxHacker)      | A powerful AI accounting app                                              | 7331   |
+| 190 | [TaxHacker](https://github.com/vas3k/TaxHacker)      | A powerful AI accounting app                                              | 7332   |
 | 191 | [Teable](https://github.com/teableio/teable)         | An AI no-code database                                                    | 8599   |
 | 192 | [Textpod](https://github.com/freetonik/textpod)      | An extremely simple note-taking app                                       | 8099   |
 | 193 | [Threema Web](https://github.com/threema-ch/threema-web) | An intuitive and secure web client for Threema users                  | 8855   |
