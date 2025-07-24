@@ -2,7 +2,7 @@ manifestVersion: 1
 id: denny-fusion
 name: Fusion
 tagline: A lightweight RSS reader
-icon: https://i.imgur.com/Fq3fMKW.png
+icon: https://i.imgur.com/qcMOBWH.png
 category: files & productivity
 version: "0.9.8"
 port: 8899
