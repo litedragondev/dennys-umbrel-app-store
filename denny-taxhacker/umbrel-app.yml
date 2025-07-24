@@ -5,7 +5,7 @@ tagline: A powerful AI accounting app
 icon: https://i.imgur.com/EA897C9.png
 category: finance
 version: "0.6.0"
-port: 7331
+port: 7332
 description: >-
   👩‍💻 TaxHacker is an intelligent accounting application that simplifies the management of receipts, invoices and financial records through the use of artificial intelligence. It is designed to automatically analyze uploaded documents, extracting key details such as dates, amounts, taxes, currencies and vendors with high accuracy.
 
