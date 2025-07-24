@@ -7,7 +7,7 @@ category: finance
 version: "0.6.0"
 port: 7331
 description: >-
-  TaxHacker is an intelligent accounting application that simplifies the management of receipts, invoices and financial records through the use of artificial intelligence. It is designed to automatically analyze uploaded documents, extracting key details such as dates, amounts, taxes, currencies and vendors with high accuracy.
+  👩‍💻 TaxHacker is an intelligent accounting application that simplifies the management of receipts, invoices and financial records through the use of artificial intelligence. It is designed to automatically analyze uploaded documents, extracting key details such as dates, amounts, taxes, currencies and vendors with high accuracy.
 
 
   The app combines advanced optical character recognition with AI-driven data interpretation, ensuring reliable parsing even for low-quality scans or documents in different languages. It can process a wide variety of currencies, including cryptocurrencies, and converts them using the historical exchange rate at the exact date of the transaction.
