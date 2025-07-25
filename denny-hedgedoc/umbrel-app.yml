@@ -4,7 +4,7 @@ name: HedgeDoc
 tagline: A secure and flexible markdown solution for teams
 icon: https://i.imgur.com/WSpUz3M.png
 category: In Progress
-version: "1.10.1"
+version: "1.10.3"
 port: 3456
 description: >-
   🦔 HedgeDoc is an open-source, collaborative markdown editor designed to facilitate real-time collaboration and efficient document creation. It allows multiple users to simultaneously edit a document, with all changes reflected in real time. The platform uses markdown, a lightweight markup language, for text formatting, which makes it easy to structure content without the complexity of traditional word processing software.
@@ -28,7 +28,7 @@ gallery:
   - https://i.imgur.com/M3lwwQ7.png
   - https://i.imgur.com/M3lwwQ7.png
 releaseNotes: >-
-  HedgeDoc 1.10.1 addresses a security vulnerability related to brute-forcing local email/passwords due to missing rate-limits, recommending an upgrade for users with local logins. 
+  HedgeDoc 1.10.3 addresses a security vulnerability related to brute-forcing local email/passwords due to missing rate-limits, recommending an upgrade for users with local logins. 
   
   
   The release also changes the default configuration of the HSTS preload attribute for compliance and deprecates support for Node 18, urging users to upgrade to Node 20 or higher. Additionally, it introduces rate-limiting for login, register, and notes endpoints, along with several bug fixes.
