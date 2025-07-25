@@ -9,7 +9,7 @@ services:
   app:
     image: ghcr.io/gameyfin/gameyfin:2
     environment:
-      APP_KEY: ${APP_SEED}
+      APP_KEY: iJxM3vJ1T9I9LqMbnjz7p7jC6T0p02sD9n+TxhzzCkE=
     volumes:
       - ${APP_DATA_DIR}/db:/opt/gameyfin/db
       - ${APP_DATA_DIR}/data:/opt/gameyfin/data
