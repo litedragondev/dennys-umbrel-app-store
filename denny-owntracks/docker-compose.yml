@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-otrecorder_app_1
+      APP_PORT: 8083
+
+  app:
+    image: owntracks/recorder:latest
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/config:/config
+      - ${APP_DATA_DIR}/store:/store
