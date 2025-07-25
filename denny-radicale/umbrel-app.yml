@@ -2,7 +2,7 @@ manifestVersion: 1
 id: denny-radicale
 name: Radicale
 tagline: A powerful CalDAV and CardDAV server
-icon: https://i.imgur.com/pdRVD3B.png
+icon: https://i.imgur.com/325iUS6.png
 category: In Progress
 version: "3.5.4.0"
 port: 5232
