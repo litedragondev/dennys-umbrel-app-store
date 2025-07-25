@@ -7,12 +7,11 @@ services:
       APP_PORT: 8080
 
   app:
-    image: ghcr.io/gameyfin/gameyfin:2
+    image: ghcr.io/gameyfin/gameyfin:2.0.0@sha256:359685c45bfd734b2733d83f7b727abdfcdec9aa45c0359837e3a0ef8af1bbac
     environment:
-      APP_KEY: ${APP_SEED}
+      APP_KEY: "iJxM3vJ1T9I9LqMbnjz7p7jC6T0p02sD9n+TxhzzCkE="
     volumes:
       - ${APP_DATA_DIR}/db:/opt/gameyfin/db
       - ${APP_DATA_DIR}/data:/opt/gameyfin/data
       - ${APP_DATA_DIR}/logs:/opt/gameyfin/logs
-      - ${APP_DATA_DIR}/games:/opt/gameyfin/library
     restart: on-failure
