@@ -13,7 +13,7 @@ services:
     ports:
       - 8810:80
     volumes:
-      - ${APP_DATA_DIR}/tirreno/html:/var/www/html
+      # ${APP_DATA_DIR}/tirreno/html:/var/www/html
     depends_on:
       - tirreno-db
 
