@@ -13,7 +13,7 @@ services:
       interval: 10s
       retries: 10
     volumes:
-      - ${APP_DATA_DIR}/invidiousdb:/var/lib/postgresql/data:rw
+      - /volume1/docker/invidiousdb:/var/lib/postgresql/data:rw
     environment:
       POSTGRES_DB: invidious
       POSTGRES_USER: kemal
@@ -22,9 +22,9 @@ services:
 
   invidious:
     image: quay.io/invidious/invidious:master
-    container_name: denny-invidious
+    container_name: denny-invidious-app
     hostname: invidious
-    user: 1026:100
+    user: "1026:100"
     security_opt:
       - no-new-privileges:true
     healthcheck:
@@ -33,6 +33,8 @@ services:
       timeout: 5s
       retries: 3
       start_period: 90s
+    ports:
+      - 7601:3000
     environment:
       INVIDIOUS_CONFIG: |
         db:
@@ -48,17 +50,15 @@ services:
           region: RO
         external_port: 443
         signature_server: inv_sig_helper:12999
-        domain: invidious.yourname.synology.me
+        domain: umbrel-2.local
         hmac_key: e8b09fcc0882e8b646beab0135027f748c39f27acb142b339a9b199acd3b0a2b
-        https_only: true
+        https_only: false
+      INVIDIOUS_MIGRATE: "1"
     restart: on-failure:5
     depends_on:
-      invidious-db:
-        condition: service_started
-      inv_sig_helper:
-        condition: service_started
-      materialious:
-        condition: service_started
+      - invidious-db
+      - inv_sig_helper
+      - materialious
 
   inv_sig_helper:
     image: quay.io/invidious/inv-sig-helper:latest
@@ -76,17 +76,17 @@ services:
 
   materialious:
     image: wardpearce/materialious
-    container_name: denny-materialious_app_1
+    container_name: denny-materialious-app
     restart: on-failure:5
+    ports:
+      - 8789:80
     environment:
-      VITE_DEFAULT_INVIDIOUS_INSTANCE: https://invidious.yourname.synology.me
-      VITE_DEFAULT_RETURNYTDISLIKES_INSTANCE: https://www.returnyoutubedislike.com/
-      VITE_DEFAULT_FRONTEND_URL: https://invidiousui.yourname.synology.me
-      VITE_DEFAULT_SPONSERBLOCK_INSTANCE: https://sponsor.ajay.app
-    expose:
-      - 80
+      VITE_DEFAULT_INVIDIOUS_INSTANCE: http://umbrel-2.local:7601
+      VITE_DEFAULT_RETURNYTDISLIKES_INSTANCE: http://umbrel-2.local:8789
+      VITE_DEFAULT_FRONTEND_URL: http://umbrel-2.local:8789
+      VITE_DEFAULT_SPONSERBLOCK_INSTANCE: http://umbrel-2.local:8789
 
   app_proxy:
     environment:
-      APP_HOST: denny-materialious_app_1
+      APP_HOST: denny-materialious-app
       APP_PORT: 80
