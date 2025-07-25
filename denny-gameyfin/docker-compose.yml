@@ -9,7 +9,7 @@ services:
   app:
     image: ghcr.io/gameyfin/gameyfin:2.0.0@sha256:359685c45bfd734b2733d83f7b727abdfcdec9aa45c0359837e3a0ef8af1bbac
     environment:
-      APP_KEY: iJxM3vJ1T9I9LqMbnjz7p7jC6T0p02sD9n+TxhzzCkE=
+      APP_KEY: EJNZrGOIdF4UiFJ5AiMinWpK3kYNpIyXfKKWjMhF6Zk=
     volumes:
       - "./db:/opt/gameyfin/db"
       - "./data:/opt/gameyfin/data"
