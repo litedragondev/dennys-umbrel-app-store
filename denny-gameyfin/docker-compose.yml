@@ -15,5 +15,5 @@ services:
       - ${APP_DATA_DIR}/db:/opt/gameyfin/db
       - ${APP_DATA_DIR}/data:/opt/gameyfin/data
       - ${APP_DATA_DIR}/logs:/opt/gameyfin/logs
-      - ${APP_DATA_DIR}/games:/opt/gameyfin/library
+      # ${APP_DATA_DIR}/games:/opt/gameyfin/library
     restart: on-failure
