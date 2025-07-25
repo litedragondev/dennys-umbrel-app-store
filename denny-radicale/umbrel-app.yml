@@ -3,7 +3,7 @@ id: denny-radicale
 name: Radicale
 tagline: A powerful CalDAV and CardDAV server
 icon: https://i.imgur.com/325iUS6.png
-category: In Progress
+category: files & productivity
 version: "3.5.4.0"
 port: 5232
 description: >-
@@ -24,9 +24,10 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/Kozea/Radicale
 support: https://github.com/tomsquest/docker-radicale/issues
 gallery:
-  - https://i.imgur.com/Rd2Iy7m.png
-  - https://i.imgur.com/Rd2Iy7m.png
-  - https://i.imgur.com/Rd2Iy7m.png
+  - https://i.imgur.com/f9gzMWp.png
+  - https://i.imgur.com/odZzan2.png
+  - https://i.imgur.com/fJB7War.png
+  - https://i.imgur.com/TXQaHyC.png
 releaseNotes: >-
   Version 3.5.4 improves the item filter by adding third-level support, including VALARM and TRIGGER (offset or absolute). It also introduces an example Caddy configuration file in the contrib directory.
 dependencies:
