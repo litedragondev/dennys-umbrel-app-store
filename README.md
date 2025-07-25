@@ -55,7 +55,7 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 | 31  | [Dashy](https://github.com/Lissy93/dashy)            | A personal dashboard built for you                                       | 4444   |
 | 32  | [Datetime](https://github.com/airyland/datetime.app) | A powerful time viewing and conversion tool                              | 3771   |
 | 33  | [Decypharr](https://github.com/sirrobot01/decypharr) | An advanced solution for automated Debrid downloads                      | 8282   |
-| 34  | [Dockerizalo](https://github.com/undernightcore/dockerizalo)        | A simple deployment platform                              | 8522   |
+| 34  | [Dockerizalo](https://github.com/undernightcore/dockerizalo) | A simple deployment platform                                     | 8522   |
 | 35  | [Docmost](https://github.com/docmost/docmost)        | An collaborative wiki and documentation software                         | 8941   |
 | 36  | [Docusaurus](https://github.com/facebook/docusaurus) | A streamlined way to build powerful documentation sites                  | 9550   |
 | 37  | [Domain Locker](https://github.com/Lissy93/domain-locker) | An all-in-one tool for keeping track of your domain name portfolio  | 8839   |
