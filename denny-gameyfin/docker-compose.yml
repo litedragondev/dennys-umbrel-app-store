@@ -11,8 +11,7 @@ services:
     environment:
       APP_KEY: iJxM3vJ1T9I9LqMbnjz7p7jC6T0p02sD9n+TxhzzCkE=
     volumes:
-      - ${APP_DATA_DIR}/db:/opt/gameyfin/db
-      - ${APP_DATA_DIR}/data:/opt/gameyfin/data
-      - ${APP_DATA_DIR}/logs:/opt/gameyfin/logs
-      # ${APP_DATA_DIR}/games:/opt/gameyfin/library
+      - "./db:/opt/gameyfin/db"
+      - "./data:/opt/gameyfin/data"
+      - "./logs:/opt/gameyfin/logs"
     restart: on-failure
