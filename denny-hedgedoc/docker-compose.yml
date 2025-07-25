@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
 
   web:
-    image: quay.io/hedgedoc/hedgedoc:1.10.2@sha256:248d964e9a3c32ebf531847063112c51324474e7cb2393bbf615d82341b64e69
+    image: quay.io/hedgedoc/hedgedoc@sha256:25374344ce4cbf4e372fc29b5df2675ae981cad8512beda9088ecf94c6cfc5ba
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/uploads:/hedgedoc/public/uploads
