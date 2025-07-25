@@ -3,7 +3,7 @@ id: denny-radicale
 name: Radicale
 tagline: A powerful CalDAV and CardDAV server
 icon: https://i.imgur.com/325iUS6.png
-category: files & productivity
+category: networking
 version: "3.5.4.0"
 port: 5232
 description: >-
