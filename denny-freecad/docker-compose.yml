@@ -21,8 +21,8 @@ services:
     volumes:
       - ${APP_DATA_DIR}/freecad:/config:rw
     environment:
-      # CUSTOM_USER=admin
-      # PASSWORD=umbrel
+      - CUSTOM_USER=admin
+      - PASSWORD=umbrel
       - TZ=Europe/Berlin
       - PUID=1000
       - PGID=1000
