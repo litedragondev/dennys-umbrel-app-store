@@ -6,7 +6,7 @@ services:
       APP_HOST: denny-freecad_app_1
       APP_PORT: 3000
 
-  freecad:
+  app:
     image: ghcr.io/linuxserver/freecad:latest
     restart: on-failure
     healthcheck:
@@ -21,8 +21,8 @@ services:
     volumes:
       - ${APP_DATA_DIR}/freecad:/config:rw
     environment:
-      - CUSTOM_USER=admin
-      - PASSWORD=umbrel
+      # CUSTOM_USER=admin
+      # PASSWORD=umbrel
       - TZ=Europe/Berlin
       - PUID=1000
       - PGID=1000
