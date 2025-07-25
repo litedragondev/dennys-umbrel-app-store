@@ -1,21 +1,92 @@
 version: "3.7"
 
 services:
+  invidious-db:
+    image: postgres:17
+    container_name: denny-invidious-db
+    hostname: invidious-db
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "pg_isready", "-q", "-d", "invidious", "-U", "kemal"]
+      timeout: 45s
+      interval: 10s
+      retries: 10
+    volumes:
+      - ${APP_DATA_DIR}/invidiousdb:/var/lib/postgresql/data:rw
+    environment:
+      POSTGRES_DB: invidious
+      POSTGRES_USER: kemal
+      POSTGRES_PASSWORD: kemalpw
+    restart: on-failure:5
+
+  invidious:
+    image: quay.io/invidious/invidious:master
+    container_name: denny-invidious
+    hostname: invidious
+    user: 1026:100
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD-SHELL", "nc -z 127.0.0.1 3000 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 90s
+    environment:
+      INVIDIOUS_CONFIG: |
+        db:
+          dbname: invidious
+          user: kemal
+          password: kemalpw
+          host: invidious-db
+          port: 5432
+        check_tables: true
+        captcha_enabled: false
+        default_user_preferences:
+          locale: ro
+          region: RO
+        external_port: 443
+        signature_server: inv_sig_helper:12999
+        domain: invidious.yourname.synology.me
+        hmac_key: e8b09fcc0882e8b646beab0135027f748c39f27acb142b339a9b199acd3b0a2b
+        https_only: true
+    restart: on-failure:5
+    depends_on:
+      invidious-db:
+        condition: service_started
+      inv_sig_helper:
+        condition: service_started
+      materialious:
+        condition: service_started
+
+  inv_sig_helper:
+    image: quay.io/invidious/inv-sig-helper:latest
+    container_name: denny-invidious-sig-helper
+    init: true
+    command: ["--tcp", "0.0.0.0:12999"]
+    environment:
+      - RUST_LOG=info
+    restart: on-failure:5
+    cap_drop:
+      - ALL
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+
+  materialious:
+    image: wardpearce/materialious
+    container_name: denny-materialious_app_1
+    restart: on-failure:5
+    environment:
+      VITE_DEFAULT_INVIDIOUS_INSTANCE: https://invidious.yourname.synology.me
+      VITE_DEFAULT_RETURNYTDISLIKES_INSTANCE: https://www.returnyoutubedislike.com/
+      VITE_DEFAULT_FRONTEND_URL: https://invidiousui.yourname.synology.me
+      VITE_DEFAULT_SPONSERBLOCK_INSTANCE: https://sponsor.ajay.app
+    expose:
+      - 80
+
   app_proxy:
     environment:
       APP_HOST: denny-materialious_app_1
       APP_PORT: 80
-
-  app:
-    image: wardpearce/materialious:latest
-    restart: on-failure
-    environment:
-      VITE_DEFAULT_INVIDIOUS_INSTANCE: "https://invidious.materialio.us"
-      VITE_DEFAULT_COMPANION_INSTANCE: "https://companion.materialio.us"
-      VITE_DEFAULT_RETURNYTDISLIKES_INSTANCE: "https://returnyoutubedislikeapi.com"
-      VITE_DEFAULT_SPONSERBLOCK_INSTANCE: "https://sponsor.ajay.app"
-      VITE_DEFAULT_DEARROW_INSTANCE: "https://sponsor.ajay.app"
-      VITE_DEFAULT_DEARROW_THUMBNAIL_INSTANCE: "https://dearrow-thumb.ajay.app"
-      VITE_DEFAULT_SETTINGS: '{"themeColor": "#2596be","region": "US"}'
-    volumes:
-      - ${APP_DATA_DIR}/data:/data
