@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-materialious_app_1
+      APP_PORT: 80
+
+  app:
+    image: wardpearce/materialious:latest
+    restart: on-failure
+    environment:
+      VITE_DEFAULT_INVIDIOUS_INSTANCE: "https://invidious.materialio.us"
+      VITE_DEFAULT_COMPANION_INSTANCE: "https://companion.materialio.us"
+      VITE_DEFAULT_RETURNYTDISLIKES_INSTANCE: "https://returnyoutubedislikeapi.com"
+      VITE_DEFAULT_SPONSERBLOCK_INSTANCE: "https://sponsor.ajay.app"
+      VITE_DEFAULT_DEARROW_INSTANCE: "https://sponsor.ajay.app"
+      VITE_DEFAULT_DEARROW_THUMBNAIL_INSTANCE: "https://dearrow-thumb.ajay.app"
+      VITE_DEFAULT_SETTINGS: '{"themeColor": "#2596be","region": "US"}'
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
