@@ -3,7 +3,7 @@ id: denny-akaunting
 name: Akaunting
 tagline: An intuitive accounting solution for small businesses and freelancers
 icon: https://i.imgur.com/UIeVQGZ.png
-category: In Progress
+category: finance
 version: "3.1.19"
 port: 8773
 description: >-
