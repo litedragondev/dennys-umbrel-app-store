@@ -58,5 +58,5 @@ releaseNotes: >-
   Several bugs, including issues with printing transaction types, module updates, tax reports, and password reset emails, have been fixed.
 dependencies:
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "admin@admin.com"
+defaultPassword: "umbrel"
