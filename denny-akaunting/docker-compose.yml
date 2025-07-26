@@ -12,7 +12,7 @@ services:
     restart: on-failure
     environment:
       AKAUNTING_SETUP: "true"
-      APP_URL: http://${DEVICE_DOMAIN_NAME}:8773
+      APP_URL: http://umbrel-2.local:8773
       LOCALE: en-US
       DB_HOST: denny-akaunting_db_1
       DB_PORT: 3306
