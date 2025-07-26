@@ -24,8 +24,8 @@ services:
       COMPANY_EMAIL: my@company.com
       ADMIN_EMAIL: me@company.com
       ADMIN_PASSWORD: password
-    volumes:
-      - ${APP_DATA_DIR}/data:/var/www/html
+    #volumes:
+      # ${APP_DATA_DIR}/data:/var/www/html
     depends_on:
       - db
 
