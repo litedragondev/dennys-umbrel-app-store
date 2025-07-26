@@ -68,7 +68,7 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 | 44  | [Emby](https://github.com/MediaBrowser/Emby)         | A personal media server                                                   | 8097   |
 | 45  | [EmulatorJS](https://github.com/linuxserver/docker-emulatorjs)   | An immersive browser retro gaming experience                  | 8662   |
 | 46  | [Enclosed](https://github.com/CorentinTh/enclosed)   | A minimalistic web application designed for sending private and secure notes | 8525   |
-| 47  | [Ente Auth](https://github.com/ente-io/ente/tree/main/auth)   | An 2FA authenticator with end-to-end encrypted backups           | 43000  |
+| 47  | [Ente Auth](https://github.com/ente-io/ente/tree/main/auth) | An 2FA authenticator with end-to-end encrypted backups             | 43000  |
 | 48  | [Ente Photos](https://github.com/ente-io/ente)       | An end-to-end encrypted platform for photo storage and sharing            | 33000  |
 | 49  | [Erugo](https://github.com/ErugoOSS/Erugo)           | A powerful file sharing platform                                          | 8564   |
 | 50  | [Etherpad](https://github.com/ether/etherpad-lite)   | An intuitive tool for real-time collaborative writing                     | 9002   |
