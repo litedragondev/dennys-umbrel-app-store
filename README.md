@@ -24,7 +24,7 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 |-----|------------------------------------------------------|--------------------------------------------------------------------------|--------|
 | 1   | [Actual Budget](https://github.com/actualbudget/actual) | A super fast privacy-focused app for managing your finances           | 5006   |
 | 2   | [Airstation](https://github.com/cheatsnake/airstation)  | An instant radio station                                              | 7331   |
-| 3   | [Akaunting](https://github.com/akaunting/akaunting)  | An intuitive accounting solution for small businesses and freelancers    | 8773   |
+| 3   | [Akaunting](https://github.com/akaunting/akaunting)  | An intuitive accounting solution for small businesses and freelancers    | 8774   |
 | 4   | [Altus](https://github.com/amanharwara/altus) | A WhatsApp client with themes and multiple account support                      | 3344   |
 | 5   | [AnonAddy](https://github.com/anonaddy/anonaddy)     | An undercover inbox for your secret agent needs                          | 8727   |
 | 6   | [Anse](https://github.com/anse-app/anse)             | A fully optimized UI for AI Chats                                        | 3339   |
