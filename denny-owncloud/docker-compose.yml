@@ -15,7 +15,7 @@ services:
       - redis
     environment:
       - OWNCLOUD_DOMAIN=umbrel.local:8080
-      - OWNCLOUD_TRUSTED_DOMAINS=umbrel.local,umbrel,localhost
+      - OWNCLOUD_TRUSTED_DOMAINS=umbrel.local,umbrel,localhost,umbrel-2.local
       - OWNCLOUD_DB_TYPE=mysql
       - OWNCLOUD_DB_NAME=owncloud
       - OWNCLOUD_DB_USERNAME=owncloud
