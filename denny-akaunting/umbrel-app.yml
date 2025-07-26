@@ -48,9 +48,14 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/akaunting/akaunting
 support: https://github.com/akaunting/akaunting/issues
 gallery:
-  - https://i.imgur.com/TCusMq2.png
-  - https://i.imgur.com/TCusMq2.png
-  - https://i.imgur.com/TCusMq2.png
+  - https://i.imgur.com/I76nzKV.png
+  - https://i.imgur.com/pYZ3W5n.png
+  - https://i.imgur.com/Fb1JWvS.png
+  - https://i.imgur.com/V4ffRaW.png
+  - https://i.imgur.com/BQK33CT.png
+  - https://i.imgur.com/uHBkwJ9.png
+  - https://i.imgur.com/95wj74d.png
+  - https://i.imgur.com/sz1EzMk.png
 releaseNotes: >-
   Version 3.1.19 introduces new features such as a discount summary report, configurable invoice logo size, and extended report data. Performance improvements and new Crowdin translations were also added. 
   
