@@ -17,12 +17,14 @@ services:
       - CMD_URL_ADDPORT=false
       - CMD_PROTOCOL_USESSL=false
       - CMD_PORT=3000
-      - CMD_ALLOW_ORIGIN=*
+      # CMD_ALLOW_ORIGIN=*
       - CMD_DB_URL=postgres://admin:umbrel@database:5432/umbrel_hedgedoc
-      - CMD_ALLOW_ANONYMOUS=true
+      - NODE_ENV=production
+      - CMD_ALLOW_ANONYMOUS=false
       - CMD_ALLOW_ANONYMOUS_EDITS=true
-      - CMD_SESSION_SECRET=${APP_SEED}
-      - UPLOADS_MODE=0777
+      - CMD_DEFAULT_PERMISSION=private
+      - CMD_ALLOW_EMAIL_REGISTER=false
+      - CMD_ALLOW_GRAVATAR=false
     depends_on:
       database:
         condition: service_started
