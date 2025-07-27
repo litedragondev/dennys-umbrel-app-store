@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
 
   web:
-    image: quay.io/hedgedoc/hedgedoc@sha256:25374344ce4cbf4e372fc29b5df2675ae981cad8512beda9088ecf94c6cfc5ba
+    image: linuxserver/hedgedoc:1.10.3@sha256:3566be1d6bf4b5bf415d9d94b728619daeb4d84c7bfa1b84bded2ff18a63e136 #quay.io/hedgedoc/hedgedoc@sha256:25374344ce4cbf4e372fc29b5df2675ae981cad8512beda9088ecf94c6cfc5ba
     user: "1000:1000"
     restart: on-failure
     volumes:
