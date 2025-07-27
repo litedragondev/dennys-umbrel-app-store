@@ -12,7 +12,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/uploads:/hedgedoc/public/uploads
     environment:
-      - CMD_DOMAIN=umbrel-2.local:3456
+      - CMD_DOMAIN=${APP_DOMAIN}
       - CMD_URL_ADDPORT=false
       - CMD_PROTOCOL_USESSL=false
       - CMD_PORT=3000
@@ -26,7 +26,7 @@ services:
       - PGID=1000
     depends_on:
       database:
-        condition: service_started
+        condition: service_healthy
 
   database:
     image: mariadb:11.8@sha256:2bcbaec92bd9d4f6591bc8103d3a8e6d0512ee2235506e47a2e129d190444405
@@ -41,3 +41,8 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/db:/var/lib/mysql:rw
     restart: on-failure
+    healthcheck:
+      test: ["CMD-SHELL", "mariadb -uroot -prootpass -e 'SELECT 1' || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
