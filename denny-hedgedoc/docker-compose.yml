@@ -18,10 +18,9 @@ services:
       - CMD_PROTOCOL_USESSL=false
       - CMD_PORT=3000
       - CMD_ALLOW_ORIGIN=*
-      # PostgreSQL DB URL, User: admin, Passwort: umbrel, DB: umbrel_hedgedoc
       - CMD_DB_URL=postgres://admin:umbrel@database:5432/umbrel_hedgedoc
-      - CMD_ALLOW_ANONYMOUS=false
-      - CMD_ALLOW_ANONYMOUS_EDITS=false
+      - CMD_ALLOW_ANONYMOUS=tru
+      - CMD_ALLOW_ANONYMOUS_EDITS=true
       - CMD_SESSION_SECRET=${APP_SEED} #XjL+Z6Jq8nBQXvFrOb1SajCcKcmqH6PWaaEbkO3HB/3iRueYs0qqEiJQ4C/TEsmE
       - UPLOADS_MODE=0777
     depends_on:
