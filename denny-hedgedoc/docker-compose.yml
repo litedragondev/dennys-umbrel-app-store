@@ -8,6 +8,7 @@ services:
 
   web:
     image: lscr.io/linuxserver/hedgedoc:latest
+    container_name: denny-hedgedoc_web_1
     restart: on-failure
     environment:
       - PUID=1000
@@ -35,11 +36,13 @@ services:
 
   db:
     image: mariadb:10.11
+    container_name: denny-hedgedoc_db_1
     restart: on-failure
     environment:
       - MYSQL_ROOT_PASSWORD=rootpass
       - MYSQL_DATABASE=hedgedoc
       - MYSQL_USER=hedgedoc
       - MYSQL_PASSWORD=hedgedocpass
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     volumes:
       - ${APP_DATA_DIR}/db:/var/lib/mysql
