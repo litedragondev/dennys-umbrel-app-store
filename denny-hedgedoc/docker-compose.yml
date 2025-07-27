@@ -12,7 +12,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/uploads:/hedgedoc/public/uploads
     environment:
-      - CMD_DOMAIN=${DEVICE_DOMAIN_NAME}:3456
+      - CMD_DOMAIN=http://${DEVICE_DOMAIN_NAME}:3456
       - CMD_URL_ADDPORT=false
       - CMD_PROTOCOL_USESSL=false
       - CMD_PORT=3000
@@ -21,7 +21,7 @@ services:
       - CMD_ALLOW_ANONYMOUS=true
       - CMD_ALLOW_ANONYMOUS_EDITS=true
       - CMD_SESSION_SECRET=${APP_SEED}
-      - UPLOADS_MODE="0755"
+      - UPLOADS_MODE=0755
       - PUID=1000
       - PGID=1000
     depends_on:
@@ -30,17 +30,19 @@ services:
 
   database:
     image: mariadb:11.8-noble-rc@sha256:ce3ce0a61f9cec258cc95f3dcebd0eaebe012712aa3d546f374159dfc799bbc8
-    restart: on-failure
     environment:
       - TZ=Europe/Berlin
       - MYSQL_ROOT_PASSWORD=rootpass
       - MYSQL_DATABASE=umbrel_hedgedoc
       - MYSQL_USER=admin
       - MYSQL_PASSWORD=umbrel
+      - PUID=1000
+      - PGID=1000
     volumes:
       - ${APP_DATA_DIR}/data/db:/var/lib/mysql:rw
+    restart: on-failure
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      test: ["CMD", "mariadb-admin", "ping", "-h", "localhost", "-uroot", "-prootpass"]
       interval: 5s
       timeout: 3s
       retries: 10
