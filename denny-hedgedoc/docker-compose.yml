@@ -10,17 +10,18 @@ services:
     image: quay.io/hedgedoc/hedgedoc@sha256:25374344ce4cbf4e372fc29b5df2675ae981cad8512beda9088ecf94c6cfc5ba
     user: "1000:1000"
     restart: on-failure
+    working_dir: /hedgedoc
     volumes:
-      - ${APP_DATA_DIR}/data:/config
       - ${APP_DATA_DIR}/data/uploads:/hedgedoc/public/uploads
+      - ${APP_DATA_DIR}/data/config:/config
     entrypoint: >
       sh -c "
-      if [ ! -f /config/.user_created ]; then
-        echo 'Creating default HedgeDoc admin user...';
-        node /hedgedoc/bin/manage_users --add admin@admin.com --password umbrel && \
-        touch /config/.user_created;
-      fi;
-      exec /init
+        if [ ! -f /config/.user_created ]; then
+          echo 'Creating default HedgeDoc admin user...';
+          printf 'umbrel\numbrel\n' | node /hedgedoc/bin/manage_users --add admin@admin.com && \
+          touch /config/.user_created;
+        fi;
+        exec /docker-entrypoint.sh
       "
     environment:
       - CMD_DOMAIN=umbrel-2.local:3456
@@ -40,6 +41,7 @@ services:
 
   database:
     image: postgres:15.4
+    restart: on-failure
     environment:
       - TZ=Europe/Berlin
       - POSTGRES_DB=umbrel_hedgedoc
@@ -47,4 +49,3 @@ services:
       - POSTGRES_PASSWORD=umbrel
     volumes:
       - ${APP_DATA_DIR}/data/db:/var/lib/postgresql/data:rw
-    restart: on-failure
