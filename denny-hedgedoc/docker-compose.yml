@@ -8,6 +8,7 @@ services:
 
   web:
     image: quay.io/hedgedoc/hedgedoc@sha256:25374344ce4cbf4e372fc29b5df2675ae981cad8512beda9088ecf94c6cfc5ba
+    user: "1000:1000"
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/uploads:/hedgedoc/public/uploads
@@ -23,14 +24,13 @@ services:
       - CMD_ALLOW_ANONYMOUS_EDITS=true
       - CMD_SESSION_SECRET=XjL+Z6Jq8nBQXvFrOb1SajCcKcmqH6PWaaEbkO3HB/3iRueYs0qqEiJQ4C/TEsmE
       - UPLOADS_MODE=0755
-      - PUID=1000
-      - PGID=1000
     depends_on:
       database:
         condition: service_started
 
   database:
     image: postgres:15.4
+    user: "1000:1000"
     environment:
       - TZ=Europe/Berlin
       - POSTGRES_DB=umbrel_hedgedoc
