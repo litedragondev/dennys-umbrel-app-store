@@ -12,14 +12,14 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/uploads:/hedgedoc/public/uploads
     environment:
-      - CMD_DOMAIN=http://${DEVICE_DOMAIN_NAME}:3456
+      - CMD_DOMAIN=${DEVICE_DOMAIN_NAME}:3456
       - CMD_URL_ADDPORT=false
       - CMD_PROTOCOL_USESSL=false
       - CMD_PORT=3000
       - CMD_ALLOW_ORIGIN=*
       - CMD_DB_URL=mysql://admin:umbrel@database:3306/umbrel_hedgedoc
-      - CMD_ALLOW_ANONYMOUS=true
-      - CMD_ALLOW_ANONYMOUS_EDITS=true
+      - CMD_ALLOW_ANONYMOUS=false
+      - CMD_ALLOW_ANONYMOUS_EDITS=false
       - CMD_SESSION_SECRET=${APP_SEED}
       - UPLOADS_MODE=0755
       - PUID=1000
