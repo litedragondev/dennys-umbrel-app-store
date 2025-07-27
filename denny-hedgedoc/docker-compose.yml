@@ -1,4 +1,4 @@
-version: '3.7'
+version: "3.7"
 
 services:
   app_proxy:
@@ -7,37 +7,39 @@ services:
       APP_PORT: 3000
 
   web:
-    image: quay.io/hedgedoc/hedgedoc@sha256:25374344ce4cbf4e372fc29b5df2675ae981cad8512beda9088ecf94c6cfc5ba
+    image: lscr.io/linuxserver/hedgedoc:latest
     restart: on-failure
-    volumes:
-      - ${APP_DATA_DIR}/data/uploads:/hedgedoc/public/uploads
     environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_USER=hedgedoc
+      - DB_PASS=hedgedocpass
+      - DB_NAME=hedgedoc
       - CMD_DOMAIN=umbrel-2.local:3456
       - CMD_URL_ADDPORT=false
       - CMD_PROTOCOL_USESSL=false
       - CMD_PORT=3000
       - CMD_ALLOW_ORIGIN=*
-      - CMD_DB_URL=mysql://admin:umbrel@database:3306/umbrel_hedgedoc
+      - CMD_DB_DIALECT=mysql
       - CMD_ALLOW_ANONYMOUS=true
       - CMD_ALLOW_ANONYMOUS_EDITS=true
       - CMD_SESSION_SECRET=XjL+Z6Jq8nBQXvFrOb1SajCcKcmqH6PWaaEbkO3HB/3iRueYs0qqEiJQ4C/TEsmE
       - UPLOADS_MODE=0755
-      - PUID=1000
-      - PGID=1000
-    depends_on:
-      database:
-        condition: service_started
-
-  database:
-    image: mariadb:11.8-noble-rc@sha256:ce3ce0a61f9cec258cc95f3dcebd0eaebe012712aa3d546f374159dfc799bbc8
-    environment:
-      - TZ=Europe/Berlin
-      - MYSQL_ROOT_PASSWORD=rootpass
-      - MYSQL_DATABASE=umbrel_hedgedoc
-      - MYSQL_USER=admin
-      - MYSQL_PASSWORD=umbrel
-      - PUID=1000
-      - PGID=1000
     volumes:
-      - ${APP_DATA_DIR}/data/db:/var/lib/mysql:rw
+      - ${APP_DATA_DIR}/config:/config
+    depends_on:
+      - db
+
+  db:
+    image: mariadb:10.11
     restart: on-failure
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpass
+      - MYSQL_DATABASE=hedgedoc
+      - MYSQL_USER=hedgedoc
+      - MYSQL_PASSWORD=hedgedocpass
+    volumes:
+      - ${APP_DATA_DIR}/db:/var/lib/mysql
