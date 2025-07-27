@@ -1,48 +1,31 @@
-version: '3.7'
+version: "3.7"
 
 services:
-  app_proxy:
-    environment:
-      APP_HOST: denny-hedgedoc_web_1
-      APP_PORT: 3000
-
-  web:
-    image: quay.io/hedgedoc/hedgedoc@sha256:25374344ce4cbf4e372fc29b5df2675ae981cad8512beda9088ecf94c6cfc5ba
-    restart: on-failure
-    volumes:
-      - ${APP_DATA_DIR}/data/uploads:/hedgedoc/public/uploads
-    environment:
-      - CMD_DOMAIN=${APP_DOMAIN}
-      - CMD_URL_ADDPORT=false
-      - CMD_PROTOCOL_USESSL=false
-      - CMD_PORT=3000
-      - CMD_ALLOW_ORIGIN=*
-      - CMD_DB_URL=mysql://admin:umbrel@database:3306/umbrel_hedgedoc
-      - CMD_ALLOW_ANONYMOUS=true
-      - CMD_ALLOW_ANONYMOUS_EDITS=true
-      - CMD_SESSION_SECRET=XjL+Z6Jq8nBQXvFrOb1SajCcKcmqH6PWaaEbkO3HB/3iRueYs0qqEiJQ4C/TEsmE
-      - UPLOADS_MODE=0755
-      - PUID=1000
-      - PGID=1000
-    depends_on:
-      database:
-        condition: service_healthy
-
   database:
-    image: mariadb:11.8@sha256:2bcbaec92bd9d4f6591bc8103d3a8e6d0512ee2235506e47a2e129d190444405
+    image: mariadb:11.8
     environment:
-      - TZ=Europe/Berlin
-      - MYSQL_ROOT_PASSWORD=rootpass
-      - MYSQL_DATABASE=umbrel_hedgedoc
-      - MYSQL_USER=admin
-      - MYSQL_PASSWORD=umbrel
-      - PUID=1000
-      - PGID=1000
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: hedgedoc
+      MYSQL_USER: hedgedoc
+      MYSQL_PASSWORD: hedgedocpass
     volumes:
-      - ${APP_DATA_DIR}/data/db:/var/lib/mysql:rw
-    restart: on-failure
-    healthcheck:
-      test: ["CMD-SHELL", "mariadb -uroot -prootpass -e 'SELECT 1' || exit 1"]
-      interval: 5s
-      timeout: 3s
-      retries: 10
+      - ./db-data:/var/lib/mysql
+    restart: unless-stopped
+
+  hedgedoc:
+    image: quay.io/hedgedoc/hedgedoc:stable
+    ports:
+      - "3456:3000"
+    environment:
+      CMD_DB_URL: mysql://hedgedoc:hedgedocpass@database:3306/hedgedoc?charset=utf8mb4
+      CMD_DOMAIN: localhost:3000
+      CMD_URL_ADDPORT: "false"
+      CMD_PROTOCOL_USESSL: "false"
+      CMD_ALLOW_ORIGIN: "*"
+      CMD_ALLOW_ANONYMOUS: "true"
+      CMD_ALLOW_ANONYMOUS_EDITS: "true"
+      CMD_SESSION_SECRET: supersecret123
+      UPLOADS_MODE: "0755"
+    depends_on:
+      - database
+    restart: unless-stopped
