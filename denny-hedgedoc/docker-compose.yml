@@ -13,7 +13,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/uploads:/hedgedoc/public/uploads
     environment:
-      - CMD_DOMAIN=umbrel-2.local:3456
+      - CMD_DOMAIN=umbrel.local:3456
       - CMD_URL_ADDPORT=false
       - CMD_PROTOCOL_USESSL=false
       - CMD_PORT=3000
