@@ -11,8 +11,7 @@ services:
     container_name: denny-syncin_web_1
     restart: always
     environment:
-      SYNCIN_SERVER_TRUST_PROXY: "true"
-      SYNCIN_MYSQL_URL: "mysql://root:MySQLRootPassword@mariadb:3306/sync_in"
+      SYNCIN_MYSQL_URL: "mysql://syncin:syncinpassword@mariadb:3306/sync_in"
       SYNCIN_AUTH_TOKEN_ACCESS_SECRET: "changeAccessWithStrongSecret"
       SYNCIN_AUTH_TOKEN_REFRESH_SECRET: "changeRefreshWithStrongSecret"
       SYNCIN_APPLICATIONS_FILES_DATAPATH: "/app/data"
@@ -24,7 +23,7 @@ services:
       PGID: 1000
     volumes:
       - ${APP_DATA_DIR}/data:/app/data
-      - ${APP_DATA_DIR}/desktop_releases:/app/static/releases:ro
+      - ${APP_DATA_DIR}/desktop_releases:/app/static/releases  # Entferne :ro
     depends_on:
       - mariadb
     logging:
@@ -41,5 +40,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: MySQLRootPassword
       MYSQL_DATABASE: sync_in
+      MYSQL_USER: syncin
+      MYSQL_PASSWORD: syncinpassword
     volumes:
       - ${APP_DATA_DIR}/mariadb:/var/lib/mysql
