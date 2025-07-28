@@ -9,7 +9,7 @@ services:
   web:
     image: syncin/server:1
     container_name: denny-syncin_web_1
-    restart: always
+    restart: on-failure
     environment:
       SYNCIN_MYSQL_URL: "mysql://syncin:syncinpassword@mariadb:3306/sync_in"
       SYNCIN_AUTH_TOKEN_ACCESS_SECRET: "changeAccessWithStrongSecret"
@@ -18,12 +18,12 @@ services:
       SYNCIN_APPLICATIONS_FILES_ONLYOFFICE_ENABLED: "false"
       SYNCIN_APPLICATIONS_FILES_ONLYOFFICE_SECRET: "onlyOfficeSecret"
       INIT_ADMIN_LOGIN: "admin"
-      INIT_ADMIN_PASSWORD: "changeme"
+      INIT_ADMIN_PASSWORD: "umbrel"
       PUID: 1000
       PGID: 1000
     volumes:
       - ${APP_DATA_DIR}/data:/app/data
-      - ${APP_DATA_DIR}/desktop_releases:/app/static/releases  # Entferne :ro
+      - ${APP_DATA_DIR}/desktop_releases:/app/static/releases
     depends_on:
       - mariadb
     logging:
@@ -35,7 +35,7 @@ services:
   mariadb:
     image: mariadb:11
     container_name: denny-syncin_mariadb_1
-    restart: always
+    restart: on-failure
     command: --innodb_ft_cache_size=16000000 --max-allowed-packet=1G
     environment:
       MYSQL_ROOT_PASSWORD: MySQLRootPassword
