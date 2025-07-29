@@ -1,0 +1,49 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-rsshub_web_1
+      APP_PORT: 1200
+
+  web:
+    image: diygod/rsshub
+    restart: on-failure
+    environment:
+      NODE_ENV: production
+      CACHE_TYPE: redis
+      REDIS_URL: redis://redis:6379/
+      PUPPETEER_WS_ENDPOINT: ws://browserless:3000
+    depends_on:
+      - redis
+      - browserless
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:1200/healthz"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  browserless:
+    image: browserless/chrome
+    restart: on-failure
+    ulimits:
+      core:
+        hard: 0
+        soft: 0
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/pressure"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  redis:
+    image: redis:alpine
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data/redis:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 5s
