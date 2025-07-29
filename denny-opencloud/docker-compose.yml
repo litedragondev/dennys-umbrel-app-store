@@ -20,9 +20,10 @@ services:
       /bin/sh -c '
         if [ ! -f /etc/opencloud/config.yml ]; then
           echo "jwt_secret: $(head -c 32 /dev/urandom | xxd -p)" > /etc/opencloud/config.yml;
-          echo "Generated jwt_secret in config.yml";
+          echo "transfer_secret: $(head -c 32 /dev/urandom | xxd -p)" >> /etc/opencloud/config.yml;
+          echo "Generated jwt_secret and transfer_secret in config.yml";
         fi;
-        exec docker-entrypoint.sh "$@"
+        exec "$@"
       '
 
 volumes:
