@@ -13,6 +13,7 @@ services:
       OC_INSECURE: "true"
       PROXY_HTTP_ADDR: "0.0.0.0:9200"
       OC_URL: "http://umbrel-2.local:9200"
+      OC_JWT_SECRET: "5f7d8e6a13f8b93dbe25c7a06d4c8e0e3d6d0a6b9c1a2e5f3b6e1c8a3f9b7d6c"
     volumes:
       - ${APP_DATA_DIR}/data/config:/etc/opencloud
       - ${APP_DATA_DIR}/data/data:/var/lib/opencloud
