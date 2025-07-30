@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-gitmirrors_web_1
+      APP_PORT: 3000
+
+  server:
+    image: "ioalexander/gitmirrors-backend:latest"
+    user: "1000:1000"
+    environment:
+      SERVER_PORT: 8000
+      POSTGRES_HOST: db
+      POSTGRES_PORT: 5432
+      ROCKET_ADDRESS: "0.0.0.0"
+      ROCKET_ENV: "production"
+      DATABASE_URL: "postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}"
+      CORS_URL: "http://${DEVICE_DOMAIN_NAME}:3863"
+
+  web:
+    image: "ioalexander/gitmirrors-frontend:latest"
+    user: "1000:1000"
+    environment:
+      PORT: 3000
+      NUXT_PUBLIC_API_URL: "http://server:8000"
+      NUXT_PUBLIC_SERVER_API_URL: "http://server:8000"
+
+  db:
+    image: postgres:14.4
+    user: "1000:1000"
+    volumes:
+      - ${APP_DATA_DIR}/pg_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: gitmirrors
+      POSTGRES_PASSWORD: secretpassword
+      POSTGRES_DB: gitmirrors
+      POSTGRES_HOST_AUTH_METHOD: trust
