@@ -42,4 +42,3 @@ services:
       POSTGRES_USER: gitmirrors
       POSTGRES_PASSWORD: secretpassword
       POSTGRES_DB: gitmirrors
-      POSTGRES_HOST_AUTH_METHOD: trust
