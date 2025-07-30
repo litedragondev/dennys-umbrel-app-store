@@ -11,6 +11,7 @@ services:
     restart: on-failure
     environment:
       PORT: 3000
+      WEB_CLIENT_PORT: 3000
       NUXT_PUBLIC_API_URL: "http://server:4000/api"
       NUXT_PUBLIC_SERVER_API_URL: "http://server:4000/api"
     depends_on:
@@ -21,15 +22,16 @@ services:
     restart: on-failure
     environment:
       SERVER_PORT: 4000
+      ROCKET_ENV: production
+      ROCKET_ADDRESS: "0.0.0.0"
       POSTGRES_HOST: db
       POSTGRES_PORT: 5432
       POSTGRES_USER: gitmirrors
       POSTGRES_PASSWORD: secretpassword
       POSTGRES_DB: gitmirrors
-      ROCKET_ADDRESS: "0.0.0.0"
-      ROCKET_ENV: "production"
-      DATABASE_URL: "postgresql://gitmirrors:secretpassword@db:5432/gitmirrors"
-      CORS_URL: http://umbrel.local:3863,http://umbrel-2.local:3863,http://localhost:3000
+      POSTGRES_HOST_AUTH_METHOD: trust
+      DATABASE_URL: "postgres://gitmirrors:secretpassword@db:5432/gitmirrors"
+      CORS_URL: "http://umbrel-2.local:3863"
     depends_on:
       - db
 
@@ -42,3 +44,4 @@ services:
       POSTGRES_USER: gitmirrors
       POSTGRES_PASSWORD: secretpassword
       POSTGRES_DB: gitmirrors
+      POSTGRES_HOST_AUTH_METHOD: trust
