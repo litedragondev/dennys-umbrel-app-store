@@ -8,6 +8,7 @@ services:
 
   web:
     image: ioalexander/gitmirrors-frontend:latest
+    user: "0:0"
     restart: on-failure
     environment:
       PORT: 3000
