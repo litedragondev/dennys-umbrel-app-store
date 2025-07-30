@@ -29,7 +29,7 @@ services:
       ROCKET_ADDRESS: "0.0.0.0"
       ROCKET_ENV: "production"
       DATABASE_URL: "postgresql://gitmirrors:secretpassword@db:5432/gitmirrors"
-      CORS_URL: "http://umbrel-2.local:3863"
+      CORS_URL: http://umbrel.local:3863,http://umbrel-2.local:3863,http://localhost:3000
     depends_on:
       - db
 
