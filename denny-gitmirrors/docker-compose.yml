@@ -12,8 +12,8 @@ services:
     restart: on-failure
     environment:
       PORT: 3000
-      NUXT_PUBLIC_API_URL: "http://server:8000"
-      NUXT_PUBLIC_SERVER_API_URL: "http://server:8000"
+      NUXT_PUBLIC_API_URL: "http://server:4000/api"
+      NUXT_PUBLIC_SERVER_API_URL: "http://server:4000/api"
     depends_on:
       - server
 
@@ -22,9 +22,12 @@ services:
     user: "1000:1000"
     restart: on-failure
     environment:
-      SERVER_PORT: 8000
+      SERVER_PORT: 4000
       POSTGRES_HOST: db
       POSTGRES_PORT: 5432
+      POSTGRES_USER: gitmirrors
+      POSTGRES_PASSWORD: secretpassword
+      POSTGRES_DB: gitmirrors
       ROCKET_ADDRESS: "0.0.0.0"
       ROCKET_ENV: "production"
       DATABASE_URL: "postgresql://gitmirrors:secretpassword@db:5432/gitmirrors"
