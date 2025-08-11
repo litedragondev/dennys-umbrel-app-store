@@ -4,7 +4,7 @@ name: Cobalt
 tagline: A media downloader that doesn't piss you off
 icon: https://i.imgur.com/jzNsNYz.png
 category: media
-version: "11.3.1"
+version: "11.4.1"
 port: 9009
 description: >-
   Cobalt is a powerful and intuitive media downloader built to simplify the process of saving your favorite content from the web. Designed for users who want to enjoy their media without the interruptions of ads, trackers, or paywalls, Cobalt offers a streamlined experience. Whether you're downloading videos, music, images, or other types of media, Cobalt acts as a proxy that fetches content directly from its source, ensuring a fast and seamless process.
@@ -30,7 +30,7 @@ gallery:
   - https://i.imgur.com/t6Zqege.png
   - https://i.imgur.com/xIerJrO.png
 releaseNotes: >-
-  Version 11.3.1 introduces TikTok headers, support for Newgrounds, and enforces a required referer to access video links. Vimeo sessions now use the Android client, and both the web and API packages have been bumped to version 11.3.
+  This version adds a warning about the deprecation of API_EXTERNAL_PROXY in api/env and updates youtubei.js to version 15.0.1.
 dependencies:
 path: ""
 defaultUsername: ""
