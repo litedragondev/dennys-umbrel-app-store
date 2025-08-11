@@ -3,7 +3,7 @@ id: denny-owncloud
 name: ownCloud
 tagline: A smart cloud for your files
 icon: https://i.imgur.com/JfhWxzP.png
-category: test
+category: In Progress
 version: "10.15.3"
 port: 8666
 description: >-
