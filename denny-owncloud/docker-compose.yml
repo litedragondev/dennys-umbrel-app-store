@@ -8,8 +8,8 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    image: owncloud/server:latest@sha256:257aa15415892d8abc2258468d37672b9a71327d1e59562f84db827fdd7150af
-    restart: unless-stopped
+    image: owncloud/server:10.15.3@sha256:ce545e72b13f0c3c19fd083aed1ec12facd91ee87993397fd883e853830dc7e9
+    restart: on-failure
     depends_on:
       - mariadb
       - redis
@@ -37,8 +37,8 @@ services:
       - ${APP_DATA_DIR}/config:/var/www/html/config
 
   mariadb:
-    image: mariadb:10.11
-    restart: unless-stopped
+    image: mariadb:10.11@sha256:24bb6e3d8e46f4581ddcc2b2c22fd78c99c77ac4e3fb7c9aba3a5c4c4d934ca2
+    restart: on-failure
     environment:
       - MYSQL_ROOT_PASSWORD=owncloud
       - MYSQL_USER=owncloud
@@ -55,8 +55,8 @@ services:
       - ${APP_DATA_DIR}/mysql:/var/lib/mysql
 
   redis:
-    image: redis:6-alpine
-    restart: unless-stopped
+    image: redis:6-alpine@sha256:7fe72c486b910f6b1a9769c937dad5d63648ddee82e056f47417542dd40825bb
+    restart: on-failure
     command: ["--databases", "1"]
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
