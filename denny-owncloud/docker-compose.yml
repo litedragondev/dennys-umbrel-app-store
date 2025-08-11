@@ -15,7 +15,7 @@ services:
       - redis
     environment:
       - OWNCLOUD_DOMAIN=umbrel.local:8080
-      - OWNCLOUD_TRUSTED_DOMAINS=umbrel.local,umbrel,localhost,umbrel-2.local
+      - OWNCLOUD_TRUSTED_DOMAINS=umbrel.local,umbrel,localhost,umbrel-2.local,umbrel-2
       - OWNCLOUD_DB_TYPE=mysql
       - OWNCLOUD_DB_NAME=owncloud
       - OWNCLOUD_DB_USERNAME=owncloud
@@ -33,7 +33,7 @@ services:
       timeout: 10s
       retries: 5
     volumes:
-      - ${APP_DATA_DIR}/data:/mnt/data
+      - ${APP_DATA_DIR}/data/app_data:/mnt/data
       - ${APP_DATA_DIR}/config:/var/www/html/config
 
   mariadb:
@@ -52,7 +52,7 @@ services:
       timeout: 5s
       retries: 5
     volumes:
-      - ${APP_DATA_DIR}/mysql:/var/lib/mysql
+      - ${APP_DATA_DIR}/data/mysql_data:/var/lib/mysql
 
   redis:
     image: redis:6-alpine@sha256:7fe72c486b910f6b1a9769c937dad5d63648ddee82e056f47417542dd40825bb
@@ -64,4 +64,4 @@ services:
       timeout: 5s
       retries: 5
     volumes:
-      - ${APP_DATA_DIR}/redis:/data
+      - ${APP_DATA_DIR}/data/redis_data:/data
