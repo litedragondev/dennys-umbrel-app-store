@@ -7,11 +7,11 @@ services:
       APP_PORT: 80
 
   web:
-    image: dennysubke/epicyon:1.6.0@sha256:d5d9adcf9a6c450ccda4cdf3e820f4c4db34be62af9c0a0e755531e9671537ec
-    user: 0:0
+    image: dennysubke/epicyon:1.6.0a@sha256:87247488312d357f9bebc6b914d0c541952e05be319476dfa34179050526b023
+    user: "1000:1000"
     restart: on-failure
     environment:
-      DOMAIN: umbrel-2.local
+      DOMAIN: umbrel-2.local:7166
     volumes:
       - ${APP_DATA_DIR}/data:/data
     expose:
