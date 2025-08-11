@@ -8,6 +8,7 @@ services:
 
   web:
     image: dennysubke/epicyon:1.6.0@sha256:d5d9adcf9a6c450ccda4cdf3e820f4c4db34be62af9c0a0e755531e9671537ec
+    user: 0:0
     restart: on-failure
     environment:
       DOMAIN: umbrel-2.local
