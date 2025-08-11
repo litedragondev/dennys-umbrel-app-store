@@ -2,8 +2,8 @@ manifestVersion: 1
 id: denny-resiliosync
 name: Resilio-Sync
 tagline: A secure way to keep files in sync
-icon: icon.png
-category: test
+icon: https://i.imgur.com/ePMFQM0.png
+category: In Progress
 version: "3.1.0"
 port: 8777
 description: >-
@@ -27,7 +27,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/linuxserver/docker-resilio-sync
 support: https://github.com/linuxserver/docker-resilio-sync/issues
 gallery:
-  - 1.jpg
+  - https://i.imgur.com/CU0Kwsv.png
+  - https://i.imgur.com/CU0Kwsv.png
+  - https://i.imgur.com/CU0Kwsv.png
 releaseNotes: >-
   Version 3.1.0 introduces a new option to prioritize file downloads by timestamp or size. It fixes non-clickable error messages and adds @__thumb* to the default IgnoreList. Several other minor bugs were also addressed.
 dependencies: []
