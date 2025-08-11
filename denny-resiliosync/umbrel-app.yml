@@ -1,36 +1,36 @@
 manifestVersion: 1
 id: denny-resiliosync
 name: Resilio-Sync
-tagline: A smart cloud for your files
+tagline: A secure way to keep files in sync
 icon: icon.png
 category: test
 version: "3.1.0"
 port: 8777
 description: >-
-  OwnCloud is a comprehensive software application designed to provide users with a personal cloud storage solution that combines file management, collaboration, and organizational tools in one platform. It allows users to upload, store, and organize their files in a secure, centralized environment, making it easy to keep track of documents, photos, videos, and other types of data. With OwnCloud, files can be synchronized seamlessly across multiple devices such as computers, smartphones, and tablets, ensuring that users always have access to the most up-to-date versions no matter where they are or what device they are using.
+  🔄 Resilio Sync is an application that enables secure and efficient file synchronization between devices using peer to peer technology. It transfers data directly between connected devices without relying on cloud storage which ensures privacy and control over the shared content.
 
 
-  The application offers advanced sharing capabilities, enabling users to share files and folders with colleagues, friends, or family members. Access permissions can be finely tuned to grant read-only, editing, or full control rights, which helps maintain privacy and security while promoting collaboration. OwnCloud also supports real-time collaboration on documents, allowing multiple users to work together efficiently, whether it is for business projects, academic work, or personal tasks.
+  The app can synchronize large files and entire folders quickly by taking advantage of multiple simultaneous connections and optimized data transfer methods. It works in real time so changes made to files on one device are instantly updated on all other connected devices.
 
 
-  Beyond basic file storage and sharing, OwnCloud includes a range of integrated productivity features. Users can manage calendars to keep track of appointments and events, organize contacts to maintain communication information, create and track tasks to boost productivity, and take notes that are easily accessible from any device. These additional tools turn OwnCloud into more than just a file repository; it becomes a centralized hub for managing various aspects of daily life and work.
+  All transfers are encrypted end to end providing a secure way to share personal or work related data with others. Resilio Sync also supports selective synchronization allowing users to choose which files or folders to download to a specific device while keeping the rest available remotely.
 
 
-  Security and control are core aspects of OwnCloud. The platform places a strong emphasis on data privacy by offering encryption options, user authentication, and detailed logging of access and changes. This ensures that sensitive information remains protected and that users have full visibility over who accesses their data and how it is used.
+  This makes it suitable for both personal use and collaborative projects where multiple people need access to the same files while maintaining full security and data ownership.
 
 
-  Overall, OwnCloud combines the convenience of cloud storage with powerful collaboration and organizational tools, providing users with a versatile and secure environment to manage their digital content efficiently and on their own terms.
-developer: OwnCloud GmbH
-website: https://owncloud.com
+  ⚠️ Please make sure to register your free Resilio account and wait for the license key and activation instructions sent to your email.
+developer: Resilio, Inc.
+website: https://www.resilio.com/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/owncloud-docker/server
-support: https://github.com/owncloud-docker/server/issues
+repo: https://github.com/linuxserver/docker-resilio-sync
+support: https://github.com/linuxserver/docker-resilio-sync/issues
 gallery:
   - 1.jpg
 releaseNotes: >-
-  The ownCloud Core 10.15.3 update disables the outdated web updater by removing its integration from the admin interface to prevent potential issues. Additionally, it improves security by strengthening how remote services like WebDAV and CalDAV are resolved, ensuring they are loaded only from trusted sources.
+  Version 3.1.0 introduces a new option to prioritize file downloads by timestamp or size. It fixes non-clickable error messages and adds @__thumb* to the default IgnoreList. Several other minor bugs were also addressed.
 dependencies: []
 path: ""
-defaultUsername: "admin"
-defaultPassword: "umbrel"
+defaultUsername: ""
+defaultPassword: ""
