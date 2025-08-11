@@ -16,8 +16,9 @@ services:
       SYNCIN_APPLICATIONS_FILES_DATAPATH: "/app/data"
       SYNCIN_APPLICATIONS_FILES_ONLYOFFICE_ENABLED: "false"
       SYNCIN_APPLICATIONS_FILES_ONLYOFFICE_SECRET: "onlyOfficeSecret"
-      #INIT_ADMIN_LOGIN: "admin"
-      #INIT_ADMIN_PASSWORD: "umbrel"
+      INIT_ADMIN: "true"
+      INIT_ADMIN_LOGIN: "admin"
+      INIT_ADMIN_PASSWORD: "umbrel"
       PUID: 1000
       PGID: 1000
     volumes:
