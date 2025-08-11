@@ -12,7 +12,5 @@ services:
     restart: on-failure
     environment:
       DOMAIN: umbrel-2.local:7166
-    volumes:
-      - ${APP_DATA_DIR}/data:/data
     expose:
       - "80"
