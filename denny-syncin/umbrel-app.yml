@@ -21,9 +21,11 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/sync-in
 support: https://github.com/Sync-in/server/issues
 gallery:
-  - https://i.imgur.com/Rd2Iy7m.png
-  - https://i.imgur.com/Rd2Iy7m.png
-  - https://i.imgur.com/Rd2Iy7m.png
+  - https://i.imgur.com/G8XJ7ya.png
+  - https://i.imgur.com/YOvFATO.png
+  - https://i.imgur.com/JcR2upu.png
+  - https://i.imgur.com/Z6dRMYF.png
+  - https://i.imgur.com/BQ9hbGn.png
 releaseNotes: >-
   Version 1.3.2 adds a new CLI command to create and manage users, enhancing user administration capabilities.
 dependencies:
