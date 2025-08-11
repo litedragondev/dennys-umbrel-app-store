@@ -1,0 +1,67 @@
+version: '3.7'
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-owncloud_server_1
+      APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
+
+  server:
+    image: owncloud/server:10.15.3@sha256:ce545e72b13f0c3c19fd083aed1ec12facd91ee87993397fd883e853830dc7e9
+    restart: on-failure
+    depends_on:
+      - mariadb
+      - redis
+    environment:
+      - OWNCLOUD_DOMAIN=http://${DEVICE_DOMAIN_NAME}:8080
+      - OWNCLOUD_TRUSTED_DOMAINS=umbrel.local,umbrel,localhost,umbrel-2.local
+      - OWNCLOUD_DB_TYPE=mysql
+      - OWNCLOUD_DB_NAME=owncloud
+      - OWNCLOUD_DB_USERNAME=owncloud
+      - OWNCLOUD_DB_PASSWORD=owncloud
+      - OWNCLOUD_DB_HOST=mariadb
+      - OWNCLOUD_ADMIN_USERNAME=admin
+      - OWNCLOUD_ADMIN_PASSWORD=umbrel
+      - OWNCLOUD_MYSQL_UTF8MB4=true
+      - OWNCLOUD_REDIS_ENABLED=true
+      - OWNCLOUD_REDIS_HOST=redis
+      - OWNCLOUD_LOG_LEVEL=2
+    healthcheck:
+      test: ["CMD", "/usr/bin/healthcheck"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    volumes:
+      - ${APP_DATA_DIR}/data/app_data:/mnt/data
+      - ${APP_DATA_DIR}/config:/var/www/html/config
+
+  mariadb:
+    image: mariadb:11.8.2@sha256:2bcbaec92bd9d4f6591bc8103d3a8e6d0512ee2235506e47a2e129d190444405
+    restart: on-failure
+    environment:
+      - MYSQL_ROOT_PASSWORD=owncloud
+      - MYSQL_USER=owncloud
+      - MYSQL_PASSWORD=owncloud
+      - MYSQL_DATABASE=owncloud
+      - MARIADB_AUTO_UPGRADE=1
+    command: ["--max-allowed-packet=128M", "--innodb-log-file-size=64M"]
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-u", "root", "--password=owncloud"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - ${APP_DATA_DIR}/data/mysql_data:/var/lib/mysql
+
+  redis:
+    image: redis:8.2.0@sha256:b0efb06f6b4d8c1e2fd1b7c1e89e178d787b432b7b09286b4e7ea3dcdbac777a
+    restart: on-failure
+    command: ["--databases", "1"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - ${APP_DATA_DIR}/data/redis_data:/data
