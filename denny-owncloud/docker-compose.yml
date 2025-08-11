@@ -14,7 +14,7 @@ services:
       - mariadb
       - redis
     environment:
-      - OWNCLOUD_DOMAIN=http://${DEVICE_DOMAIN_NAME}:8080
+      - OWNCLOUD_DOMAIN=http://${DEVICE_DOMAIN_NAME}:8666
       - OWNCLOUD_TRUSTED_DOMAINS=umbrel.local,umbrel,localhost,umbrel-2.local
       - OWNCLOUD_DB_TYPE=mysql
       - OWNCLOUD_DB_NAME=owncloud
