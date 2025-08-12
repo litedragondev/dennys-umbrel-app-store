@@ -3,34 +3,34 @@ id: denny-retroassembly
 name: RetroAssembly
 tagline: A personal retro game collection cabinet
 icon: icon.png
-category: test
-version: "1.25"
+category: gaming
+version: "1.0"
 port: 5999
 description: >-
-  OwnCloud is a comprehensive software application designed to provide users with a personal cloud storage solution that combines file management, collaboration, and organizational tools in one platform. It allows users to upload, store, and organize their files in a secure, centralized environment, making it easy to keep track of documents, photos, videos, and other types of data. With OwnCloud, files can be synchronized seamlessly across multiple devices such as computers, smartphones, and tablets, ensuring that users always have access to the most up-to-date versions no matter where they are or what device they are using.
+  RetroAssembly is a platform designed to let users build and enjoy their own personal library of retro video games. It takes ROM files provided by the user and transforms them into a beautifully presented collection, complete with cover art and detailed information. The interface makes it easy to explore the library, search for specific titles, and rediscover forgotten classics in an engaging and organized way.
 
 
-  The application offers advanced sharing capabilities, enabling users to share files and folders with colleagues, friends, or family members. Access permissions can be finely tuned to grant read-only, editing, or full control rights, which helps maintain privacy and security while promoting collaboration. OwnCloud also supports real-time collaboration on documents, allowing multiple users to work together efficiently, whether it is for business projects, academic work, or personal tasks.
+  Once a game is selected, it can be launched immediately, providing a seamless transition from browsing to playing. All progress is automatically saved, allowing players to return to their exact point in the game at any time. This persistence ensures that even long, challenging titles can be completed over multiple sessions without losing any achievements.
 
 
-  Beyond basic file storage and sharing, OwnCloud includes a range of integrated productivity features. Users can manage calendars to keep track of appointments and events, organize contacts to maintain communication information, create and track tasks to boost productivity, and take notes that are easily accessible from any device. These additional tools turn OwnCloud into more than just a file repository; it becomes a centralized hub for managing various aspects of daily life and work.
+  The gameplay experience is enhanced by a variety of features that recreate the feel of original hardware while adding modern conveniences. Visual filters mimic the appearance of classic CRT and handheld screens, bringing an authentic atmosphere to each session. A rewind function allows players to reverse gameplay in real time, offering the chance to retry difficult sections without starting over completely. Save states provide another layer of control, letting users preserve specific points in a game for quick reloads.
 
 
-  Security and control are core aspects of OwnCloud. The platform places a strong emphasis on data privacy by offering encryption options, user authentication, and detailed logging of access and changes. This ensures that sensitive information remains protected and that users have full visibility over who accesses their data and how it is used.
-
-
-  Overall, OwnCloud combines the convenience of cloud storage with powerful collaboration and organizational tools, providing users with a versatile and secure environment to manage their digital content efficiently and on their own terms.
-developer: OwnCloud GmbH
-website: https://owncloud.com
+  Navigation throughout the library and during gameplay is smooth and intuitive, with full support for both keyboard and controller input. Every element is designed to keep the focus on the games themselves, removing unnecessary distractions and making it simple to enjoy everything from quick sessions of arcade-style action to long adventures spanning many hours.
+developer: arianrhodsandlot
+website: https://retroassembly.com/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/owncloud-docker/server
-support: https://github.com/owncloud-docker/server/issues
+repo: https://github.com/arianrhodsandlot/retroassembly
+support: https://github.com/arianrhodsandlot/retroassembly/issues
 gallery:
   - 1.jpg
 releaseNotes: >-
-  The ownCloud Core 10.15.3 update disables the outdated web updater by removing its integration from the admin interface to prevent potential issues. Additionally, it improves security by strengthening how remote services like WebDAV and CalDAV are resolved, ensuring they are loaded only from trusted sources.
+  This version marks the official v1 release of RetroAssembly, introducing several major improvements over the initial version. 
+  
+  
+  New features include Docker self-hosting, dark mode, automatic continuation from the latest saved state, full screen mode, and MD5-based metadata matching.
 dependencies: []
 path: ""
-defaultUsername: "admin"
-defaultPassword: "umbrel"
+defaultUsername: ""
+defaultPassword: ""
