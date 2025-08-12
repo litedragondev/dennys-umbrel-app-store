@@ -4,7 +4,7 @@ name: LiteChat
 tagline: A smart cloud for your files
 icon: icon.png
 category: test
-version: "3.1.0"
+version: "0.2.9"
 port: 7744
 description: >-
   OwnCloud is a comprehensive software application designed to provide users with a personal cloud storage solution that combines file management, collaboration, and organizational tools in one platform. It allows users to upload, store, and organize their files in a secure, centralized environment, making it easy to keep track of documents, photos, videos, and other types of data. With OwnCloud, files can be synchronized seamlessly across multiple devices such as computers, smartphones, and tablets, ensuring that users always have access to the most up-to-date versions no matter where they are or what device they are using.
