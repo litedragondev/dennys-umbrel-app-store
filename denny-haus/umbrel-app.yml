@@ -1,36 +1,33 @@
 manifestVersion: 1
 id: denny-haus
 name: Haus
-tagline: A smart cloud for your files
+tagline: A calm space for focus and productivity
 icon: icon.png
-category: test
-version: "3.1.0"
+category: files & productivity
+version: "0.0.4"
 port: 8392
 description: >-
-  OwnCloud is a comprehensive software application designed to provide users with a personal cloud storage solution that combines file management, collaboration, and organizational tools in one platform. It allows users to upload, store, and organize their files in a secure, centralized environment, making it easy to keep track of documents, photos, videos, and other types of data. With OwnCloud, files can be synchronized seamlessly across multiple devices such as computers, smartphones, and tablets, ensuring that users always have access to the most up-to-date versions no matter where they are or what device they are using.
+  Haus is a minimalistic online workstation that brings together essential tools for focus and productivity within a single, calm, and visually pleasing environment. It is designed to reduce distractions and create a sense of mental clarity, allowing you to concentrate fully on the task at hand.
 
 
-  The application offers advanced sharing capabilities, enabling users to share files and folders with colleagues, friends, or family members. Access permissions can be finely tuned to grant read-only, editing, or full control rights, which helps maintain privacy and security while promoting collaboration. OwnCloud also supports real-time collaboration on documents, allowing multiple users to work together efficiently, whether it is for business projects, academic work, or personal tasks.
+  Within Haus you can create and manage to do lists to keep track of your responsibilities, write and organize notes for quick reference, and set gentle reminders to help maintain momentum throughout your day. It offers a clean writing space where you can jot down thoughts or work on longer pieces without intrusive formatting or visual noise.
 
 
-  Beyond basic file storage and sharing, OwnCloud includes a range of integrated productivity features. Users can manage calendars to keep track of appointments and events, organize contacts to maintain communication information, create and track tasks to boost productivity, and take notes that are easily accessible from any device. These additional tools turn OwnCloud into more than just a file repository; it becomes a centralized hub for managing various aspects of daily life and work.
+  To enhance concentration, Haus also provides ambient background sounds such as soft rain, gentle waves, or subtle white noise, which can help block out unwanted interruptions and establish a consistent work rhythm.
 
 
-  Security and control are core aspects of OwnCloud. The platform places a strong emphasis on data privacy by offering encryption options, user authentication, and detailed logging of access and changes. This ensures that sensitive information remains protected and that users have full visibility over who accesses their data and how it is used.
-
-
-  Overall, OwnCloud combines the convenience of cloud storage with powerful collaboration and organizational tools, providing users with a versatile and secure environment to manage their digital content efficiently and on their own terms.
-developer: OwnCloud GmbH
-website: https://owncloud.com
+  The interface is intuitive and aesthetically restrained, encouraging a feeling of order and calm. By combining organization, focus, and atmosphere in one place, Haus aims to be a digital space where your ideas can flow freely and your work can progress smoothly without the usual distractions of a busy online environment.
+developer: remvze
+website: https://use.haus/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/owncloud-docker/server
-support: https://github.com/owncloud-docker/server/issues
+repo: https://github.com/awwwsm/haus
+support: https://github.com/awwwsm/haus/issues
 gallery:
   - 1.jpg
 releaseNotes: >-
-  The ownCloud Core 10.15.3 update disables the outdated web updater by removing its integration from the admin interface to prevent potential issues. Additionally, it improves security by strengthening how remote services like WebDAV and CalDAV are resolved, ensuring they are loaded only from trusted sources.
+  Version 0.0.4 adds a sample deployment for Kubernetes support and includes various bug fixes to improve stability.
 dependencies: []
 path: ""
-defaultUsername: "admin"
-defaultPassword: "umbrel"
+defaultUsername: ""
+defaultPassword: ""
