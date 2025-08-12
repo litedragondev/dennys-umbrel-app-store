@@ -1,35 +1,32 @@
 manifestVersion: 1
 id: denny-dawarich
 name: Dawarich
-tagline: A smart cloud for your files
+tagline: A Location History Tracker
 icon: icon.png
-category: test
-version: "3.1.0"
+category: files & productivity
+version: "0.30.8"
 port: 8955
 description: >-
-  OwnCloud is a comprehensive software application designed to provide users with a personal cloud storage solution that combines file management, collaboration, and organizational tools in one platform. It allows users to upload, store, and organize their files in a secure, centralized environment, making it easy to keep track of documents, photos, videos, and other types of data. With OwnCloud, files can be synchronized seamlessly across multiple devices such as computers, smartphones, and tablets, ensuring that users always have access to the most up-to-date versions no matter where they are or what device they are using.
+  🌍 Dawarich is an application that enables you to capture, explore and relive your personal location history in a private and meaningful way. It works by continuously collecting your movement data and transforming it into a rich, interactive representation of your journeys. Every place you visit becomes part of a visual timeline, allowing you to see exactly where you have been and when you were there. This timeline can be navigated effortlessly, letting you jump to specific dates or periods to revisit the paths you took and the places you explored.
 
 
-  The application offers advanced sharing capabilities, enabling users to share files and folders with colleagues, friends, or family members. Access permissions can be finely tuned to grant read-only, editing, or full control rights, which helps maintain privacy and security while promoting collaboration. OwnCloud also supports real-time collaboration on documents, allowing multiple users to work together efficiently, whether it is for business projects, academic work, or personal tasks.
+  The application provides detailed statistics about your movements, including total distances traveled, time spent in specific locations and the number of cities and countries visited. These insights are presented in a visually engaging way, turning your travels into a living record. A scratch-map style view allows you to highlight visited countries and regions, offering a clear picture of your travel footprint. Interactive maps show your routes and stops, helping you rediscover the small details of each journey, from long trips abroad to everyday movements close to home.
 
 
-  Beyond basic file storage and sharing, OwnCloud includes a range of integrated productivity features. Users can manage calendars to keep track of appointments and events, organize contacts to maintain communication information, create and track tasks to boost productivity, and take notes that are easily accessible from any device. These additional tools turn OwnCloud into more than just a file repository; it becomes a centralized hub for managing various aspects of daily life and work.
+  Dawarich also supports the import of existing location data from various sources, allowing you to integrate years of past travel into your personal history. Whether the data comes from other tracking tools, fitness applications, GPX files or geotagged photos, it can be merged seamlessly into the timeline. This means your location history is not only a record of recent activities but also a complete archive of your past movements.
 
 
-  Security and control are core aspects of OwnCloud. The platform places a strong emphasis on data privacy by offering encryption options, user authentication, and detailed logging of access and changes. This ensures that sensitive information remains protected and that users have full visibility over who accesses their data and how it is used.
-
-
-  Overall, OwnCloud combines the convenience of cloud storage with powerful collaboration and organizational tools, providing users with a versatile and secure environment to manage their digital content efficiently and on their own terms.
-developer: OwnCloud GmbH
-website: https://owncloud.com
+  The result is a beautifully designed, data-rich environment that gives you full ownership of your location information. It turns raw movement records into an insightful, personal story that you can explore at any time, preserving your journeys and experiences in a form that is both private and visually compelling.
+developer: ZeitFlow UG
+website: https://dawarich.app/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/owncloud-docker/server
-support: https://github.com/owncloud-docker/server/issues
+repo: https://github.com/Freika/dawarich
+support: https://github.com/Freika/dawarich/issues
 gallery:
   - 1.jpg
 releaseNotes: >-
-  The ownCloud Core 10.15.3 update disables the outdated web updater by removing its integration from the admin interface to prevent potential issues. Additionally, it improves security by strengthening how remote services like WebDAV and CalDAV are resolved, ensuring they are loaded only from trusted sources.
+  Version 0.30.8 fixes issues with the fog of war feature so it now works correctly when zooming or moving the map, resolves a problem with incorrect visit suggestions, and restores proper functionality of the scratch map. These improvements enhance map interaction and ensure location data is displayed as intended.
 dependencies: []
 path: ""
 defaultUsername: "demo@dawarich.app"
