@@ -24,12 +24,12 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/arianrhodsandlot/retroassembly
 support: https://github.com/arianrhodsandlot/retroassembly/issues
 gallery:
-  - https://i.imgur.com/eEC7p0h
-  - https://i.imgur.com/KARGctG
-  - https://i.imgur.com/91nNwcl
-  - https://i.imgur.com/PNRdlcD
-  - https://i.imgur.com/cf8WL2c
-  - https://i.imgur.com/zXEAqBw
+  - https://i.imgur.com/eEC7p0h.png
+  - https://i.imgur.com/KARGctG.png
+  - https://i.imgur.com/91nNwcl.png
+  - https://i.imgur.com/PNRdlcD.png
+  - https://i.imgur.com/cf8WL2c.png
+  - https://i.imgur.com/zXEAqBw.png
 releaseNotes: >-
   This version marks the official v1 release of RetroAssembly, introducing several major improvements over the initial version. 
   
