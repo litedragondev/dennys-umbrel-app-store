@@ -2,7 +2,7 @@ manifestVersion: 1
 id: denny-retroassembly
 name: RetroAssembly
 tagline: A personal retro game collection cabinet
-icon: icon.png
+icon: https://i.imgur.com/mlMRALQ.png
 category: gaming
 version: "1.0"
 port: 5999
@@ -24,7 +24,12 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/arianrhodsandlot/retroassembly
 support: https://github.com/arianrhodsandlot/retroassembly/issues
 gallery:
-  - 1.jpg
+  - https://imgur.com/eEC7p0h
+  - https://imgur.com/KARGctG
+  - https://imgur.com/91nNwcl
+  - https://imgur.com/PNRdlcD
+  - https://imgur.com/cf8WL2c
+  - https://imgur.com/zXEAqBw
 releaseNotes: >-
   This version marks the official v1 release of RetroAssembly, introducing several major improvements over the initial version. 
   
