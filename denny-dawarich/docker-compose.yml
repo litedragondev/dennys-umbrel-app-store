@@ -58,7 +58,7 @@ services:
       DATABASE_PASSWORD: password
       DATABASE_NAME: dawarich_development
       MIN_MINUTES_SPENT_IN_CITY: 60
-      APPLICATION_HOSTS: "*"
+      APPLICATION_HOSTS: "umbrel.local, umbrel, umbrel-2.local, umbrel-2, umbrel-3.local, umbrel-3"
       TIME_ZONE: Europe/Berlin
       APPLICATION_PROTOCOL: http
       PROMETHEUS_EXPORTER_ENABLED: "false"
@@ -107,7 +107,7 @@ services:
       DATABASE_USERNAME: postgres
       DATABASE_PASSWORD: password
       DATABASE_NAME: dawarich_development
-      APPLICATION_HOSTS: "*"
+      APPLICATION_HOSTS: "umbrel.local, umbrel, umbrel-2.local, umbrel-2, umbrel-3.local, umbrel-3"
       BACKGROUND_PROCESSING_CONCURRENCY: 10
       APPLICATION_PROTOCOL: http
       PROMETHEUS_EXPORTER_ENABLED: "false"
