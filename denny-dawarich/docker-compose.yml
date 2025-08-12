@@ -1,56 +1,50 @@
-networks:
-  dawarich:
+version: '3.7'
+
 services:
-  dawarich_redis:
+  app_proxy:
+    environment:
+      APP_HOST: denny-dawarich_app_1
+      APP_PORT: 3000
+      PROXY_AUTH_ADD: "false"
+      
+  redis:
     image: redis:7.4-alpine
-    container_name: dawarich_redis
     command: redis-server
-    networks:
-      - dawarich
     volumes:
-      - dawarich_shared:/data
-    restart: always
+      - ${APP_DATA_DIR}/data/dawarich_data:/data
+    restart: on-failure
     healthcheck:
       test: [ "CMD", "redis-cli", "--raw", "incr", "ping" ]
       interval: 10s
       retries: 5
       start_period: 30s
       timeout: 10s
-  dawarich_db:
+      
+  db:
     image: postgis/postgis:17-3.5-alpine
     shm_size: 1G
-    container_name: dawarich_db
     volumes:
-      - dawarich_db_data:/var/lib/postgresql/data
-      - dawarich_shared:/var/shared
-      # - ./postgresql.conf:/etc/postgresql/postgresql.conf # Optional, uncomment if you want to use a custom config
-    networks:
-      - dawarich
+      - ${APP_DATA_DIR}/data/dawarich_db_data:/var/lib/postgresql/data
+      - ${APP_DATA_DIR}/data/dawarich_shared:/var/shared
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
       POSTGRES_DB: dawarich_development
-    restart: always
+    restart: on-failure
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready -U postgres -d dawarich_development" ]
       interval: 10s
       retries: 5
       start_period: 30s
       timeout: 10s
-    # command: postgres -c config_file=/etc/postgresql/postgresql.conf # Use custom config, uncomment if you want to use a custom config
-  dawarich_app:
+      
+  app:
     image: freikin/dawarich:latest
-    container_name: dawarich_app
     volumes:
-      - dawarich_public:/var/app/public
-      - dawarich_watched:/var/app/tmp/imports/watched
-      - dawarich_storage:/var/app/storage
-      - dawarich_db_data:/dawarich_db_data
-    networks:
-      - dawarich
-    ports:
-      - 8955:3000
-      # - 9394:9394 # Prometheus exporter, uncomment if needed
+      - ${APP_DATA_DIR}/data/dawarich_public:/var/app/public
+      - ${APP_DATA_DIR}/data/dawarich_watched:/var/app/tmp/imports/watched
+      - ${APP_DATA_DIR}/data/dawarich_storage:/var/app/storage
+      - ${APP_DATA_DIR}/data/dawarich_db_data:/dawarich_db_data
     stdin_open: true
     tty: true
     entrypoint: web-entrypoint.sh
@@ -58,14 +52,14 @@ services:
     restart: on-failure
     environment:
       RAILS_ENV: development
-      REDIS_URL: redis://dawarich_redis:6379
-      DATABASE_HOST: dawarich_db
+      REDIS_URL: redis://redis:6379
+      DATABASE_HOST: db
       DATABASE_USERNAME: postgres
       DATABASE_PASSWORD: password
       DATABASE_NAME: dawarich_development
       MIN_MINUTES_SPENT_IN_CITY: 60
       APPLICATION_HOSTS: umbrel-2.local
-      TIME_ZONE: Europe/London
+      TIME_ZONE: Europe/Berlin
       APPLICATION_PROTOCOL: http
       PROMETHEUS_EXPORTER_ENABLED: "false"
       PROMETHEUS_EXPORTER_HOST: 0.0.0.0
@@ -84,26 +78,23 @@ services:
       start_period: 30s
       timeout: 10s
     depends_on:
-      dawarich_db:
+      db:
         condition: service_healthy
         restart: true
-      dawarich_redis:
+      redis:
         condition: service_healthy
         restart: true
     deploy:
       resources:
         limits:
-          cpus: '0.50'    # Limit CPU usage to 50% of one core
-          memory: '4G'    # Limit memory usage to 4GB
-  dawarich_sidekiq:
+          cpus: '0.50' 
+          memory: '4G'
+  sidekiq:
     image: freikin/dawarich:latest
-    container_name: dawarich_sidekiq
     volumes:
-      - dawarich_public:/var/app/public
-      - dawarich_watched:/var/app/tmp/imports/watched
-      - dawarich_storage:/var/app/storage
-    networks:
-      - dawarich
+      - ${APP_DATA_DIR}/data/dawarich_public:/var/app/public
+      - ${APP_DATA_DIR}/data/dawarich_watched:/var/app/tmp/imports/watched
+      - ${APP_DATA_DIR}/data/dawarich_storage:/var/app/storage
     stdin_open: true
     tty: true
     entrypoint: sidekiq-entrypoint.sh
@@ -111,8 +102,8 @@ services:
     restart: on-failure
     environment:
       RAILS_ENV: development
-      REDIS_URL: redis://dawarich_redis:6379
-      DATABASE_HOST: dawarich_db
+      REDIS_URL: redis://redis:6379
+      DATABASE_HOST: db
       DATABASE_USERNAME: postgres
       DATABASE_PASSWORD: password
       DATABASE_NAME: dawarich_development
