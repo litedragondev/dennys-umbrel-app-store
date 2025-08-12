@@ -10,10 +10,10 @@ services:
   db:
     image: postgis/postgis:17-3.5-alpine
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d dawarich"]
+      test: ["CMD-SHELL", "pg_isready -U postgres -d dawarich_development"]
       interval: 10s
       retries: 5
-      start_period: 30s
+      start_period: 60s
       timeout: 10s
     volumes:
       - ${APP_DATA_DIR}/data/db:/var/lib/postgresql/data:rw
@@ -24,7 +24,6 @@ services:
       POSTGRES_DB: dawarich_development
     shm_size: 1G
     restart: on-failure
-    user: "1000:1000"
 
   redis:
     image: redis:7.4-alpine
