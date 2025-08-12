@@ -1,36 +1,39 @@
 manifestVersion: 1
 id: denny-litechat
 name: LiteChat
-tagline: A smart cloud for your files
+tagline: A local first AI chat app
 icon: icon.png
-category: test
+category: AI
 version: "0.2.9"
 port: 7744
 description: >-
-  OwnCloud is a comprehensive software application designed to provide users with a personal cloud storage solution that combines file management, collaboration, and organizational tools in one platform. It allows users to upload, store, and organize their files in a secure, centralized environment, making it easy to keep track of documents, photos, videos, and other types of data. With OwnCloud, files can be synchronized seamlessly across multiple devices such as computers, smartphones, and tablets, ensuring that users always have access to the most up-to-date versions no matter where they are or what device they are using.
+  💬 LiteChat is a sophisticated AI chat application designed to provide users with a seamless and private conversational experience. It enables interaction with various artificial intelligence language models, allowing users to engage in rich, dynamic dialogues. The application prioritizes user privacy by storing all data locally within the browser, meaning that no information is transmitted to external servers or third parties. This approach ensures that conversations and personal data remain secure and under the user's control at all times.
 
 
-  The application offers advanced sharing capabilities, enabling users to share files and folders with colleagues, friends, or family members. Access permissions can be finely tuned to grant read-only, editing, or full control rights, which helps maintain privacy and security while promoting collaboration. OwnCloud also supports real-time collaboration on documents, allowing multiple users to work together efficiently, whether it is for business projects, academic work, or personal tasks.
+  The platform supports a wide range of AI providers and models, offering flexibility and choice to users depending on their needs. This versatility allows users to experiment with different AI engines, each bringing unique capabilities and responses. By accommodating multiple models, LiteChat caters to a diverse set of use cases, from casual chatting to more complex and task-oriented interactions.
 
 
-  Beyond basic file storage and sharing, OwnCloud includes a range of integrated productivity features. Users can manage calendars to keep track of appointments and events, organize contacts to maintain communication information, create and track tasks to boost productivity, and take notes that are easily accessible from any device. These additional tools turn OwnCloud into more than just a file repository; it becomes a centralized hub for managing various aspects of daily life and work.
+  LiteChat’s architecture is built with modularity in mind, enabling the incorporation of advanced features such as agents that can perform specific tasks, workflows that automate multi-step processes, and custom rules that guide the behavior of the AI during conversations. This modular design empowers users to tailor the AI experience to their specific requirements and create highly personalized interactions.
 
 
-  Security and control are core aspects of OwnCloud. The platform places a strong emphasis on data privacy by offering encryption options, user authentication, and detailed logging of access and changes. This ensures that sensitive information remains protected and that users have full visibility over who accesses their data and how it is used.
+  In addition to conversational features, LiteChat includes tools for visualizing ideas and processes. Users can create diagrams and interactive workflows, which help in organizing thoughts, planning projects, or illustrating complex concepts within the chat environment. These visual elements enhance clarity and make the interaction more engaging and productive.
 
 
-  Overall, OwnCloud combines the convenience of cloud storage with powerful collaboration and organizational tools, providing users with a versatile and secure environment to manage their digital content efficiently and on their own terms.
-developer: OwnCloud GmbH
-website: https://owncloud.com
+  For users with a technical background, LiteChat offers extensive developer-friendly capabilities. It supports running custom scripts written in Python or JavaScript directly within the application, allowing for extended functionality and automation. Integration with version control systems further facilitates collaborative development and configuration management, making it easier to maintain and evolve AI-assisted workflows over time.
+
+
+  Overall, LiteChat combines privacy, flexibility, and powerful customization options to deliver a versatile AI chat platform that adapts to a wide variety of conversational and productivity needs. It is designed to give users complete control over their data and interactions while enabling advanced and creative uses of AI technology.
+developer: Dimitri Gilbert
+website: https://litechat.dev/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/owncloud-docker/server
-support: https://github.com/owncloud-docker/server/issues
+repo: https://github.com/DimitriGilbert/LiteChat
+support: https://github.com/DimitriGilbert/LiteChat/issues
 gallery:
   - 1.jpg
 releaseNotes: >-
-  The ownCloud Core 10.15.3 update disables the outdated web updater by removing its integration from the admin interface to prevent potential issues. Additionally, it improves security by strengthening how remote services like WebDAV and CalDAV are resolved, ensuring they are loaded only from trusted sources.
+  Version 0.2.9 includes settings for proxy and Formedible update, as well as various improvements and bug fixes.
 dependencies: []
 path: ""
-defaultUsername: "admin"
-defaultPassword: "umbrel"
+defaultUsername: ""
+defaultPassword: ""
