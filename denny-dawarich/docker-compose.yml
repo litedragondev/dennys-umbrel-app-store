@@ -9,7 +9,6 @@ services:
 
   db:
     image: postgis/postgis:17-3.5-alpine
-    container_name: dawarich_db
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres -d dawarich"]
       interval: 10s
@@ -29,7 +28,6 @@ services:
 
   redis:
     image: redis:7.4-alpine
-    container_name: dawarich_redis
     command: redis-server
     user: "1000:1000"
     healthcheck:
@@ -42,7 +40,6 @@ services:
 
   app:
     image: freikin/dawarich:latest
-    container_name: dawarich_app
     volumes:
       - ${APP_DATA_DIR}/data/public:/var/app/public:rw
       - ${APP_DATA_DIR}/data/watched:/var/app/tmp/imports/watched:rw
@@ -91,7 +88,6 @@ services:
 
   sidekiq:
     image: freikin/dawarich:latest
-    container_name: dawarich_sidekiq
     healthcheck:
       test: ["CMD-SHELL", "pgrep -f sidekiq"]
       interval: 10s
