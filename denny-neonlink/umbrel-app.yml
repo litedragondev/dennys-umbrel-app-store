@@ -1,36 +1,33 @@
 manifestVersion: 1
 id: denny-neonlink
 name: NeonLink
-tagline: A personal retro game collection cabinet
+tagline: A simple self-hosted bookmark service
 icon: icon.png
-category: test
-version: "1.10.3"
+category: files & productivity
+version: "1.4.19"
 port: 8332
 description: >-
-  OwnCloud is a comprehensive software application designed to provide users with a personal cloud storage solution that combines file management, collaboration, and organizational tools in one platform. It allows users to upload, store, and organize their files in a secure, centralized environment, making it easy to keep track of documents, photos, videos, and other types of data. With OwnCloud, files can be synchronized seamlessly across multiple devices such as computers, smartphones, and tablets, ensuring that users always have access to the most up-to-date versions no matter where they are or what device they are using.
+  🔗 NeonLink is a self-hosted web application designed to give users complete control over how they collect, organize, and revisit their favorite web resources. It provides a clean, intuitive, and visually engaging interface that transforms a simple list of bookmarks into a personalized library of online content. Each link saved in NeonLink is automatically enriched with metadata such as the website title, a brief description, and its favicon, creating a polished and easily recognizable collection that is both functional and aesthetically pleasing.
 
 
-  The application offers advanced sharing capabilities, enabling users to share files and folders with colleagues, friends, or family members. Access permissions can be finely tuned to grant read-only, editing, or full control rights, which helps maintain privacy and security while promoting collaboration. OwnCloud also supports real-time collaboration on documents, allowing multiple users to work together efficiently, whether it is for business projects, academic work, or personal tasks.
+  The application allows users to apply tags to bookmarks, enabling precise categorization and filtering. This makes it effortless to group similar resources together or to quickly locate a specific link using the built-in search functionality. Whether you are managing a large archive of research material or a small set of frequently visited sites, the tagging and search tools make navigation smooth and efficient.
 
 
-  Beyond basic file storage and sharing, OwnCloud includes a range of integrated productivity features. Users can manage calendars to keep track of appointments and events, organize contacts to maintain communication information, create and track tasks to boost productivity, and take notes that are easily accessible from any device. These additional tools turn OwnCloud into more than just a file repository; it becomes a centralized hub for managing various aspects of daily life and work.
+  NeonLink also offers a high degree of customization to suit individual tastes and workflows. Users can select or add their own background images to give the dashboard a distinct visual identity, turning it from a generic list into a space that feels personal and tailored. The organized layout presents bookmarks in a way that balances clarity and design, ensuring that the information you need is always easy to find.
 
 
-  Security and control are core aspects of OwnCloud. The platform places a strong emphasis on data privacy by offering encryption options, user authentication, and detailed logging of access and changes. This ensures that sensitive information remains protected and that users have full visibility over who accesses their data and how it is used.
-
-
-  Overall, OwnCloud combines the convenience of cloud storage with powerful collaboration and organizational tools, providing users with a versatile and secure environment to manage their digital content efficiently and on their own terms.
-developer: OwnCloud GmbH
-website: https://owncloud.com
+  At its core, NeonLink is focused on privacy and autonomy. All bookmarks are stored under the user’s control, without reliance on third-party services, which ensures that personal browsing habits remain private. It is built for people who value both functionality and independence in managing their online resources, making it an elegant and secure solution for anyone seeking a better way to store and access the websites that matter most to them.
+developer: AlexSciFier
+website: https://github.com/AlexSciFier/neonlink
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/owncloud-docker/server
-support: https://github.com/owncloud-docker/server/issues
+repo: https://github.com/AlexSciFier/neonlink
+support: https://github.com/AlexSciFier/neonlink/issues
 gallery:
   - 1.jpg
 releaseNotes: >-
-  The ownCloud Core 10.15.3 update disables the outdated web updater by removing its integration from the admin interface to prevent potential issues. Additionally, it improves security by strengthening how remote services like WebDAV and CalDAV are resolved, ensuring they are loaded only from trusted sources.
+  In version 1.4.19, several dependencies were updated to their latest versions, including cross-spawn, tar-fs, and rollup, improving stability and compatibility. The server framework Fastify was also upgraded to version 5.4.0, ensuring better performance and security. Overall, this release focuses on maintenance and keeping the project up to date.
 dependencies: []
 path: ""
-defaultUsername: "admin"
-defaultPassword: "umbrel"
+defaultUsername: ""
+defaultPassword: ""
