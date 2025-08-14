@@ -2,7 +2,7 @@ manifestVersion: 1
 id: denny-speedtest-tracker
 name: Speedtest Tracker
 tagline: A real-time internet performance monitor
-icon: icon.png
+icon: https://i.imgur.com/7AR6UmN.png
 category: networking
 version: "1.6.6"
 port: 8622
@@ -23,7 +23,11 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/alexjustesen/speedtest-tracker
 support: https://github.com/alexjustesen/speedtest-tracker/issues
 gallery:
-  - 1.jpg
+  - https://i.imgur.com/XXusTY9.png
+  - https://i.imgur.com/6d7yFKy.png
+  - https://i.imgur.com/4nCVHhr.png
+  - https://i.imgur.com/gcmDcbT.png
+  - https://i.imgur.com/hvjHOmv.png
 releaseNotes: >-
   Version 1.6.6 of Speedtest Tracker introduces several improvements and fixes. 
   
