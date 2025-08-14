@@ -1,35 +1,37 @@
 manifestVersion: 1
 id: denny-speedtest-tracker
 name: Speedtest Tracker
-tagline: A personal retro game collection cabinet
+tagline: A real-time internet performance monitor
 icon: icon.png
-category: test
-version: "1.10.3"
+category: networking
+version: "1.6.6"
 port: 8622
 description: >-
-  OwnCloud is a comprehensive software application designed to provide users with a personal cloud storage solution that combines file management, collaboration, and organizational tools in one platform. It allows users to upload, store, and organize their files in a secure, centralized environment, making it easy to keep track of documents, photos, videos, and other types of data. With OwnCloud, files can be synchronized seamlessly across multiple devices such as computers, smartphones, and tablets, ensuring that users always have access to the most up-to-date versions no matter where they are or what device they are using.
+  Speedtest Tracker is an application designed to continuously monitor the performance and reliability of your internet connection. It performs regular speed tests to measure download speeds, upload speeds, and latency, capturing detailed data about your network’s performance over time. By collecting this information consistently, it provides a complete view of how your internet connection behaves under different conditions and at various times of the day.
 
+  The application presents all recorded results in a clean and interactive dashboard. Users can explore historical data, visualize trends, and identify patterns in their internet performance. This allows them to see when speeds fluctuate, detect recurring issues, and gain a better understanding of the overall stability of their connection. The dashboard is designed to make complex data easy to understand, offering both high-level summaries and detailed insights into each speed test.
 
-  The application offers advanced sharing capabilities, enabling users to share files and folders with colleagues, friends, or family members. Access permissions can be finely tuned to grant read-only, editing, or full control rights, which helps maintain privacy and security while promoting collaboration. OwnCloud also supports real-time collaboration on documents, allowing multiple users to work together efficiently, whether it is for business projects, academic work, or personal tasks.
+  In addition to monitoring and visualization, Speedtest Tracker offers the ability to set alerts and notifications. Users can define thresholds for performance, and the application will notify them whenever their connection falls below these levels. This proactive approach helps users address problems quickly and ensures they are always aware of any interruptions or slowdowns in their internet service.
 
+  Another important feature is the export of historical data. Users can download their collected speed test results in formats suitable for further analysis. This makes it possible to perform custom investigations, compare performance over long periods, and even generate reports for work or personal use. The application also supports multiple users with different access levels, allowing teams or households to centrally monitor internet performance while maintaining appropriate control over who can view and manage the data.
 
-  Beyond basic file storage and sharing, OwnCloud includes a range of integrated productivity features. Users can manage calendars to keep track of appointments and events, organize contacts to maintain communication information, create and track tasks to boost productivity, and take notes that are easily accessible from any device. These additional tools turn OwnCloud into more than just a file repository; it becomes a centralized hub for managing various aspects of daily life and work.
-
-
-  Security and control are core aspects of OwnCloud. The platform places a strong emphasis on data privacy by offering encryption options, user authentication, and detailed logging of access and changes. This ensures that sensitive information remains protected and that users have full visibility over who accesses their data and how it is used.
-
-
-  Overall, OwnCloud combines the convenience of cloud storage with powerful collaboration and organizational tools, providing users with a versatile and secure environment to manage their digital content efficiently and on their own terms.
-developer: OwnCloud GmbH
-website: https://owncloud.com
+  Overall, Speedtest Tracker provides a comprehensive, intuitive, and actionable view of internet performance, helping users understand, track, and respond to changes in their network’s behavior over time.
+developer: Alex Justesen
+website: speedtest-tracker.dev/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/owncloud-docker/server
-support: https://github.com/owncloud-docker/server/issues
+repo: https://github.com/alexjustesen/speedtest-tracker
+support: https://github.com/alexjustesen/speedtest-tracker/issues
 gallery:
   - 1.jpg
 releaseNotes: >-
-  The ownCloud Core 10.15.3 update disables the outdated web updater by removing its integration from the admin interface to prevent potential issues. Additionally, it improves security by strengthening how remote services like WebDAV and CalDAV are resolved, ensuring they are loaded only from trusted sources.
+  Version 1.6.6 of Speedtest Tracker introduces several improvements and fixes. 
+  
+  
+  The update fixes text color issues on the getting started page for the light theme, adds a multi-database CI pipeline, and consolidates various API endpoints into dedicated controllers. 
+  
+  
+  It also adds a notification to show when an app update is available.
 dependencies: []
 path: ""
 defaultUsername: "login@umbrel.admin"
