@@ -8,7 +8,7 @@ services:
 
   app:
     image: alexscifier/neonlink:v1.4.19@sha256:5b672e0caa801ffc5e651d8d53ff1be01d8acf0c3af53d16ecccc933a8fc5990
-    user: "1000:1000"
+    user: "0:0"
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/app_data:/app/data
