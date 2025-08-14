@@ -7,13 +7,17 @@ category: networking
 version: "1.6.6"
 port: 8622
 description: >-
-  Speedtest Tracker is an application designed to continuously monitor the performance and reliability of your internet connection. It performs regular speed tests to measure download speeds, upload speeds, and latency, capturing detailed data about your network’s performance over time. By collecting this information consistently, it provides a complete view of how your internet connection behaves under different conditions and at various times of the day.
+  ⚡ Speedtest Tracker is an application designed to continuously monitor the performance and reliability of your internet connection. It performs regular speed tests to measure download speeds, upload speeds, and latency, capturing detailed data about your network’s performance over time. By collecting this information consistently, it provides a complete view of how your internet connection behaves under different conditions and at various times of the day.
+
 
   The application presents all recorded results in a clean and interactive dashboard. Users can explore historical data, visualize trends, and identify patterns in their internet performance. This allows them to see when speeds fluctuate, detect recurring issues, and gain a better understanding of the overall stability of their connection. The dashboard is designed to make complex data easy to understand, offering both high-level summaries and detailed insights into each speed test.
 
+
   In addition to monitoring and visualization, Speedtest Tracker offers the ability to set alerts and notifications. Users can define thresholds for performance, and the application will notify them whenever their connection falls below these levels. This proactive approach helps users address problems quickly and ensures they are always aware of any interruptions or slowdowns in their internet service.
 
+
   Another important feature is the export of historical data. Users can download their collected speed test results in formats suitable for further analysis. This makes it possible to perform custom investigations, compare performance over long periods, and even generate reports for work or personal use. The application also supports multiple users with different access levels, allowing teams or households to centrally monitor internet performance while maintaining appropriate control over who can view and manage the data.
+
 
   Overall, Speedtest Tracker provides a comprehensive, intuitive, and actionable view of internet performance, helping users understand, track, and respond to changes in their network’s behavior over time.
 developer: Alex Justesen
