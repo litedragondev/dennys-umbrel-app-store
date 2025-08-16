@@ -8,6 +8,7 @@ services:
 
   db:
     image: docker.io/bitnami/mongodb:7.0.5-debian-11-r22
+    user: "1000:1000"
     hostname: rocketchat-db
     security_opt:
       - no-new-privileges:true
@@ -28,6 +29,7 @@ services:
 
   rocketchat:
     image: rocketchat/rocket.chat:latest
+    user: "1000:1000"
     hostname: rocketchat
     security_opt:
       - no-new-privileges:true
