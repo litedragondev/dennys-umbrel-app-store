@@ -2,53 +2,46 @@ version: "3.7"
 
 services:
   app_proxy:
+    image: ghcr.io/umbrel/umbrel-app-proxy:latest
+    container_name: denny-rocketchat_app_proxy_1
     environment:
-      APP_HOST: denny-rocketchat_rocketchat_1
+      APP_HOST: rocketchat
       APP_PORT: 3000
+    ports:
+      - "3459:3459"
+    depends_on:
+      rocketchat:
+        condition: service_healthy
+    restart: unless-stopped
 
-  db:
-    image: docker.io/bitnami/mongodb:7.0.5-debian-11-r22
-    user: "1000:1000"
-    hostname: rocketchat-db
-    security_opt:
-      - no-new-privileges:true
-    healthcheck:
-      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
-      interval: 10s
-      timeout: 10s
-      retries: 5
-      start_period: 20s
-    environment:
-      MONGODB_REPLICA_SET_MODE: primary
-      MONGODB_REPLICA_SET_NAME: rs0
-      ALLOW_EMPTY_PASSWORD: 1
-      MONGODB_SYSTEM_LOG_VERBOSITY: 3
+  mongo:
+    image: mongo:7.0
+    container_name: denny-rocketchat_mongo_1
+    restart: on-failure:5
     volumes:
-      - ${APP_DATA_DIR}/db:/bitnami/mongodb
-    restart: on-failure
+      - ${APP_DATA_DIR}/db:/data/db
+    healthcheck:
+      test: ["CMD", "mongo", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    user: "1000:1000"
 
   rocketchat:
     image: rocketchat/rocket.chat:latest
-    user: "1000:1000"
-    hostname: rocketchat
-    security_opt:
-      - no-new-privileges:true
-    healthcheck:
-      test: ["CMD-SHELL", "nc -z 127.0.0.1 3000 || exit 1"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-      start_period: 90s
+    container_name: denny-rocketchat_rocketchat_1
+    restart: on-failure:5
     environment:
-      MONGO_URL: mongodb://rocketchat-db:27017/rocketchat?replicaSet=rs0
-      MONGO_OPLOG_URL: mongodb://rocketchat-db:27017/local?replicaSet=rs0
-      ROOT_URL: http://umbrel-2.local:3458
-      URL: http://umbrel-2.local:3458
+      MONGO_URL: mongodb://mongo:27017/rocketchat
+      ROOT_URL: http://umbrel-2.local:3459
       PORT: 3000
-      DEPLOY_METHOD: docker
     volumes:
       - ${APP_DATA_DIR}/data:/app/uploads
-    restart: on-failure
     depends_on:
-      db:
-        condition: service_started
+      mongo:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:3000 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
