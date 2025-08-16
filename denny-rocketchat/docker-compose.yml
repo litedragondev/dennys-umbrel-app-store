@@ -7,15 +7,12 @@ services:
       APP_PORT: 3000
 
   db:
-    image: docker.io/bitnami/mongodb:7.0.5-debian-11-r22
-    environment:
-      MONGODB_REPLICA_SET_MODE: primary
-      MONGODB_REPLICA_SET_NAME: rs0
-      ALLOW_EMPTY_PASSWORD: 1
-      MONGODB_SYSTEM_LOG_VERBOSITY: 3
+    image: mongo:7
+    restart: unless-stopped
+    command: ["mongod", "--replSet", "rs0", "--bind_ip_all"]
     volumes:
-      - ${APP_DATA_DIR}/db:/bitnami/mongodb
-    restart: on-failure
+      - ${APP_DATA_DIR}/db:/data/db
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
 
   app:
     image: rocketchat/rocket.chat:latest
@@ -23,12 +20,10 @@ services:
       MONGO_URL: mongodb://db:27017/rocketchat?replicaSet=rs0
       MONGO_OPLOG_URL: mongodb://db:27017/local?replicaSet=rs0
       ROOT_URL: http://umbrel-2.local:3458
-      URL: http://umbrel-2.local:3458
       PORT: 3000
       DEPLOY_METHOD: docker
     volumes:
       - ${APP_DATA_DIR}/data:/app/uploads
-    restart: on-failure
+    restart: unless-stopped
     depends_on:
-      db:
-        condition: service_started
+      - db
