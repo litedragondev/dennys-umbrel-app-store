@@ -1,36 +1,34 @@
 manifestVersion: 1
 id: denny-moocup
 name: Moocup
-tagline: A personal retro game collection cabinet
-icon: icon.png
-category: test
-version: "1.5.0"
+tagline: A visual editor to create stunning screenshots
+icon: https://i.imgur.com/BYIlVQx.png
+category: In Progress
+version: "1.0.0"
 port: 3458
 description: >-
-  OwnCloud is a comprehensive software application designed to provide users with a personal cloud storage solution that combines file management, collaboration, and organizational tools in one platform. It allows users to upload, store, and organize their files in a secure, centralized environment, making it easy to keep track of documents, photos, videos, and other types of data. With OwnCloud, files can be synchronized seamlessly across multiple devices such as computers, smartphones, and tablets, ensuring that users always have access to the most up-to-date versions no matter where they are or what device they are using.
+  ☕ Moocup is an open source application designed to turn plain screenshots into beautiful and professional looking visuals. Instead of leaving a screenshot in its raw form, the tool enhances it with refined design elements that make the image stand out. The goal is to provide an effortless way to transform something ordinary into something visually engaging.
 
+  At its core, Moocup focuses on simplicity. You start with a screenshot, and the application automatically applies a clean base style. This initial styling already improves the overall appearance, but you are not limited to it. You can continue to adjust and refine the design so that the final result fits your personal taste or the visual identity of your project.
 
-  The application offers advanced sharing capabilities, enabling users to share files and folders with colleagues, friends, or family members. Access permissions can be finely tuned to grant read-only, editing, or full control rights, which helps maintain privacy and security while promoting collaboration. OwnCloud also supports real-time collaboration on documents, allowing multiple users to work together efficiently, whether it is for business projects, academic work, or personal tasks.
+  The real strength of Moocup lies in how it bridges the gap between design and accessibility. It enables people without design expertise to produce screenshots that look as if they were crafted by a professional. At the same time, it is flexible enough for creative users who want to fine tune details and create highly polished results.
 
+  Because the process is so fast and straightforward, Moocup is well suited for situations where presentation matters. Screenshots used in portfolios, product showcases, documentation, or social media posts instantly gain more impact when styled with Moocup. The tool reduces the effort required to make content look appealing while keeping the creative control in your hands.
 
-  Beyond basic file storage and sharing, OwnCloud includes a range of integrated productivity features. Users can manage calendars to keep track of appointments and events, organize contacts to maintain communication information, create and track tasks to boost productivity, and take notes that are easily accessible from any device. These additional tools turn OwnCloud into more than just a file repository; it becomes a centralized hub for managing various aspects of daily life and work.
-
-
-  Security and control are core aspects of OwnCloud. The platform places a strong emphasis on data privacy by offering encryption options, user authentication, and detailed logging of access and changes. This ensures that sensitive information remains protected and that users have full visibility over who accesses their data and how it is used.
-
-
-  Overall, OwnCloud combines the convenience of cloud storage with powerful collaboration and organizational tools, providing users with a versatile and secure environment to manage their digital content efficiently and on their own terms.
-developer: OwnCloud GmbH
-website: https://owncloud.com
+  In essence, Moocup is about transforming the everyday screenshot into a visual asset. It empowers you to communicate ideas more effectively by giving even the simplest image a sense of style and professionalism.
+developer: Jaydip Sanghani
+website: https://moocup.jaydip.me/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/owncloud-docker/server
-support: https://github.com/owncloud-docker/server/issues
+repo: https://github.com/jellydeck/moocup
+support: https://github.com/jellydeck/moocup/issues
 gallery:
-  - 1.jpg
+  - https://i.imgur.com/kvyRcwx.png
+  - https://i.imgur.com/kvyRcwx.png
+  - https://i.imgur.com/kvyRcwx.png
 releaseNotes: >-
-  The ownCloud Core 10.15.3 update disables the outdated web updater by removing its integration from the admin interface to prevent potential issues. Additionally, it improves security by strengthening how remote services like WebDAV and CalDAV are resolved, ensuring they are loaded only from trusted sources.
+  There is no versioning for Moocup and therefore no changelogs are available.
 dependencies: []
 path: ""
-defaultUsername: "admin"
-defaultPassword: "umbrel"
+defaultUsername: ""
+defaultPassword: ""
