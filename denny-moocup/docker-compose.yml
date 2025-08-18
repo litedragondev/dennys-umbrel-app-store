@@ -8,7 +8,6 @@ services:
 
   app:
     image: jellydeck/moocup:latest
-    user: "1000:1000"
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data:/data
