@@ -3,7 +3,7 @@ id: denny-moocup
 name: Moocup
 tagline: A visual editor to create stunning screenshots
 icon: https://i.imgur.com/BYIlVQx.png
-category: In Progress
+category: files & productivity
 version: "1.0.0"
 port: 3458
 description: >-
