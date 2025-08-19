@@ -31,7 +31,7 @@ gallery:
   - https://i.imgur.com/kvyRcwx.png
   - https://i.imgur.com/kvyRcwx.png
 releaseNotes: >-
-  There is no versioning for Moocup and therefore no changelogs are available.
+  This version marks the first official release of Moocup and introduces multi-arch Docker builds for amd64 and arm64. It also enables automatic semantic versioning for future updates and improves the Docker build and push workflow, with images now published under both latest and versioned tags.
 dependencies: []
 path: ""
 defaultUsername: ""
