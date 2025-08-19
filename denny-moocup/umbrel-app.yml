@@ -27,9 +27,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/jellydeck/moocup
 support: https://github.com/jellydeck/moocup/issues
 gallery:
-  - https://i.imgur.com/kvyRcwx.png
-  - https://i.imgur.com/kvyRcwx.png
-  - https://i.imgur.com/kvyRcwx.png
+  - https://i.imgur.com/egUlScQ.png
+  - https://i.imgur.com/kkk2goK.png
+  - https://i.imgur.com/U4JBIhI.png
 releaseNotes: >-
   This version marks the first official release of Moocup and introduces multi-arch Docker builds for amd64 and arm64. It also enables automatic semantic versioning for future updates and improves the Docker build and push workflow, with images now published under both latest and versioned tags.
 dependencies: []
