@@ -7,7 +7,7 @@ services:
       APP_PORT: 7880
 
   db:
-    image: postgres:17
+    image: postgres:17.6@sha256:29e0bb09c8e7e7fc265ea9f4367de9622e55bae6b0b97e7cce740c2d63c2ebc0
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/db:/var/lib/postgresql/data:rw
@@ -17,7 +17,7 @@ services:
       - POSTGRES_PASSWORD=docspellpass
 
   solr:
-    image: solr:latest
+    image: solr:9.9.0@sha256:6cc61e53edc21b02fc0c86fc835c47061f57892b7ee01f189880000ac5602b16
     restart: on-failure
     command:
       - solr-precreate
@@ -50,7 +50,7 @@ services:
       - solr
 
   joex:
-    image: docspell/joex:latest
+    image: docspell/joex:v0.42.0@sha256:b21d2285e49c0869d827dcba631ff10d574c673eb8df2ebf7fc1f326d0afd581
     restart: on-failure
     environment:
       - TZ=Europe/Berlin
