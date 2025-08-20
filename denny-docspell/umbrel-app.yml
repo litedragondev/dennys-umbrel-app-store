@@ -4,7 +4,7 @@ name: Docspell
 tagline: A personal document organizer
 icon: https://i.imgur.com/MPmI4AF.png
 category: In Progress
-version: "0.43.0"
+version: "0.42.0"
 port: 7853
 description: >-
   🗃️ Docspell is an open source document management system designed to simplify the way users handle their digital documents. The application focuses on organizing, categorizing, and making documents easily retrievable, providing an efficient solution for managing both personal and professional paperwork. It automatically extracts important metadata from documents, such as sender information, dates, and relevant tags. This feature allows users to sort and organize their files without spending time on manual classification, ensuring that documents are systematically stored and ready for retrieval whenever needed.
