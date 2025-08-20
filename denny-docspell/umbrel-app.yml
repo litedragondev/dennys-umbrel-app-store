@@ -24,9 +24,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/eikek/docspell
 support: https://github.com/eikek/docspell/issues
 gallery:
-  - https://i.imgur.com/20fJRjs.png
-  - https://i.imgur.com/20fJRjs.png
-  - https://i.imgur.com/20fJRjs.png
+  - https://i.imgur.com/gTJ6yj5.png
+  - https://i.imgur.com/gTJ6yj5.png
+  - https://i.imgur.com/gTJ6yj5.png
 releaseNotes: >-
   This version of Docspell mainly focuses on bug fixes and maintenance improvements. It resolves issues like sidebar scrolling, duplicate tasks on reboot, and deprecated options in WeasyPrint, while also correcting a German word typo. 
   
