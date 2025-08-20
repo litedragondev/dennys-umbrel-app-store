@@ -17,6 +17,9 @@ description: >-
 
 
   In addition, Docspell provides a well documented REST API that allows integration with other applications. This enables automation and connectivity with other systems, enhancing workflow efficiency. The overall goal of the application is to reduce the effort required to manage documents, increase accessibility, and ensure that all information is organized in a logical and reliable manner, allowing users to focus on their work without worrying about lost or misplaced documents.
+
+
+  ⚠️ When you add your own credentials, ensure the Collective ID and User Login are the same.
 developer: eikek
 website: https://docspell.org/
 submitter: dennysubke
