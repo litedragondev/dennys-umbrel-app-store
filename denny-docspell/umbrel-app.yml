@@ -1,36 +1,38 @@
 manifestVersion: 1
 id: denny-docspell
 name: Docspell
-tagline: A personal retro game collection cabinet
-icon: icon.png
-category: test
-version: "1.5.0"
+tagline: A personal document organizer
+icon: https://i.imgur.com/MPmI4AF.png
+category: In Progress
+version: "0.43.0"
 port: 7853
 description: >-
-  OwnCloud is a comprehensive software application designed to provide users with a personal cloud storage solution that combines file management, collaboration, and organizational tools in one platform. It allows users to upload, store, and organize their files in a secure, centralized environment, making it easy to keep track of documents, photos, videos, and other types of data. With OwnCloud, files can be synchronized seamlessly across multiple devices such as computers, smartphones, and tablets, ensuring that users always have access to the most up-to-date versions no matter where they are or what device they are using.
+  🗃️ Docspell is an open source document management system designed to simplify the way users handle their digital documents. The application focuses on organizing, categorizing, and making documents easily retrievable, providing an efficient solution for managing both personal and professional paperwork. It automatically extracts important metadata from documents, such as sender information, dates, and relevant tags. This feature allows users to sort and organize their files without spending time on manual classification, ensuring that documents are systematically stored and ready for retrieval whenever needed.
 
 
-  The application offers advanced sharing capabilities, enabling users to share files and folders with colleagues, friends, or family members. Access permissions can be finely tuned to grant read-only, editing, or full control rights, which helps maintain privacy and security while promoting collaboration. OwnCloud also supports real-time collaboration on documents, allowing multiple users to work together efficiently, whether it is for business projects, academic work, or personal tasks.
+  One of the key features of Docspell is its ability to process scanned documents through optical character recognition technology. This transforms images and PDF files into fully searchable text, allowing users to locate specific information within documents quickly. The system’s powerful full text search functionality ensures that even documents with large volumes of content can be searched effortlessly, making it easy to find precise information based on any keyword or phrase.
 
 
-  Beyond basic file storage and sharing, OwnCloud includes a range of integrated productivity features. Users can manage calendars to keep track of appointments and events, organize contacts to maintain communication information, create and track tasks to boost productivity, and take notes that are easily accessible from any device. These additional tools turn OwnCloud into more than just a file repository; it becomes a centralized hub for managing various aspects of daily life and work.
+  Docspell also offers a highly intuitive and user friendly web interface that can be accessed across different devices. The interface is designed to be visually clear and supports both light and dark modes, providing a comfortable user experience in various lighting conditions. Users can import documents directly from emails or upload files from cloud services, streamlining the process of adding new documents to the system.
 
 
-  Security and control are core aspects of OwnCloud. The platform places a strong emphasis on data privacy by offering encryption options, user authentication, and detailed logging of access and changes. This ensures that sensitive information remains protected and that users have full visibility over who accesses their data and how it is used.
-
-
-  Overall, OwnCloud combines the convenience of cloud storage with powerful collaboration and organizational tools, providing users with a versatile and secure environment to manage their digital content efficiently and on their own terms.
-developer: OwnCloud GmbH
-website: https://owncloud.com
+  In addition, Docspell provides a well documented REST API that allows integration with other applications. This enables automation and connectivity with other systems, enhancing workflow efficiency. The overall goal of the application is to reduce the effort required to manage documents, increase accessibility, and ensure that all information is organized in a logical and reliable manner, allowing users to focus on their work without worrying about lost or misplaced documents.
+developer: eikek
+website: https://docspell.org/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/owncloud-docker/server
-support: https://github.com/owncloud-docker/server/issues
+repo: https://github.com/eikek/docspell
+support: https://github.com/eikek/docspell/issues
 gallery:
-  - 1.jpg
+  - https://i.imgur.com/20fJRjs.png
+  - https://i.imgur.com/20fJRjs.png
+  - https://i.imgur.com/20fJRjs.png
 releaseNotes: >-
-  The ownCloud Core 10.15.3 update disables the outdated web updater by removing its integration from the admin interface to prevent potential issues. Additionally, it improves security by strengthening how remote services like WebDAV and CalDAV are resolved, ensuring they are loaded only from trusted sources.
+  This version of Docspell mainly focuses on bug fixes and maintenance improvements. It resolves issues like sidebar scrolling, duplicate tasks on reboot, and deprecated options in WeasyPrint, while also correcting a German word typo. 
+  
+  
+  Additionally, it cleans up development workflows, updates gitignore files, and moves Docker-related workflows to a separate repository.
 dependencies: []
 path: ""
-defaultUsername: "admin"
-defaultPassword: "umbrel"
+defaultUsername: ""
+defaultPassword: ""
