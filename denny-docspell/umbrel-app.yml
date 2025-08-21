@@ -3,7 +3,7 @@ id: denny-docspell
 name: Docspell
 tagline: A personal document organizer
 icon: https://i.imgur.com/MPmI4AF.png
-category: In Progress
+category: files & productivity
 version: "0.42.0"
 port: 7853
 description: >-
@@ -27,9 +27,12 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/eikek/docspell
 support: https://github.com/eikek/docspell/issues
 gallery:
-  - https://i.imgur.com/gTJ6yj5.png
-  - https://i.imgur.com/gTJ6yj5.png
-  - https://i.imgur.com/gTJ6yj5.png
+  - https://i.imgur.com/MbMXT0C.png
+  - https://i.imgur.com/DA3jJ7z.png
+  - https://i.imgur.com/4INc87z.png
+  - https://i.imgur.com/QnDxX4b.png
+  - https://i.imgur.com/3Zhf7s5.png
+  - https://i.imgur.com/TbykhCM.png
 releaseNotes: >-
   This version of Docspell mainly focuses on bug fixes and maintenance improvements. It resolves issues like sidebar scrolling, duplicate tasks on reboot, and deprecated options in WeasyPrint, while also correcting a German word typo. 
   
