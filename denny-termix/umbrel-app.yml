@@ -3,7 +3,7 @@ id: denny-termix
 name: Termix
 tagline: A server management platform with SSH terminal
 icon: https://i.imgur.com/ba0t4Pq.png
-category: In Progress
+category: networking
 version: "1.3.0"
 port: 6444
 description: >-
@@ -30,9 +30,11 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/LukeGus/Termix
 support: https://github.com/LukeGus/Termix/issues
 gallery:
-  - https://i.imgur.com/CuMS36U.png
-  - https://i.imgur.com/CuMS36U.png
-  - https://i.imgur.com/CuMS36U.png
+  - https://i.imgur.com/uqikjHM.png
+  - https://i.imgur.com/IJDSsLF.png
+  - https://i.imgur.com/q9jpIYl.png
+  - https://i.imgur.com/kFRVg2m.png
+  - https://i.imgur.com/VRAQ5Ad.png
 releaseNotes: >-
   This release introduces a redesigned and unified frontend, combining everything into a single server browser panel for easier management. It adds full file manager functionality with create, upload, rename, and delete operations, as well as real-time server statistics via SSH. The admin page was simplified, SSH tools improved with key recording, and a registration bug was fixed.
 dependencies: []
