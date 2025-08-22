@@ -2,7 +2,7 @@ manifestVersion: 1
 id: denny-termix
 name: Termix
 tagline: A server management platform with SSH terminal
-icon: https://i.imgur.com/ML2skIN.png
+icon: https://i.imgur.com/ba0t4Pq.png
 category: In Progress
 version: "1.3.0"
 port: 6444
