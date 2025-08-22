@@ -17,6 +17,14 @@ description: >-
 
 
   ⚠️ Quake III works best in Chromium-based browsers. Firefox may encounter compatibility issues due to WebGL or security restrictions.
+
+
+  🔧 System Requirements: A time machine to '99,
+                          Pentium II 266 MHz or AMD K6-2 350 MHz CPU, 
+                          64 MB RAM, 
+                          25 MB for game files,
+                          (Umbrel Home is 100x CPU, but will need to make 0.001192% of Free Space)
+                          Runs in the browser, will need to download 0.3906% of more RAM if needed from browser.
 developer: id Software
 website: https://github.com/id-Software/Quake-III-Arena
 submitter: dennysubke
