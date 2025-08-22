@@ -3,7 +3,7 @@ id: denny-nexterm
 name: Nexterm
 tagline: An efficient way to manage remote terminals with ease
 icon: https://i.imgur.com/t2OvDqy.png
-category: developer tools
+category: networking
 version: "1.0.2"
 port: 6989
 description: >-
