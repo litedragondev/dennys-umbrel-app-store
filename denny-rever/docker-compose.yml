@@ -22,6 +22,7 @@ services:
       MINIO_ENDPOINT: minio
       MINIO_ACCESS_KEY: minio
       MINIO_SECRET_KEY: minio123
+      DEFAULT_FILE_STORAGE: django.core.files.storage.FileSystemStorage
     command: gunicorn rever.wsgi:application --bind 0.0.0.0:8000 -w 4 --max-requests 1200 --max-requests-jitter 1000 --access-logfile -
 
   web:
@@ -48,6 +49,7 @@ services:
       MINIO_ENDPOINT: minio
       MINIO_ACCESS_KEY: minio
       MINIO_SECRET_KEY: minio123
+      DEFAULT_FILE_STORAGE: django.core.files.storage.FileSystemStorage
     command: celery -A rever worker --loglevel=info
 
   db:
