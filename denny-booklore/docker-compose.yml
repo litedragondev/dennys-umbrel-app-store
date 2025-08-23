@@ -10,7 +10,7 @@ services:
     image: booklore/booklore:v0.38.0@sha256:48d4cacd5961436a02b938dbb4f5b17bc4f9dd5ff3c8803170d268051088b9e4
     restart: on-failure
     environment:
-      DATABASE_URL: jdbc:mariadb://mariadb:3306/booklore
+      DATABASE_URL: jdbc:mariadb://db:3306/booklore
       DATABASE_USERNAME: bookloreuser
       DATABASE_PASSWORD: booklorepass
     depends_on:
