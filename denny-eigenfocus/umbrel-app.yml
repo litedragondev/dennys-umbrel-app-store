@@ -27,12 +27,12 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/Eigenfocus/eigenfocus
 support: https://github.com/Eigenfocus/eigenfocus/issues
 gallery:
-  - https://i.imgur.com/1rwnfAO.png
-  - https://i.imgur.com/RwgBhyG.png
-  - https://i.imgur.com/YOOVSZl.png
-  - https://i.imgur.com/FKa82xk.png
-  - https://i.imgur.com/krBkHgi.png
-  - https://i.imgur.com/H5Z1L5y.png
+  - https://i.imgur.com/QJcfQhQ.png
+  - https://i.imgur.com/QnCmsRE.png
+  - https://i.imgur.com/o7ZPySP.png
+  - https://i.imgur.com/xTEfPhj.png
+  - https://i.imgur.com/H1AZKlu.png
+  - https://i.imgur.com/V2UOkeA.png
 releaseNotes: >-
   This update introduces alerts for running time logs to prevent forgotten timers and adds the ability to register time in minutes or hours with saved preferences. It also allows finishing issues directly from the list view for a faster and simpler workflow.
 dependencies: []
