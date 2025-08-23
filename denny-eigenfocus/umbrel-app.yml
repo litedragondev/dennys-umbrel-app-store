@@ -7,29 +7,25 @@ category: test
 version: "1.3.0"
 port: 3390
 description: >-
-  OwnCloud is a comprehensive software application designed to provide users with a personal cloud storage solution that combines file management, collaboration, and organizational tools in one platform. It allows users to upload, store, and organize their files in a secure, centralized environment, making it easy to keep track of documents, photos, videos, and other types of data. With OwnCloud, files can be synchronized seamlessly across multiple devices such as computers, smartphones, and tablets, ensuring that users always have access to the most up-to-date versions no matter where they are or what device they are using.
+  ⏱️ Eigenfocus is a comprehensive application designed to bring together project management, task organization, time tracking and focus enhancing features in one unified environment. It is built to simplify the way projects are structured and followed through, while at the same time helping users stay concentrated and productive during their work sessions.
 
+  At its core, Eigenfocus provides flexible project management tools. Users can create projects, break them down into tasks and organize those tasks within customizable boards. Each task can include detailed information, labels and statuses, allowing projects to remain structured and transparent at every stage. This makes it possible to oversee both small and large projects with a clear understanding of what needs to be done and how progress is unfolding.
 
-  The application offers advanced sharing capabilities, enabling users to share files and folders with colleagues, friends, or family members. Access permissions can be finely tuned to grant read-only, editing, or full control rights, which helps maintain privacy and security while promoting collaboration. OwnCloud also supports real-time collaboration on documents, allowing multiple users to work together efficiently, whether it is for business projects, academic work, or personal tasks.
+  Time tracking is deeply integrated into the workflow. Work sessions can be logged directly on tasks or projects, giving users accurate data about how much time is being spent on specific activities. Reports can then be generated to show a complete overview of time distribution, making it easier to analyze productivity, identify bottlenecks and reflect on working habits.
 
+  Another defining aspect of Eigenfocus is its focus oriented environment. The application includes features such as timers and ambient sounds that are designed to support deep work and concentration. These tools transform the workspace into a place where distractions are minimized and attention can be directed fully toward the task at hand.
 
-  Beyond basic file storage and sharing, OwnCloud includes a range of integrated productivity features. Users can manage calendars to keep track of appointments and events, organize contacts to maintain communication information, create and track tasks to boost productivity, and take notes that are easily accessible from any device. These additional tools turn OwnCloud into more than just a file repository; it becomes a centralized hub for managing various aspects of daily life and work.
-
-
-  Security and control are core aspects of OwnCloud. The platform places a strong emphasis on data privacy by offering encryption options, user authentication, and detailed logging of access and changes. This ensures that sensitive information remains protected and that users have full visibility over who accesses their data and how it is used.
-
-
-  Overall, OwnCloud combines the convenience of cloud storage with powerful collaboration and organizational tools, providing users with a versatile and secure environment to manage their digital content efficiently and on their own terms.
-developer: OwnCloud GmbH
-website: https://owncloud.com
+  By combining project planning, detailed task management, precise time tracking and tools that promote focus, Eigenfocus offers a seamless workflow that connects planning, execution and reflection. It provides a space where ideas can be organized, work can be tracked and focus can be maintained, creating a balanced approach that supports both individual productivity and collaborative project success.
+developer: SoftVoid, LLC
+website: https://eigenfocus.com/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/owncloud-docker/server
-support: https://github.com/owncloud-docker/server/issues
+repo: https://github.com/Eigenfocus/eigenfocus
+support: https://github.com/Eigenfocus/eigenfocus/issues
 gallery:
   - 1.jpg
 releaseNotes: >-
-  The ownCloud Core 10.15.3 update disables the outdated web updater by removing its integration from the admin interface to prevent potential issues. Additionally, it improves security by strengthening how remote services like WebDAV and CalDAV are resolved, ensuring they are loaded only from trusted sources.
+  This update introduces alerts for running time logs to prevent forgotten timers and adds the ability to register time in minutes or hours with saved preferences. It also allows finishing issues directly from the list view for a faster and simpler workflow.
 dependencies: []
 path: ""
 defaultUsername: "admin"
