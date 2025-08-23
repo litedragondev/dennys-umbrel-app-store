@@ -3,34 +3,28 @@ id: denny-wally
 name: Wally
 tagline: A lightweight expense tracker
 icon: icon.png
-category: test
+category: finance
 version: "1.1"
 port: 3811
 description: >-
-  OwnCloud is a comprehensive software application designed to provide users with a personal cloud storage solution that combines file management, collaboration, and organizational tools in one platform. It allows users to upload, store, and organize their files in a secure, centralized environment, making it easy to keep track of documents, photos, videos, and other types of data. With OwnCloud, files can be synchronized seamlessly across multiple devices such as computers, smartphones, and tablets, ensuring that users always have access to the most up-to-date versions no matter where they are or what device they are using.
+  👛 Wally is a personal finance management application designed to help users take control of their money and gain a clear understanding of their financial situation. It provides a platform where users can easily record their income and expenses, ensuring that every transaction is accounted for. By keeping a detailed history of financial activity, Wally enables users to track their spending patterns over time and identify areas where they can save or adjust their budget.
 
 
-  The application offers advanced sharing capabilities, enabling users to share files and folders with colleagues, friends, or family members. Access permissions can be finely tuned to grant read-only, editing, or full control rights, which helps maintain privacy and security while promoting collaboration. OwnCloud also supports real-time collaboration on documents, allowing multiple users to work together efficiently, whether it is for business projects, academic work, or personal tasks.
+  The application allows users to categorize transactions, making it simple to see how much is being spent on different aspects of life such as groceries, transportation, or entertainment. This categorization helps users recognize trends in their spending and make informed decisions about where to allocate resources. Users can also view summaries and overviews of their financial activity, giving a comprehensive snapshot of their current financial health at a glance.
 
 
-  Beyond basic file storage and sharing, OwnCloud includes a range of integrated productivity features. Users can manage calendars to keep track of appointments and events, organize contacts to maintain communication information, create and track tasks to boost productivity, and take notes that are easily accessible from any device. These additional tools turn OwnCloud into more than just a file repository; it becomes a centralized hub for managing various aspects of daily life and work.
-
-
-  Security and control are core aspects of OwnCloud. The platform places a strong emphasis on data privacy by offering encryption options, user authentication, and detailed logging of access and changes. This ensures that sensitive information remains protected and that users have full visibility over who accesses their data and how it is used.
-
-
-  Overall, OwnCloud combines the convenience of cloud storage with powerful collaboration and organizational tools, providing users with a versatile and secure environment to manage their digital content efficiently and on their own terms.
-developer: OwnCloud GmbH
-website: https://owncloud.com
+  Wally emphasizes clarity and simplicity in its design, providing a clean and intuitive interface that makes managing finances accessible to everyone. It focuses on essential functionality without unnecessary features or distractions, allowing users to stay organized and make decisions based on accurate financial data. By offering insight into both income and expenses, Wally helps users plan for the future, manage their budget effectively, and develop healthier financial habits over time.
+developer: Pol Alzina
+website: https://github.com/polius/Wally
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/owncloud-docker/server
-support: https://github.com/owncloud-docker/server/issues
+repo: https://github.com/polius/Wally
+support: https://github.com/polius/Wally/issues
 gallery:
   - 1.jpg
 releaseNotes: >-
-  The ownCloud Core 10.15.3 update disables the outdated web updater by removing its integration from the admin interface to prevent potential issues. Additionally, it improves security by strengthening how remote services like WebDAV and CalDAV are resolved, ensuring they are loaded only from trusted sources.
+  This update introduces a new optional HTTPS environment variable that restricts authenticated API access to secure connections only, preventing authentication tokens from being sent over HTTP. Login sessions have also been improved with an expiration time for cookies, allowing sessions to persist even after closing the browser.
 dependencies: []
 path: ""
-defaultUsername: "admin"
-defaultPassword: "umbrel"
+defaultUsername: ""
+defaultPassword: ""
