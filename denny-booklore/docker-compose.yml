@@ -15,6 +15,7 @@ services:
       DATABASE_PASSWORD: booklorepass
     depends_on:
       db:
+        condition: service_started
     volumes:
       - ${APP_DATA_DIR}/data/app_data:/app/data
       - ${APP_DATA_DIR}/data/books:/books
