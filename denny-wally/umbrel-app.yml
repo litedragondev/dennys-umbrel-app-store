@@ -1,11 +1,11 @@
 manifestVersion: 1
 id: denny-wally
 name: Wally
-tagline: A personal retro game collection cabinet
+tagline: A lightweight expense tracker
 icon: icon.png
 category: test
-version: "1.3.0"
-port: 3390
+version: "1.1"
+port: 3811
 description: >-
   OwnCloud is a comprehensive software application designed to provide users with a personal cloud storage solution that combines file management, collaboration, and organizational tools in one platform. It allows users to upload, store, and organize their files in a secure, centralized environment, making it easy to keep track of documents, photos, videos, and other types of data. With OwnCloud, files can be synchronized seamlessly across multiple devices such as computers, smartphones, and tablets, ensuring that users always have access to the most up-to-date versions no matter where they are or what device they are using.
 
