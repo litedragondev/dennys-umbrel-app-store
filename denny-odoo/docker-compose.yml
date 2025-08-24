@@ -23,7 +23,7 @@ services:
 
   web:
     image: odoo:18
-    user: "1000:1000"
+    user: "0:0"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8069/"]
       interval: 10s
@@ -39,7 +39,6 @@ services:
       # https://github.com/odoo/docker/blob/master/18.0/odoo.conf
     environment:
       HOST: db
-      PORT: 5432
       USER: odoouser
       PASSWORD: odoopass
     restart: on-failure
