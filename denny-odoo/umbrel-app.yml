@@ -2,7 +2,7 @@ manifestVersion: 1
 id: denny-odoo
 name: Odoo
 tagline: A suite of web based open source business apps
-icon: icon.png
+icon: https://i.imgur.com/XGo6eDx.png
 category: In Progress
 version: "18.0"
 port: 8069
@@ -33,7 +33,9 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/odoo/odoo
 support: https://github.com/odoo/odoo/issues
 gallery:
-  - 1.jpg
+  - https://i.imgur.com/Nu5AUXu.png
+  - https://i.imgur.com/Nu5AUXu.png
+  - https://i.imgur.com/Nu5AUXu.png
 releaseNotes: >-
   This update introduces keyboard shortcuts to switch between companies quickly and enhances contact search by address. Error messages are now clearer, allowing users to provide technical details more easily, and the error debugging menu provides direct access to underlying models.
 
