@@ -26,7 +26,6 @@ services:
       - ${APP_DATA_DIR}/data/local:/.local:rw
 #     - ${APP_DATA_DIR}/config:/etc/odoo:rw
       # only needed for special configurations
-      # https://github.com/odoo/docker/blob/master/18.0/odoo.conf
     environment:
       HOST: db
       USER: odoouser
