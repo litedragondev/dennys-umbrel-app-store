@@ -3,7 +3,7 @@ id: denny-booklore
 name: BookLore
 tagline: An app for managing and reading books
 icon: https://i.imgur.com/d42NVXk.png
-category: In Progress
+category: files & productivity
 version: "0.38.0"
 port: 6060
 description: >-
