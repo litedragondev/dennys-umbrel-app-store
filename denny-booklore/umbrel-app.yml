@@ -42,9 +42,12 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/booklore-app/booklore
 support: https://github.com/booklore-app/booklore/issues
 gallery:
-  - https://i.imgur.com/pakFSUf.png
-  - https://i.imgur.com/pakFSUf.png
-  - https://i.imgur.com/pakFSUf.png
+  - https://i.imgur.com/jszQd1R.png
+  - https://i.imgur.com/LaWiGfv.png
+  - https://i.imgur.com/Qkx5hem.png
+  - https://i.imgur.com/D5wUplt.png
+  - https://i.imgur.com/FhBfuOf.png
+  - https://i.imgur.com/PGLf2QI.png
 releaseNotes: >-
   The v0.38.0 release of BookLore introduces the highly requested Kobo book sync and transfer feature, allowing users to seamlessly integrate their Kobo eReaders with their BookLore libraries. Each user now has a dedicated Kobo shelf with two-way sync, so adding or removing books on either platform is instantly reflected.
 
