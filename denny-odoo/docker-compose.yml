@@ -8,11 +8,6 @@ services:
       
   db:
     image: postgres:17
-    healthcheck:
-      test: ["CMD", "pg_isready", "-q", "-d", "postgres", "-U", "odoouser"]
-      timeout: 45s
-      interval: 10s
-      retries: 10
     volumes:
       - ${APP_DATA_DIR}/db:/var/lib/postgresql/data:rw
     environment:
@@ -24,11 +19,6 @@ services:
   web:
     image: odoo:18
     user: "0:0"
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8069/"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
     volumes:
       - ${APP_DATA_DIR}/web-data:/var/lib/odoo:rw
       - ${APP_DATA_DIR}/addons:/mnt/extra-addons:rw
@@ -44,4 +34,4 @@ services:
     restart: on-failure
     depends_on:
       db:
-        condition: service_healthy
+        condition: service_started
