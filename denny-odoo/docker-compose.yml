@@ -1,0 +1,47 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-odoo_web_1
+      APP_PORT: 8069
+      
+  db:
+    image: postgres:17
+    healthcheck:
+      test: ["CMD", "pg_isready", "-q", "-d", "postgres", "-U", "odoouser"]
+      timeout: 45s
+      interval: 10s
+      retries: 10
+    volumes:
+      - ${APP_DATA_DIR}/db:/var/lib/postgresql/data:rw
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: odoouser
+      POSTGRES_PASSWORD: odoopass
+    restart: on-failure
+
+  web:
+    image: odoo:18
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8069/"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - ${APP_DATA_DIR}/web-data:/var/lib/odoo:rw
+      - ${APP_DATA_DIR}/addons:/mnt/extra-addons:rw
+      - ${APP_DATA_DIR}/cache:/.cache/pip:rw
+      - ${APP_DATA_DIR}/local:/.local:rw
+#     - ${APP_DATA_DIR}/config:/etc/odoo:rw
+      # only needed for special configurations
+      # https://github.com/odoo/docker/blob/master/18.0/odoo.conf
+    environment:
+      HOST: db
+      PORT: 5432
+      USER: odoouser
+      PASSWORD: odoopass
+    restart: on-failure
+    depends_on:
+      db:
+        condition: service_healthy
