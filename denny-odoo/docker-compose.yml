@@ -25,7 +25,6 @@ services:
       - ${APP_DATA_DIR}/data/cache:/.cache/pip:rw
       - ${APP_DATA_DIR}/data/local:/.local:rw
 #     - ${APP_DATA_DIR}/config:/etc/odoo:rw
-      # only needed for special configurations
     environment:
       HOST: db
       USER: odoouser
