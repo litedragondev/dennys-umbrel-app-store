@@ -24,7 +24,6 @@ services:
       - ${APP_DATA_DIR}/data/addons:/mnt/extra-addons:rw
       - ${APP_DATA_DIR}/data/cache:/.cache/pip:rw
       - ${APP_DATA_DIR}/data/local:/.local:rw
-#     - ${APP_DATA_DIR}/config:/etc/odoo:rw
     environment:
       HOST: db
       USER: odoouser
