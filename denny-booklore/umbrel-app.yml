@@ -35,7 +35,7 @@ description: >-
 
 
   At its core, BookLore is more than just a management tool. It is a thoughtful environment for digital reading that combines organization, automation, sharing, and customization into a single experience. By bringing together the functional needs of cataloging with the emotional enjoyment of reading, it helps transform a scattered set of files into a living, evolving library that is both beautiful and deeply personal.
-developer: Booklore
+developer: BookLore
 website: https://demo.booklore.dev/login
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
