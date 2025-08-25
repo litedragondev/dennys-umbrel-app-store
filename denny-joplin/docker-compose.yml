@@ -1,45 +1,70 @@
-version: '3.7'
+version: "3.7"
 
 services:
   app_proxy:
     environment:
       APP_HOST: denny-joplin_server_1
       APP_PORT: 22300
-    networks:
-      - joplin-network
 
   db:
-    image: postgres:17.2@sha256:3267c505060a0052e5aa6e5175a7b41ab6b04da2f8c4540fc6e98a37210aa2d3
+    image: postgres:16
     restart: on-failure
+    user: "1000:1000"
     volumes:
-      - ${APP_DATA_DIR}/data/joplin/postgres:/var/lib/postgresql/data
+      - ${APP_DATA_DIR}/postgres:/var/lib/postgresql/data
     environment:
-      POSTGRES_USER: joplin
-      POSTGRES_PASSWORD: joplinpass
-      POSTGRES_DB: joplin
-    networks:
-      - joplin-network
+      - POSTGRES_PASSWORD=joplinpass
+      - POSTGRES_USER=joplinuser
+      - POSTGRES_DB=joplindb
 
   server:
-    image: joplin/server:3.0.1-beta@sha256:52af57880c0e04a179107807e13ffb8868b31ea2cc86a2b04da42220facb7589
+    image: joplin/server:latest
     restart: on-failure
-    environment:
-      APP_BASE_URL: http://umbrel-2.local:22300
-      DB_CLIENT: pg
-      POSTGRES_PASSWORD: joplinpass
-      POSTGRES_DATABASE: joplin
-      POSTGRES_USER: joplin
-      POSTGRES_PORT: 5432
-      POSTGRES_HOST: db
-      JOPLIN_EMAIL: admin@localhost
-      JOPLIN_PASSWORD: admin
+    container_name: denny-joplin_server_1
     depends_on:
       - db
+      - transcribe
+    environment:
+      - APP_PORT=22300
+      - APP_BASE_URL=http://${DEVICE_DOMAIN_NAME}:22300
+      - DB_CLIENT=pg
+      - POSTGRES_PASSWORD=joplinpass
+      - POSTGRES_DATABASE=joplindb
+      - POSTGRES_USER=joplinuser
+      - POSTGRES_PORT=5432
+      - POSTGRES_HOST=db
+      - TRANSCRIBE_API_KEY=transcribekey123
+      - TRANSCRIBE_BASE_URL=http://transcribe:4567
+      - TRANSCRIBE_ENABLED=true
     volumes:
-      - ${APP_DATA_DIR}/data/joplin:/var/lib/joplin
-    networks:
-      - joplin-network
+      - ${APP_DATA_DIR}/data:/var/lib/joplin
 
-networks:
-  joplin-network:
-    driver: bridge
+  transcribe-db:
+    image: postgres:16
+    restart: on-failure
+    user: "1000:1000"
+    volumes:
+      - ${APP_DATA_DIR}/transcribe-postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=transcribepass
+      - POSTGRES_USER=transcribeuser
+      - POSTGRES_DB=transcribedb
+
+  transcribe:
+    image: joplin/transcribe:latest
+    restart: on-failure
+    depends_on:
+      - transcribe-db
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${APP_DATA_DIR}/images:/app/packages/transcribe/images
+    environment:
+      - APP_PORT=4567
+      - DB_CLIENT=pg
+      - QUEUE_DATABASE_NAME=transcribedb
+      - QUEUE_DATABASE_USER=transcribeuser
+      - QUEUE_DATABASE_PASSWORD=transcribepass
+      - QUEUE_DATABASE_PORT=5432
+      - QUEUE_DATABASE_HOST=transcribe-db
+      - API_KEY=transcribekey123
+      - HTR_CLI_IMAGES_FOLDER=/app/packages/transcribe/images
