@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-seedtool_web_1
+      APP_PORT: 8069
+      
+  web:
+    image: dennysubke/seedtool:2.2.0@sha256:c20cab307761aa4fa2edbbce1747d9e202c2a254ff9cdb86335d05821587ab08
+    restart: on-failure
+    environment:
+      NODE_ENV: production
+      APP_HOST: 0.0.0.0
+      APP_PORT: 8921
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
