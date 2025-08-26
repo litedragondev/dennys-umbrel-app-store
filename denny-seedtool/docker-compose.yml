@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
       
   web:
-    image: dennysubke/seedtool:2.2.4
+    image: dennysubke/seedtool:2.2.5
     restart: on-failure
     environment:
       NODE_ENV: production
