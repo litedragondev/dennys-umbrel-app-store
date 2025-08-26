@@ -4,7 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: denny-seedtool_web_1
-      APP_PORT: 3000
+      APP_PORT: 8921
       
   web:
     image: dennysubke/seedtool:2.2.5
