@@ -7,7 +7,7 @@ services:
       APP_PORT: 8921
       
   web:
-    image: dennysubke/seedtool:2.2.6
+    image: dennysubke/seedtool:2.2.8@sha256:93c19f3601c73d63091ed886f5a7c7da1cf2e0df29d6479eeff7a534582dc612
     restart: on-failure
     environment:
       NODE_ENV: production
