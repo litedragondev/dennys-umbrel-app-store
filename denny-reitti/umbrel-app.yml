@@ -22,7 +22,7 @@ description: >-
   ⚙️ After starting the application, the first step is to generate an API token in the Settings under API Tokens, which is needed for mobile app integration. Next, geocoding services should be added in Settings under Geocoding to enable accurate address resolution. You can then import your existing location data through Settings under Import Data. Finally, configure mobile apps such as OwnTracks or GPSLogger to enable real-time tracking of your movements.
 
 
-  🔧 For detailed instructions on configuring Reitti, please refer to the official documentation at https://www.dedicatedcode.com/projects/reitti/getting-started/
+  🔧 For detailed instructions on configuring Reitti, please refer to the official documentation at https://www.dedicatedcode.com/projects/reitti/getting-started/.
 developer: Daniel Graf
 website: https://www.dedicatedcode.com/projects/reitti/overview/
 submitter: dennysubke
