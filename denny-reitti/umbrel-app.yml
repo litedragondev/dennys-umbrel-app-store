@@ -1,29 +1,32 @@
 manifestVersion: 1
 id: denny-reitti
 name: Reitti
-tagline: A task manager that respects your privacy
+tagline: A location tracking and analysis application
 icon: icon.png
-category: test
-version: "0.2.0"
+category: In Progress
+version: "1.4.0"
 port: 8744
 description: >-
-  TaskTrove is a modern task management application designed to help people organize their daily work and personal projects with clarity and efficiency. It provides a clean and intuitive interface where tasks can be quickly added, edited, and managed. The application supports natural language input so due dates, reminders, and scheduling details can be written in everyday language and immediately transformed into structured information. Tasks can be grouped into projects and further refined with labels, subtasks, and recurring patterns, making it easy to manage both simple to do lists and more complex workflows.
+  Reitti is an application designed to monitor and record your movements in a comprehensive and automated way. It continuously tracks your location throughout the day and identifies the places you visit, creating a detailed log of your daily activities. By analyzing your movements, it can detect the mode of transportation you use, whether you are walking, cycling, or driving, and provides insights into how you travel between different locations.
 
 
-  TaskTrove offers multiple ways to view and interact with tasks including a traditional list view, a compact view for dense overviews, and a Kanban style board that is especially useful for visual organization and progress tracking. Searching and filtering are central features, allowing users to focus only on what is relevant at a given moment without losing sight of the bigger picture. Upcoming additions such as calendar integration and analytical tools extend its ability to provide insights into productivity and time management.
+  The app also identifies significant places that you frequently visit and allows you to assign custom names to them, helping you better understand the locations that matter most in your life. It organizes this information into an interactive timeline that shows when and for how long you stayed at each place, as well as the distances traveled between them. This timeline gives a clear overview of your daily routines and patterns.
 
 
-  The application is built with privacy in mind and avoids unnecessary tracking or telemetry. It encourages a personal and distraction free workflow where the user stays in full control of their information. Its flexibility makes it suitable for different styles of productivity whether that means a simple checklist for everyday errands or a structured system for managing multiple projects at once.
-developer: Mushroom Theory Inc.
-website: https://tasktrove.io/
+  Reitti offers detailed visualizations of your complete travel paths using precise GPS data. These visual representations make it easy to see your movement habits, recurring routes, and overall mobility trends. By providing these insights, the app helps users gain a deeper understanding of their personal travel behaviors, the places they frequent, and the way they navigate their daily environment.
+
+
+  Overall, Reitti focuses on giving users a comprehensive picture of their mobility patterns and the spatial context of their daily life, turning raw location data into meaningful information about how they move and interact with their surroundings.
+developer: Daniel Graf
+website: https://www.dedicatedcode.com/projects/reitti/overview/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/dohsimpson/TaskTrove
-support: https://github.com/dohsimpson/TaskTrove/issues
+repo: https://github.com/dedicatedcode/reitti
+support: https://github.com/dedicatedcode/reitti/issues
 gallery:
   - 1.jpg
 releaseNotes: >-
-  This update adds new natural language shortcuts for today and tomorrow, introduces a comprehensive settings dialog with UI improvements, and enhances drag and drop with shadow effects and collapsed section support. It also fixes a bug affecting kanban board drag and drop between sections.
+  The v1.4.0 update improves the user interface and mobile responsiveness, enhances reverse geocoding, and adds new data export options. Long-distance routes are now displayed as geodesic arcs, providing a clearer and more accurate visual representation of travel paths.
 dependencies: []
 path: ""
 defaultUsername: "admin"
