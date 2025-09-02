@@ -14,7 +14,7 @@ services:
       #OC_URL: https://umbrel-2.local:9200
       OC_INSECURE: "true"
       PROXY_TLS: "false"
-      #PROXY_HTTP_ADDR: 0.0.0.0:9200
+      PROXY_HTTP_ADDR: 0.0.0.0:9200
       JWT_SECRET: "Z7u4c9QxB1pHj5mEo2Lk8yTgN3sR0wVdX6fC4tUqG8rA1bPj9mK5vD0hS2lW7zY"
       OC_LOG_LEVEL: info
       OC_LOG_COLOR: "false"
