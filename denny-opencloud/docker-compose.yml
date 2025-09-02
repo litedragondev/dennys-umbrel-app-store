@@ -1,60 +1,21 @@
 version: "3.7"
 
 services:
-  opencloud:
-    image: opencloudeu/opencloud-rolling:latest
-    networks:
-      - opencloud-net
-    user: "0:0" # root, damit Config geschrieben werden kann
-    entrypoint:
-      - /bin/sh
-    command: ["-c", "opencloud init --force-overwrite || true; opencloud server"]
+  app_proxy:
     environment:
-      OC_ADD_RUN_SERVICES: 
-      OC_URL: https://umbrel-2.local:9200
-      OC_INSECURE: "true"
-      PROXY_TLS: "false"
-      PROXY_HTTP_ADDR: 0.0.0.0:9200
-      JWT_SECRET: "Z7u4c9QxB1pHj5mEo2Lk8yTgN3sR0wVdX6fC4tUqG8rA1bPj9mK5vD0hS2lW7zY"
-      OC_LOG_LEVEL: info
-      OC_LOG_COLOR: "false"
-      OC_LOG_PRETTY: "false"
-      PROXY_ENABLE_BASIC_AUTH: "false"
-      IDM_CREATE_DEMO_USERS: "false"
-      IDM_ADMIN_PASSWORD: 
-      NOTIFICATIONS_SMTP_HOST: 
-      NOTIFICATIONS_SMTP_PORT: 
-      NOTIFICATIONS_SMTP_SENDER: "OpenCloud notifications <notifications@umbrel-2.local>"
-      NOTIFICATIONS_SMTP_USERNAME: 
-      NOTIFICATIONS_SMTP_PASSWORD: 
-      NOTIFICATIONS_SMTP_INSECURE: 
-      NOTIFICATIONS_SMTP_AUTHENTICATION: 
-      NOTIFICATIONS_SMTP_ENCRYPTION: "none"
-      FRONTEND_ARCHIVER_MAX_SIZE: "10000000000"
-      PROXY_CSP_CONFIG_FILE_LOCATION: /etc/opencloud/csp.yaml
-      OC_PASSWORD_POLICY_BANNED_PASSWORDS_LIST: banned-password-list.txt
-      OC_SHARING_PUBLIC_SHARE_MUST_HAVE_PASSWORD: "true"
-      OC_SHARING_PUBLIC_WRITEABLE_SHARE_MUST_HAVE_PASSWORD: "true"
-      OC_PASSWORD_POLICY_DISABLED: "false"
-      OC_PASSWORD_POLICY_MIN_CHARACTERS: "8"
-      OC_PASSWORD_POLICY_MIN_LOWERCASE_CHARACTERS: "1"
-      OC_PASSWORD_POLICY_MIN_UPPERCASE_CHARACTERS: "1"
-      OC_PASSWORD_POLICY_MIN_DIGITS: "1"
-      OC_PASSWORD_POLICY_MIN_SPECIAL_CHARACTERS: "1"
+      APP_HOST: denny-opencloud_opencloud_1
+      APP_PORT: 9200
+
+  opencloud:
+    image: ghcr.io/opencloud-eu/opencloud-rolling:latest
+    container_name: denny-opencloud_opencloud_1
+    restart: unless-stopped
+    ports:
+      - "9200:9200"
+    environment:
+      INITIAL_ADMIN_USER: admin
+      INITIAL_ADMIN_PASSWORD: "DEIN.SICHERES.PASSWORT"
+      # Optional: Weitere Umgebungsvariablen aus der offiziellen .env
     volumes:
-      - ${APP_DATA_DIR}/data/csp.yaml:/etc/opencloud/csp.yaml
-      - ${APP_DATA_DIR}/data/config:/etc/opencloud
-      - ${APP_DATA_DIR}/data/oc_data:/var/lib/opencloud
-      - ${APP_DATA_DIR}/data/apps:/var/lib/opencloud/web/assets/apps
-      - ${APP_DATA_DIR}/data/banned-password-list.txt:/etc/opencloud/banned-password-list.txt
-    logging:
-      driver: local
-    restart: always
-
-volumes:
-  opencloud-config:
-  opencloud-data:
-
-networks:
-  opencloud-net:
-    driver: bridge
+      - ${APP_DATA_DIR}/opencloud/data:/var/lib/opencloud
+      - ${APP_DATA_DIR}/opencloud/config:/etc/opencloud
