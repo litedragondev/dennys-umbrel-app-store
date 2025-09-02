@@ -11,7 +11,7 @@ services:
     command: ["-c", "opencloud init --force-overwrite || true; opencloud server"]
     environment:
       OC_ADD_RUN_SERVICES: 
-      OC_URL: http://umbrel-2.local:9200
+      OC_URL: https://umbrel-2.local:9200
       OC_INSECURE: "true"
       PROXY_TLS: "false"
       PROXY_HTTP_ADDR: 0.0.0.0:9200
