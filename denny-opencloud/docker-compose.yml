@@ -10,8 +10,6 @@ services:
     image: ghcr.io/opencloud-eu/opencloud-rolling:latest
     container_name: denny-opencloud_opencloud_1
     restart: unless-stopped
-    ports:
-      - "9200:9200"
     environment:
       INITIAL_ADMIN_USER: admin
       INITIAL_ADMIN_PASSWORD: "DEIN.SICHERES.PASSWORT"
