@@ -1,20 +1,62 @@
 version: "3.7"
 
 services:
-  app_proxy:
+  opencloud:
+    image: ${OC_DOCKER_IMAGE:-opencloudeu/opencloud-rolling}:${OC_DOCKER_TAG:-latest}
+    networks:
+      - opencloud-net
+    user: "0:0" # root, damit Config geschrieben werden kann
+    entrypoint:
+      - /bin/sh
+    command: ["-c", "opencloud init --force-overwrite || true; opencloud server"]
     environment:
-      APP_HOST: denny-opencloud_app_1
-      APP_PORT: 9200
-
-  app:
-    image: opencloudeu/opencloud-rolling:latest
-    user: "0:0"   # root, damit Schreibrechte auf /etc/opencloud
-    restart: on-failure
-    environment:
-      - OC_INSECURE=true                # HTTPS deaktivieren → nur HTTP
-      - PROXY_HTTP_ADDR=0.0.0.0:9200    # OpenCloud hört auf HTTP-Port 9200
-      - OC_URL=http://umbrel-2.local:8844
-      - OC_SECRET=Z7u4c9QxB1pHj5mEo2Lk8yTgN3sR0wVdX6fC4tUqG8rA1bPj9mK5vD0hS2lW7zY
+      # enable services that are not started automatically
+      OC_ADD_RUN_SERVICES: ${START_ADDITIONAL_SERVICES}
+      # HTTP URL (NICHT HTTPS)
+      OC_URL: http://${OC_DOMAIN:-umbrel-2.local}:9200
+      OC_INSECURE: "true"           # disable HTTPS enforcement
+      PROXY_TLS: "false"            # do not use SSL between reverse proxy and OpenCloud
+      PROXY_HTTP_ADDR: 0.0.0.0:9200 # OpenCloud listens on HTTP port 9200
+      JWT_SECRET: "${JWT_SECRET:-Z7u4c9QxB1pHj5mEo2Lk8yTgN3sR0wVdX6fC4tUqG8rA1bPj9mK5vD0hS2lW7zY}" # default JWT secret
+      OC_LOG_LEVEL: ${LOG_LEVEL:-info}
+      OC_LOG_COLOR: "${LOG_PRETTY:-false}"
+      OC_LOG_PRETTY: "${LOG_PRETTY:-false}"
+      PROXY_ENABLE_BASIC_AUTH: "${PROXY_ENABLE_BASIC_AUTH:-false}"
+      IDM_CREATE_DEMO_USERS: "${DEMO_USERS:-false}"
+      IDM_ADMIN_PASSWORD: "${INITIAL_ADMIN_PASSWORD}"
+      NOTIFICATIONS_SMTP_HOST: "${SMTP_HOST}"
+      NOTIFICATIONS_SMTP_PORT: "${SMTP_PORT}"
+      NOTIFICATIONS_SMTP_SENDER: "${SMTP_SENDER:-OpenCloud notifications <notifications@${OC_DOMAIN:-umbrel-2.local}>}"
+      NOTIFICATIONS_SMTP_USERNAME: "${SMTP_USERNAME}"
+      NOTIFICATIONS_SMTP_PASSWORD: "${SMTP_PASSWORD}"
+      NOTIFICATIONS_SMTP_INSECURE: "${SMTP_INSECURE}"
+      NOTIFICATIONS_SMTP_AUTHENTICATION: "${SMTP_AUTHENTICATION}"
+      NOTIFICATIONS_SMTP_ENCRYPTION: "${SMTP_TRANSPORT_ENCRYPTION:-none}"
+      FRONTEND_ARCHIVER_MAX_SIZE: "10000000000"
+      PROXY_CSP_CONFIG_FILE_LOCATION: /etc/opencloud/csp.yaml
+      OC_PASSWORD_POLICY_BANNED_PASSWORDS_LIST: banned-password-list.txt
+      OC_SHARING_PUBLIC_SHARE_MUST_HAVE_PASSWORD: "${OC_SHARING_PUBLIC_SHARE_MUST_HAVE_PASSWORD:-true}"
+      OC_SHARING_PUBLIC_WRITEABLE_SHARE_MUST_HAVE_PASSWORD: "${OC_SHARING_PUBLIC_WRITEABLE_SHARE_MUST_HAVE_PASSWORD:-true}"
+      OC_PASSWORD_POLICY_DISABLED: "${OC_PASSWORD_POLICY_DISABLED:-false}"
+      OC_PASSWORD_POLICY_MIN_CHARACTERS: "${OC_PASSWORD_POLICY_MIN_CHARACTERS:-8}"
+      OC_PASSWORD_POLICY_MIN_LOWERCASE_CHARACTERS: "${OC_PASSWORD_POLICY_MIN_LOWERCASE_CHARACTERS:-1}"
+      OC_PASSWORD_POLICY_MIN_UPPERCASE_CHARACTERS: "${OC_PASSWORD_POLICY_MIN_UPPERCASE_CHARACTERS:-1}"
+      OC_PASSWORD_POLICY_MIN_DIGITS: "${OC_PASSWORD_POLICY_MIN_DIGITS:-1}"
+      OC_PASSWORD_POLICY_MIN_SPECIAL_CHARACTERS: "${OC_PASSWORD_POLICY_MIN_SPECIAL_CHARACTERS:-1}"
     volumes:
-      - ${APP_DATA_DIR}/config:/etc/opencloud
-      - ${APP_DATA_DIR}/data:/var/lib/opencloud
+      - ./config/opencloud/csp.yaml:/etc/opencloud/csp.yaml
+      - ./config/opencloud/banned-password-list.txt:/etc/opencloud/banned-password-list.txt
+      - ${OC_CONFIG_DIR:-opencloud-config}:/etc/opencloud
+      - ${OC_DATA_DIR:-opencloud-data}:/var/lib/opencloud
+      - ${OC_APPS_DIR:-./config/opencloud/apps}:/var/lib/opencloud/web/assets/apps
+    logging:
+      driver: ${LOG_DRIVER:-local}
+    restart: always
+
+volumes:
+  opencloud-config:
+  opencloud-data:
+
+networks:
+  opencloud-net:
+    driver: bridge
