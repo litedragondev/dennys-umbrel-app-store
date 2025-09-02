@@ -42,11 +42,10 @@ services:
       OC_PASSWORD_POLICY_MIN_DIGITS: "1"
       OC_PASSWORD_POLICY_MIN_SPECIAL_CHARACTERS: "1"
     volumes:
-      - ./config/opencloud/csp.yaml:/etc/opencloud/csp.yaml
-      - ./config/opencloud/banned-password-list.txt:/etc/opencloud/banned-password-list.txt
-      - opencloud-config:/etc/opencloud
-      - opencloud-data:/var/lib/opencloud
-      - ./config/opencloud/apps:/var/lib/opencloud/web/assets/apps
+      - ${APP_DATA_DIR}/data/csp.yaml:/etc/opencloud/csp.yaml
+      - ${APP_DATA_DIR}/data/config:/etc/opencloud
+      - ${APP_DATA_DIR}/data/oc_data:/var/lib/opencloud
+      - ${APP_DATA_DIR}/data/apps:/var/lib/opencloud/web/assets/apps
     logging:
       driver: local
     restart: always
