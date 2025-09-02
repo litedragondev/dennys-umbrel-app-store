@@ -8,6 +8,7 @@ services:
 
   opencloud:
     image: opencloudeu/opencloud-rolling:latest
+    user: "0:0"
     restart: unless-stopped
     environment:
       INITIAL_ADMIN_USER: admin
