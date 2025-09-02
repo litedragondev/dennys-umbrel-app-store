@@ -46,6 +46,7 @@ services:
       - ${APP_DATA_DIR}/data/config:/etc/opencloud
       - ${APP_DATA_DIR}/data/oc_data:/var/lib/opencloud
       - ${APP_DATA_DIR}/data/apps:/var/lib/opencloud/web/assets/apps
+      - ${APP_DATA_DIR}/data/banned-password-list.txt:/etc/opencloud/banned-password-list.txt
     logging:
       driver: local
     restart: always
