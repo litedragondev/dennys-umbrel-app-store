@@ -8,19 +8,27 @@ services:
 
   app:
     image: opencloudeu/opencloud-rolling:latest
-    user: "0:0"
     restart: on-failure
+    networks:
+      - opencloud-net
     entrypoint:
       - /bin/sh
     command: ["-c", "opencloud init || true; opencloud server"]
     environment:
       - OC_INSECURE=true
+      - PROXY_TLS=false
       - PROXY_HTTP_ADDR=0.0.0.0:9200
-      - OC_URL=http://umbrel-2.local:8844
-      # optional: Admin-Passwort setzen (z. B. für WebDAV)
+      - OC_URL=https://umbrel-2.local:8844
       - IDM_ADMIN_PASSWORD=changeme
     volumes:
       - ${APP_DATA_DIR}/config:/etc/opencloud
       - ${APP_DATA_DIR}/data:/var/lib/opencloud
     expose:
       - "9200"
+
+volumes:
+  opencloud-config:
+  opencloud-data:
+
+networks:
+  opencloud-net:
