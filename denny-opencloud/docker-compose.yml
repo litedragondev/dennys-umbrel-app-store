@@ -8,13 +8,13 @@ services:
 
   app:
     image: opencloudeu/opencloud-rolling:latest
-    user: "0:0"
+    user: "0:0"   # root, damit Schreibrechte auf /etc/opencloud
     restart: on-failure
     environment:
       - OC_INSECURE=true                # HTTPS deaktivieren → nur HTTP
       - PROXY_HTTP_ADDR=0.0.0.0:9200    # OpenCloud hört auf HTTP-Port 9200
       - OC_URL=http://umbrel-2.local:8844
-      - JWT_SECRET=Z7u4c9QxB1pHj5mEo2Lk8yTgN3sR0wVdX6fC4tUqG8rA1bPj9mK5vD0hS2lW7zY
+      - OC_SECRET=Z7u4c9QxB1pHj5mEo2Lk8yTgN3sR0wVdX6fC4tUqG8rA1bPj9mK5vD0hS2lW7zY
     volumes:
       - ${APP_DATA_DIR}/config:/etc/opencloud
       - ${APP_DATA_DIR}/data:/var/lib/opencloud
