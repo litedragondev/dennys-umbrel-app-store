@@ -188,90 +188,91 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 | 164 | [Pinchflat](https://github.com/kieraneglin/pinchflat)| A YouTube media manager                                                   | 8945   |
 | 165 | [Pingvin Share](https://github.com/stonith404/pingvin-share) | A self-hosted file-sharing solution combining ease and elegance   | 6453   |
 | 166 | [Planka](https://github.com/plankanban/planka)       | A powerful and elegant open-source tool for project tracking              | 1338   |
-| 167 | [portkey](https://github.com/kodehat/portkey)        | An engaging startup hub for favorite links and custom pages               | 3343   |
-| 168 | [PrivateBin](https://github.com/PrivateBin/PrivateBin) | A minimalist, open-source online pastebin                               | 3070   |
-| 169 | [ProjectSend](https://github.com/projectsend/projectsend) | A private file sharing platform for client access                    | 8181   |
-| 170 | [Puter](https://github.com/puterOS/puterOS)          | An advanced, open-source internet operating system                        | 4100   |
-| 171 | [QRding](https://github.com/rishikanthc/qrding)      | A simple self-hosted QR code generator                                    | 3329   |
-| 172 | [Quake III Arena](https://github.com/id-Software/Quake-III-Arena) | An explosive journey into the heart of '90s gaming madness   | 8789   |
-| 173 | [Quotysco](https://github.com/interaapps/quotysco)   | A creative hub for bloggers, writers, and visionaries                     | 1337   |
-| 174 | [Radicale](https://github.com/Kozea/Radicale)        | A powerful CalDAV and CardDAV server                                      | 5232   |
-| 175 | [Readeck](https://github.com/readeck/readeck)        | A simple app to save the web's precious content                           | 8858   |
-| 176 | [Readur](https://github.com/readur/readur)           | An intuitive OCR platform for documents                                   | 8111   |
-| 177 | [Reitti](https://github.com/dedicatedcode/reitti)    | A location tracking and analysis application                              | 8744   |
-| 178 | [Resilio Sync](https://github.com/linuxserver/docker-resilio-sync)| A secure way to keep files in sync                           | 8777   |
-| 179 | [Restreamer](https://github.com/datarhei/restreamer)    | An easy to use open source video server                                | 8135   |
-| 180 | [RetroAssembly](https://github.com/arianrhodsandlot/retroassembly)| A personal retro game collection cabinet                     | 5999   |
-| 181 | [Reubah](https://github.com/dendianugerah/reubah)       | A tool for processing images and converting documents                  | 8739   |
-| 182 | [RomM](https://github.com/rommapp/romm)                 | An elegant, powerful, and self-hosted ROM manager for seamless gaming  | 9221   |
-| 183 | [RStudio](https://github.com/rstudio/rstudio)           | An intuitive IDE for data analysis                                     | 8787   |
-| 184 | [RustDesk Client](https://github.com/rustdesk/rustdesk) | A full-featured remote control with minimal configuration              | 3044   |
-| 185 | [RustDesk Server](https://github.com/rustdesk/rustdesk-server) | A fast and reliable solution for remote access                  | 21080  |
-| 186 | [Rustpad](https://github.com/ekzhang/rustpad)        | An easy solution for real-time collaborative writing                      | 3038   |
-| 187 | [Ryot](https://github.com/IgnisDa/ryot)              | An intelligent way to track, organize, and optimize your digital life     | 18030  |
-| 188 | [Scrypted](https://github.com/koush/scrypted)        | A high-performance home video integration platform                        | 11080  |
-| 189 | [SearXNG](https://github.com/searxng/searxng)        | A free internet metasearch engine                                         | 8182   |
-| 190 | [Serge](https://github.com/serge-chat/serge)         | An easy way to chat with Alpaca & other LLaMa based models                | 8803   |
-| 191 | [SerpBear](https://github.com/towfiqi/serpbear)      | An SEO tool designed for accuracy and simplicity                          | 3232   |
-| 192 | [Shopstr](https://github.com/shopstr-eng/shopstr)    | A global, permissionless Nostr marketplace for Bitcoin commerce           | 30402  |
-| 193 | [SillyTavern](https://github.com/SillyTavern/SillyTavern) | An immersive LLM chat with image generation and TTS support          | 8321   |
-| 194 | [SiYuan](https://github.com/siyuan-note/siyuan)      | A privacy-first personal knowledge management system                      | 6806   |
-| 195 | [Slash](https://github.com/yourselfhosted/slash)     | A link shortener that simplifies the managing and sharing of links        | 5231   |
-| 196 | [slskd](https://github.com/slskd/slskd)              | A modern client-server application for the Soulseek file sharing network  | 5030   |
-| 197 | [SolidInvoice](https://github.com/SolidInvoice/SolidInvoice) | A sophisticated open-source invoicing application                 | 5484   |
-| 198 | [Spacedrive](https://github.com/spacedriveapp/spacedrive) | A file manager from the future                                       | 8199   |
-| 199 | [Speedtest Tracker](https://github.com/alexjustesen/speedtest-tracker) | A real-time internet performance monitor                | 8622   |
-| 200 | [SPIS](https://github.com/gbbirkisson/spis)          | A simple private image server                                             | 8222   |
-| 201 | [Spooty](https://github.com/Raiper34/spooty)         | A self-hosted Spotify downloader                                          | 3381   |
-| 202 | [Spotube](https://github.com/KRTirtho/spotube)       | An open-source Spotify client for every platform                          | 30123  |
-| 203 | [Stalwart](https://github.com/stalwartlabs/stalwart) | An all-in-one Mail & Collaboration server                                 | 18080  |
-| 204 | [Statping NG](https://github.com/statping-ng/statping-ng)| A web and app status monitoring tool                                  | 8722   |
-| 205 | [Statusnook](https://github.com/goksan/statusnook)    | An effortless solution for setting up a status page and monitoring endpoints in minutes | 8444  |
-| 206 | [Stremio](https://github.com/tsaridas/stremio-docker) | An all-in-one streaming hub for all your entertainment needs             | 10470  |
-| 207 | [Supabase](https://github.com/supabase/supabase)      | An open source Firebase alternative                                      | 53000  |
-| 208 | [Super Productivity](https://github.com/johannesjo/super-productivity) | An efficient way to manage tasks, time, and projects all in one place  | 8020   |
-| 209 | [Swing Music](https://github.com/swingmx/swingmusic) | A beautiful, self-hosted music player for your local audio files          | 1970   |
-| 210 | [Sync-in](https://github.com/Sync-in/server)         | A platform to sync, share, and collaborate securely                       | 8943   |
-| 211 | [TaxHacker](https://github.com/vas3k/TaxHacker)      | A powerful AI accounting app                                              | 7332   |
-| 212 | [Teable](https://github.com/teableio/teable)         | An AI no-code database                                                    | 8599   |
-| 213 | [Termix](https://github.com/LukeGus/Termix)          | A server management platform with SSH terminal                            | 6444   |
-| 214 | [Textpod](https://github.com/freetonik/textpod)      | An extremely simple note-taking app                                       | 8099   |
-| 215 | [Threema Web](https://github.com/threema-ch/threema-web) | An intuitive and secure web client for Threema users                  | 8855   |
-| 216 | [Thunderbird](https://github.com/jlesage/docker-thunderbird) | A secure, flexible, and efficient email client                    | 5858   |
-| 217 | [Ticky](https://github.com/dkorecko/Ticky)          | A modern Kanban board app                                                  | 4088   |
-| 218 | [Tillywork](https://github.com/tillywork/tillywork) | A work management solution for startups                                    | 8556   |
-| 219 | [Timechain Calendar](https://github.com/timechainb) | A journey through Bitcoin’s timechain                                      | 8953   |
-| 220 | [TimeTagger](https://github.com/almarklein/timetagger) | An open source time tracker                                             | 8905   |
-| 221 | [tldraw](https://github.com/tldraw)                 | An intuitive whiteboard for ideas                                          | 8505   |
-| 222 | [Tor Browser](https://github.com/thetorproject)     | An invisible shield for your browsing experience                           | 5832   |
-| 223 | [Traggo](https://github.com/traggo/server)          | An open-source time tracking tool designed for self-hosting                | 3083   |
-| 224 | [TRIP](https://github.com/itskovacs/trip)           | A minimalist map tracker and trip planner                                  | 8952   |
-| 225 | [Tududi](https://github.com/chrisvel/tududi)        | A private task manager                                                     | 3382   |
-| 226 | [Twenty](https://github.com/twentyhq/twenty)        | An adaptable CRM solution for seamless team collaboration and growth       | 2020   |
-| 227 | [Ungoogled Chromium](https://github.com/ungoogled-software/ungoogled-chromium) | An optimized, privacy-focused browser experience| 3330   |
-| 228 | [UniFi Network Server](https://github.com/linuxserver/docker-unifi-network-application) | An intuitive solution for seamless network management | 8893   |
-| 229 | [Vito](https://github.com/GlobusGroup/vito)          | A secure, self-hosted secret sharing application                          | 9998   |
-| 230 | [VoceChat](https://github.com/Privoce/vocechat-server-rust)   | A secure chat solution for privacy-focused communication         | 3197   |
-| 231 | [Wallos](https://github.com/ellite/Wallos)           | An empowering app to manage finances and track subscriptions and expenses | 8283   |
-| 232 | [Online Whiteboard](https://github.com/lovasoa/whitebophir) | An online collaborative whiteboard that's simple, free, and easy to use | 5111   |
-| 233 | [Wagmi](https://github.com/mentholmike/wagmios)      | A self-hosted container management system with AI-powered automation      | 5174   |
-| 234 | [Wanderer](https://github.com/Flomp/wanderer)        | A self-hosted trail database                                              | 3111   |
-| 235 | [Wakapi](https://github.com/muety/wakapi)            | A minimalist, self-hosted WakaTime-compatible backend for coding statistics | 3366   |
-| 236 | [Wally](https://github.com/polius/Wally)             | A lightweight expense tracker                                             | 3811   |
-| 237 | [WebCheck](https://github.com/Lissy93/web-check)     | An all-in-one open-source intelligence tool for analyzing any website     | 3093   |
-| 238 | [Websurfx](https://github.com/neon-mmd/websurfx)     | A fast, private, secure open source SearX alternative                     | 8177   |
-| 239 | [Webtop](https://github.com/linuxserver/docker-webtop) | An easy-to-use desktop that brings the power of Ubuntu to your fingertips | 3399   |
-| 240 | [Webtor](https://github.com/webtor-io/self-hosted)   | An instant torrent stream in your browser                                 | 8488   |
-| 241 | [wger](https://github.com/wger-project/docker)       | A fitness tracker for workouts and nutrition                              | 8450   |
-| 242 | [Wiki-Go](https://github.com/leomoon-studios/wiki-go)| A modern flat-file wiki built with Go                                     | 8833   |
-| 243 | [Wingfit](https://github.com/itskovacs/wingfit)      | An open-source minimalist fitness app                                     | 8950   |
-| 244 | [YaDNSb](https://github.com/altendorfme/yadnsb)      | An advanced tool for testing DNS performance                              | 3933   |
-| 245 | [Yamtrack](https://github.com/FuzzyGrim/Yamtrack)    | A self hosted media tracker                                               | 8742   |
-| 246 | [Yopass](https://github.com/jhaals/yopass)           | A secure, open-source sharing platform for encrypted secret transfers     | 3006   |
-| 247 | [YTPTube](https://github.com/arabcoders/ytptube)     | A WebGUI for yt-dlp with concurrent downloads support                     | 8562   |
-| 248 | [Zen](https://github.com/sheshbabu/zen)              | A simple app for focused and private note-taking                          | 8094   |
-| 249 | [Zipline](https://github.com/diced/zipline) | An advanced solution for seamless and secure file sharing                          | 3472   |
-| 250 | [Zoraxy Proxy Server](https://github.com/tobychui/zoraxy) | An efficient reverse proxy server with automated SSL management      | 8400   |
+| 167 | [Pluto](https://gitlab.com/bemindinteractive/pluto)  | A real time mining monitor                                                | 7777   |
+| 168 | [portkey](https://github.com/kodehat/portkey)        | An engaging startup hub for favorite links and custom pages               | 3343   |
+| 169 | [PrivateBin](https://github.com/PrivateBin/PrivateBin) | A minimalist, open-source online pastebin                               | 3070   |
+| 170 | [ProjectSend](https://github.com/projectsend/projectsend) | A private file sharing platform for client access                    | 8181   |
+| 171 | [Puter](https://github.com/puterOS/puterOS)          | An advanced, open-source internet operating system                        | 4100   |
+| 172 | [QRding](https://github.com/rishikanthc/qrding)      | A simple self-hosted QR code generator                                    | 3329   |
+| 173 | [Quake III Arena](https://github.com/id-Software/Quake-III-Arena) | An explosive journey into the heart of '90s gaming madness   | 8789   |
+| 174 | [Quotysco](https://github.com/interaapps/quotysco)   | A creative hub for bloggers, writers, and visionaries                     | 1337   |
+| 175 | [Radicale](https://github.com/Kozea/Radicale)        | A powerful CalDAV and CardDAV server                                      | 5232   |
+| 176 | [Readeck](https://github.com/readeck/readeck)        | A simple app to save the web's precious content                           | 8858   |
+| 177 | [Readur](https://github.com/readur/readur)           | An intuitive OCR platform for documents                                   | 8111   |
+| 178 | [Reitti](https://github.com/dedicatedcode/reitti)    | A location tracking and analysis application                              | 8744   |
+| 179 | [Resilio Sync](https://github.com/linuxserver/docker-resilio-sync)| A secure way to keep files in sync                           | 8777   |
+| 180 | [Restreamer](https://github.com/datarhei/restreamer)    | An easy to use open source video server                                | 8135   |
+| 181 | [RetroAssembly](https://github.com/arianrhodsandlot/retroassembly)| A personal retro game collection cabinet                     | 5999   |
+| 182 | [Reubah](https://github.com/dendianugerah/reubah)       | A tool for processing images and converting documents                  | 8739   |
+| 183 | [RomM](https://github.com/rommapp/romm)                 | An elegant, powerful, and self-hosted ROM manager for seamless gaming  | 9221   |
+| 184 | [RStudio](https://github.com/rstudio/rstudio)           | An intuitive IDE for data analysis                                     | 8787   |
+| 185 | [RustDesk Client](https://github.com/rustdesk/rustdesk) | A full-featured remote control with minimal configuration              | 3044   |
+| 186 | [RustDesk Server](https://github.com/rustdesk/rustdesk-server) | A fast and reliable solution for remote access                  | 21080  |
+| 187 | [Rustpad](https://github.com/ekzhang/rustpad)        | An easy solution for real-time collaborative writing                      | 3038   |
+| 188 | [Ryot](https://github.com/IgnisDa/ryot)              | An intelligent way to track, organize, and optimize your digital life     | 18030  |
+| 189 | [Scrypted](https://github.com/koush/scrypted)        | A high-performance home video integration platform                        | 11080  |
+| 190 | [SearXNG](https://github.com/searxng/searxng)        | A free internet metasearch engine                                         | 8182   |
+| 191 | [Serge](https://github.com/serge-chat/serge)         | An easy way to chat with Alpaca & other LLaMa based models                | 8803   |
+| 192 | [SerpBear](https://github.com/towfiqi/serpbear)      | An SEO tool designed for accuracy and simplicity                          | 3232   |
+| 193 | [Shopstr](https://github.com/shopstr-eng/shopstr)    | A global, permissionless Nostr marketplace for Bitcoin commerce           | 30402  |
+| 194 | [SillyTavern](https://github.com/SillyTavern/SillyTavern) | An immersive LLM chat with image generation and TTS support          | 8321   |
+| 195 | [SiYuan](https://github.com/siyuan-note/siyuan)      | A privacy-first personal knowledge management system                      | 6806   |
+| 196 | [Slash](https://github.com/yourselfhosted/slash)     | A link shortener that simplifies the managing and sharing of links        | 5231   |
+| 197 | [slskd](https://github.com/slskd/slskd)              | A modern client-server application for the Soulseek file sharing network  | 5030   |
+| 198 | [SolidInvoice](https://github.com/SolidInvoice/SolidInvoice) | A sophisticated open-source invoicing application                 | 5484   |
+| 199 | [Spacedrive](https://github.com/spacedriveapp/spacedrive) | A file manager from the future                                       | 8199   |
+| 200 | [Speedtest Tracker](https://github.com/alexjustesen/speedtest-tracker) | A real-time internet performance monitor                | 8622   |
+| 201 | [SPIS](https://github.com/gbbirkisson/spis)          | A simple private image server                                             | 8222   |
+| 202 | [Spooty](https://github.com/Raiper34/spooty)         | A self-hosted Spotify downloader                                          | 3381   |
+| 203 | [Spotube](https://github.com/KRTirtho/spotube)       | An open-source Spotify client for every platform                          | 30123  |
+| 204 | [Stalwart](https://github.com/stalwartlabs/stalwart) | An all-in-one Mail & Collaboration server                                 | 18080  |
+| 205 | [Statping NG](https://github.com/statping-ng/statping-ng)| A web and app status monitoring tool                                  | 8722   |
+| 206 | [Statusnook](https://github.com/goksan/statusnook)    | An effortless solution for setting up a status page and monitoring endpoints in minutes | 8444  |
+| 207 | [Stremio](https://github.com/tsaridas/stremio-docker) | An all-in-one streaming hub for all your entertainment needs             | 10470  |
+| 208 | [Supabase](https://github.com/supabase/supabase)      | An open source Firebase alternative                                      | 53000  |
+| 209 | [Super Productivity](https://github.com/johannesjo/super-productivity) | An efficient way to manage tasks, time, and projects all in one place  | 8020   |
+| 210 | [Swing Music](https://github.com/swingmx/swingmusic) | A beautiful, self-hosted music player for your local audio files          | 1970   |
+| 211 | [Sync-in](https://github.com/Sync-in/server)         | A platform to sync, share, and collaborate securely                       | 8943   |
+| 212 | [TaxHacker](https://github.com/vas3k/TaxHacker)      | A powerful AI accounting app                                              | 7332   |
+| 213 | [Teable](https://github.com/teableio/teable)         | An AI no-code database                                                    | 8599   |
+| 214 | [Termix](https://github.com/LukeGus/Termix)          | A server management platform with SSH terminal                            | 6444   |
+| 215 | [Textpod](https://github.com/freetonik/textpod)      | An extremely simple note-taking app                                       | 8099   |
+| 216 | [Threema Web](https://github.com/threema-ch/threema-web) | An intuitive and secure web client for Threema users                  | 8855   |
+| 217 | [Thunderbird](https://github.com/jlesage/docker-thunderbird) | A secure, flexible, and efficient email client                    | 5858   |
+| 218 | [Ticky](https://github.com/dkorecko/Ticky)          | A modern Kanban board app                                                  | 4088   |
+| 219 | [Tillywork](https://github.com/tillywork/tillywork) | A work management solution for startups                                    | 8556   |
+| 220 | [Timechain Calendar](https://github.com/timechainb) | A journey through Bitcoin’s timechain                                      | 8953   |
+| 221 | [TimeTagger](https://github.com/almarklein/timetagger) | An open source time tracker                                             | 8905   |
+| 222 | [tldraw](https://github.com/tldraw)                 | An intuitive whiteboard for ideas                                          | 8505   |
+| 223 | [Tor Browser](https://github.com/thetorproject)     | An invisible shield for your browsing experience                           | 5832   |
+| 224 | [Traggo](https://github.com/traggo/server)          | An open-source time tracking tool designed for self-hosting                | 3083   |
+| 225 | [TRIP](https://github.com/itskovacs/trip)           | A minimalist map tracker and trip planner                                  | 8952   |
+| 226 | [Tududi](https://github.com/chrisvel/tududi)        | A private task manager                                                     | 3382   |
+| 227 | [Twenty](https://github.com/twentyhq/twenty)        | An adaptable CRM solution for seamless team collaboration and growth       | 2020   |
+| 228 | [Ungoogled Chromium](https://github.com/ungoogled-software/ungoogled-chromium) | An optimized, privacy-focused browser experience| 3330   |
+| 229 | [UniFi Network Server](https://github.com/linuxserver/docker-unifi-network-application) | An intuitive solution for seamless network management | 8893   |
+| 230 | [Vito](https://github.com/GlobusGroup/vito)          | A secure, self-hosted secret sharing application                          | 9998   |
+| 231 | [VoceChat](https://github.com/Privoce/vocechat-server-rust)   | A secure chat solution for privacy-focused communication         | 3197   |
+| 232 | [Wallos](https://github.com/ellite/Wallos)           | An empowering app to manage finances and track subscriptions and expenses | 8283   |
+| 233 | [Online Whiteboard](https://github.com/lovasoa/whitebophir) | An online collaborative whiteboard that's simple, free, and easy to use | 5111   |
+| 234 | [Wagmi](https://github.com/mentholmike/wagmios)      | A self-hosted container management system with AI-powered automation      | 5174   |
+| 235 | [Wanderer](https://github.com/Flomp/wanderer)        | A self-hosted trail database                                              | 3111   |
+| 236 | [Wakapi](https://github.com/muety/wakapi)            | A minimalist, self-hosted WakaTime-compatible backend for coding statistics | 3366   |
+| 237 | [Wally](https://github.com/polius/Wally)             | A lightweight expense tracker                                             | 3811   |
+| 238 | [WebCheck](https://github.com/Lissy93/web-check)     | An all-in-one open-source intelligence tool for analyzing any website     | 3093   |
+| 239 | [Websurfx](https://github.com/neon-mmd/websurfx)     | A fast, private, secure open source SearX alternative                     | 8177   |
+| 240 | [Webtop](https://github.com/linuxserver/docker-webtop) | An easy-to-use desktop that brings the power of Ubuntu to your fingertips | 3399   |
+| 241 | [Webtor](https://github.com/webtor-io/self-hosted)   | An instant torrent stream in your browser                                 | 8488   |
+| 242 | [wger](https://github.com/wger-project/docker)       | A fitness tracker for workouts and nutrition                              | 8450   |
+| 243 | [Wiki-Go](https://github.com/leomoon-studios/wiki-go)| A modern flat-file wiki built with Go                                     | 8833   |
+| 244 | [Wingfit](https://github.com/itskovacs/wingfit)      | An open-source minimalist fitness app                                     | 8950   |
+| 245 | [YaDNSb](https://github.com/altendorfme/yadnsb)      | An advanced tool for testing DNS performance                              | 3933   |
+| 246 | [Yamtrack](https://github.com/FuzzyGrim/Yamtrack)    | A self hosted media tracker                                               | 8742   |
+| 247 | [Yopass](https://github.com/jhaals/yopass)           | A secure, open-source sharing platform for encrypted secret transfers     | 3006   |
+| 248 | [YTPTube](https://github.com/arabcoders/ytptube)     | A WebGUI for yt-dlp with concurrent downloads support                     | 8562   |
+| 249 | [Zen](https://github.com/sheshbabu/zen)              | A simple app for focused and private note-taking                          | 8094   |
+| 250 | [Zipline](https://github.com/diced/zipline) | An advanced solution for seamless and secure file sharing                          | 3472   |
+| 251 | [Zoraxy Proxy Server](https://github.com/tobychui/zoraxy) | An efficient reverse proxy server with automated SSL management      | 8400   |
 
 🔄 All Apps are continually updated and new Apps are added over time.
 
