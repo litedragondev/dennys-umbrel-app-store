@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: denny-pluto
 name: Pluto
-tagline: A clear view of your mining
+tagline: A real time mining monitor
 icon: ""
 category: bitcoin
 version: "0.6.0-rc.1"
