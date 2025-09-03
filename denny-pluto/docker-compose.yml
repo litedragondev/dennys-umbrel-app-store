@@ -68,7 +68,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-    user: "65534:65534"
+    user: "1000:1000"
 
   grafana:
     image: grafana/grafana:11.1.2@sha256:3d605614c7c7ce2e96f71abaccd09eb3cfacef48fea5fda4b02a555c95a73edc
