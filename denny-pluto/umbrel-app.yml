@@ -17,9 +17,9 @@ description: >
 
 
   By combining detailed performance insights with direct device management, Pluto transforms mining into a more transparent, approachable, and efficient process. It reduces complexity, empowers users to optimize their setups continuously, and creates a smoother path for individuals who want full visibility and control over their mining operations.
-developer: Lorenzo De Santis
+developer: Pluto
 website: https://www.plutomining.io/
-submitter: Pluto
+submitter: Lorenzo De Santis
 submission: https://github.com/getumbrel/umbrel-apps/pull/1790
 repo: https://gitlab.com/plutomining/pluto
 support: https://gitlab.com/plutomining/pluto/issues
