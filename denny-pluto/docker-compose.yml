@@ -92,4 +92,4 @@ services:
     depends_on:
       prometheus:
         condition: service_healthy
-    user: "472:472"
+    user: "1000:1000"
