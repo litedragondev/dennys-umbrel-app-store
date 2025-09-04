@@ -7,7 +7,8 @@ services:
       APP_PORT: 3000
       
   app:
-    image: ghcr.io/dohsimpson/tasktrove:v0.2.0@sha256:c48ac618810c807d836b7dd06385d0c0b53401a71c6a92e311b58aa41d0bd148
+    image: ghcr.io/dohsimpson/tasktrove:v0.3.0@sha256:4cb6e504666951b1ef67a394e5f590c004733005beb51deefca641f7066868b4
+    user: "1000:1000"
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data:/app/data:rw
