@@ -4,7 +4,7 @@ name: Crafty Controller
 tagline: An intuitive way to automate and manage your Minecraft server with ease
 icon: https://i.imgur.com/S9pJOPi.png
 category: gaming
-version: "4.4.9"
+version: "4.5.3"
 port: 18443
 description: >-
   ⛏️ Crafty Controller is an open-source, web-based interface designed to manage and control Crafty Bots, which are used for automating and managing Minecraft servers. Crafty itself is a bot framework that allows administrators to automate various tasks on Minecraft servers, from running tests to managing in-game events, controlling server settings, and much more. Crafty Controller provides a centralized platform where administrators can monitor and control these bots from one place.
@@ -39,7 +39,7 @@ gallery:
   - https://i.imgur.com/8cTkoj9.png
   - https://i.imgur.com/DnwgLOR.png
 releaseNotes: >-
-  The update 4.4.9 includes bug fixes and resolves the issue by replacing the "ubuntu" user with the "crafty" user in the Docker repair process.
+  You can find the release notes at this URL : https://gitlab.com/crafty-controller/crafty-4/-/releases
 dependencies:
 path: "https://umbrel.local:18443"
 defaultUsername: "admin"
