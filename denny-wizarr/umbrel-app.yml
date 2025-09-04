@@ -1,36 +1,36 @@
 manifestVersion: 1
 id: denny-wizarr
 name: Wizarr
-tagline: A personal retro game collection cabinet
-icon: icon.png
-category: test
-version: "0.38.0"
+tagline: An advanced invitation and management system for media servers
+icon: https://i.imgur.com/p7ndWGP.png
+category: media
+version: "2025.8.4"
 port: 5690
 description: >-
-  OwnCloud is a comprehensive software application designed to provide users with a personal cloud storage solution that combines file management, collaboration, and organizational tools in one platform. It allows users to upload, store, and organize their files in a secure, centralized environment, making it easy to keep track of documents, photos, videos, and other types of data. With OwnCloud, files can be synchronized seamlessly across multiple devices such as computers, smartphones, and tablets, ensuring that users always have access to the most up-to-date versions no matter where they are or what device they are using.
+  🧙 Wizarr is an application created to streamline the process of managing and onboarding users for media servers. It provides a centralized system that allows administrators to generate invitation links, which can be shared with new users to grant them access to the server. This process eliminates the need for manual setup and reduces administrative overhead, making it easier to manage multiple users efficiently. The application ensures that every new user receives guidance through the setup process, helping them configure their clients and connect to the server in a straightforward manner.
 
 
-  The application offers advanced sharing capabilities, enabling users to share files and folders with colleagues, friends, or family members. Access permissions can be finely tuned to grant read-only, editing, or full control rights, which helps maintain privacy and security while promoting collaboration. OwnCloud also supports real-time collaboration on documents, allowing multiple users to work together efficiently, whether it is for business projects, academic work, or personal tasks.
+  The app also offers a system for tracking invitations and user activity, giving administrators detailed insights into who has joined, when they joined, and how they interact with the server. This tracking allows for better management of access permissions, including options for temporary memberships or restricted access levels. By monitoring activity and requests, Wizarr ensures that the server remains organized and that users receive the appropriate level of access and support.
 
 
-  Beyond basic file storage and sharing, OwnCloud includes a range of integrated productivity features. Users can manage calendars to keep track of appointments and events, organize contacts to maintain communication information, create and track tasks to boost productivity, and take notes that are easily accessible from any device. These additional tools turn OwnCloud into more than just a file repository; it becomes a centralized hub for managing various aspects of daily life and work.
+  In addition, Wizarr integrates with various platforms and communication tools to automate certain tasks, such as sending notifications or coordinating user onboarding. It supports a guided onboarding experience, providing clear instructions and steps to ensure that users can navigate the server environment without confusion. This reduces support requests and makes the user experience smoother and more intuitive.
 
 
-  Security and control are core aspects of OwnCloud. The platform places a strong emphasis on data privacy by offering encryption options, user authentication, and detailed logging of access and changes. This ensures that sensitive information remains protected and that users have full visibility over who accesses their data and how it is used.
-
-
-  Overall, OwnCloud combines the convenience of cloud storage with powerful collaboration and organizational tools, providing users with a versatile and secure environment to manage their digital content efficiently and on their own terms.
-developer: OwnCloud GmbH
-website: https://owncloud.com
+  Overall, Wizarr is focused on making user management seamless, efficient, and transparent. It provides administrators with the tools to monitor interactions, handle requests, and maintain control over access, while giving users an easy and structured way to join and use the server. By combining invitation management, activity tracking, and automated guidance, Wizarr enhances the overall server experience for both administrators and users.
+developer: Wizarr
+website: https://wizarr.org/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/
-repo: https://github.com/owncloud-docker/server
-support: https://github.com/owncloud-docker/server/issues
+repo: https://github.com/wizarrrr/wizarr
+support: https://github.com/wizarrrr/wizarr/issues
 gallery:
-  - 1.jpg
+  - https://i.imgur.com/lfxEgG1.png
+  - https://i.imgur.com/ztaPz8F.png
+  - https://i.imgur.com/nrmDtkx.png
+  - https://i.imgur.com/wz6Lhj6.png
 releaseNotes: >-
-  The ownCloud Core 10.15.3 update disables the outdated web updater by removing its integration from the admin interface to prevent potential issues. Additionally, it improves security by strengthening how remote services like WebDAV and CalDAV are resolved, ensuring they are loaded only from trusted sources.
+  The 2025.8.4 update adds support for AudioBookRequest and includes general bug fixes and optimizations. Since the release, seven additional commits have been made to the main branch.
 dependencies: []
 path: ""
-defaultUsername: "admin"
-defaultPassword: "umbrel"
+defaultUsername: ""
+defaultPassword: ""
