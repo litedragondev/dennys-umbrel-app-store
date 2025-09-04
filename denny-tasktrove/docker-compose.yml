@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-tasktrove_app_1
+      APP_PORT: 3000
+      
+  app:
+    image: ghcr.io/dohsimpson/tasktrove:v0.2.0@sha256:c48ac618810c807d836b7dd06385d0c0b53401a71c6a92e311b58aa41d0bd148
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data:/app/data:rw
