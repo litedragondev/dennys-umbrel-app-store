@@ -266,13 +266,14 @@ This repository contains my custom Umbrel App Store. Unlike the official store, 
 | 242 | [wger](https://github.com/wger-project/docker)       | A fitness tracker for workouts and nutrition                              | 8450   |
 | 243 | [Wiki-Go](https://github.com/leomoon-studios/wiki-go)| A modern flat-file wiki built with Go                                     | 8833   |
 | 244 | [Wingfit](https://github.com/itskovacs/wingfit)      | An open-source minimalist fitness app                                     | 8950   |
-| 245 | [YaDNSb](https://github.com/altendorfme/yadnsb)      | An advanced tool for testing DNS performance                              | 3933   |
-| 246 | [Yamtrack](https://github.com/FuzzyGrim/Yamtrack)    | A self hosted media tracker                                               | 8742   |
-| 247 | [Yopass](https://github.com/jhaals/yopass)           | A secure, open-source sharing platform for encrypted secret transfers     | 3006   |
-| 248 | [YTPTube](https://github.com/arabcoders/ytptube)     | A WebGUI for yt-dlp with concurrent downloads support                     | 8562   |
-| 249 | [Zen](https://github.com/sheshbabu/zen)              | A simple app for focused and private note-taking                          | 8094   |
-| 250 | [Zipline](https://github.com/diced/zipline) | An advanced solution for seamless and secure file sharing                          | 3472   |
-| 251 | [Zoraxy Proxy Server](https://github.com/tobychui/zoraxy) | An efficient reverse proxy server with automated SSL management      | 8400   |
+| 245 | [Wizarr](https://github.com/wizarrrr/wizarr)         | An advanced invitation and management system for media servers            | 5690   |
+| 246 | [YaDNSb](https://github.com/altendorfme/yadnsb)      | An advanced tool for testing DNS performance                              | 3933   |
+| 247 | [Yamtrack](https://github.com/FuzzyGrim/Yamtrack)    | A self hosted media tracker                                               | 8742   |
+| 248 | [Yopass](https://github.com/jhaals/yopass)           | A secure, open-source sharing platform for encrypted secret transfers     | 3006   |
+| 249 | [YTPTube](https://github.com/arabcoders/ytptube)     | A WebGUI for yt-dlp with concurrent downloads support                     | 8562   |
+| 250 | [Zen](https://github.com/sheshbabu/zen)              | A simple app for focused and private note-taking                          | 8094   |
+| 251 | [Zipline](https://github.com/diced/zipline) | An advanced solution for seamless and secure file sharing                          | 3472   |
+| 252 | [Zoraxy Proxy Server](https://github.com/tobychui/zoraxy) | An efficient reverse proxy server with automated SSL management      | 8400   |
 
 🔄 All Apps are continually updated and new Apps are added over time.
 
