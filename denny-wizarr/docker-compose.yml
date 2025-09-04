@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: denny-wizarr_app_1
+      APP_PORT: 5690
+      
+  app:
+    image: ghcr.io/wizarrrr/wizarr:2025.8.4@sha256:1026717e3fc35d67c80394c34330fe69b9e28cdb50ead0a23cdde5b44c598c3d
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - DISABLE_BUILTIN_AUTH=false
+      - TZ=Europe/Berlin
