@@ -5,9 +5,8 @@ services:
       APP_HOST: denny-swingmusic_server_1
       APP_PORT: 1970
       PROXY_AUTH_ADD: "false"
-
   server:
-    image: ghcr.io/swingmx/swingmusic:v2.0.9
+    image: ghcr.io/swingmx/swingmusic:v2.0.9@sha256:f8dcd4e074355de8fe5e8ae256c0af0441715a0eaf0bf2eabaebc65447ea716c
     restart: on-failure
     environment:
       - PUID=1000
@@ -15,9 +14,8 @@ services:
     volumes:
       - ${APP_DATA_DIR}/config:/config
       - ${APP_DATA_DIR}/music:/music:rw
-
   fix_permissions:
-    image: ghcr.io/swingmx/swingmusic:v2.0.9
+    image: ghcr.io/swingmx/swingmusic:v2.0.9@sha256:f8dcd4e074355de8fe5e8ae256c0af0441715a0eaf0bf2eabaebc65447ea716c
     container_name: denny-swingmusic_fix_permissions
     volumes:
       - ${APP_DATA_DIR}/music:/music
