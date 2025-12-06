@@ -1,0 +1,43 @@
+manifestVersion: 1
+id: vert
+category: Files & Productivity
+name: VERT
+version: "1.0.0"
+tagline: Le convertisseur de fichiers nouvelle génération
+description: >-
+  VERT est un utilitaire de conversion de fichiers qui utilise WebAssembly pour convertir vos fichiers directement sur votre appareil plutôt que dans le cloud. 
+  
+  
+  Avec VERT, vous pouvez convertir rapidement n'importe quel fichier image, vidéo, audio et document. Sans publicités, sans tracking, open source, et tout le traitement (sauf vidéo) est effectué sur votre appareil.
+  
+  
+  Caractéristiques principales:
+  
+  - Convertissez des fichiers directement sur votre appareil en utilisant WebAssembly*
+  
+  - Aucune limite de fichier ou de taille de fichier
+  
+  - Convertissez des images, de l'audio, des documents et des vidéos*
+  
+  - Support de plus de 250+ formats de fichiers
+  
+  - Paramètres de conversion personnalisables
+  
+  - Interface utilisateur conviviale construite avec Svelte
+  
+  
+  *La conversion vidéo non-locale est disponible avec l'instance officielle, mais le daemon est facilement auto-hébergeable pour maintenir la confidentialité et une fonctionnalité entièrement locale.
+developer: VERT.sh
+website: https://vert.sh
+dependencies: []
+repo: https://github.com/VERT-sh/VERT
+support: https://github.com/VERT-sh/VERT/discussions
+port: 3880
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+releaseNotes: >-
+  Version initiale pour Umbrel avec support complet de conversion locale pour les images, audio et documents via WebAssembly.
+submitter: Community
+submission: https://github.com/VERT-sh/VERT
