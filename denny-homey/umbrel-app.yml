@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: denny-homey
+name: Homey
+tagline: HomeAssistant but for IU lovers
+icon: https://play-lh.googleusercontent.com/NRheRIPx9ROqtLEtEXBww5RTwH9vR_Cee4u14ixB6mIEMObHMIOcUqMjWOc66geFImY2
+category: Home & Automation
+version: "1.0.0"
+port: 4859
+description: >- Homey Self-Hosted Server is based on Homey Pro’s operating system, but hosted on your own hardware. Extend with Homey Bridge to connect your Bluetooth, Zigbee, Z-Wave, 433 MHz, and Infrared devices.
+
+developer: Homey
+website: https://homey.app/
+submitter: litedragondev
+submission: https://github.com/getumbrel/umbrel-apps/pull/
+repo: https://support.homey.app/hc/en-us/articles/24010537261980-How-to-install-Homey-Self-Hosted-Server-with-Docker-on-Linux
+support: https://support.homey.app/
+gallery:
+  - https://homey.app/img/pages/homey-shs/intro/homey-shs-lineup.png
+releaseNotes: >-
+  Published.
+dependencies:
+path: ""
+defaultUsername: ""
+defaultPassword: ""
